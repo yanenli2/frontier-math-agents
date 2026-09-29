@@ -1,0 +1,161 @@
+{
+  "mode": "CERTIFICATION focused attempt; mathematical blocker, not a proved target",
+  "approved_statement": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean",
+  "approved_sha256": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed",
+  "header_sha256": "8553b2804a2be4c99b92e7e8127e588b00351a5d650386160c3056ee997d1728",
+  "attempts": [
+    {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/Attempt-v1.lean",
+      "sha256": "84565442e7cfd05a582ecf09fcd13b332639e30b6e9e9b3482a28a09a33a2dd7",
+      "statement_header_identical": true,
+      "exit_status": 1,
+      "status": "INCOMPLETE, not accepted or importable",
+      "build_record": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/build-01-residual.json"
+    },
+    {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/Attempt-v2.lean",
+      "sha256": "e6025881f81a63a65d31ff8c6a4bc7e82cf87f29e277319c033d91cafe354ab9",
+      "statement_header_identical": true,
+      "exit_status": 1,
+      "status": "INCOMPLETE, not accepted or importable",
+      "build_record": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/build-02-prime-core.json"
+    }
+  ],
+  "target_proof_status": "UNPROVED; no successful target compilation or target axiom certificate",
+  "dependency_audit_exit_status": 0,
+  "dependency_axioms": {
+    "ArithmeticStatement.omega": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.HasSignedRepresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.HasRepresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.hasSignedRepresentation_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_eight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.four_mul_representation_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_count_pos_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.count_pos_iff_keystone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prod_primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prime_of_mem_primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "dependency_audit_scope": "Accepted pre-existing declarations only; not the new target",
+  "protected_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/approved-v1/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+  },
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "next_obligation": "For arbitrary p : Nat, hp : Nat.Prime p, hpne : p ≠ 2, construct HasRepresentation (4*p).",
+  "master_integration": "Nothing proposed for integration; existing master unchanged"
+}

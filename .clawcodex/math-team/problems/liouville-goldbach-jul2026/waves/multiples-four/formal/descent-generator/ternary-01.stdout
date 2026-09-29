@@ -1,0 +1,39 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean:72:55: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 4
+  1 ≤ b - 3*e ≤ 2
+  a ≥ 1
+  -2 ≤ a - 2*b + 3*f ≤ -1
+  a - b ≤ -1
+  -2 ≤ a - b + 3*c ≤ -1
+  1 ≤ a - 3*d ≤ 2
+  2*a - b ≥ 1
+where
+ a := ↑y
+ b := ↑p
+ c := ↑x / 3
+ d := ↑y / 3
+ e := ↑p / 3
+ f := ↑(p + x) / 3
+'ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.positive_pair_gap_step' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.no_positive_pair' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.strong_induction_on' does not depend on any axioms

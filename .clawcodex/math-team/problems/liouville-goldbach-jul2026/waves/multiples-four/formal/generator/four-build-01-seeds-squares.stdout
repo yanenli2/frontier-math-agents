@@ -1,0 +1,14 @@
+'ArithmeticStatement.lambda_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.twelve_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_lambda_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_three_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_sum_two_squares' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,523 @@
+{
+  "mode": "CERTIFICATION candidate production; independent acceptance and integration separate",
+  "task_id": "8770ba99c0f5",
+  "created_utc": "2026-09-25T10:41:08.225796+00:00",
+  "modules": [
+    {
+      "module": "Statement.FourWork.Descent.Cyclic",
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean",
+      "source_sha256": "09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290",
+      "olean": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/FourWork/Descent/Cyclic.olean",
+      "olean_sha256": "f2023ad4ac1ea9c12e56e8d50fc2ccee148bea8ec246585a71080bd60ae2c620",
+      "imports": [
+        "Statement.Partial",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Tactic.Linarith"
+      ],
+      "records": [
+        {
+          "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/cyclic-02.json",
+          "sha256": "78bb6b607e1ad4169ee197dfb819f3e5c036271021c05ccbf4fff35331d1d99f",
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean"
+          ],
+          "exit_status": 0
+        },
+        {
+          "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/cyclic-03-lake-build.json",
+          "sha256": "e422375549b325fff081bfd6e91091dc87f010bd613a2c15a7acccea8084cb4e",
+          "argv": [
+            "lake",
+            "build",
+            "Statement.FourWork.Descent.Cyclic"
+          ],
+          "exit_status": 0
+        }
+      ],
+      "axioms": {
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ZMod.val_lt": [
+          "propext"
+        ],
+        "ZMod.natCast_zmod_val": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ZMod.val_natCast_of_lt": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Nat.Prime.eq_one_or_self_of_dvd": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "Statement.FourWork.Descent.Ternary",
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+      "source_sha256": "d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753",
+      "olean": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/FourWork/Descent/Ternary.olean",
+      "olean_sha256": "91595e9fe3d42b6bef5dc35ac0e97f2d1d3c59f07a1f46e962a9e908e5e27dc5",
+      "imports": [
+        "Statement.Partial"
+      ],
+      "records": [
+        {
+          "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/ternary-03.json",
+          "sha256": "e6be4f6c6d0bb603efd3499b2d11307a9c1f6618ee20789821ee41c2322acc0f",
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean"
+          ],
+          "exit_status": 0
+        },
+        {
+          "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/ternary-04-lake-build.json",
+          "sha256": "f58f66637cb285d45a225ae73433f683f7353d5a9eea54beae0618851cfd3c10",
+          "argv": [
+            "lake",
+            "build",
+            "Statement.FourWork.Descent.Ternary"
+          ],
+          "exit_status": 0
+        }
+      ],
+      "axioms": {
+        "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.FourWork.no_positive_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Nat.strong_induction_on": []
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "ArithmeticStatement.FourWork.cyclic_short_multiple",
+      "module": "Cyclic",
+      "candidate_line": 10,
+      "approved_line": 65,
+      "signature_sha256": "aad618b6d15cfbf061dc18936d91becbf4d2e2816c199aa1a0153ce255188182",
+      "exact_internal_text_equal": true
+    },
+    {
+      "name": "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg",
+      "module": "Ternary",
+      "candidate_line": 8,
+      "approved_line": 30,
+      "signature_sha256": "f65b58b57c96085fd4c6f24c388988301bfd6a9a4024d3b3ab7d47053be51529",
+      "exact_internal_text_equal": true
+    },
+    {
+      "name": "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos",
+      "module": "Ternary",
+      "candidate_line": 22,
+      "approved_line": 35,
+      "signature_sha256": "6b2eeb821e58532ffbd1a21a16107129f31efc184c23a5a92e327cf7b623284e",
+      "exact_internal_text_equal": true
+    },
+    {
+      "name": "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair",
+      "module": "Ternary",
+      "candidate_line": 36,
+      "approved_line": 40,
+      "signature_sha256": "9f380c462b87b1bef9d7c683893e808359726460a40fbd96ee776648bb1d57ae",
+      "exact_internal_text_equal": true
+    },
+    {
+      "name": "ArithmeticStatement.FourWork.positive_pair_gap_step",
+      "module": "Ternary",
+      "candidate_line": 56,
+      "approved_line": 46,
+      "signature_sha256": "04c8c1983e2ddef6edf6051463bb4b1d4a2c0455e6c77dd8b3e5bd6601ccb35e",
+      "exact_internal_text_equal": true
+    },
+    {
+      "name": "ArithmeticStatement.FourWork.no_positive_pair",
+      "module": "Ternary",
+      "candidate_line": 103,
+      "approved_line": 54,
+      "signature_sha256": "f712da17ce78c49776ee2e33ae75399a99657f1a163d9b39ae0aca6cb7166d52",
+      "exact_internal_text_equal": true
+    },
+    {
+      "name": "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation",
+      "module": "Ternary",
+      "candidate_line": 124,
+      "approved_line": 60,
+      "signature_sha256": "2e98d41965376ae2e1b5b1813e25d83ef3e5bf875dfcea49c4e89b98320e32cd",
+      "exact_internal_text_equal": true
+    }
+  ],
+  "exported_theorem_count": 7,
+  "axiom_report_count": 18,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_definition_count": 0,
+  "admitted_obligations": [],
+  "endpoint_dependencies": [],
+  "protected_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+  },
+  "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/nl/descent/proof-attempt-v1.md",
+  "source_sha256": "23fc6ad19d1c45dd432945aa84756b190700b8c15394b1554ebb3ecaff82235e",
+  "fidelity_report": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/descent-fidelity-v1.md",
+  "fidelity_sha256": "02500f9a05e68f42c4eebeec074ee58a7cfbcb5b56a2fe01492b3fb231ef0411",
+  "prime_field_source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Field/ZMod.lean",
+  "prime_field_source_sha256": "417e8776440d058896b5f05a65d534041a1b7f0b8adb90c011b75486f3e1de22",
+  "compiler_version": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+  "checkouts": [
+    {
+      "name": "plausible",
+      "pin": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "pin": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "clean": true
+    },
+    {
+      "name": "importGraph",
+      "pin": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "pin": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "clean": true
+    },
+    {
+      "name": "aesop",
+      "pin": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "clean": true
+    },
+    {
+      "name": "Qq",
+      "pin": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "clean": true
+    },
+    {
+      "name": "batteries",
+      "pin": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "clean": true
+    },
+    {
+      "name": "Cli",
+      "pin": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "clean": true
+    },
+    {
+      "name": "mathlib",
+      "pin": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "clean": true
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "shell_display": "lake env lean --version",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_status": 0,
+      "stdout": "e12c1910fe855cbfc38803cd4e55543906d5fa62\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_status": 0,
+      "stdout": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_status": 0,
+      "stdout": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_status": 0,
+      "stdout": "6e311e2a844da9b2cc3971187df2fe0066947b93\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_status": 0,
+      "stdout": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_status": 0,
+      "stdout": "38d591e778f100aec9762bb582f9c7f55f50e9dc\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_status": 0,
+      "stdout": "023ce7d62a0531e22a5331e20b587817a80d49ff\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_status": 0,
+      "stdout": "88679d088c9720c27ebdf2ba4dafe17341747f94\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "full_target_status": "Not supplied in these modules; await character package and authorized Assembly proof",
+  "master_status": "Existing masters/root/pins unchanged; only assigned scratch modules built"
+}

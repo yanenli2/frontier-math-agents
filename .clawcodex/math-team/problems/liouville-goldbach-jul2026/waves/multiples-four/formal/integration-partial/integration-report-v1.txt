@@ -1,0 +1,192 @@
+Mode: CERTIFICATION — mechanical integration, nineteen partial helpers only.
+Owner: fl-integrator; task 357fd078ec63.
+
+VERDICT
+PASS: exact reviewed FourCandidate integrated and rechecked. This artifact is a
+baseline for further proof work, NOT a proof of all positive multiples of four
+(T4), and NOT a proof of the original all-even Target. No mathematical change,
+proof repair, golfing, or new statement certification was performed.
+
+P = .clawcodex/math-team/problems/liouville-goldbach-jul2026
+W = P/waves/multiples-four
+D = W/formal/integration-partial
+L = P/lean
+B = .clawcodex/math-team/review-inputs/r20260924-four-v1
+
+OWNERSHIP AND APPROVED INPUTS
+TaskGet/TaskList were reread; the initial routing race was held without edits
+until TaskList confirmed owner fl-integrator, in_progress, no blockers.
+
+Exact candidate and final master (byte-identical):
+  W/formal/generator/FourCandidate.lean
+  P/lean/Statement/FourPartial.lean
+  SHA-256 4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325
+
+Approved helper signature snapshot and neutral input (byte-identical):
+  W/formal/generator/four-interfaces-v1.lean
+  B/Interfaces.lean
+  SHA-256 be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee
+
+Literal readback B/interfaces-readback.md:
+  SHA-256 693e7d4a45e5e3e0e1afefbee6c4232b2f4b5a5eb308c85344881afe0e0f1a6d
+Its neutral Declaration.lean defining segments were compared literally with
+Definitions.lean (omega/lambda) and Partial.lean (representation predicates).
+No definition, domain, sign, quantifier, or hypothesis was changed.
+
+Statement fidelity: W/formal/reviews/helper-fidelity-v1.md
+  SHA-256 ad4612c5f35e0e0b75b1b06913b756605f4fe62557346be0ee2f6cdfbd35f517
+Exact candidate gate: W/formal/reviews/four-candidate-review-v1.md
+  SHA-256 573eedc7b428cbadfb3730854bb36bb61c226ab9011433fc7808273b820f56e5
+Independent compile/axiom evidence: four-candidate-review-v1.compile.json
+  SHA-256 7b380889526d86a557ba3c389c4f97a3a6f40392349340d7ef5cdcc23e0a79f5
+Natural-language partial review: W/nl/reviews/partial-review-v1.md
+  SHA-256 a692b264bf9185f3f067d7c15804a6ff7e743a6ff295db50058d32d151727ddc
+The mathematical/proof-route scope is exactly the gate's 19 helpers and source
+proof-attempt-v1.md sections 1-4. Separate later descent work was not integrated
+or assessed here.
+
+DIFF AND PRESERVATION
+- New FourPartial.lean is the complete 293-line candidate, including its two
+  imports, namespace, unchanged proof bodies, 48 axiom prints and one #check.
+- Root Statement.lean retains its four previous imports and adds exactly:
+    import Statement.FourPartial
+- No lakefile change was necessary. No collisions or namespace changes occurred.
+- Complete unified diff: D/integration-v2.diff
+  SHA-256 b0cb8b0664766f8a5b7fc64c59d13aa1cd3838ab5fd31f8e37547aaecd0f282b
+- Final root SHA-256:
+  dc72b845dbb045593ef3a6212b03a54cc0797a29baac132e870aff324cdc5853
+- Prior root preserved at D/Statement.before.lean, SHA-256:
+  426a0b62a141387e22f0e5481a705e3ffe3d64e0f8ad100daea3101c802e8458
+
+Definitions.lean remains 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d.
+Partial.lean remains 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0.
+All old integration evidence, original REPRODUCE.md, FINAL_ARGUMENT.md, sources.md,
+Scaffold/Smoke, protected snapshots, Lean toolchain, lakefile and manifest were
+hash-checked before/after and left unchanged. No concurrent edits were detected.
+No unfinished scaffold, endpoint signature, axiom or assumed core was integrated.
+FourPartial depends only on Partial and the pinned SumTwoSquares module.
+
+MECHANICAL FAILURE AND RECOVERY — NO PROOF FAILURE
+The first recorder (check_four_first_attempt.py, preserved verbatim) assumed
+one-line #print axioms output. Lean wraps nine long-name results over multiple
+lines. Thus audit-v1.json records a Python parser assertion failure (runner exit
+1) after every actual Lean build/direct/trust-zero command had exited 0.
+
+Root was immediately restored to Statement.before.lean and confirmed equal by
+cmp (exit 0). The unchanged new candidate and all v1 raw evidence were retained.
+Only the wave-owned recorder was repaired to parse bracketed multiline lists;
+a separate check successfully parsed all 48 preserved direct/trust-zero results.
+The same root import was then reapplied and the entire suite rerun with fresh
+v2 outputs. No Lean source or protected statement was altered in this recovery.
+The authoritative completed evidence is audit-v2.json, not the interrupted v1.
+
+ACTUAL COMMANDS AND EXIT CODES
+Preflight runner: python3 D/check_four.py preflight, exit 0.
+Copy: test ! -e L/Statement/FourPartial.lean &&
+      cp W/formal/generator/FourCandidate.lean L/Statement/FourPartial.lean &&
+      cmp W/formal/generator/FourCandidate.lean L/Statement/FourPartial.lean
+All paths were expanded to the absolute paths above; exit 0, no output.
+Root import edits used exact-string replacements, preserving other lines.
+Final runner: python3 D/check_four.py verify v2, exit 0.
+
+All following subprocesses ran with cwd L. Exact argv/cwd/timestamps/durations,
+exit codes, timeout 600 seconds, stdout/stderr and their hashes are recorded in
+D/v2-*.json and audit-v2.json:
+
+lake env lean --version                         0   3.671 s
+lake --version                                  0   0.039 s
+lake env printenv LEAN_PATH                     0   0.601 s
+lake build                                      0   1.476 s
+lake build Statement.FourPartial                0   1.036 s
+lake env lean Statement/FourPartial.lean         0   9.357 s
+lake env lean -t 0 Statement/FourPartial.lean     0   5.430 s
+lake env lean --stdin [root diagnostics]         0   2.446 s
+lake env lean --stdin [absence check]            1   2.122 s (expected)
+
+Both default builds succeeded with 1972 jobs. v1-03-default-build.stdout:151,219
+records actual builds of FourPartial and root Statement; v2 repeats the build
+success, replaying the same unchanged compiled module. Direct and trust-zero
+compilation were actually rerun on the exact final source, not merely cached.
+
+Root diagnostic input is D/v2-07-root-import.stdin.lean. It imports only Statement,
+checks all 19 new elaborated types with @, prints fixed definitions, and prints
+the union of all 48 new and 82 old axiom queries (114 distinct declarations).
+All 82 old axiom maps equal their accepted prior integration map.
+
+Absence input is D/v2-08-absent-endpoints.stdin.lean. Expected exit 1 consists
+solely of Unknown identifier diagnostics for representation_multiple_four,
+pointwise_keystone and liouville_goldbach. This is a negative presence test,
+not an accepted failed proof.
+
+For all nine pinned packages, actual git rev-parse HEAD and tracked-status checks
+exited 0, with manifest-equal revisions and clean tracked sources. For each of
+SumTwoSquares, GaussianInt and QuadraticReciprocity, git rev-parse PIN:PATH and
+git hash-object PATH exited 0 and returned identical blobs. All argv are retained.
+
+STATEMENTS, ADMISSIONS, AND AXIOMS
+All 19 theorem headers compare exactly with the approved interface after only
+removing their proof assignments/bodies and trailing separator whitespace.
+No internal whitespace normalization is needed for equality. The independently
+reviewed normalized header-snapshot hash is also reproduced:
+20d393bd6cd7e9528ec555c41c00bf610ede2a731d97668bdb81f4cc2d63590c.
+Every header/full declaration hash and line number appears in audit-v2.json.
+There are no new definitions; the old defining bodies remain byte-identical.
+
+Direct and trust-zero compilation return exactly the same 48 axiom maps; root
+import repeats them and verifies the full 114-name union. All 19 new theorems
+have exactly {propext, Classical.choice, Quot.sound}. Of the 48 required queries,
+44 have that full set, two only propext, and two propext plus Quot.sound.
+No sorryAx, custom mathematical axiom, Lean.ofReduceBool or other extra axiom
+appears. Candidate, Partial and Definitions scans contain no sorry, admit,
+native_decide, unsafe proof bypass, implemented_by or custom axiom/postulate.
+The new module emits no warning/error/admission diagnostics. Four pre-existing
+unused-variable warnings in Partial are replayed by the default build only.
+
+Trust remains the pinned Lean implementation/kernel, those standard foundational
+axioms, and pinned compiled library artifacts. Ordinary decide, simp, omega and
+ring produce checked proof terms. Trust-zero compilation passed; no claim of an
+independent kernel implementation or rebuild of all upstream sources is made.
+
+PROVENANCE
+Lean remains v4.32.2, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c;
+Lake 5.0.0-src+f3b06c7; Mathlib 905b95818eb32af7874a58b427f50c1711a5e96c.
+The frozen manifest hash remains
+de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03.
+All nine package pins were rebound to preserved exact-SHA public CI witnesses
+strictly before 2026-08-01, with raw public-repository metadata checked. No use
+of author dates alone, current branch, newer documentation, or later paper was
+needed. No network, package update, cache download or installation was run here.
+
+New dependency details and exact prerequisite/proof-route distinction are in
+D/provenance-addendum-v1.txt. The original same-pin cache record was checked
+against its stream hashes, not rerun. The library's Gaussian proof supplies the
+two-squares assertion; the different prose proof's intermediate steps are not
+claimed as separately formalized. The independent candidate gate audited this.
+
+DELIVERY AND REMAINING OBLIGATIONS
+- Passing machine evidence: D/audit-v2.json
+  SHA-256 0be64eae8a1d09818a2e14821a7143378ece3e0dee8077a7e13d38e3cc4166b1
+- D/integration-v2.diff, all v1/v2 command records, both recorder versions,
+  D/preflight-v1.json, D/Statement.before.lean.
+- D/source-proof-map-v1.txt; D/provenance-addendum-v1.txt.
+- W/REPRODUCE.md is the wave-only draft for this partial baseline.
+- D/artifact-hashes-v1.json records final delivery identities.
+No frozen original documentation or shared source/lemma ledger was edited.
+
+Still absent from this checked baseline:
+  theorem ArithmeticStatement.representation_multiple_four
+      (m : Nat) (hm : 0 < m) : ArithmeticStatement.HasRepresentation (4 * m)
+
+Its equivalent residual goal is:
+  |- forall p : Nat, Nat.Prime p -> 7 <= p -> p % 4 = 3 ->
+       ArithmeticStatement.HasRepresentation (4 * p)
+
+The new equivalence does not itself prove that residual proposition. New checked
+families include m%4 != 3, positive-sign m, multiples of 3, square-sum m and
+appropriate prime-divisor cases. They are not a full T4 proof. The original
+pointwise_keystone and liouville_goldbach also remain absent from this baseline.
+
+The leader/generators may now use import Statement.FourPartial for separately
+approved full proof work. Subsequent proof/integration and independent review
+are separate tasks. Artifact production is complete; awaiting the leader's
+explicit shutdown request to release this persistent worker slot.

@@ -1,0 +1,28 @@
+{
+  "team_name": "math-team",
+  "description": "Liouville additive conjecture: exact universal even-N target, NL and faithful checked Lean work, source cutoff 2026-07-31, at most two persistent specialists plus fresh synchronous reviewers. Main session is team-lead.",
+  "lead_agent_id": "tcp9ou0cy",
+  "members": [
+    {
+      "agent_id": "tcp9ou0cy",
+      "name": "team-lead",
+      "color": null,
+      "tmux_pane_id": null,
+      "backend_type": "in-process"
+    },
+    {
+      "agent_id": "tw05jhslm",
+      "name": "fl-generator",
+      "color": null,
+      "tmux_pane_id": null,
+      "backend_type": "in-process"
+    },
+    {
+      "agent_id": "tdkudsui0",
+      "name": "fl-integrator-final",
+      "color": null,
+      "tmux_pane_id": null,
+      "backend_type": "in-process"
+    }
+  ]
+}

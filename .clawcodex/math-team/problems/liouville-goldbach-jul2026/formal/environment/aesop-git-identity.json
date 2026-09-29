@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+    "show",
+    "-s",
+    "--format=%H%n%aI%n%cI",
+    "HEAD"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop show -s --format=%H%n%aI%n%cI HEAD",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:02:05.779038+00:00",
+  "elapsed_seconds": 0.015536167000000004,
+  "timeout_seconds": 180,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-identity.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-identity.stderr",
+  "stdout_sha256": "bb5b4000f96033ef8cde43e6a01d2edd65a2058bc2629003326c1b6436257bba",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

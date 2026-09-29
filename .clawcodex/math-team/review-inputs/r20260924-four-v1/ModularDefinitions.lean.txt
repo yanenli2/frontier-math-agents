@@ -1,0 +1,18 @@
+def ZMod : ℕ → Type
+  | 0 => ℤ
+  | n + 1 => Fin (n + 1)
+
+namespace ZMod
+
+def val : ∀ {n : ℕ}, ZMod n → ℕ
+  | 0 => Int.natAbs
+  | n + 1 => ((↑) : Fin (n + 1) → ℕ)
+
+theorem val_lt {n : ℕ} [NeZero n] (a : ZMod n) : a.val < n
+
+end ZMod
+
+universe u
+variable {α : Type u} [Mul α]
+
+def IsSquare (a : α) : Prop := ∃ r, a = r * r

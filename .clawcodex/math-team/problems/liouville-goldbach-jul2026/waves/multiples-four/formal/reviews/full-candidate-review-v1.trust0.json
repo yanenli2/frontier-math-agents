@@ -1,0 +1,14 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-t0",
+    "Statement/FourWork/Assembly.lean"
+  ],
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "start_utc": "2026-09-25T10:52:00.084000+00:00",
+  "exit_status": 0,
+  "elapsed_seconds": 16.157023332999998,
+  "raw_log": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.trust0.log"
+}

@@ -1,0 +1,218 @@
+{
+  "packages": [
+    {
+      "name": "plausible",
+      "revision": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "source_url": "https://github.com/leanprover-community/plausible/tree/e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "clean": true,
+      "witness": {
+        "name": "Lean Action CI",
+        "id": 29253419718,
+        "html_url": "https://github.com/leanprover-community/plausible/actions/runs/29253419718",
+        "created_at": "2026-07-13T13:20:50Z",
+        "updated_at": "2026-07-13T13:24:52Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "head_sha": "e12c1910fe855cbfc38803cd4e55543906d5fa62"
+      },
+      "nested_manifest": {
+        "sha256": "99a17603b60cd9af445e5689b572b8441aaeaed149f3760dc52595a0c4b128db",
+        "bytes": 115
+      }
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "source_url": "https://github.com/leanprover-community/LeanSearchClient/tree/c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "clean": true,
+      "witness": {
+        "name": "Lean Action CI",
+        "id": 21928619159,
+        "html_url": "https://github.com/leanprover-community/LeanSearchClient/actions/runs/21928619159",
+        "created_at": "2026-02-12T00:28:07Z",
+        "updated_at": "2026-02-12T00:28:47Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "head_sha": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+      },
+      "nested_manifest": {
+        "sha256": "a9b5fc5e76254f415e49b04b7049f58c6cb42e76a0e31b0aed2ddf4af6882033",
+        "bytes": 122
+      }
+    },
+    {
+      "name": "importGraph",
+      "revision": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "source_url": "https://github.com/leanprover-community/import-graph/tree/7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "clean": true,
+      "witness": {
+        "name": "Build the project",
+        "id": 29255410348,
+        "html_url": "https://github.com/leanprover-community/import-graph/actions/runs/29255410348",
+        "created_at": "2026-07-13T13:50:43Z",
+        "updated_at": "2026-07-13T13:51:35Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+      },
+      "nested_manifest": {
+        "sha256": "c8028cb25d859d531af43c02ca1ead5cd95a95f34f180f1544cee17316dd1703",
+        "bytes": 453
+      }
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "source_url": "https://github.com/leanprover-community/ProofWidgets4/tree/6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "clean": true,
+      "witness": {
+        "name": "ci",
+        "id": 29253424000,
+        "html_url": "https://github.com/leanprover-community/ProofWidgets4/actions/runs/29253424000",
+        "created_at": "2026-07-13T13:20:54Z",
+        "updated_at": "2026-07-13T13:23:42Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "6e311e2a844da9b2cc3971187df2fe0066947b93"
+      },
+      "nested_manifest": {
+        "sha256": "cfa8a1535cd79fbd868bcc67eb22efdab57568248a437fa5dda567234f1f03e2",
+        "bytes": 118
+      }
+    },
+    {
+      "name": "aesop",
+      "revision": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "source_url": "https://github.com/leanprover-community/aesop/tree/a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "clean": true,
+      "witness": {
+        "name": "Build",
+        "id": 29256329889,
+        "html_url": "https://github.com/leanprover-community/aesop/actions/runs/29256329889",
+        "created_at": "2026-07-13T14:03:38Z",
+        "updated_at": "2026-07-13T14:06:27Z",
+        "event": "merge_group",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3"
+      },
+      "nested_manifest": {
+        "sha256": "d2bdbc6c14453f7ab86baee6fc23111588531bdbdddd0e5f56179f34c89994bb",
+        "bytes": 473
+      }
+    },
+    {
+      "name": "Qq",
+      "revision": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "source_url": "https://github.com/leanprover-community/quote4/tree/38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "clean": true,
+      "witness": {
+        "name": "ci",
+        "id": 29253426904,
+        "html_url": "https://github.com/leanprover-community/quote4/actions/runs/29253426904",
+        "created_at": "2026-07-13T13:20:57Z",
+        "updated_at": "2026-07-13T13:21:33Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "38d591e778f100aec9762bb582f9c7f55f50e9dc"
+      },
+      "nested_manifest": {
+        "sha256": "460e7ce76c58edfd8ba59428f23e908c5860e8bbca8883ff6c1262980e364d30",
+        "bytes": 108
+      }
+    },
+    {
+      "name": "batteries",
+      "revision": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "source_url": "https://github.com/leanprover-community/batteries/tree/023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "clean": true,
+      "witness": {
+        "name": "Merge conflicts",
+        "id": 29282598413,
+        "html_url": "https://github.com/leanprover-community/batteries/actions/runs/29282598413",
+        "created_at": "2026-07-13T20:29:43Z",
+        "updated_at": "2026-07-13T20:29:53Z",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "023ce7d62a0531e22a5331e20b587817a80d49ff"
+      },
+      "nested_manifest": {
+        "sha256": "67a8bbfcd0c742e05e198714b2d0f3602a3103d838e7427d773a5587555f88a2",
+        "bytes": 141
+      }
+    },
+    {
+      "name": "Cli",
+      "revision": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "source_url": "https://github.com/leanprover/lean4-cli/tree/88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "clean": true,
+      "witness": {
+        "name": "build lean4-cli",
+        "id": 29253416514,
+        "html_url": "https://github.com/leanprover/lean4-cli/actions/runs/29253416514",
+        "created_at": "2026-07-13T13:20:47Z",
+        "updated_at": "2026-07-13T13:21:18Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+      },
+      "nested_manifest": {
+        "sha256": "f608bac5ccb22b59292584eb7fb4497c327e780a17e7afb8d584ce5d79ad0b70",
+        "bytes": 109
+      }
+    },
+    {
+      "name": "mathlib",
+      "revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "source_url": "https://github.com/leanprover-community/mathlib4/tree/905b95818eb32af7874a58b427f50c1711a5e96c",
+      "clean": true,
+      "witness": {
+        "name": "Release",
+        "id": 30379053106,
+        "html_url": "https://github.com/leanprover-community/mathlib4/actions/runs/30379053106",
+        "created_at": "2026-07-28T16:36:37Z",
+        "updated_at": "2026-07-28T16:36:53Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "905b95818eb32af7874a58b427f50c1711a5e96c"
+      },
+      "nested_manifest": {
+        "sha256": "015c7e00ead0f05f2a72b32d9bdef782d4689d05a6297f0ceb0ab5d196c164bd",
+        "bytes": 2811
+      }
+    }
+  ],
+  "lean_witness": {
+    "name": "lean",
+    "sha": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+    "exit_status": 0,
+    "witnesses": [
+      {
+        "name": "CI",
+        "id": 30368480005,
+        "html_url": "https://github.com/leanprover/lean4/actions/runs/30368480005",
+        "created_at": "2026-07-28T14:27:52Z",
+        "updated_at": "2026-07-28T16:34:41Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "f3b06c705e6c85f5314019d5d3baab0fec5b580c"
+      }
+    ]
+  },
+  "metadata_source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json",
+  "metadata_identity": {
+    "sha256": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1",
+    "bytes": 53996
+  },
+  "cutoff_exclusive": "2026-08-01T00:00:00Z",
+  "method": "Offline retained exact-SHA public CI witnesses; no network/update/install"
+}

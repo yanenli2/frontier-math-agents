@@ -1,0 +1,317 @@
+Mode: CERTIFICATION — proposed interface/design artifact only; no new Lean proof.
+Owner: fl-generator, direct follow-up assignment from team-lead.
+P=.clawcodex/math-team/problems/liouville-goldbach-jul2026
+W=P/waves/multiples-four
+M=P/lean/.lake/packages/mathlib/Mathlib
+
+1. DELIVERABLE AND REVIEW BOUNDARY
+
+Proposed code-only helper bundle:
+W/formal/generator/four-interfaces-v1.lean
+SHA-256 be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee
+
+It contains 19 body-erased theorem signatures, not axioms, assumptions, or
+compilable declarations. Do not import this signature-text file. No sorry bodies
+have been inserted. No theorem in this new bundle has been compiled or accepted
+by this worker. Per assignment, blind readback and fidelity review come before
+proof implementation/compilation. Research in this follow-up was source-only;
+no Lean/API probe was compiled, no cache was fetched, and no master was edited.
+
+No new mathematical definition is necessary: every interface reuses the exact
+accepted ArithmeticStatement.lambda, HasSignedRepresentation, and
+HasRepresentation. In particular no second lambda, new notion of representation,
+unnamed positivity predicate, or new T4/core definition is introduced. The two
+core equivalences spell out both propositions directly, exposing all quantifiers
+and bounds. The bundle imports only Statement.Partial for their existing types.
+
+The requested unconditional theorem is deliberately NOT in the helper bundle.
+It remains separately OPEN in the unchanged approved-v1/Declaration.lean:
+
+theorem representation_multiple_four (m : ℕ) (hm : 0 < m) :
+  HasRepresentation (4 * m)
+
+The new partial target covers m%4≠3, not all m. The residual prime core is
+necessary and sufficient only through the proposed equivalence; its universal
+right-hand side is not granted as a hypothesis to the unconditional theorem.
+
+2. EXACT MATHEMATICAL INPUTS
+
+A = W/nl/generator/proof-attempt-v1.md
+  SHA-256 1730e39b6ef4eb33bc4621e26642d63b4c775415a4cdeec7de00ccff71fa89ef
+V = W/nl/reviews/partial-review-v1.md
+  SHA-256 a692b264bf9185f3f067d7c15804a6ff7e743a6ff295db50058d32d151727ddc
+B = P/lean/Statement/Partial.lean
+  SHA-256 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0
+D = P/lean/Statement/Definitions.lean
+  SHA-256 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+
+The scoped source is A §§2–4, lines 60–179; V §§4.1–4.7 checks these local
+arguments but does not prove T4. No conjectural S(p)/Q(p), finite experiment,
+fixed-pair template, all-even Target, or universal residual core is used here.
+
+Notation in this blueprint only: G(N)=HasRepresentation N; T4 is the exact
+forall m>0, G(4m); C3 is forall prime p≥7 with p%4=3, G(4p).
+
+3. SOURCE-ALIGNED INTERFACE MAP
+
+All signatures are in ArithmeticStatement. Input numbers are naturals, signs
+are integers, and % denotes natural remainder. Line references in column I are
+to four-interfaces-v1.lean. Every binder is explicit under autoImplicit=false.
+
+ID   I    Declaration / purpose                              Source A
+F01   7   lambda_six: lambda 6=+1                            101–105, §1.2–3
+F02  10   lambda_seven: lambda 7=-1                         101–105
+F03  13   twelve_two_sign_seed: P_-1(12) and P_1(12)         101–105
+F04  17   representation_multiple_twelve: all t>0           101–105
+F05  20   representation_multiple_four_of_lambda_one       64–69
+F06  24   representation_multiple_four_of_even              64–69
+F07  28   representation_multiple_four_of_three_dvd         101–105,175
+F08  32   representation_multiple_four_of_sum_two_squares   111–123
+F09  36   prime_one_mod_four_eq_sum_two_squares             125–153
+F10  40   representation_four_prime_one_mod_four            153–155
+F11  44   prime_divisor_positive_sign_cofactor              71–75
+F12  49   exists_prime_factor_of_lambda_neg_one             69–77, §1.58
+F13  54   representation_multiple_four_of_prime_divisor     75–79
+F14  60   representation_multiple_four_of_prime_one_mod_four_dvd 176
+F15  65   exists_prime_one_mod_four_of_lambda_neg_one        177
+F16  70   representation_multiple_four_of_mod_four_one      177
+F17  74   representation_multiple_four_of_mod_four_ne_three 175–179
+F18  78   multiple_four_iff_odd_prime_core                  81–91
+F19  82   multiple_four_iff_prime_three_mod_four_core        159–171
+
+F11 applies to ANY chosen prime divisor, not only the first or a distinct factor.
+It is deliberately not restricted to odd m: the cofactor-sign argument only
+requires m>0 and lambda m=-1. This scope is explicitly used in A:176. F12 chooses
+a prime occurrence and allows d=1. F13 is a conditional scaling lemma, with its
+hCore premise displayed; it does not assert the premise uniformly. F14 removes
+the lambda-sign premise by splitting the two signs, exactly as A:176 specifies.
+
+F08 allows u=0, v=0 individually, and u=v. Only m>0 excludes the double-zero
+case. It concludes existential G(4m), not a theorem prescribing a single witness
+formula in the equal-coordinate branch. F09 uses an explicit prime hypothesis,
+not a new typeclass assumption on the mathematical statement.
+
+F15 extracts a prime divisor congruent to 1 mod 4 only with BOTH m%4=1 and
+lambda m=-1. It does not assert that every number 1 mod 4 is a sum of two squares.
+For example such a claim would be stronger and is not the source argument.
+
+F18 quantifies over primes p≠2; together with primality this is exactly odd primes.
+F19 uses precisely Prime p, 7≤p, p%4=3 in that order, including p=7. Both sides
+are universally quantified with witnesses supplied by the fixed G predicate.
+No least-counterexample declaration is added: it is unnecessary for the
+requested partial theorem and exact core equivalence.
+
+4. DEPENDENCY-ORDERED PROOF PLAN AFTER REVIEW
+
+Wave A: small seeds and direct specializations.
+- F01 from lambda_mul at 2,3 and the accepted prime values.
+- F02 from lambda_prime and pinned Nat.prime_seven.
+- F03 uses independent witnesses (5,7) and (6,6), with exact sums 12.
+- F04 applies the accepted representation_two_sign_seed at d=12.
+- F05 uses lambda_two_mul on m and the diagonal witnesses (2m,2m), or the
+  accepted representation_diagonal after proving lambda(4m)=1.
+- F06 writes m=k+k, derives k>0, and specializes all-8k.
+- F07 writes m=3t, derives t>0, and normalizes 4m=12t before F04.
+
+Wave B: the two-squares construction, independent of Fermat.
+- Prove F08 with exactly the zero/equality cases in A:111–123.
+- If u=v, hSum and m>0 imply u²>0 and 4m=8u²; use all-8t with t=u².
+- Otherwise order the coordinates. Write the larger as the smaller plus w,
+  where w>0. This avoids relying on truncated natural subtraction for |u-v|.
+  The two roots are u+v and w; both are positive. Their doubled squares have
+  lambda=-1 by lambda_square followed by lambda_two_mul. The sum identity is
+  a polynomial identity after substituting larger=smaller+w, hence kernel ring
+  arithmetic suffices. The resulting witnesses are 2(u+v)² and 2|u-v|².
+- When one coordinate is zero these witnesses can coincide; this is allowed.
+  Never use the unequal formula when u=v, since it would introduce a zero
+  second witness. No stronger positivity condition may be added to F08.
+
+Wave C: the prime-1-mod-4 input.
+- Prove F09 using the exact pinned library theorem documented in §5, after the
+  narrow required module is available and its type/axioms actually checked.
+  This is an authorized alternate derivation of the same two-squares statement;
+  A:125–151 supplies the separately reviewed elementary proof if needed.
+- F10 combines F09, prime positivity, and F08. The proposed interface does not
+  need nonzero or unequal square coordinates because F08 already handles them.
+
+Wave D: extraction and sign-preserving scaling.
+- F11 obtains a natural cofactor from p∣m, proves it positive from m>0, rewrites
+  lambda m with lambda_mul, and uses lambda p=-1 to force lambda d=1.
+  Normalize m=p*d to m=d*p by commutativity; do not divide any representation.
+- F12 uses m≠1 (lambda_one and hSign) plus Nat.exists_prime_and_dvd, then F11;
+  alternatively take the head of the nonempty primeFactorsList as in the
+  earlier failed exact-target attempt. In either route d=1 remains allowed.
+- F13 applies F11 and accepted hasSignedRepresentation_mul to hCore, with
+  lambda d=1, then normalizes d*(4p)=4m.
+- F14 splits lambda m: F05 in the positive case, F10 then F13 in the negative
+  case. No assumption that m is odd is required.
+- F18: forward specialize m=p using hp.pos. In reverse, first use F05/F06;
+  otherwise use F12. From m=d*p and ¬Even m prove p≠2, apply the stated odd-prime
+  core, and scale by d. This is a closed equivalence, not a proof of the core.
+
+Wave E: all m not congruent to 3 mod 4.
+- F15 is the only genuinely new multiplicity/residue bookkeeping obligation.
+  From m%4=1 obtain oddness of m. Suppose no prime divisor has residue 1.
+  Every prime occurrence in m.primeFactorsList divides m, cannot be 2, and has
+  residue 1 or 3 by primality/oddness; hence every occurrence has residue 3.
+- Preserve repetitions: use the actual prime-factor LIST and its length omega m,
+  not the distinct-prime finset. Its product is m since hm gives m≠0.
+- Lambda's negative sign gives Odd (omega m) from the pinned negative-one-power
+  parity lemma. By list induction, a list whose entries are all 3 modulo 4 has
+  product congruent to 3^length modulo 4. An odd length makes that remainder 3
+  (3²≡1 modulo 4), contradicting m%4=1. This proves the required prime exists.
+  List.prod_nat_mod is available in pinned source as an optional convenience;
+  direct list induction with Nat.mul_mod avoids any extra import if preferred.
+- F16 splits lambda m. The positive case is F05; the negative case uses F15 to
+  select p and F14 for the representation. The case m=1 is therefore covered.
+- F17 splits Even m. That case is F06. Otherwise m is odd; a natural odd
+  remainder modulo 4 is 1 or 3, and hMod excludes 3. Apply F16. Thus residue
+  classes 0,1,2 are uniformly covered, without asserting failure at class 3.
+
+Wave F: sharper exact residual equivalence.
+- F19 can reuse F18 rather than repeat factor extraction. An odd prime p is
+  either 1 or 3 modulo 4. The first case is F10. For residue 3, split p=3:
+  use F04 at t=1 there; otherwise primality/residue bounds give 7≤p and the
+  stated C3 premise applies. The forward direction is specialization to m=p.
+- The final theorem representation_multiple_four is still absent. Do not add
+  a sorry, axiom, hC3 parameter, finite computation, or alleged positivity
+  consequence of the counting identity to manufacture it.
+
+Suggested dependency edges:
+F01,F02 -> F03 -> F04 -> F07;
+F08,F09 -> F10;
+F11 -> F12,F13; F05,F10,F13 -> F14;
+F05,F14,F15 -> F16; F06,F16 -> F17;
+F05,F06,F12 -> F18; F04,F10,F18 -> F19.
+The exact source supports proving F15 using its local factor-list argument;
+F12 is not a premise of F15, since F15 must find a divisor of a prescribed residue.
+
+5. PINNED LIBRARY API RESEARCH — SOURCE CHECKED, NOT COMPILED HERE
+
+All paths below are in M at immutable commit
+905b95818eb32af7874a58b427f50c1711a5e96c. The exact local Git HEAD matches and
+`git status --short` is empty. No online/current documentation was consulted.
+The inherited source cutoff is 2026-07-31 inclusive.
+
+Primary Fermat API:
+M/NumberTheory/SumTwoSquares.lean:35–38
+Authors: Chris Hughes, Michael Stoll; module title Sums of two squares.
+
+Exact usable declaration:
+theorem Nat.Prime.sq_add_sq {p : ℕ} [Fact p.Prime] (hp : p % 4 ≠ 3) :
+    ∃ a b : ℕ, a ^ 2 + b ^ 2 = p
+
+Application to F09:
+- install a LOCAL `Fact p.Prime` instance from F09's explicit hp;
+- derive p%4≠3 from hMod:p%4=1 by concrete arithmetic;
+- obtain the two natural coordinates;
+- reverse the returned equality to match p=u²+v².
+There is no condition p>2, coprimality, or distinctness on the returned coordinates.
+The library's weaker modulus premise permits p=2, but F09 deliberately retains
+its source premise p%4=1. No theorem about arbitrary m%4=1 is inferred from it.
+
+Immutable source locator:
+https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/NumberTheory/SumTwoSquares.lean#L35-L38
+SHA-256 of the inspected full file:
+ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9
+
+The pinned proof uses Gaussian integers, not the NL candidate's factorial/grid
+construction. Its source is a proved library theorem, not a new external axiom.
+The source imports Squarefree, Zsqrtd.QuadraticReciprocity, and PadicVal.Basic;
+its later characterization results are not mathematically needed here. A direct
+import of Mathlib.NumberTheory.SumTwoSquares is the simplest named-API route.
+For a narrower alternative, its two-line proof can be reconstructed using
+GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible (GaussianInt.lean:243–244)
+and GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime
+(QuadraticReciprocity.lean:83–85), both with the same local Fact p.Prime. This is
+an implementation option, not an additional proposed mathematical interface.
+Use one route, not both, and retain exact dependency/axiom evidence afterward.
+
+Other source-checked usable APIs:
+- Nat.prime_seven : Nat.Prime 7.
+  Data/Nat/Prime/Defs.lean:177; existing baseline factor/prime imports suffice.
+- Nat.exists_prime_and_dvd {n} (hn:n≠1) : ∃p, Nat.Prime p ∧ p∣n.
+  Data/Nat/Prime/Defs.lean:407–408. F12 supplies n≠1; positivity is separately
+  retained for the cofactor and product identity.
+- Nat.Prime.eq_two_or_odd (hp:Nat.Prime p) : p=2 ∨ p%2=1.
+  Data/Nat/Prime/Basic.lean:41–43.
+- Nat.Prime.eq_two_or_odd' (hp:Nat.Prime p) : p=2 ∨ Odd p.
+  Same file:45–46. Do not confuse the remainder and Odd variants.
+- Nat.odd_mod_four_iff : n%2=1 ↔ n%4=1 ∨ n%4=3.
+  Data/Nat/ModEq.lean:582–586. Alternatively concrete `omega` remainder
+  arithmetic can supply this step without an extra import.
+- Nat.odd_of_mod_four_eq_one : n%4=1 -> n%2=1.
+  Same file:575–576.
+- Nat.dvd_of_mem_primeFactorsList : p∈n.primeFactorsList -> p∣n.
+  Data/Nat/Factors.lean:149–152; prime membership and nonzero product are already
+  accepted dependencies in Statement.Partial.
+- List.prod_nat_mod (l:List ℕ) (n:ℕ) :
+    l.prod % n = (l.map (· % n)).prod % n.
+  Algebra/BigOperators/Group/List/Basic.lean:455–459.
+- neg_one_pow_eq_neg_one_iff_odd (h:(-1:R)≠1) :
+    (-1:R)^n=-1 ↔ Odd n, with Monoid R and HasDistribNeg R.
+  Algebra/Ring/Parity.lean:400–401. Specialize R=ℤ; the baseline already imports
+  the integer ring instance. This avoids the missing-instance issue diagnosed
+  in the earlier proof wave. h is discharged by the concrete integers.
+
+Source file SHA-256 values for additional inspected APIs:
+Data/Nat/Prime/Basic.lean
+b97e83d65681b68b3ad1f4bdfd36defd0a30aa173cf726b3d2807acf8bde5027
+Data/Nat/ModEq.lean
+678c7d5030c056efb633aaab3a1b44ceec599332b9f70f694b08f4cce27d1fea
+Algebra/BigOperators/Group/List/Basic.lean
+5a4c739edd5bf07c5c119f850392cec75ff9aa8ab8486055d41325407a21fd92
+The defining Factors/Prime/Parity inputs retain the earlier pinned baseline.
+
+6. CACHE/COMPILATION STATUS AND NEXT GATES
+
+The exact file
+P/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/NumberTheory/SumTwoSquares.olean
+is currently absent. This was checked with a bounded filesystem existence query,
+not by compiling a proposed theorem. It is a setup/cache issue, not a mathematical
+gap in the Fermat statement. No fetch or build was performed in this design
+assignment. A future proof worker should use only the required source-hash cache
+closure at the identical audited pin, after authorization, for example the
+narrow root `Mathlib.NumberTheory.SumTwoSquares`; never `import Mathlib`, an
+unconstrained lake update, or a current docs/source substitution. If using the
+narrower Gaussian route, request that exact module closure instead.
+
+Existing toolchain/config hashes verified unchanged:
+lean-toolchain 2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273
+lakefile.toml 0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4
+lake-manifest.json de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03
+The actual configured compiler remains Lean v4.32.2. This follow-up does not
+repeat the public-availability audit; it uses the leader's eligible exact pins.
+
+Required next gates:
+1. Leader sends only the code-only 19-signature bundle and its exact transitive
+   definitions to fresh blind readback, then source-fidelity review against
+   A:60–179. This blueprint is not a blind packet and no existing verdict should
+   be supplied to the blind reader.
+2. Freeze the approved interface bytes. Any semantic edit returns to review.
+3. Implement in assigned scratch, preserving all accepted master/snapshot files.
+   Compile meaningful increments with actual pinned commands and preserved
+   success/failure diagnostics. First seeds/sum-squares/scaling can proceed
+   independently of the missing Fermat cache.
+4. Print axioms for every final helper and key imported Fermat dependencies.
+   Reject sorryAx, custom axioms, native unchecked trust, and unresolved helpers;
+   compare all approved headers and protected base hashes. Source inspection
+   here is not an API elaboration/axiom certificate.
+5. Independent proof review and integrator-owned master extension are separate.
+   No theorem from this proposal is currently integration-ready.
+
+7. REMAINING FULL GOAL
+
+The original new target T4 is still unresolved. After all 19 local helpers are
+proved, the exact residual obligation is:
+
+p : ℕ
+hp : Nat.Prime p
+hpLower : 7 ≤ p
+hpMod : p % 4 = 3
+⊢ HasRepresentation (4 * p)
+
+No helper signature asserts this universally. F19 asserts only the equivalence
+of that universal proposition with T4. No all-even result follows merely from
+these partial statements. The leader's separate NL exploration of this residual
+is outside this design artifact's proof scope.

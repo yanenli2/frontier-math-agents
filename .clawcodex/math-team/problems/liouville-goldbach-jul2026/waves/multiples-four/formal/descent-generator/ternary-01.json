@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean"
+  ],
+  "shell_display": "lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T10:37:03.514378+00:00",
+  "elapsed_seconds": 2.091432583,
+  "timeout_seconds": 180,
+  "exit_status": 1,
+  "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+  "source_sha256_before": "416d08f9eb9d16deab832b1fe43492b3743fdc3e120b9cc6993a075a4c74b28c",
+  "source_sha256_after": "416d08f9eb9d16deab832b1fe43492b3743fdc3e120b9cc6993a075a4c74b28c",
+  "snapshot": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/ternary-01.lean",
+  "stdout_sha256": "40776c2564733b9ec538207f0d255324ea76d2f93dbaec4e58f3d970f79d8652",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "protected_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+  },
+  "protected_unchanged_after": true
+}

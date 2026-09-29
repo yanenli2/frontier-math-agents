@@ -1,0 +1,182 @@
+<stdin>:2:0: error: Unknown option `pp.width`
+@ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg : ∀ {p n : ℕ},
+  ¬ArithmeticStatement.HasRepresentation (4 * p) →
+    0 < n → n < p → ArithmeticStatement.lambda n = -1 → ArithmeticStatement.lambda (p - n) = 1
+@ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos : ∀ {p n : ℕ},
+  ¬ArithmeticStatement.HasRepresentation (4 * p) →
+    0 < n → n < 2 * p → ArithmeticStatement.lambda n = 1 → ArithmeticStatement.lambda (2 * p - n) = -1
+@ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair : ∀ {p x y : ℕ},
+  ¬ArithmeticStatement.HasRepresentation (4 * p) →
+    0 < x → 0 < y → x + y = p → ArithmeticStatement.lambda x = 1 → ArithmeticStatement.lambda y = 1 → ¬3 ∣ x
+@ArithmeticStatement.FourWork.positive_pair_gap_step : ∀ {p x y : ℕ},
+  Nat.Prime p →
+    p ≠ 3 →
+      ¬ArithmeticStatement.HasRepresentation (4 * p) →
+        0 < x →
+          x < y →
+            x + y = p →
+              ArithmeticStatement.lambda x = 1 →
+                ArithmeticStatement.lambda y = 1 →
+                  ∃ u v,
+                    0 < u ∧
+                      u < v ∧
+                        u + v = p ∧ ArithmeticStatement.lambda u = 1 ∧ ArithmeticStatement.lambda v = 1 ∧ v - u < y - x
+@ArithmeticStatement.FourWork.no_positive_pair : ∀ {p : ℕ},
+  Nat.Prime p →
+    p ≠ 2 →
+      p ≠ 3 →
+        ¬ArithmeticStatement.HasRepresentation (4 * p) →
+          ∀ {x y : ℕ},
+            0 < x → 0 < y → x + y = p → ¬(ArithmeticStatement.lambda x = 1 ∧ ArithmeticStatement.lambda y = 1)
+@ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation : ∀ {p : ℕ},
+  Nat.Prime p →
+    p ≠ 2 →
+      p ≠ 3 →
+        ¬ArithmeticStatement.HasRepresentation (4 * p) →
+          ∀ (n : ℕ), 0 < n → n < p → ArithmeticStatement.lambda (p - n) = -ArithmeticStatement.lambda n
+@ArithmeticStatement.FourWork.cyclic_short_multiple : ∀ {p n : ℕ},
+  Nat.Prime p → 2 ≤ n → n < p → ∀ (z : ZMod p), z ≠ 0 → ∃ k d, k ≠ 0 ∧ k.natAbs < n ∧ 0 < d ∧ n * d < p ∧ ↑k * z = ↑d
+@ArithmeticStatement.FourWork.residueLambda_natCast : ∀ {p n : ℕ},
+  n < p → ArithmeticStatement.FourWork.residueLambda p ↑n = ArithmeticStatement.lambda n
+@ArithmeticStatement.FourWork.residueLambda_sign : ∀ {p : ℕ} {z : ZMod p},
+  z ≠ 0 → ArithmeticStatement.FourWork.residueLambda p z = 1 ∨ ArithmeticStatement.FourWork.residueLambda p z = -1
+@ArithmeticStatement.FourWork.residueLambda_neg : ∀ {p : ℕ},
+  Nat.Prime p →
+    (∀ (n : ℕ), 0 < n → n < p → ArithmeticStatement.lambda (p - n) = -ArithmeticStatement.lambda n) →
+      ∀ {z : ZMod p},
+        z ≠ 0 → ArithmeticStatement.FourWork.residueLambda p (-z) = -ArithmeticStatement.FourWork.residueLambda p z
+@ArithmeticStatement.FourWork.goodMultiplier_one : ∀ {p : ℕ},
+  Nat.Prime p → ArithmeticStatement.FourWork.GoodMultiplier p 1
+@ArithmeticStatement.FourWork.goodMultiplier_neg : ∀ {p : ℕ},
+  Nat.Prime p →
+    (∀ (n : ℕ), 0 < n → n < p → ArithmeticStatement.lambda (p - n) = -ArithmeticStatement.lambda n) →
+      ∀ {a : ZMod p},
+        ArithmeticStatement.FourWork.GoodMultiplier p a → ArithmeticStatement.FourWork.GoodMultiplier p (-a)
+@ArithmeticStatement.FourWork.goodMultiplier_natCast_step : ∀ {p n : ℕ},
+  Nat.Prime p →
+    (∀ (j : ℕ), 0 < j → j < p → ArithmeticStatement.lambda (p - j) = -ArithmeticStatement.lambda j) →
+      0 < n →
+        n < p →
+          (∀ (j : ℕ), 0 < j → j < n → ArithmeticStatement.FourWork.GoodMultiplier p ↑j) →
+            ArithmeticStatement.FourWork.GoodMultiplier p ↑n
+@ArithmeticStatement.FourWork.residueLambda_mul : ∀ {p : ℕ},
+  Nat.Prime p →
+    (∀ (n : ℕ), 0 < n → n < p → ArithmeticStatement.lambda (p - n) = -ArithmeticStatement.lambda n) →
+      ∀ {a b : ZMod p},
+        a ≠ 0 →
+          b ≠ 0 →
+            ArithmeticStatement.FourWork.residueLambda p (a * b) =
+              ArithmeticStatement.FourWork.residueLambda p a * ArithmeticStatement.FourWork.residueLambda p b
+@ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare : ∀ {p n : ℕ},
+  Nat.Prime p →
+    (∀ (j : ℕ), 0 < j → j < p → ArithmeticStatement.lambda (p - j) = -ArithmeticStatement.lambda j) →
+      0 < n → n < p → IsSquare ↑n → ArithmeticStatement.lambda n = 1
+@ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare : ∀ {p r : ℕ},
+  Nat.Prime p → 7 ≤ p → p % 4 = 3 → Nat.Prime r → r ∣ (p + 1) / 4 → IsSquare ↑r
+@ArithmeticStatement.FourWork.exists_small_prime_isSquare : ∀ {p : ℕ},
+  Nat.Prime p → 7 ≤ p → p % 4 = 3 → ∃ r, Nat.Prime r ∧ r ∣ (p + 1) / 4 ∧ r ≤ (p + 1) / 4 ∧ r < p ∧ IsSquare ↑r
+@ArithmeticStatement.representation_four_prime_three_mod_four : ∀ {p : ℕ},
+  Nat.Prime p → 7 ≤ p → p % 4 = 3 → ArithmeticStatement.HasRepresentation (4 * p)
+ArithmeticStatement.representation_multiple_four : ∀ (m : ℕ), 0 < m → ArithmeticStatement.HasRepresentation (4 * m)
+ArithmeticStatement.lambda_six : ArithmeticStatement.lambda 6 = 1
+ArithmeticStatement.lambda_seven : ArithmeticStatement.lambda 7 = -1
+ArithmeticStatement.twelve_two_sign_seed : ArithmeticStatement.HasSignedRepresentation (-1) 12 ∧
+  ArithmeticStatement.HasSignedRepresentation 1 12
+ArithmeticStatement.representation_multiple_twelve : ∀ (t : ℕ), 0 < t → ArithmeticStatement.HasRepresentation (12 * t)
+@ArithmeticStatement.representation_multiple_four_of_lambda_one : ∀ {m : ℕ},
+  0 < m → ArithmeticStatement.lambda m = 1 → ArithmeticStatement.HasRepresentation (4 * m)
+@ArithmeticStatement.representation_multiple_four_of_even : ∀ {m : ℕ},
+  0 < m → Even m → ArithmeticStatement.HasRepresentation (4 * m)
+@ArithmeticStatement.representation_multiple_four_of_three_dvd : ∀ {m : ℕ},
+  0 < m → 3 ∣ m → ArithmeticStatement.HasRepresentation (4 * m)
+@ArithmeticStatement.representation_multiple_four_of_sum_two_squares : ∀ {m u v : ℕ},
+  0 < m → m = u ^ 2 + v ^ 2 → ArithmeticStatement.HasRepresentation (4 * m)
+@ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares : ∀ {p : ℕ},
+  Nat.Prime p → p % 4 = 1 → ∃ u v, p = u ^ 2 + v ^ 2
+@ArithmeticStatement.representation_four_prime_one_mod_four : ∀ {p : ℕ},
+  Nat.Prime p → p % 4 = 1 → ArithmeticStatement.HasRepresentation (4 * p)
+@ArithmeticStatement.prime_divisor_positive_sign_cofactor : ∀ {m p : ℕ},
+  0 < m →
+    ArithmeticStatement.lambda m = -1 → Nat.Prime p → p ∣ m → ∃ d, 0 < d ∧ ArithmeticStatement.lambda d = 1 ∧ m = d * p
+@ArithmeticStatement.exists_prime_factor_of_lambda_neg_one : ∀ {m : ℕ},
+  0 < m → ArithmeticStatement.lambda m = -1 → ∃ p d, Nat.Prime p ∧ 0 < d ∧ ArithmeticStatement.lambda d = 1 ∧ m = d * p
+@ArithmeticStatement.representation_multiple_four_of_prime_divisor : ∀ {m p : ℕ},
+  0 < m →
+    ArithmeticStatement.lambda m = -1 →
+      Nat.Prime p →
+        p ∣ m → ArithmeticStatement.HasRepresentation (4 * p) → ArithmeticStatement.HasRepresentation (4 * m)
+@ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd : ∀ {m p : ℕ},
+  0 < m → Nat.Prime p → p ∣ m → p % 4 = 1 → ArithmeticStatement.HasRepresentation (4 * m)
+@ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one : ∀ {m : ℕ},
+  0 < m → m % 4 = 1 → ArithmeticStatement.lambda m = -1 → ∃ p, Nat.Prime p ∧ p ∣ m ∧ p % 4 = 1
+@ArithmeticStatement.representation_multiple_four_of_mod_four_one : ∀ {m : ℕ},
+  0 < m → m % 4 = 1 → ArithmeticStatement.HasRepresentation (4 * m)
+@ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three : ∀ {m : ℕ},
+  0 < m → m % 4 ≠ 3 → ArithmeticStatement.HasRepresentation (4 * m)
+ArithmeticStatement.multiple_four_iff_odd_prime_core : (∀ (m : ℕ),
+    0 < m → ArithmeticStatement.HasRepresentation (4 * m)) ↔
+  ∀ (p : ℕ), Nat.Prime p → p ≠ 2 → ArithmeticStatement.HasRepresentation (4 * p)
+ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core : (∀ (m : ℕ),
+    0 < m → ArithmeticStatement.HasRepresentation (4 * m)) ↔
+  ∀ (p : ℕ), Nat.Prime p → 7 ≤ p → p % 4 = 3 → ArithmeticStatement.HasRepresentation (4 * p)
+def ArithmeticStatement.omega : ℕ → ℕ :=
+fun n => n.primeFactorsList.length
+def ArithmeticStatement.lambda : ℕ → ℤ :=
+fun n => (-1) ^ ArithmeticStatement.omega n
+def ArithmeticStatement.HasSignedRepresentation : ℤ → ℕ → Prop :=
+fun s N => ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = s ∧ ArithmeticStatement.lambda b = s
+def ArithmeticStatement.HasRepresentation : ℕ → Prop :=
+fun N => ArithmeticStatement.HasSignedRepresentation (-1) N
+def ArithmeticStatement.FourWork.residueLambda : (p : ℕ) → ZMod p → ℤ :=
+fun p z => ArithmeticStatement.lambda z.val
+def ArithmeticStatement.FourWork.GoodMultiplier : (p : ℕ) → ZMod p → Prop :=
+fun p a =>
+  a ≠ 0 ∧
+    ∀ (z : ZMod p),
+      z ≠ 0 →
+        ArithmeticStatement.FourWork.residueLambda p (a * z) =
+          ArithmeticStatement.FourWork.residueLambda p a * ArithmeticStatement.FourWork.residueLambda p z
+@[irreducible] def Nat.primeFactorsList : ℕ → List ℕ :=
+WellFounded.Nat.fix (fun x => x) fun a a_1 =>
+  (match (motive := (x : ℕ) → ((y : ℕ) → InvImage (fun x1 x2 => x1 < x2) (fun x => x) y x → List ℕ) → List ℕ) a with
+    | 0 => fun x => []
+    | 1 => fun x => []
+    | k.succ.succ => fun x =>
+      let m := (k + 2).minFac;
+      m :: x ((k + 2) / m) ⋯)
+    a_1
+def Nat.minFac : ℕ → ℕ :=
+fun n => if 2 ∣ n then 2 else n.minFacAux 3
+def Nat.Prime : ℕ → Prop :=
+fun p => Irreducible p
+def ZMod : ℕ → Type :=
+fun x =>
+  match x with
+  | 0 => ℤ
+  | n.succ => Fin (n + 1)
+def ZMod.val : {n : ℕ} → ZMod n → ℕ :=
+fun x =>
+  match (motive := (x : ℕ) → ZMod x → ℕ) x with
+  | 0 => Int.natAbs
+  | n.succ => Fin.val
+def IsSquare.{u_2} : {α : Type u_2} → [Mul α] → α → Prop :=
+fun {α} [Mul α] a => ∃ r, a = r * r
+def Even.{u_2} : {α : Type u_2} → [Add α] → α → Prop :=
+fun {α} [Add α] a => ∃ r, a = r + r
+theorem ArithmeticStatement.representation_multiple_four : ∀ (m : ℕ),
+  0 < m → ArithmeticStatement.HasRepresentation (4 * m) :=
+fun m hm =>
+  ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core.mpr
+    (fun p hp hLower hMod => ArithmeticStatement.representation_four_prime_three_mod_four hp hLower hMod) m hm
+@Nat.Prime.sq_add_sq : ∀ {p : ℕ} [Fact (Nat.Prime p)], p % 4 ≠ 3 → ∃ a b, a ^ 2 + b ^ 2 = p
+@ZMod.exists_sq_eq_neg_one_iff : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)], IsSquare (-1) ↔ p % 4 ≠ 3
+@ZMod.exists_sq_eq_two_iff : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)], p ≠ 2 → (IsSquare 2 ↔ p % 8 = 1 ∨ p % 8 = 7)
+@ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one : ∀ {p q : ℕ} [inst : Fact (Nat.Prime p)] [inst_1 : Fact (Nat.Prime q)],
+  p % 4 = 1 → q ≠ 2 → (IsSquare ↑q ↔ IsSquare ↑p)
+@ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three : ∀ {p q : ℕ} [inst : Fact (Nat.Prime p)]
+  [inst_1 : Fact (Nat.Prime q)], p % 4 = 3 → q % 4 = 3 → p ≠ q → (IsSquare ↑q ↔ ¬IsSquare ↑p)
+@Nat.perm_primeFactorsList_mul : ∀ {a b : ℕ},
+  a ≠ 0 → b ≠ 0 → (a * b).primeFactorsList.Perm (a.primeFactorsList ++ b.primeFactorsList)
+@Nat.prod_primeFactorsList : ∀ {n : ℕ}, n ≠ 0 → n.primeFactorsList.prod = n
+@Nat.exists_prime_and_dvd : ∀ {n : ℕ}, n ≠ 1 → ∃ p, Nat.Prime p ∧ p ∣ n
+ZMod.instField : (p : ℕ) → [hp : Fact (Nat.Prime p)] → Field (ZMod p)

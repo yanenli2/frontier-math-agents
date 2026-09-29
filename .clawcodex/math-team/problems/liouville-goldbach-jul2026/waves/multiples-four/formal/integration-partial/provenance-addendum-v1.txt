@@ -1,0 +1,97 @@
+Mode: CERTIFICATION — provenance addendum for the FourPartial helper baseline.
+Owner: fl-integrator. This does not modify the frozen original sources.md.
+
+P = .clawcodex/math-team/problems/liouville-goldbach-jul2026
+W = P/waves/multiples-four
+M = P/lean/.lake/packages/mathlib
+D = W/formal/integration-partial
+All mathematical source versions must be publicly available by 2026-07-31.
+
+PIN AND PUBLIC AVAILABILITY
+Every source below belongs to Mathlib commit
+905b95818eb32af7874a58b427f50c1711a5e96c (release v4.32.2).
+Exact-SHA public witness:
+https://github.com/leanprover-community/mathlib4/actions/runs/30385574037
+created 2026-07-28T18:01:52Z, updated 2026-07-28T18:16:52Z.
+Its preserved raw response identifies this head_sha in a public repository.
+See P/formal/environment/public-availability-witnesses.json and
+public-ci-mathlib.stdout, rebound to the actual checkout in D/audit-v2.json.
+Commit dates or mutable tags alone are not the availability basis.
+
+Actual Lean is leanprover/lean4:v4.32.2, commit
+f3b06c705e6c85f5314019d5d3baab0fec5b580c; its public CI witness is
+https://github.com/leanprover/lean4/actions/runs/30368480005 (2026-07-28).
+Manifest revisions for all nine packages remained fixed; each HEAD and tracked
+worktree were rechecked and tied to pre-cutoff raw exact-SHA public witnesses.
+Those full revisions/URLs are in audit-v2.json and the wave REPRODUCE draft.
+
+NEW LOAD-BEARING SOURCE
+Title: Sums of two squares.
+Authors: Chris Hughes, Michael Stoll (pinned source header).
+URL: https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/NumberTheory/SumTwoSquares.lean
+Locator: lines 35-38, Nat.Prime.sq_add_sq.
+Exact type:
+  theorem Nat.Prime.sq_add_sq {p : Nat} [Fact p.Prime]
+      (hp : p % 4 != 3) : exists a b : Nat, a^2 + b^2 = p
+SHA-256: ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9
+Matching pinned/local Git blob: 1047517a0e89e9863b8cb1d3bf1ca0dba3fd9150.
+
+Application in Statement/FourPartial.lean:81-86:
+The supplied hp : Nat.Prime p installs Fact p.Prime locally; p%4=1 implies
+p%4!=3; the returned equality is reversed. No new implicit primality premise
+escapes into the helper type. Natural roots may be zero, as the reviewed
+square-sum helper permits. Source theorem transitive axioms are precisely
+{propext, Classical.choice, Quot.sound}, verified after integration.
+
+SOURCE PROOF DEPENDENCIES AUDITED BY THE EXACT-CANDIDATE REVIEW
+1. Title: Gaussian integers. Author: Chris Hughes.
+   URL: https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/NumberTheory/Zsqrtd/GaussianInt.lean
+   Locator: lines 243-255,
+   GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible.
+   SHA-256: 3b1ad71a44a0ba95fe172fff4adb35c1c3d0ab3dacc0cacca37d6024c51fd12b
+   Matching Git blob: 3c893ab7a53aa8bac0436a160b580f45f32154d5.
+2. Title: Facts about the Gaussian integers relying on quadratic reciprocity.
+   Author: Chris Hughes.
+   URL: https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/NumberTheory/Zsqrtd/QuadraticReciprocity.lean
+   Locator: lines 34-85,
+   GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime.
+   SHA-256: 8b1fa86e4d60240ff76e788a41fa711a762103b08bd3975b00d6f8eb18f38e88
+   Matching Git blob: 41ecbf248ed324945b48682f4c37a264fb85bc6b.
+
+Both declaration axiom sets were reprinted and remain standard only. Their
+preconditions and noncircular dependency on Gaussian norms/quadratic residues
+were independently audited in W/formal/reviews/four-candidate-review-v1.md §5.
+Integration rechecked unchanged bytes and exact Git blobs; it did not invent a
+new proof or substitute an axiom. The source contains no project T4 dependency.
+
+PROOF ROUTE BOUNDARY
+The reviewed prose derives the prime two-squares fact by a local inverse-pair
+and pigeonhole argument. This Lean candidate instead imports the eligible
+Gaussian-integer proof of the same fact. The candidate review explicitly checks
+this alternative dependency and its preconditions. The prose intermediate
+steps are not asserted to be separately formalized in FourPartial.
+All other added representation arguments are local deductions, checked as the
+19 reviewed helper types. No literature paper is used as a new axiom.
+
+SAME-PIN CACHE
+Preserved generator record:
+W/formal/generator/four-cache-sum-two-squares-v1.json
+Actual historical command, cwd P/lean:
+  lake exe cache get Mathlib.NumberTheory.SumTwoSquares
+  MATHLIB_CACHE_DIR=W/formal/generator/cache
+Exit 0; recorded Mathlib HEAD equals the exact pin; manifest before/after equals
+  de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03.
+The log reports 1950 module artifacts decompressed. Its stdout SHA-256 is
+c6762bb2e914460d0b0578022f701b17d69a22ff729936cc6db0f9141d7ebf0e;
+stderr SHA-256 is
+d3c5216e27bf74dba102c6b7b7e04309c1869fdca7bd2742e4eab52ef8ed175c.
+Integration rehashed these streams and the source; no cache fetch was repeated.
+The historical mathlib4-master cache-container label does not mean that a moving
+source branch was fetched. Existing eligible source-hash-addressed binaries are
+trusted build artifacts; no from-source rebuild of all upstream libraries is
+claimed. Direct and trust-zero integrated Lean checks both passed.
+
+No network, unpinned source, package/toolchain update, newer documentation or
+post-cutoff mathematical source was used in this integration. No known source
+contamination occurred. This addendum is integrator-owned for later source-ledger
+incorporation by its authorized owner.

@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+    "checkout",
+    "--detach",
+    "023ce7d62a0531e22a5331e20b587817a80d49ff"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries checkout --detach 023ce7d62a0531e22a5331e20b587817a80d49ff",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:02:07.622309+00:00",
+  "elapsed_seconds": 0.050444541999999995,
+  "timeout_seconds": 180,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-checkout.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-checkout.stderr",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "b6760668935bc5f6e83b465bf11af5c62185549317d1e4b91ebf9cb3afd86d67"
+}

@@ -1,0 +1,61 @@
+Production handoff and independent statement-review request
+Task ca76ab6f021e — fl-formalizer — CERTIFICATION scaffold production.
+
+Deliverable status: complete, compiler-checked scaffold; mathematical acceptance
+pending. No source target theorem is proved, no target proof attempt is included,
+and no master integration was performed. The target exists only as a named Prop.
+
+Core paths (relative to the problem directory):
+- lean/Statement/Definitions.lean
+- lean/Statement/Scaffold.lean
+- lean/Statement/Smoke.lean
+- lean/Statement.lean
+- formal/formalizer/definition-audit-v1.txt
+- formal/formalizer/source-map-v1.json
+- formal/formalizer/snapshot-v1.json
+- formal/formalizer/proposed-sources-additions.txt
+- formal/environment/environment-report.txt
+- formal/environment/REPRODUCE.md
+- formal/environment/source-file-identities.json
+- formal/environment/dependency-audit.stdout
+- formal/environment/public-availability-witnesses.json
+- formal/environment/checkout-audit.json
+All raw command metadata/stdout/stderr remain alongside the environment report.
+
+Blind readback packet: ONLY these neutral code-only paths and a private output
+path chosen by the leader. Do NOT include this request, problem title/source,
+author reports, prior messages/verdicts, plans or smoke output in that packet.
+.clawcodex/math-team/review-inputs/r20260924-v1/Declaration.lean
+.clawcodex/math-team/review-inputs/r20260924-v1/Dependencies.lean
+.clawcodex/math-team/review-inputs/r20260924-v1/ListOperations.lean
+
+Definition/Declaration SHA256:
+79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+Dependencies SHA256:
+55b5480511d2a2cb749cebafa9b8da29f744090a269bd0ece94df1b37ab0d07c
+ListOperations SHA256:
+925cbf08a1aac0870075ad56ff2d95c7b0eb94c87853ace32d0043a9c094e2bc
+The neutral statement file was compiled separately and is byte-identical to
+the actual definition file. The supplements are proof-erased signature/definition
+excerpts, not alternative axioms or standalone compilation units.
+
+After readback: request a fresh formal fidelity reviewer to compare request.md
+lines 7 and 11-14 with the exact statement, the pinned factor-list semantics,
+the Nat/positive-integer correspondence in definition-audit-v1.txt, and the
+literal blind readback. Review positivity, exact N>2 boundary, every-even-N
+quantifier, no a!=b restriction, repeated factors, lambda(1), Int negative one,
+zero totalization irrelevance, and absence of hidden target assumptions.
+
+Actual successful build command includes all modules:
+lake build Statement.Definitions Statement.Scaffold Statement.Smoke Statement
+Actual direct Lean checks of Scaffold.lean, Smoke.lean and neutral Declaration.lean
+all exited 0. Axiom printouts contain only propext, Classical.choice, Quot.sound,
+not sorryAx or custom axioms. Again, these are checks of definitions/interfaces,
+not a proof of their target proposition.
+
+The entire proof of ArithmeticStatement.Target remains an unprovided obligation.
+There are no admitted target lemmas to accept or integrate. Any statement change
+requires a separate revision, new snapshot, fresh blind readback and fidelity
+review. No proof development should begin before leader statement approval.
+Shared sources.md was not edited; merge the separate proposed provenance only
+under leader ownership. This worker can now yield the persistent slot when asked.

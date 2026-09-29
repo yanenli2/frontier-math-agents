@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "shell_display": "git rev-parse HEAD",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+  "started_utc": "2026-09-25T11:10:39.543965+00:00",
+  "seconds": 0.00895987499999995,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "401d5e1d35a4c42f6e1ea99dcb2c77fa6577700442e092894eed41cf6460ef7c",
+    "bytes": 41
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

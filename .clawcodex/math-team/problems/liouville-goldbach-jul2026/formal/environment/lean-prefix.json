@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "lean",
+    "--print-prefix"
+  ],
+  "shell_display": "lean --print-prefix",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:07:26.915686+00:00",
+  "elapsed_seconds": 0.26821754200000003,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-prefix.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-prefix.stderr",
+  "stdout_sha256": "ab824f36c3f255e3209f4e7b86c0bf4f51cdf42213e04b44df1246592eccbdc3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,92 @@
+{
+  "mode": "CERTIFICATION scaffold production only",
+  "acceptance": "Independent blind readback and source-fidelity review requested, not yet accepted",
+  "source": "request.md",
+  "definition_file": "lean/Statement/Definitions.lean",
+  "definition_sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+  "mathlib_revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "lean_revision": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+  "entries": [
+    {
+      "source_locator": "request.md:7",
+      "source_role": "Omega counts prime factors with multiplicity; Omega(1)=0",
+      "declaration": "ArithmeticStatement.omega",
+      "declaration_locator": "lean/Statement/Definitions.lean:6",
+      "role": "definition",
+      "type": "Nat -> Nat",
+      "body": "fun n => n.primeFactorsList.length",
+      "dependencies": ["Nat.primeFactorsList", "List.length"],
+      "source_semantics": [
+        "Mathlib/Data/Nat/Factors.lean:38-44",
+        "Mathlib/Data/Nat/Factors.lean:50",
+        "Mathlib/Data/Nat/Factors.lean:55-81",
+        "Mathlib/Data/Nat/Factors.lean:168-187",
+        "src/Init/Prelude.lean:3027-3029"
+      ],
+      "status": "Compiling definition and smoke test only; fidelity pending"
+    },
+    {
+      "source_locator": "request.md:7",
+      "source_role": "lambda(n)=(-1)^Omega(n)",
+      "declaration": "ArithmeticStatement.lambda",
+      "declaration_locator": "lean/Statement/Definitions.lean:8",
+      "role": "definition",
+      "type": "Nat -> Int",
+      "body": "fun n => (-1 : Int) ^ ArithmeticStatement.omega n",
+      "dependencies": ["ArithmeticStatement.omega", "Int.pow"],
+      "normalization": "Domain is natural representatives of positive integers; totalization at zero irrelevant to target",
+      "status": "Compiling definition; lambda(1)=1 executable smoke check, not separate named theorem"
+    },
+    {
+      "source_locator": "request.md:11-14",
+      "source_role": "Every even integer N>2 is a sum of two positive integers with both lambda values -1",
+      "declaration": "ArithmeticStatement.Target",
+      "declaration_locator": "lean/Statement/Definitions.lean:10-14",
+      "role": "definition of the target proposition, not proof",
+      "type": "Prop",
+      "dependencies": ["ArithmeticStatement.lambda", "Even", "Nat addition and strict order", "Int negative one"],
+      "normalization": "Natural-domain statement with explicit positivity, corresponding bijectively to source positive integers; see definition-audit-v1.txt section 3",
+      "status": "UNPROVED: no inhabitant supplied; all source target proof obligations remain open"
+    },
+    {
+      "source_locator": "No new source theorem; unfinished implementation interface only",
+      "declaration": "ArithmeticStatement.UnfinishedScaffold",
+      "declaration_locator": "lean/Statement/Scaffold.lean:8-9",
+      "role": "proof interface with no provided inhabitant",
+      "type": "Prop",
+      "body": "structure with field result : ArithmeticStatement.Target",
+      "dependencies": ["ArithmeticStatement.Target"],
+      "status": "Compiles as an interface; does not prove or assume an inhabitant of Target"
+    }
+  ],
+  "tests": {
+    "module": "Statement.Smoke",
+    "scope": "Definitions on 1,2,4,8,12,18 and displayed types/axioms",
+    "status": "All executable checks passed; bounded diagnostics, not target proof"
+  },
+  "transitive_axiom_sets_printed": {
+    "ArithmeticStatement.omega": ["propext", "Classical.choice", "Quot.sound"],
+    "ArithmeticStatement.lambda": ["propext", "Classical.choice", "Quot.sound"],
+    "ArithmeticStatement.Target": ["propext", "Classical.choice", "Quot.sound"],
+    "ArithmeticStatement.UnfinishedScaffold.mk": ["propext", "Classical.choice", "Quot.sound"]
+  },
+  "review_input_files": [
+    {
+      "path": "../../review-inputs/r20260924-v1/Declaration.lean",
+      "sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+      "status": "Byte-identical statement copy; compiled"
+    },
+    {
+      "path": "../../review-inputs/r20260924-v1/Dependencies.lean",
+      "sha256": "55b5480511d2a2cb749cebafa9b8da29f744090a269bd0ece94df1b37ab0d07c",
+      "status": "Code-only semantic signature/definition excerpts, proof bodies erased; not a standalone module"
+    },
+    {
+      "path": "../../review-inputs/r20260924-v1/ListOperations.lean",
+      "sha256": "925cbf08a1aac0870075ad56ff2d95c7b0eb94c87853ace32d0043a9c094e2bc",
+      "status": "Code-only list-operation excerpt; not a standalone module"
+    }
+  ],
+  "proof_work": "Not started; awaits leader statement approval",
+  "master_integration": "Not performed"
+}

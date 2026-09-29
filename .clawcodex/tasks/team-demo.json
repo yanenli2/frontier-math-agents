@@ -1,0 +1,30 @@
+{
+  "e828f0bdfe1a": {
+    "id": "e828f0bdfe1a",
+    "subject": "reader: Read README.md and summarize how ClawCodex starts",
+    "description": "OWNER: reader (do not auto-claim; this task belongs to the teammate named \"reader\").\n\nRead README.md in the repo root and produce a concise summary of how ClawCodex starts: what the user runs, the entry point, and the startup sequence, based only on the README. Then send that summary directly to the teammate \"reviewer\" using SendMessage.\n\nConstraints: read-only, no edits to project source files, ignore the typescript/ folder.",
+    "activeForm": "Reading README.md and summarizing startup",
+    "status": "completed",
+    "owner": "reader",
+    "blocks": [
+      "7f946e718605"
+    ],
+    "blockedBy": [],
+    "metadata": {},
+    "output": ""
+  },
+  "7f946e718605": {
+    "id": "7f946e718605",
+    "subject": "reviewer: Verify README startup summary against src/cli.py",
+    "description": "OWNER: reviewer (do not auto-claim; this task belongs to the teammate named \"reviewer\"). Depends on the reader's summary arriving via SendMessage.\n\nInspect src/cli.py (and directly referenced files as needed) to determine how ClawCodex actually starts. Compare that against the summary the \"reader\" sends you. Note accurate, imprecise, wrong, and missing points. Send the verified explanation, including corrections, to \"team-lead\" using SendMessage, and reply to \"reader\" with the corrections.\n\nConstraints: read-only inspection, no edits to project source files, ignore the typescript/ folder.",
+    "activeForm": "Verifying startup explanation against src/cli.py",
+    "status": "completed",
+    "owner": "reviewer",
+    "blocks": [],
+    "blockedBy": [
+      "e828f0bdfe1a"
+    ],
+    "metadata": {},
+    "output": ""
+  }
+}

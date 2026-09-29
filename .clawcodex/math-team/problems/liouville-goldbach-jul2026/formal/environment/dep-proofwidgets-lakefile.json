@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "-H",
+    "Accept: application/vnd.github.raw+json",
+    "repos/leanprover-community/ProofWidgets4/contents/lakefile.lean?ref=6e311e2a844da9b2cc3971187df2fe0066947b93"
+  ],
+  "shell_display": "gh api -H 'Accept: application/vnd.github.raw+json' 'repos/leanprover-community/ProofWidgets4/contents/lakefile.lean?ref=6e311e2a844da9b2cc3971187df2fe0066947b93'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:00:15.562416+00:00",
+  "elapsed_seconds": 0.302612167,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-lakefile.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-lakefile.stderr",
+  "stdout_sha256": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

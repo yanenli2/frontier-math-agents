@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "-H",
+    "Accept: application/vnd.github.raw+json",
+    "repos/leanprover-community/mathlib4/contents/lean-toolchain?ref=905b95818eb32af7874a58b427f50c1711a5e96c"
+  ],
+  "shell_display": "gh api -H 'Accept: application/vnd.github.raw+json' 'repos/leanprover-community/mathlib4/contents/lean-toolchain?ref=905b95818eb32af7874a58b427f50c1711a5e96c'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T01:59:20.987691+00:00",
+  "elapsed_seconds": 0.284003083,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-toolchain.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-toolchain.stderr",
+  "stdout_sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

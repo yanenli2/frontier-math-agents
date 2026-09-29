@@ -1,0 +1,253 @@
+COMMAND ["lake", "env", "lean", "-t0", "Statement/Definitions.lean"]
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/Definitions.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:05.095941+00:00", "exit_status": 0, "elapsed_seconds": 2.3903035000000004}
+COMMAND ["lake", "env", "lean", "-t0", "Statement/Partial.lean"]
+Statement/Partial.lean:51:29: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Statement/Partial.lean:171:35: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Statement/Partial.lean:187:5: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Statement/Partial.lean:291:46: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.Perm.length_eq' depends on axioms: [propext]
+'List.length_append' depends on axioms: [propext]
+'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'pow_add' does not depend on any axioms
+'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.sub_sub_self' depends on axioms: [propext]
+'Nat.cast_sub' depends on axioms: [propext]
+'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_filter' depends on axioms: [propext, Quot.sound]
+'Finset.card_pos' depends on axioms: [propext, Quot.sound]
+'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]
+'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_const' depends on axioms: [propext, Quot.sound]
+'Finset.mul_sum' depends on axioms: [propext, Quot.sound]
+'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]
+'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.prod_cons' does not depend on any axioms
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/Partial.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:07.486790+00:00", "exit_status": 0, "elapsed_seconds": 2.2589985}
+COMMAND ["lake", "env", "lean", "-t0", "Statement/FourPartial.lean"]
+'ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_mod_four_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Nat.Prime.sq_add_sq {p : ℕ} [Fact (Nat.Prime p)] (hp : p % 4 ≠ 3) : ∃ a b, a ^ 2 + b ^ 2 = p
+'Nat.Prime.sq_add_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_four_prime_one_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.prime_divisor_positive_sign_cofactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.exists_prime_factor_of_lambda_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_prime_divisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.multiple_four_iff_odd_prime_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.twelve_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_lambda_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_three_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_sum_two_squares' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.exists_eq_add_of_le' depends on axioms: [propext]
+'Nat.exists_prime_and_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.dvd_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.Prime.eq_two_or_odd' depends on axioms: [propext]
+'Nat.odd_mod_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.odd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.not_even_iff_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.natCast_mod' depends on axioms: [propext, Quot.sound]
+'Int.cast_pow' depends on axioms: [propext, Quot.sound]
+'GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/FourPartial.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:09.746229+00:00", "exit_status": 0, "elapsed_seconds": 3.728435833999999}
+COMMAND ["lake", "env", "lean", "-t0", "Statement/FourWork/Descent/Cyclic.lean"]
+'ArithmeticStatement.FourWork.cyclic_short_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.exists_ne_map_eq_of_card_lt_of_maps_to' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.val_lt' depends on axioms: [propext]
+'ZMod.natCast_zmod_val' depends on axioms: [propext, Quot.sound]
+'ZMod.val_natCast_of_lt' depends on axioms: [propext, Quot.sound]
+'Nat.Prime.eq_one_or_self_of_dvd' depends on axioms: [propext]
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/FourWork/Descent/Cyclic.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:13.475461+00:00", "exit_status": 0, "elapsed_seconds": 2.692979417}
+COMMAND ["lake", "env", "lean", "-t0", "Statement/FourWork/Descent/Ternary.lean"]
+'ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.positive_pair_gap_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.no_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.strong_induction_on' does not depend on any axioms
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/FourWork/Descent/Ternary.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:16.168934+00:00", "exit_status": 0, "elapsed_seconds": 2.1349762919999993}
+COMMAND ["lake", "env", "lean", "-t0", "Statement/FourWork/Character/ResidueValue.lean"]
+'ArithmeticStatement.FourWork.residueLambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.GoodMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.instField' depends on axioms: [propext, Classical.choice, Quot.sound]
+'mul_ne_zero' does not depend on any axioms
+'ArithmeticStatement.FourWork.residueLambda_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.goodMultiplier_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.goodMultiplier_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.val_natCast_of_lt' depends on axioms: [propext, Quot.sound]
+'ZMod.val_pos' depends on axioms: [propext, Quot.sound]
+'ZMod.val_lt' depends on axioms: [propext]
+'ZMod.neg_val' depends on axioms: [propext, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/FourWork/Character/ResidueValue.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:18.304492+00:00", "exit_status": 0, "elapsed_seconds": 1.7829165419999988}
+COMMAND ["lake", "env", "lean", "-t0", "Statement/FourWork/Character/Rigidity.lean"]
+'ArithmeticStatement.FourWork.goodMultiplier_natCast_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.cyclic_short_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Int.natAbs_pos' depends on axioms: [propext]
+'Int.natAbs_eq' does not depend on any axioms
+'Nat.strong_induction_on' does not depend on any axioms
+'ZMod.natCast_zmod_val' depends on axioms: [propext, Quot.sound]
+'mul_left_cancel₀' does not depend on any axioms
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/FourWork/Character/Rigidity.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:20.087977+00:00", "exit_status": 0, "elapsed_seconds": 1.9728885409999997}
+COMMAND ["lake", "env", "lean", "-t0", "Statement/FourWork/Character/ResiduePrime.lean"]
+'ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.exists_small_prime_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_neg_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_two_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.natCast_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.exists_prime_and_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.le_of_dvd' depends on axioms: [propext]
+'Nat.Prime.eq_two_or_odd' depends on axioms: [propext]
+'Nat.odd_mod_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+RESULT {"command": ["lake", "env", "lean", "-t0", "Statement/FourWork/Character/ResiduePrime.lean"], "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean", "start_utc": "2026-09-25T10:55:22.061371+00:00", "exit_status": 0, "elapsed_seconds": 9.472739458}

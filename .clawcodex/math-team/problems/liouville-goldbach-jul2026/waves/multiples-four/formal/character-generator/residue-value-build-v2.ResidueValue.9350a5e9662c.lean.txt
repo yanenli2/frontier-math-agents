@@ -1,0 +1,66 @@
+import Statement.Partial
+import Mathlib.Algebra.Field.ZMod
+
+set_option autoImplicit false
+
+namespace ArithmeticStatement
+namespace FourWork
+
+def residueLambda (p : ℕ) (z : ZMod p) : ℤ :=
+  lambda z.val
+
+def GoodMultiplier (p : ℕ) (a : ZMod p) : Prop :=
+  a ≠ 0 ∧ ∀ z : ZMod p, z ≠ 0 →
+    residueLambda p (a * z) = residueLambda p a * residueLambda p z
+
+theorem residueLambda_natCast {p n : ℕ} (hnp : n < p) :
+    residueLambda p (n : ZMod p) = lambda n := by
+  unfold residueLambda
+  rw [ZMod.val_natCast_of_lt hnp]
+
+theorem residueLambda_sign {p : ℕ} {z : ZMod p} (hz : z ≠ 0) :
+    residueLambda p z = (1 : ℤ) ∨ residueLambda p z = (-1 : ℤ) := by
+  exact lambda_sign (ZMod.val_pos.mpr hz)
+
+theorem residueLambda_neg {p : ℕ} (hp : Nat.Prime p)
+    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)
+    {z : ZMod p} (hz : z ≠ 0) :
+    residueLambda p (-z) = -residueLambda p z := by
+  letI : Fact p.Prime := ⟨hp⟩
+  simp only [residueLambda, ZMod.neg_val, if_neg hz]
+  exact hanti z.val (ZMod.val_pos.mpr hz) (ZMod.val_lt z)
+
+theorem goodMultiplier_one {p : ℕ} (hp : Nat.Prime p) :
+    GoodMultiplier p (1 : ZMod p) := by
+  letI : Fact p.Prime := ⟨hp⟩
+  refine ⟨one_ne_zero, ?_⟩
+  intro z hz
+  have hone : residueLambda p (1 : ZMod p) = (1 : ℤ) := by
+    simpa only [Nat.cast_one, lambda_one] using
+      (residueLambda_natCast (p := p) (n := 1) hp.one_lt)
+  rw [one_mul, hone, one_mul]
+
+theorem goodMultiplier_neg {p : ℕ} (hp : Nat.Prime p)
+    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)
+    {a : ZMod p} (ha : GoodMultiplier p a) :
+    GoodMultiplier p (-a) := by
+  letI : Fact p.Prime := ⟨hp⟩
+  refine ⟨neg_ne_zero.mpr ha.1, ?_⟩
+  intro z hz
+  rw [neg_mul, residueLambda_neg hp hanti (mul_ne_zero ha.1 hz), ha.2 z hz,
+    residueLambda_neg hp hanti ha.1, neg_mul]
+
+end FourWork
+end ArithmeticStatement
+
+#print axioms ArithmeticStatement.FourWork.residueLambda_natCast
+#print axioms ArithmeticStatement.FourWork.residueLambda_sign
+#print axioms ArithmeticStatement.FourWork.residueLambda_neg
+#print axioms ArithmeticStatement.FourWork.goodMultiplier_one
+#print axioms ArithmeticStatement.FourWork.goodMultiplier_neg
+#print axioms ZMod.val_natCast_of_lt
+#print axioms ZMod.val_pos
+#print axioms ZMod.val_lt
+#print axioms ZMod.neg_val
+#print axioms ArithmeticStatement.lambda_one
+#print axioms ArithmeticStatement.lambda_sign

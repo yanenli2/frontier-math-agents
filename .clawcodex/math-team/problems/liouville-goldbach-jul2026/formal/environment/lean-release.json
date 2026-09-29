@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover/lean4/releases/tags/v4.32.2"
+  ],
+  "shell_display": "gh api repos/leanprover/lean4/releases/tags/v4.32.2",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T01:59:00.073126+00:00",
+  "elapsed_seconds": 0.3219805,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-release.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-release.stderr",
+  "stdout_sha256": "8c58bfbff7a6fca95e743e7de64de75561d605accd9d31e1179b9e3f17c6cbe2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

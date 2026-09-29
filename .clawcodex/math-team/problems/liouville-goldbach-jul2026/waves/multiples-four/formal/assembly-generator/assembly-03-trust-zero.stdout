@@ -1,0 +1,98 @@
+ArithmeticStatement.representation_four_prime_three_mod_four {p : ℕ} (hp : Nat.Prime p) (hLower : 7 ≤ p)
+  (hMod : p % 4 = 3) : ArithmeticStatement.HasRepresentation (4 * p)
+ArithmeticStatement.representation_multiple_four (m : ℕ) (hm : 0 < m) : ArithmeticStatement.HasRepresentation (4 * m)
+'ArithmeticStatement.representation_four_prime_three_mod_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.positive_pair_gap_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.no_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.cyclic_short_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.GoodMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.goodMultiplier_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.goodMultiplier_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.goodMultiplier_natCast_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.exists_small_prime_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.twelve_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_lambda_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_three_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_sum_two_squares' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_four_prime_one_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.prime_divisor_positive_sign_cofactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.exists_prime_factor_of_lambda_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_prime_divisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_mod_four_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.multiple_four_iff_odd_prime_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.Prime.sq_add_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_neg_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_two_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.exists_ne_map_eq_of_card_lt_of_maps_to' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.instField' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.strong_induction_on' does not depend on any axioms

@@ -1,0 +1,81 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:51:29: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:171:35: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:187:5: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:222:12: error: Tactic `rcases` failed: `left✝ : Quot.lift (fun l => (a, b) ∈ l) ⋯
+  ((I N).product (I N)).val` is not an inductive datatype
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:225:11: error: Invalid `⟨...⟩` notation: The expected type
+  Quot.lift (fun l => (a, b) ∈ l) ⋯ ((I N).product (I N)).val
+is not an inductive type
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:219:56: warning: This simp argument is unused:
+  Finset.mem_product
+
+Hint: Omit it from the simp argument list.
+  simp only [orderedRepresentations, Finset.mem_filter, F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵p̵r̵o̵d̵u̵c̵t̵,̵mem_I_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:220:4: warning: This simp argument is unused:
+  mem_I_iff
+
+Hint: Omit it from the simp argument list.
+  simp only [orderedRepresentations, Finset.mem_filter, Finset.mem_product,̵
+  ̵ ̵ ̵ ̵ ̵m̵e̵m̵_̵I̵_̵i̵f̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:252:46: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]

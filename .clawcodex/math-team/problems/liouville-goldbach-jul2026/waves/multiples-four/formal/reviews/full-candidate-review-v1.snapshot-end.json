@@ -1,0 +1,165 @@
+{
+  "phase": "end",
+  "utc": "2026-09-25T10:59:13.387793+00:00",
+  "files": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md": {
+      "sha256": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f",
+      "size": 7762
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/request.md": {
+      "sha256": "a812fb01fe4e29e0c6e0fc4737fb3e98a730091f35e32f08ceba740bc30ec96f",
+      "size": 1244
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/PROOF.md": {
+      "sha256": "205df4c7b85c9ce40cccf1b42aa92f174fb0365b058466a3c4f2d3ba6968831b",
+      "size": 19741
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt": {
+      "sha256": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+      "size": 4673
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean": {
+      "sha256": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed",
+      "size": 519
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean": {
+      "sha256": "be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee",
+      "size": 2853
+    },
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/descent-readback.md": {
+      "sha256": "460c911b32d72948da676c52e3f0edba52ad724aa505bd4d650b94375165e6ab",
+      "size": 18041
+    },
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/DescentInterfaces.lean.txt": {
+      "sha256": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+      "size": 4673
+    },
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/ModularDefinitions.lean.txt": {
+      "sha256": "5c073db2b07ba2ccd729dd9c0218fd7ca6d1d6767e18d81c74bc19975188ec56",
+      "size": 348
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": {
+      "sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+      "size": 25
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": {
+      "sha256": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+      "size": 282
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": {
+      "sha256": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+      "size": 3548
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement.lean": {
+      "sha256": "dc72b845dbb045593ef3a6212b03a54cc0797a29baac132e870aff324cdc5853",
+      "size": 132
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": {
+      "sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+      "size": 403
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean": {
+      "sha256": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+      "size": 12611
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Assembly.lean": {
+      "sha256": "fb279bfbb469022b119c37d011cfcf47852a3fe25dea03fac966379351437066",
+      "size": 5301
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean": {
+      "sha256": "518f28a33ab98d1a44ea7b544ca7f695e28c48893982caaf72eb4879956763dd",
+      "size": 2922
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean": {
+      "sha256": "3df5a3f0a6de6a60c2b8b8ba89dd6e44fa4d47cb28e98c33f1e31d1dfb7d84dd",
+      "size": 2601
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean": {
+      "sha256": "843e4ee562071ef4729a61c715b77510b378add7f19b8c02d1e3d36fa9165f88",
+      "size": 4379
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean": {
+      "sha256": "09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290",
+      "size": 4900
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean": {
+      "sha256": "d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753",
+      "size": 6864
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": {
+      "sha256": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+      "size": 17967
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Scaffold.lean": {
+      "sha256": "0bd0952096ebf027fa956458dfb1c1bb08e6396cd89c77b24a3eaadbe1070d1a",
+      "size": 343
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Smoke.lean": {
+      "sha256": "50fcf1606d7bf7c52cf84cc7ebc60f0e05a151745339f295c86c1a37ffab8e19",
+      "size": 1648
+    }
+  },
+  "changed_since_begin": [],
+  "source_end_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/sources.md": "9df552348f03fd84ffe0e203f1340f26e6a902f8424f924068fe6fb86c1a7dbb",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Factors.lean": "3e64e2c8ba907c05209966a7bba8754cf2ab33f328a3010667ffe58c95e0bca3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Defs.lean": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/ZMod/Defs.lean": "7c3719a4e2c38f9549f5f61a0882fa10e220505dc4b61968186d0a4d30f335f1",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/ZMod/Basic.lean": "9a57047615cf4231f3561aef5c75ededf5a6ed6559308f31e241d1d27b2bc00c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Even.lean": "1180fa9ac282e55257e95c8402acd7314fcbd0a18bcfdede92a3cde16e1db630",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/SumTwoSquares.lean": "ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/Basic.lean": "9ac75516bf1585b7af0c71340344ecb3e4c135ac3c06f959d6a3f1e8c2ebd95c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean": "24ffbf256f6f6f7a2617901323c2d532e2d7871c826a8b11f0580b283e994302",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/Zsqrtd/QuadraticReciprocity.lean": "8b1fa86e4d60240ff76e788a41fa711a762103b08bd3975b00d6f8eb18f38e88"
+  },
+  "source_changed_since_begin": [],
+  "package_end_status": [
+    {
+      "name": "plausible",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "importGraph",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "proofwidgets",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "aesop",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "Qq",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "batteries",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "Cli",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "mathlib",
+      "head_unchanged": true,
+      "tracked_changes": ""
+    }
+  ],
+  "frozen": true
+}

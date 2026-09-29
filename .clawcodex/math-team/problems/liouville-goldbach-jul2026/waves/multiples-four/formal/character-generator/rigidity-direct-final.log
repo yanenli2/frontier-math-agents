@@ -1,0 +1,16 @@
+cwd: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+argv: ["lake", "env", "lean", "Statement/FourWork/Character/Rigidity.lean"]
+command: lake env lean Statement/FourWork/Character/Rigidity.lean
+
+'ArithmeticStatement.FourWork.goodMultiplier_natCast_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.cyclic_short_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Int.natAbs_pos' depends on axioms: [propext]
+'Int.natAbs_eq' does not depend on any axioms
+'Nat.strong_induction_on' does not depend on any axioms
+'ZMod.natCast_zmod_val' depends on axioms: [propext, Quot.sound]
+'mul_left_cancel₀' does not depend on any axioms
+
+exit_status: 0

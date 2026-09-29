@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/ApiProbe.lean"
+  ],
+  "shell_display": "lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/ApiProbe.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T03:18:10.388476+00:00",
+  "elapsed_seconds": 6.536273041,
+  "timeout_seconds": 180,
+  "exit_status": 1,
+  "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/ApiProbe.lean",
+  "source_sha256_before": "91d19d2590f9357da2c4c6025cbcf950f2d3c6a014537f7007bc835c3e178f22",
+  "source_sha256_after": "91d19d2590f9357da2c4c6025cbcf950f2d3c6a014537f7007bc835c3e178f22",
+  "snapshot": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/probe-01-count.lean",
+  "stdout_sha256": "9fa09efaa32f5ed827ec4e86c2cff0f9f2f350f0b017238d675c94be7f3d6f0f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "protected_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/approved-v1/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/blueprinter/interfaces-v1.lean": "89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+  },
+  "protected_unchanged_after": true
+}

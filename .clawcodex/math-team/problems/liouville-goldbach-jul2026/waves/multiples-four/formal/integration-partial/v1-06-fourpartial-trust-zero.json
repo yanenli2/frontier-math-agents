@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "-t",
+    "0",
+    "Statement/FourPartial.lean"
+  ],
+  "shell_display": "lake env lean -t 0 Statement/FourPartial.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T10:11:13.709281+00:00",
+  "elapsed_seconds": 2.408,
+  "exit_status": 0,
+  "expected_exit_status": 0,
+  "timeout_seconds": 600,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v1-06-fourpartial-trust-zero.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v1-06-fourpartial-trust-zero.stderr",
+  "stdout_sha256": "2275f1fe8774affbdf27f43476dbb493b1dfd8f820f2e7a63c28ce3390816b12",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

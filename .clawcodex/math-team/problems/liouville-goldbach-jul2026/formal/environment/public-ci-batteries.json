@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/batteries/actions/runs?head_sha=023ce7d62a0531e22a5331e20b587817a80d49ff&per_page=100"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/batteries/actions/runs?head_sha=023ce7d62a0531e22a5331e20b587817a80d49ff&per_page=100'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:12:15.068468+00:00",
+  "elapsed_seconds": 1.979099917,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-batteries.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-batteries.stderr",
+  "stdout_sha256": "3bb8ca7972a48ad427bab042620fed56c5a2a71813ec02621723647adc7fa741",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

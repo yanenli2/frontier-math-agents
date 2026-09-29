@@ -1,0 +1,21 @@
+cwd: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+argv: ["lake", "env", "lean", "Statement/FourWork/Character/ResidueValue.lean"]
+command: lake env lean Statement/FourWork/Character/ResidueValue.lean
+
+'ArithmeticStatement.FourWork.residueLambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.GoodMultiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.instField' depends on axioms: [propext, Classical.choice, Quot.sound]
+'mul_ne_zero' does not depend on any axioms
+'ArithmeticStatement.FourWork.residueLambda_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.residueLambda_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.goodMultiplier_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.goodMultiplier_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.val_natCast_of_lt' depends on axioms: [propext, Quot.sound]
+'ZMod.val_pos' depends on axioms: [propext, Quot.sound]
+'ZMod.val_lt' depends on axioms: [propext]
+'ZMod.neg_val' depends on axioms: [propext, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+exit_status: 0

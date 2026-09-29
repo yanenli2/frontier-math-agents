@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib.NumberTheory.SumTwoSquares"
+  ],
+  "shell_display": "lake exe cache get Mathlib.NumberTheory.SumTwoSquares",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "environment_additions": {
+    "MATHLIB_CACHE_DIR": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/cache"
+  },
+  "started_utc": "2026-09-25T09:04:18.489920+00:00",
+  "elapsed_seconds": 23.906815875000003,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "mathlib_head": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "manifest_sha256_before": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+  "manifest_sha256_after": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+  "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/SumTwoSquares.lean",
+  "source_sha256": "ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9",
+  "stdout_sha256": "c6762bb2e914460d0b0578022f701b17d69a22ff729936cc6db0f9141d7ebf0e",
+  "stderr_sha256": "d3c5216e27bf74dba102c6b7b7e04309c1869fdca7bd2742e4eab52ef8ed175c"
+}

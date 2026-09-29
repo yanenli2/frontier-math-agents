@@ -1,0 +1,211 @@
+Mode: CERTIFICATION — statement/scaffold production, not a proof.
+Author role: fl-formalizer. Task: ca76ab6f021e.
+Local audit date: 2026-09-24 America/Los_Angeles / 2026-09-25 UTC.
+Independent statement acceptance: REQUESTED, NOT YET OBTAINED.
+
+1. Exact production artifacts
+
+Project: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+Definitions: Statement/Definitions.lean
+  SHA256 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+Unfinished interface: Statement/Scaffold.lean
+  SHA256 0bd0952096ebf027fa956458dfb1c1bb08e6396cd89c77b24a3eaadbe1070d1a
+Smoke/diagnostic module: Statement/Smoke.lean
+Root build module: Statement.lean
+No master theorem module has been created or integrated.
+
+ArithmeticStatement.omega : Nat -> Nat
+ArithmeticStatement.lambda : Nat -> Int
+ArithmeticStatement.Target : Prop
+ArithmeticStatement.UnfinishedScaffold : Prop
+
+Target expands to:
+  forall N : Nat, Even N -> 2 < N ->
+    exists a b : Nat,
+      0 < a and 0 < b and N = a + b and
+      lambda a = (-1 : Int) and lambda b = (-1 : Int).
+
+Target is a DEFINITION OF A PROPOSITION, not a proof of that proposition.
+UnfinishedScaffold is a structure with the single field result : Target. No
+inhabitant is supplied. Its constructor requires a proof of Target; neither
+the constructor nor the projection establishes Target. There is no axiom or
+sorry placeholder for the target. The entire original target remains open.
+
+2. Source and translation decisions
+
+Source: request.md lines 7 and 11-14, with audit requirements at lines 49-57.
+
+- Mathematical functions are encoded as def, not axioms or theorem assumptions.
+- omega n is n.primeFactorsList.length. This is list length, NOT the cardinality
+  of a finset of distinct prime factors, and NOT a radical or squarefree count.
+- lambda n is (-1 : Int) ^ omega n. The explicit Int codomain and base ensure
+  negative one is represented correctly; no natural-number subtraction is used.
+- The source expression lambda(a)=lambda(b)=-1 is interpreted as two assertions
+  lambda(a)=-1 and lambda(b)=-1. Neither equality is dropped.
+- Positive integers are represented by naturals accompanied by 0 < a and 0 < b.
+  N is also natural; the exact correspondence with the source integer domain
+  is given in section 3, rather than silently changing the domain.
+- Even N uses Mathlib's additive predicate: exists r, N = r + r. It is not a
+  function-evenness predicate or an assertion that N is an even prime.
+- The order of universal quantification and implications is N, evenness, N>2,
+  then the existential witnesses. Both witnesses can depend on N.
+- The strict boundary 2 < N is preserved. No asymptotic or finite-range bound,
+  sufficiently-large qualifier, or effective-threshold hypothesis is added.
+- There is no primality, parity, coprimality, distinctness, or ordering condition
+  on a or b. In particular a=b is permitted. The domain includes composite
+  numbers with odd factor multiplicity count, not only primes.
+- Standard naturals rather than PNat avoid packaging positivity in hidden
+  subtype fields. Explicit positivity is easy to inspect in the displayed type.
+- lambda is totalized at n=0 by the library convention primeFactorsList 0=[];
+  therefore omega 0=0 and lambda 0=1. This extension is not part of the source
+  positive-domain assertion and is never used by its witnesses because 0<a,b.
+- The source fixes omega(1)=0; the chosen library definition gives exactly [].
+  Consequently the exponent at 1 is 0 and the value is the integer 1.
+- No extra ambient variables, sections, typeclass assumptions on the theorem,
+  optional hypotheses, or global target assumptions are introduced. The project
+  enables autoImplicit=false, and #print Target confirms the full closed type.
+
+No unresolved notational ambiguity was found in the source once its explicit
+positive-integer and multiplicity conventions are applied. These are author
+translation decisions and still require independent fidelity review.
+
+3. Explicit natural/positive-integer correspondence
+
+This paragraph is the normalization rationale for review, not a separately
+Lean-certified transport theorem.
+
+Let iota : Nat -> Int be the standard nonnegative inclusion. Every source
+integer N>2 is positive, hence has a unique natural preimage n=N.toNat with
+iota(n)=N. Conversely every natural n>2 gives such an integer. Addition and
+strict order on these nonnegative values agree under iota. For any positive
+integer a, its unique preimage a.toNat is strictly positive; the same holds
+for b. Thus N=a+b corresponds exactly to n=a.toNat+b.toNat and back.
+
+For evenness, if an integer N>2 has N=r+r, its witness r must be positive:
+r<=0 would give N<=0. Its natural preimage therefore gives n=s+s. Conversely
+n=s+s casts to N=iota(s)+iota(s). There is thus no loss of even integers at the
+universal quantifier. The positivity argument rules out the only potential
+issue in transporting an arbitrary integer half to Nat.
+
+On a positive integer, prime factorization is precisely the prime
+factorization of its natural preimage. The source does not ask for lambda on
+negative integers. Its omega and lambda values are therefore represented by
+omega(a.toNat) and lambda(a.toNat), and equally for b. The allowed equal case
+is preserved by this bijection. These maps establish the claimed exact
+correspondence of the source reading and the natural-domain proposition.
+
+4. Actual library audit at immutable Mathlib commit
+
+Mathlib 905b95818eb32af7874a58b427f50c1711a5e96c, release v4.32.2.
+All locators below refer to that exact version, not current main.
+
+Mathlib/Data/Nat/Factors.lean:
+- Lines 38-44: primeFactorsList 0=[]; primeFactorsList 1=[]; at k+2 extract
+  m=minFac(k+2), then prepend m to primeFactorsList((k+2)/m).
+  A repeated prime is extracted again from the quotient, so multiplicity is
+  retained rather than deduplicated.
+- Lines 46-53: zero, one, and two equations.
+- Lines 55-65: prime_of_mem_primeFactorsList says every list entry is prime.
+- Lines 70-81: prod_primeFactorsList says the product is n when n is nonzero.
+  This precondition holds on every positive source input.
+- Lines 115-117: primeFactorsList_add_two exposes the recursive equation.
+- Lines 168-179: primeFactorsList_unique identifies any prime list with product
+  n up to permutation, hence confirms the ordinary prime factorization meaning.
+- Lines 181-187: Prime.primeFactorsList_pow states that a prime p to the nth
+  power has factor list List.replicate n p. This directly distinguishes repeated
+  factors from distinct prime divisors.
+- Lines 196-202: perm_primeFactorsList_mul uses list concatenation for nonzero
+  factors, not finset union without multiplicity.
+
+Mathlib/Data/Nat/Prime/Defs.lean:
+- Lines 42-43: Nat.Prime is Irreducible on Nat.
+- Line 107: prime_def_lt characterizes it by 2<=p and proper divisors equal 1.
+- Lines 207-219: minFacAux and minFac implement least-factor trial division.
+- Lines 287-303: minFac divides n, is prime when n!=1, and is no larger than any
+  divisor >=2. No interpretation of minFac as a distinct-factor count is used.
+
+Mathlib/Algebra/Group/Even.lean lines 53-57:
+- Even is the to_additive-generated definition exists r, a=r+r. The actual
+  compiler #print output confirms this generated definition.
+
+Lean core f3b06c705e6c85f5314019d5d3baab0fec5b580c:
+- src/Init/Prelude.lean lines 3027-3029: List.length adds one per cons.
+- src/Init/Data/List/Basic.lean lines 84-90 and 705-707: length equations and
+  List.replicate repeat the element n times.
+- src/Init/Data/Int/Basic.lean lines 400-405: natural exponentiation on Int.
+
+Exact source bytes, Git blobs, last-changing ancestor commits and their dates,
+plus immutable URLs are in ../environment/source-file-identities.json.
+Selected installed Lean source files were byte-compared with raw contents at
+its pinned source commit; all matched. All Mathlib source checkouts are clean.
+
+5. Diagnostics and scope of verification
+
+Executed successfully, from the exact project directory:
+  lake build Statement.Definitions Statement.Scaffold Statement.Smoke Statement
+  lake env lean Statement/Scaffold.lean
+  lake env lean Statement/Smoke.lean
+  lake env lean <neutral bundle>/Declaration.lean
+All exit 0. The explicit build includes the real scaffold and smoke modules.
+The default Statement module also imports all three subordinate modules.
+No additional Lean toolchain was installed; no deferred diagnostics tool was
+available, so real Lean/Lake commands were used.
+
+Smoke output:
+  primeFactorsList 1 = []
+  primeFactorsList 12 = [2,2,3]
+  (n,omega n,lambda n) for n=1,2,4,8,12,18:
+  [(1,0,1),(2,1,-1),(4,2,1),(8,3,-1),(12,3,-1),(18,3,-1)]
+The executable assertions of these defining cases passed. They are bounded
+sanity tests, not a proof of either the conjecture or a universal theorem.
+
+#print axioms for omega, lambda, Target, UnfinishedScaffold.mk, and the checked
+factor-list semantic declarations reports exactly:
+  [propext, Classical.choice, Quot.sound]
+There is no sorryAx or custom axiom in these transitive sets. These are the
+ordinary Mathlib foundational axioms; leader/reviewer acceptance of the base
+is still separate. Checking axioms of the Prop-valued Target definition DOES
+NOT exhibit a proof of Target. Imported .olean files use the standard Mathlib
+content-addressed cache; imported library proofs were not all rebuilt from
+source in this production task.
+
+Grep audit of lean/Statement/*.lean for whole-word sorry, admit, axiom returned
+no matches. The neutral bundle had no comments, by proof blocks, sorry/admit,
+or axiom declarations. These text audits supplement, not replace, #print axioms.
+Exact command arguments, cwd, timestamps, exits, diagnostics and stream hashes
+are in ../environment/{build-statement-v1,lean-scaffold-v1,lean-smoke-v1,
+lean-review-declaration-v1}.{json,stdout,stderr}.
+
+6. Blind input construction and handoff
+
+Neutral directory:
+.clawcodex/math-team/review-inputs/r20260924-v1/
+
+Declaration.lean is byte-identical to Statement/Definitions.lean and compiles.
+Dependencies.lean contains the exact mathematical equation clauses for Even,
+minFacAux, minFac, primeFactorsList and relevant library declaration signatures,
+including explicit prime-power repetition semantics. Proof and termination
+proof bodies are erased. ListOperations.lean supplies the list-length and
+replicate definitions and equation signatures. These two supplementary files
+are code-only readback excerpts, NOT separate compiling project modules and
+NOT new axioms. Standard Nat, Int, List constructors and ordinary arithmetic
+notation are Lean primitives; the nontrivial factor-list semantics are exposed.
+The Nat.Prime predicate used in supplementary signatures is characterized by
+prime_def_lt, so irreducibility machinery need not be inferred by the reader.
+No problem brief, source comments, plan, mathematical proof body, or previous
+verdict is in the neutral bundle. The unfinished wrapper is not a dependency
+of Target and need not enter the blind packet.
+
+Remaining actions, owned by leader/fresh reviewers:
+- Fresh blind statement readback using only those neutral files and a private
+  output path. Do NOT give that reader this author audit or the source brief.
+- Fresh formal source-fidelity review comparing request.md, exact statement,
+  this recorded normalization, pinned definitions and the independent readback.
+- Explicit approval/snapshot before any theorem proof development.
+- The target proof, correspondence theorem if reviewers require it, all helper
+  proofs, integration and final acceptance are wholly unfinished future work.
+
+No post-cutoff mathematical source was encountered or used. Only metadata for
+specified dated tags/commits and their older ancestry was queried. Existing
+unversioned cache material was not adopted. No paper theorem or remembered
+external theorem is a proof dependency of this scaffold.

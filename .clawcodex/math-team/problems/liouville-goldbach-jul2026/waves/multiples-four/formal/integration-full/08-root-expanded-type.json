@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "-t0",
+    "--stdin"
+  ],
+  "shell_display": "lake env lean -t0 --stdin",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-27T16:57:12.139148+00:00",
+  "seconds": 41.726705,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "5441a4d16c5be9791525f14366652747f8ad5072c51df32960d2f6a1e1470733",
+    "bytes": 324
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "stdin": {
+    "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/08-root-expanded-type.stdin.lean",
+    "sha256": "22e1ec170110c0dbe57b7f63688619a89bbf2e18e11c29c0b5840b23c47ef69d",
+    "bytes": 377
+  }
+}

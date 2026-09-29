@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "-t0",
+    "Statement/FourWork/Descent/Cyclic.lean"
+  ],
+  "shell_display": "lake env lean -t0 Statement/FourWork/Descent/Cyclic.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T11:11:44.470152+00:00",
+  "seconds": 2.7912923749999976,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "4ea5f9d79ffc6f19641e786738e4b3db4ba2e3ceb0e3d69848e30f9ab3b6aa56",
+    "bytes": 456
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

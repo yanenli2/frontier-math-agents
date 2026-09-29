@@ -1,0 +1,15 @@
+.DS_Store
+.clawcodex/settings.local.json
+*.read_offset
+
+# Rebuildable Lean artifacts and source-hash download caches.
+**/.lake/
+.clawcodex/math-team/problems/**/cache/
+**/__pycache__/
+
+# Local team communications and session-recovery snapshots.
+.clawcodex/mailboxes/
+.clawcodex/math-team/runtime-archive/
+
+# The versioned citation and hash are archived; the third-party PDF stays local.
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/knowledge/mangerel-v2/paper.pdf

@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+    "show",
+    "-s",
+    "--format=%H%n%aI%n%cI",
+    "HEAD"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient show -s --format=%H%n%aI%n%cI HEAD",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:02:02.113789+00:00",
+  "elapsed_seconds": 0.013156792,
+  "timeout_seconds": 180,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-identity.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-identity.stderr",
+  "stdout_sha256": "5f7a6a96a296b480b79993dabb2a6193bbf4d23669b99c01c15c38f69556a72d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

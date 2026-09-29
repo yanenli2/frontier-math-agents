@@ -1,0 +1,50 @@
+{
+  "Statement.Definitions": {
+    "sha256": "c31d1d835f8f24aafa879b65d83c2d6b3461669e203c345bcdb3ac4f64f91ab8",
+    "bytes": 18928
+  },
+  "Statement.Scaffold": {
+    "sha256": "42682f40994ab47b45d044858188539d1255e1d84b97b71aa0d47b69d955d9c5",
+    "bytes": 10448
+  },
+  "Statement.Smoke": {
+    "sha256": "95f9675ff1681b3e5d6c1ef5a0ad992c4953e66b67ec469ba73246528b8ab2e3",
+    "bytes": 2560
+  },
+  "Statement.Partial": {
+    "sha256": "c239710722453f4204a38ee700016adbaeca4806c34f5b2c7d5c994a0f231e4c",
+    "bytes": 629440
+  },
+  "Statement.FourPartial": {
+    "sha256": "504c2190b80dd09085fe9a023b8d9a1f5ea6bb3b2c5d8be07abd18e1bd5539e5",
+    "bytes": 365112
+  },
+  "Statement.FourWork.Descent.Ternary": {
+    "sha256": "91595e9fe3d42b6bef5dc35ac0e97f2d1d3c59f07a1f46e962a9e908e5e27dc5",
+    "bytes": 686000
+  },
+  "Statement.FourWork.Character.ResidueValue": {
+    "sha256": "e21ccaa0326d56ef7a6a83a9dddd32faf0b711c1b44af27cad3571eb60f78e23",
+    "bytes": 66376
+  },
+  "Statement.FourWork.Descent.Cyclic": {
+    "sha256": "f2023ad4ac1ea9c12e56e8d50fc2ccee148bea8ec246585a71080bd60ae2c620",
+    "bytes": 435280
+  },
+  "Statement.FourWork.Character.Rigidity": {
+    "sha256": "a97e601bbe20d47f31d0f5c1f2dfe22f00b79379ec5a323293dc14b2698ccd8a",
+    "bytes": 224032
+  },
+  "Statement.FourWork.Character.ResiduePrime": {
+    "sha256": "50012a2d7702c8bda1af68fee51016c105b89dc7a8e45fe4df713b0f3b7ed635",
+    "bytes": 274384
+  },
+  "Statement.FourWork.Assembly": {
+    "sha256": "ad55873b9a91bf28085b0b242818fe766b1f122ebaa6d85129a0e5cce942743b",
+    "bytes": 65712
+  },
+  "Statement": {
+    "sha256": "2b5a993f48ef599ff5c22248b8b5bc764035aa5a582f54eddd0b726940d3d86f",
+    "bytes": 2208
+  }
+}

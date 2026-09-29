@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/import-graph/git/commits/7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+  ],
+  "shell_display": "gh api repos/leanprover-community/import-graph/git/commits/7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:00:13.089680+00:00",
+  "elapsed_seconds": 0.33105937500000004,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-commit.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-commit.stderr",
+  "stdout_sha256": "25feecab9dad24e309bc65dde16cc9d8f9c1f69d8711bf3e1fb88175167567f2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

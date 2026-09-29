@@ -1,0 +1,21 @@
+Mode: CERTIFICATION environment/scaffold production only. No target proof attempted.
+
+Initial tool calls before durable command recorder creation:
+1. Bash cwd .:
+pwd && ls -ld . .clawcodex/math-team/problems/liouville-goldbach-jul2026 .clawcodex/math-team/review-inputs ~/.cache ~/.elan && command -v lean && command -v lake && command -v elan && command -v gh && elan toolchain list && lean --version && lake --version
+Exit 0. Tools ~/.elan/bin/{lean,lake,elan}; gh /opt/homebrew/bin/gh. Only installed toolchain leanprover/lean4:v4.32.2. Lean version 4.32.2 arm64-apple-darwin24.6.0 commit f3b06c705e6c85f5314019d5d3baab0fec5b580c Release; Lake 5.0.0-src+f3b06c7.
+
+2. Glob **/lean-toolchain in .: no files found.
+3. Bash ls -la ~/.cache and assigned formal/, lean/, review-inputs/: exit 1 solely because initial lean/ did not exist. formal/environment/, formal/formalizer/, and review-inputs/r20260924-v1/ existed and were empty. ~/.cache/mathlib exists (8641 directory entries, not inspected as mathematical material).
+4. Bash ls -la ~/workspace: exit 0. Only relevant adjacent reference checkout was MechMath-agent-team.
+5. Glob **/lean-toolchain in ~/.cache/mathlib: no files found.
+6. Glob **/lean-toolchain in ~/workspace/MechMath-agent-team: no files found. Did not modify reference checkout.
+Narrow cached project check therefore found no eligible project. Existing .cache/mathlib archive material was not read or trusted.
+
+Metadata-only preliminary queries (exit 0; duplicated into raw captures using run.py):
+gh api repos/leanprover-community/mathlib4/releases/tags/v4.32.0
+published_at 2026-07-13T17:39:13Z. Not selected.
+gh api repos/leanprover-community/mathlib4/releases/tags/v4.32.2 && gh api repos/leanprover-community/mathlib4/git/ref/tags/v4.32.2
+published_at 2026-07-28T16:47:51Z; tag currently points to commit 905b95818eb32af7874a58b427f50c1711a5e96c. Selected for immutable-commit/date audit; no current main branch used.
+
+Source contamination so far: none. No mathematical source newer than cutoff was opened. Tool paths, local directory names and current release metadata are environment/provenance information, not adopted later mathematical content.

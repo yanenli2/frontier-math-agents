@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "shell_display": "git rev-parse HEAD",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+  "started_utc": "2026-09-25T11:10:39.679535+00:00",
+  "seconds": 0.008877125000000152,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "3e05b0a27d80e9c865b8f36158aaf09c9ab65f59c9ee1d06714de9f821fff73f",
+    "bytes": 41
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Data/Nat/Prime/Defs.lean&per_page=1"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Data/Nat/Prime/Defs.lean&per_page=1'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:03.960301+00:00",
+  "elapsed_seconds": 0.472518458,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-history.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-history.stderr",
+  "stdout_sha256": "fc6dfd2e49016f9415bbc16a12911482447f99aef3e82bd8e921b809787e2230",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

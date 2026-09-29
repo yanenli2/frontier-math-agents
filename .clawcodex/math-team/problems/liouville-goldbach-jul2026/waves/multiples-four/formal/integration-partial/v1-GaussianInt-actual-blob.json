@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+    "hash-object",
+    "Mathlib/NumberTheory/Zsqrtd/GaussianInt.lean"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib hash-object Mathlib/NumberTheory/Zsqrtd/GaussianInt.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T10:10:56.956718+00:00",
+  "elapsed_seconds": 0.01,
+  "exit_status": 0,
+  "expected_exit_status": 0,
+  "timeout_seconds": 600,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v1-GaussianInt-actual-blob.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v1-GaussianInt-actual-blob.stderr",
+  "stdout_sha256": "6f40c4b37f089958b1aa729d7f4cc5513c5b293b79acdeabefd8f3198404f4ca",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

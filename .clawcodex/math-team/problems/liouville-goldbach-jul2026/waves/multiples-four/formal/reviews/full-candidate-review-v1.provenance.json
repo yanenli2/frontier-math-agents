@@ -1,0 +1,461 @@
+{
+  "utc": "2026-09-25T10:53:23.142247+00:00",
+  "network_lookup_performed": false,
+  "lean_revision": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+  "lean_public_witnesses": [
+    {
+      "name": "CI",
+      "id": 30368480005,
+      "html_url": "https://github.com/leanprover/lean4/actions/runs/30368480005",
+      "created_at": "2026-07-28T14:27:52Z",
+      "updated_at": "2026-07-28T16:34:41Z",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "f3b06c705e6c85f5314019d5d3baab0fec5b580c"
+    }
+  ],
+  "packages": [
+    {
+      "name": "plausible",
+      "expected_revision": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "actual_revision": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "Lean Action CI",
+        "id": 29253419718,
+        "html_url": "https://github.com/leanprover-community/plausible/actions/runs/29253419718",
+        "created_at": "2026-07-13T13:20:50Z",
+        "updated_at": "2026-07-13T13:24:52Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "head_sha": "e12c1910fe855cbfc38803cd4e55543906d5fa62"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "actual_revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "Lean Action CI",
+        "id": 21928619159,
+        "html_url": "https://github.com/leanprover-community/LeanSearchClient/actions/runs/21928619159",
+        "created_at": "2026-02-12T00:28:07Z",
+        "updated_at": "2026-02-12T00:28:47Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "head_sha": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "importGraph",
+      "expected_revision": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "actual_revision": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "Build the project",
+        "id": 29255410348,
+        "html_url": "https://github.com/leanprover-community/import-graph/actions/runs/29255410348",
+        "created_at": "2026-07-13T13:50:43Z",
+        "updated_at": "2026-07-13T13:51:35Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "proofwidgets",
+      "expected_revision": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "actual_revision": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "ci",
+        "id": 29253424000,
+        "html_url": "https://github.com/leanprover-community/ProofWidgets4/actions/runs/29253424000",
+        "created_at": "2026-07-13T13:20:54Z",
+        "updated_at": "2026-07-13T13:23:42Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "6e311e2a844da9b2cc3971187df2fe0066947b93"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "aesop",
+      "expected_revision": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "actual_revision": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "Build",
+        "id": 29256329889,
+        "html_url": "https://github.com/leanprover-community/aesop/actions/runs/29256329889",
+        "created_at": "2026-07-13T14:03:38Z",
+        "updated_at": "2026-07-13T14:06:27Z",
+        "event": "merge_group",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "Qq",
+      "expected_revision": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "actual_revision": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "ci",
+        "id": 29253426904,
+        "html_url": "https://github.com/leanprover-community/quote4/actions/runs/29253426904",
+        "created_at": "2026-07-13T13:20:57Z",
+        "updated_at": "2026-07-13T13:21:33Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "38d591e778f100aec9762bb582f9c7f55f50e9dc"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "batteries",
+      "expected_revision": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "actual_revision": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "Merge conflicts",
+        "id": 29282598413,
+        "html_url": "https://github.com/leanprover-community/batteries/actions/runs/29282598413",
+        "created_at": "2026-07-13T20:29:43Z",
+        "updated_at": "2026-07-13T20:29:53Z",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "023ce7d62a0531e22a5331e20b587817a80d49ff"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "Cli",
+      "expected_revision": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "actual_revision": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "build lean4-cli",
+        "id": 29253416514,
+        "html_url": "https://github.com/leanprover/lean4-cli/actions/runs/29253416514",
+        "created_at": "2026-07-13T13:20:47Z",
+        "updated_at": "2026-07-13T13:21:18Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+      },
+      "nested_manifest_mismatches": []
+    },
+    {
+      "name": "mathlib",
+      "expected_revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "actual_revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "pin_matches": true,
+      "tracked_changes": "",
+      "eligible_public_witness": {
+        "name": "Release",
+        "id": 30379053106,
+        "html_url": "https://github.com/leanprover-community/mathlib4/actions/runs/30379053106",
+        "created_at": "2026-07-28T16:36:37Z",
+        "updated_at": "2026-07-28T16:36:53Z",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "905b95818eb32af7874a58b427f50c1711a5e96c"
+      },
+      "nested_manifest_mismatches": []
+    }
+  ],
+  "source_begin_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/sources.md": "9df552348f03fd84ffe0e203f1340f26e6a902f8424f924068fe6fb86c1a7dbb",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Factors.lean": "3e64e2c8ba907c05209966a7bba8754cf2ab33f328a3010667ffe58c95e0bca3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Defs.lean": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/ZMod/Defs.lean": "7c3719a4e2c38f9549f5f61a0882fa10e220505dc4b61968186d0a4d30f335f1",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/ZMod/Basic.lean": "9a57047615cf4231f3561aef5c75ededf5a6ed6559308f31e241d1d27b2bc00c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Even.lean": "1180fa9ac282e55257e95c8402acd7314fcbd0a18bcfdede92a3cde16e1db630",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/SumTwoSquares.lean": "ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/Basic.lean": "9ac75516bf1585b7af0c71340344ecb3e4c135ac3c06f959d6a3f1e8c2ebd95c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean": "24ffbf256f6f6f7a2617901323c2d532e2d7871c826a8b11f0580b283e994302",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/Zsqrtd/QuadraticReciprocity.lean": "8b1fa86e4d60240ff76e788a41fa711a762103b08bd3975b00d6f8eb18f38e88"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "e12c1910fe855cbfc38803cd4e55543906d5fa62\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "6e311e2a844da9b2cc3971187df2fe0066947b93\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "38d591e778f100aec9762bb582f9c7f55f50e9dc\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "023ce7d62a0531e22a5331e20b587817a80d49ff\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "88679d088c9720c27ebdf2ba4dafe17341747f94\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--githash"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "f3b06c705e6c85f5314019d5d3baab0fec5b580c\n",
+      "stderr": ""
+    }
+  ]
+}

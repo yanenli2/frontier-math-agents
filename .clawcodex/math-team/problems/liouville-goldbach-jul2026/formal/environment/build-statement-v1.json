@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "lake",
+    "build",
+    "Statement.Definitions",
+    "Statement.Scaffold",
+    "Statement.Smoke",
+    "Statement"
+  ],
+  "shell_display": "lake build Statement.Definitions Statement.Scaffold Statement.Smoke Statement",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "environment_additions": {
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "started_utc": "2026-09-25T02:05:46.911826+00:00",
+  "elapsed_seconds": 11.955592333,
+  "timeout_seconds": 300,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/build-statement-v1.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/build-statement-v1.stderr",
+  "stdout_sha256": "63ef09b64bf82d57eb25fbb43c0fbf92b1415427f6426cc5c30b54ee06ee0e9b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

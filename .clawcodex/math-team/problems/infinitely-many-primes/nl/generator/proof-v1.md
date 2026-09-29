@@ -1,0 +1,408 @@
+# Proof attempt — infinitely many primes
+
+**Mode:** CERTIFICATION candidate (this artifact is a *proof attempt*; it carries no
+proof weight until a fresh `math-nl-verifier` accepts it). The author does **not**
+certify this result.
+
+**Problem:** `infinitely-many-primes`. **Target (verbatim from `request.md`):**
+
+> Prove that there are infinitely many primes.
+
+**Inputs used:** `request.md`, `nl/sketcher/target-contract.md`,
+`nl/sketcher/lemma-plan.md`, `nl/sketcher/obligations.md`.
+Definitions, domain, and normalizations below are taken from the contract;
+the lemmas `L1`–`L6` are the plan's statements but every one of them is proved
+here from scratch. Nothing is cited as established merely because the plan
+asserts it.
+
+---
+
+## 0. Target, domain, definitions, framework
+
+### 0.1 The assertion and its two readings
+
+Let
+```
+P := { p ∈ ℕ : p is prime }.
+```
+**Primary reading (cardinality).** `P` is infinite, i.e. `P` is not finite
+(definition of finite in §0.4, Definition F).
+
+**Working form (unboundedness).** `∀ n ∈ ℕ, ∃ p ∈ P with p > n`.
+
+Per `target-contract.md` §1 these two readings are equivalent for subsets of ℕ;
+that equivalence is *proved* here (Lemma L5 and Lemma L5c), not assumed. The
+quantifier order of the working form is `∀n ∃p`; the swapped form
+`∃p ∀n, p > n` is **false** and is not used anywhere. The argument below proves
+the working form and then converts it to the primary reading through L5.
+
+### 0.2 Domain (contract `N1`, `N2`)
+
+`ℕ = {1, 2, 3, …}`, the positive integers. Primes are drawn from ℕ.
+
+*Remark on `N2` (whether 0 ∈ ℕ).* The argument is written for `ℕ = {1,2,…}`.
+If instead `0 ∈ ℕ`, then: (i) primes are still `> 1` by `D2`, so `0` is never
+prime and the set `P` is literally unchanged; (ii) the working form at `n = 0`
+follows from its value at `n = 1`, since any prime `p > 1` satisfies `p > 0`
+(existence of a prime is Lemma L4); (iii) all divisibility occurrences below
+have `d ≥ 1` or `n ≥ 1` (checked at each step). Hence both readings of ℕ yield
+the same true statement, and the proof for the reading `ℕ = {1,2,…}` transfers.
+
+### 0.3 Definitions (contract `D1`, `D2`)
+
+**`D1` (divisibility).** For `a, b ∈ ℕ`: `a | b`  iff  `∃ c ∈ ℕ, b = a·c`.
+
+**`D2` (prime; the normalized definition).** `p ∈ ℕ` is **prime** iff
+```
+p > 1   and   ∀ d ∈ ℕ, ( d | p  ⟹  d = 1 ∨ d = p ).
+```
+Consequences used: a prime satisfies `p > 1`, so `1` is not prime; and every
+prime is `≥ 2`.
+
+### 0.4 Finiteness (for the primary reading)
+
+**Definition F.** A set `S` is **finite** iff either `S = ∅`, or there exist
+`k ∈ ℕ` and a bijection `f : {1, …, k} → S`. A set is **infinite** iff it is not
+finite. This matches `target-contract.md` §1 ("no `k ∈ ℕ` and no bijection
+`{1,…,k} → P`"): since `P ≠ ∅` (e.g. `2 ∈ P`, proved in §1, E11), the empty
+alternative never applies to `P`.
+
+### 0.5 Ambient framework for ℕ
+
+We use the standard model `ℕ = {1,2,3,…}`. The following are its standard
+properties (each a theorem of the Peano axioms / the ordered semiring ℕ; **none
+mentions primes**, so using them is not circular with respect to the target):
+
+* **(AR1)** ℕ is a commutative semiring with multiplicative identity `1`;
+  `1 ≤ a` for every `a ∈ ℕ`.
+* **(AR2)** `≤` is a total order on ℕ (reflexive, antisymmetric, transitive,
+  and total), compatible with arithmetic: `a ≤ b ⟹ a+c ≤ b+c` and `ac ≤ bc`.
+* **(AR3)** `a < b ⟺ ∃ c ∈ ℕ, b = a + c`; and (discreteness) `a < b ⟹ a+1 ≤ b`.
+* **(AR4)** Addition and multiplication cancel: `a+c = b+c ⟹ a = b`, and
+  `ac = bc ⟹ a = b`.
+* **(AR5)** Well-ordering: every nonempty `S ⊆ ℕ` has a least element.
+
+All invocations of these are flagged as `O-T1` (AR5) and `O-T2`/`O-AR*` in the
+ledger. No other infinity/factorization principle is used anywhere.
+
+---
+
+## 1. Elementary facts on ℕ, order, divisibility, and factorial
+
+Every fact is proved from §0.5. Notation: `a > b` means `b < a`; `a ≥ b` means
+`b ≤ a`.
+
+**E1 (trichotomy / totality).** For `a, b ∈ ℕ`, exactly one of `a < b`, `a = b`,
+`a > b` holds; in particular `a ≤ b` or `b ≤ a`.
+*Proof.* `≤` is a total order (AR2), so `a ≤ b` or `b ≤ a`. Define `<` by
+`a < b ⟺ a ≤ b ∧ a ≠ b` (AR3 gives the equivalent `∃c, b = a+c`). If `a ≤ b`
+and `b ≤ a`, antisymmetry gives `a = b`; otherwise exactly one of `a < b`,
+`b < a` holds. ∎
+
+**E2 (discreteness, restated).** `a < b ⟹ a+1 ≤ b` (AR3).
+
+**E3 (product dominates factors).** For `a, b ∈ ℕ`: `ab ≥ a` and `ab ≥ b`.
+*Proof.* `b ≥ 1` (AR1). From `b ≥ 1`, multiply by `a`: `ab ≥ a·1 = a`
+(AR2 + AR1). Symmetrically with `a ≥ 1`. ∎
+
+**E4 (no factor `1` unless both are `1`).** If `a, b ∈ ℕ` and `ab = 1`, then
+`a = b = 1`.
+*Proof.* Suppose `a ≠ 1`. Since `a ≥ 1` (AR1) and `a ≠ 1`, E2 gives `a ≥ 2`.
+Then `ab ≥ a ≥ 2 > 1` (E3), contradicting `ab = 1`. Hence `a = 1`; symmetrically
+`b = 1`. ∎
+
+**E5 (cancellation).** `ac = bc ⟹ a = b` (AR4). Also used: `a+c = b+c ⟹ a=b`
+(AR4).
+
+**E6 (divisibility basics).** For `a, b, c ∈ ℕ`:
+(a) `a | a`;  (b) `1 | b`;
+(c) *(transitivity)* `a | b` and `b | c` ⟹ `a | c`.
+*Proof.* (a) `a = a·1`. (b) `b = 1·b`. (c) `b = a x`, `c = b y` with `x,y ∈ ℕ`;
+then `c = a(xy)` and `xy ∈ ℕ`. ∎
+
+**E7 (`|` implies `≤`).** If `a | b` then `a ≤ b`. Consequently, if `a | b` and
+`b | a` then `a = b`.
+*Proof.* `b = a c` with `c ∈ ℕ`, `c ≥ 1`; so `b = ac ≥ a·1 = a` by E3/AR2.
+For the consequence apply E7 twice and antisymmetry. ∎
+
+**E8 (only `1` divides `1`).** If `d ∈ ℕ` and `d | 1` then `d = 1`.
+*Proof.* `1 = d·c` with `c ∈ ℕ`; E4 gives `d = 1`. ∎
+
+**E9 (divisibility is linear under subtraction).** Let `a, b, d ∈ ℕ` with
+`d | a`, `d | b`, and `a > b`. Then `d | (a − b)`, where `a − b` is the unique
+`c ∈ ℕ` with `a = b + c` (it exists because `a > b`, and is unique by E5).
+*Proof.* Write `a = d x`, `b = d y` with `x, y ∈ ℕ`. If `x ≤ y` then
+`a = dx ≤ dy = b` (AR2), contradicting `a > b`. Hence by E1 `x > y`, so
+`x = y + c'` for some `c' ∈ ℕ`. Then
+`a = dx = d(y + c') = dy + dc' = b + dc'`.
+By uniqueness of the difference, `a − b = dc'`, so `d | (a−b)`. ∎
+
+**E10 (factorial).** Define `n!` for `n ∈ ℕ` by recursion:
+`1! := 1`, and `(n+1)! := n! · (n+1)` for `n ≥ 1`. Then for all `n ∈ ℕ`:
+(a) `n! ≥ 1`;  (b) `n! + 1 ≥ 2 > 1`.
+*Proof.* (a) Induction: `1! = 1 ≥ 1`; and `(n+1)! = n!·(n+1) ≥ n! ≥ 1` by E3
+and the induction hypothesis. (b) From (a), `n! + 1 ≥ 1 + 1 = 2 > 1`. ∎
+
+**E11 (`2` is prime).** `2 ∈ P`; hence `P ≠ ∅`.
+*Proof.* `2 > 1`. Let `d ∈ ℕ` with `d | 2`. By E7, `d ≤ 2`. Since `d ≥ 1` and
+`1 ≤ d ≤ 2`, E2 (applied to `1 < d` when `d > 1`) gives `d = 1` or `d = 2`.
+Hence every divisor of `2` in ℕ is `1` or `2`, so `2` is prime by `D2`. ∎
+
+---
+
+## 2. Lemma L1 — Every integer `> 1` has a prime divisor
+
+**Statement (L1).** For every `m ∈ ℕ` with `m ≥ 2` there exists `p ∈ ℕ` such
+that `p | m` and `p` is prime (`D2`).
+
+**Proof.** Fix `m ∈ ℕ` with `m ≥ 2`. Define
+```
+S := { d ∈ ℕ : d | m  and  d > 1 }.
+```
+*Nonemptiness.* `m | m` by E6(a), and `m > 1` since `m ≥ 2`. Hence `m ∈ S`, so
+`S ≠ ∅`. (Precondition of AR5 met: `S` is a nonempty subset of ℕ.)
+
+*Choice of minimal element.* Apply **AR5 (well-ordering of ℕ; obligation
+`O-T1`)**: `S` has a least element. Set
+```
+p := min S,
+```
+so `p ∈ S`; in particular `p | m` and `p > 1`.
+
+*`p` is prime.* `p > 1` holds. Let `d ∈ ℕ` with `d | p`; we must show
+`d = 1 ∨ d = p`. By E7, `d ≤ p`. By E1, either `d ≤ 1` — and then `d = 1`
+since `d ≥ 1` — or `d > 1`. In the second case `d | p` and `p | m` give
+`d | m` by **E6(c) (transitivity of `|`)**; together with `d > 1` this says
+`d ∈ S`. As `p` is the least element of `S`, `p ≤ d`. With `d ≤ p` and
+antisymmetry, `d = p`. Either way `d = 1` or `d = p`, so the `D2` divisor
+condition holds and `p` is prime. ∎
+
+**Non-circularity check (`O-L1`, keystone).** The proof uses **only**: the
+definition `D1` of `|`; reflexivity (E6a) and transitivity (E6c) of `|`;
+`| `-implies-`≤` (E7); E1 trichotomy; and **AR5 well-ordering**. It does **not**
+use the infinitude of the primes (the target), does **not** use the Fundamental
+Theorem of Arithmetic (existence *or* uniqueness), does **not** use Euclid's
+lemma `p | ab ⟹ p | a ∨ p | b`, and does **not** assume `P` finite or infinite.
+The minimal element `p` is produced directly by well-ordering, not by iterative
+"extract a prime factor from a proper divisor" (which would presuppose L1). ∎
+
+---
+
+## 3. Lemma L2 — A prime `≤ n` divides `n!`
+
+**Statement (L2).** For all `n ∈ ℕ` and every prime `p`: if `p ≤ n` then
+`p | n!`.
+
+**Proof.** Induction on `n ≥ 1` using the recursion of E10.
+
+*Base `n = 1`.* If `p` is prime then `p > 1` (`D2`), so `p ≤ 1` is impossible
+(by E1, `p ≤ 1` with `p ≥ 1` forces `p = 1`, contradicting `p > 1`). Hence the
+statement is vacuously true for `n = 1`.
+
+*Inductive step.* Assume L2 holds for `n ≥ 1`; prove it for `n+1`. Let `p` be
+prime with `p ≤ n+1`. By **E1 (trichotomy)** either `p ≤ n` or `p > n`.
+* If `p ≤ n`: the induction hypothesis gives `p | n!`. Also `n! | (n+1)!`,
+  because the recursion gives `(n+1)! = n!·(n+1)`. By **E6(c) (transitivity of
+  `|`)**, `p | (n+1)!`.
+* If `p > n`: then `n < p ≤ n+1`. By **E2 (discreteness)**, `n < p` gives
+  `n+1 ≤ p`; with `p ≤ n+1` and antisymmetry, `p = n+1`. Then
+  `(n+1)! = n!·(n+1) = n!·p`, so `p | (n+1)!`.
+
+The two cases are exhaustive (E1) and both yield `p | (n+1)!`. ∎
+
+**Preconditions checked.** Factorial is defined for all `n ∈ ℕ` (E10); `p ∈ ℕ`
+by `D2`. No hypothesis beyond `D1`, `D2`, and the factorial recursion is used.
+
+---
+
+## 4. Lemma L3 — `n! + 1` is coprime to `n!`
+
+**Statement (L3).** For every `n ∈ ℕ`:
+(i) `n! + 1 > 1`; and
+(ii) every `d ∈ ℕ` with `d | n!` and `d | (n! + 1)` satisfies `d = 1`.
+
+**Proof.** Fix `n ∈ ℕ`.
+
+(i) By **E10(a)**, `n! ≥ 1`, so `n! + 1 ≥ 2 > 1`. ∎
+
+(ii) Let `d ∈ ℕ` with `d | n!` and `d | (n! + 1)`. Put `a := n! + 1` and
+`b := n!`. Then `a > b` (indeed `a = b + 1`), and `b, a, d ∈ ℕ`. Apply
+**E9 (linearity of `|` under subtraction)** with these `a, b, d`: the
+preconditions `d | a`, `d | b`, `a > b` all hold, so `d | (a − b)`. The
+difference is `a − b = (n! + 1) − n! = 1` (the unique `c` with
+`n! + 1 = n! + c` is `c = 1`, by E5). Hence `d | 1`, and **E8** gives `d = 1`. ∎
+
+**Note.** No gcd or coprimality primitive is introduced; the statement is phrased
+with `|` alone, as in the plan.
+
+---
+
+## 5. Lemma L4 — Unboundedness of the primes
+
+**Statement (L4).** For every `n ∈ ℕ` there exists a prime `p ∈ ℕ` with `p > n`.
+
+**Proof.** Fix `n ∈ ℕ`. Put
+```
+M := n! + 1.
+```
+By **E10(b)**, `M ≥ 2 > 1`, so the hypothesis `m ≥ 2` of **L1** holds for
+`m := M`. Apply **L1**: there exists a prime `p ∈ ℕ` with `p | M`, i.e.
+`p | (n! + 1)`.
+
+Now apply **E1 (trichotomy)** to the pair `(p, n)`: either `p ≤ n` or `p > n`.
+These two cases are exhaustive.
+* **Case `p > n`.** Done: `p` is a prime with `p > n`.
+* **Case `p ≤ n`.** Then `p` is prime and `p ≤ n`, so **L2** gives `p | n!`.
+  Also `p | (n! + 1)`. Apply **L3(ii)** with `d := p` (legitimate since `p ∈ ℕ`):
+  `p = 1`. But `p` is prime, so `D2` gives `p > 1`, contradicting `p = 1`. This
+  case is therefore impossible.
+
+Since the second case is contradictory, the first holds, and there is a prime
+`p > n`. As `n ∈ ℕ` was arbitrary, `∀ n ∈ ℕ ∃ p prime, p > n`. ∎
+
+**Hypotheses audit.** `L4` is a closed `∀n ∃p` statement: no finiteness
+assumption on `P`, no bound on `p`, and no extra hypothesis is introduced. All
+preconditions of L1, L2, L3 are checked above; the only order principle used is
+E1 (from AR2/AR3).
+
+*Remark (reading `N2`, `0 ∈ ℕ`).* If ℕ were taken to contain `0`, the case
+`n = 0` is immediate from the case `n = 1` (there is a prime `p > 1 > 0`),
+consistent with `target-contract.md` §3. The recursion-based proof above is
+stated for `n ≥ 1`, which is exactly `ℕ = {1,2,…}`.
+
+---
+
+## 6. Lemma L5 — Finite subsets of ℕ are bounded above; and L5c (converse)
+
+**Statement (L5).** For every `S ⊆ ℕ`: if `S` is finite (Definition F) then `S`
+is bounded above, i.e. `∃ N ∈ ℕ, ∀ s ∈ S, s ≤ N`.
+
+**Proof.** Two cases.
+
+*Case `S = ∅`.* Take `N := 1 ∈ ℕ`. The condition `∀ s ∈ ∅, s ≤ 1` is vacuous. ∎
+
+*Case `S ≠ ∅` finite.* By Definition F there are `k ∈ ℕ` and a bijection
+`f : {1,…,k} → S`. We prove the following by induction on `k ≥ 1`:
+
+> **(L5-g)** For every `k ∈ ℕ`, every `S ⊆ ℕ` admitting a bijection
+> `f : {1,…,k} → S` has a **greatest element**: `∃ g ∈ S, ∀ s ∈ S, s ≤ g`.
+
+*Base `k = 1`.* `S = {f(1)}`; take `g := f(1) ∈ S ⊆ ℕ`. For `s ∈ S`, `s = f(1)`
+so `s ≤ g`. ✓
+
+*Inductive step (`k → k+1`).* Assume L5-g for `k ≥ 1`. Let `S ⊆ ℕ` and
+`f : {1,…,k+1} → S` be a bijection. Set `S' := S \ { f(k+1) }`; the restriction
+`f|_{\{1,…,k\}}` is a bijection `{1,…,k} → S'`. By the induction hypothesis `S'`
+has a greatest element `g'`. Define `g := max(g', f(k+1))`, the larger of two
+elements of ℕ (so `g ∈ ℕ`). For any `s ∈ S`: either `s = f(k+1)`, giving
+`s = f(k+1) ≤ g`; or `s ∈ S'`, giving `s ≤ g' ≤ g`. Hence `g` is a greatest
+element of `S`. ✓
+
+Applying L5-g to the given `S` and `f` yields a greatest element `g ∈ S ⊆ ℕ`.
+Take `N := g ∈ ℕ`. For every `s ∈ S`, `s ≤ g = N`. Hence `S` is bounded above. ∎
+
+**Contrapositive form (used for the target).**
+
+> **(L5\*)** For every `S ⊆ ℕ`: if `S` is *unbounded above* — i.e.
+> `∀ n ∈ ℕ ∃ s ∈ S, s > n` — then `S` is infinite (not finite).
+
+*Proof.* `L5*` is the literal contrapositive of L5: "finite ⟹ bounded above"
+is logically equivalent to "not bounded above ⟹ not finite"; "not bounded
+above" is the displayed unboundedness condition, and "not finite" is the
+definition of infinite. ∎
+
+**Statement (L5c, converse; `O-L5c`, non-load-bearing).** If `S ⊆ ℕ` is bounded
+above then `S` is finite.
+
+*Proof.* Suppose `∃ N ∈ ℕ, ∀ s ∈ S, s ≤ N`. Since every `s ∈ S ⊆ ℕ` satisfies
+`s ≥ 1`, we get `S ⊆ {1,…,N}`. We show by induction on `N ≥ 1` that **every**
+subset of `{1,…,N}` is finite.
+* Base `N = 1`: a subset of `{1}` is `∅` or `{1}`; `∅` is finite by Definition F,
+  and `{1}` is finite via the identity bijection `{1} → {1}`.
+* Step `N → N+1`: let `T ⊆ {1,…,N+1}`. If `N+1 ∉ T` then `T ⊆ {1,…,N}`, finite
+  by the induction hypothesis. If `N+1 ∈ T`, write `T = T' ∪ {N+1}` with
+  `T' ⊆ {1,…,N}`, finite by the induction hypothesis; if `T' = ∅` then
+  `T = {N+1}`, finite via `1 ↦ N+1`; otherwise `T'` has a bijection
+  `f: {1,…,k} → T'` (some `k ∈ ℕ`) and extending it by `k+1 ↦ N+1` is a
+  bijection `{1,…,k+1} → T`, so `T` is finite.
+Hence `S ⊆ {1,…,N}` is finite. ∎
+
+**Remark.** L5 and L5c together give, for every `S ⊆ ℕ`: `S` is infinite `⟺`
+`S` is unbounded above. This is exactly the equivalence asserted in
+`target-contract.md` §1 / ambiguity `A1`; it is now proved, so the reading
+choice is discharged rather than assumed.
+
+---
+
+## 7. Lemma L6 — Assembly: the original target
+
+Let `P := { p ∈ ℕ : p prime }` (`D2`).
+
+1. **`P ⊆ ℕ`.** Immediate from the definition of `P`. (`O-B1`.)
+2. **Working form.** By **L4**, for each `n ∈ ℕ` there is a prime `p ∈ ℕ` with
+   `p > n`. That `p` satisfies `p ∈ P` and `p > n`. Hence
+   `∀ n ∈ ℕ, ∃ p ∈ P with p > n`, i.e. `P` is unbounded above. The `∀n ∃p`
+   order of L4 is preserved verbatim; the swapped form `∃p ∀n` is **not**
+   produced or used. (`O-B3`.)
+3. **Unbounded ⟹ infinite.** Apply **L5\*** with `S := P` (legitimate: `P ⊆ ℕ`
+   by step 1, and `P` is unbounded above by step 2). Conclusion: `P` is infinite.
+4. **Reading bridge.** By `target-contract.md` §1 the primary reading of
+   "there are infinitely many primes" **is** the statement "`P` is infinite".
+   Step 3 therefore establishes the original target. (`O-B2`.)
+
+**Conclusion.** `P = { p ∈ ℕ : p prime }` is infinite; equivalently,
+`∀ n ∈ ℕ ∃ p ∈ ℕ (p prime ∧ p > n)`. ∎
+
+---
+
+## 8. Global audit
+
+**Hypothesis audit.** No hypothesis is added anywhere. The target is an
+unconditional closed statement. In particular:
+* no finiteness assumption on `P` is made in L4 (the contradiction-style Route B
+  of the plan is deliberately *not* used);
+* no genericity, nonzero, or regularity hypothesis is inserted: all uses of
+  divisibility occur with arguments in ℕ, and the "`d ≥ 1`"/"`d > 1`" conditions
+  are forced by `D2`, E1, and E10, as shown;
+* the ambient principles (AR1)–(AR5) are standard properties of ℕ and do not
+  mention primes.
+
+**Circularity audit.** The dependency graph is
+`D1,D2,AR* → {L1, L2, L3, L5(-g)} → L4 → L5* → L6`.
+No lemma uses the target. Specifically:
+* L1 uses well-ordering of ℕ, `D1`, and transitivity of `|` only (§2);
+* L2 uses the factorial recursion and transitivity of `|` only (§3);
+* L3 uses subtraction-linearity of `|` (E9) and E8 only (§4);
+* L4 uses L1, L2, L3 and trichotomy only (§5);
+* L5/L5-g use Definition F, induction, and `max` on ℕ only (§6);
+* the assembly uses L4, L5\*, and the definitional reading bridge only (§7).
+Explicitly **not** used: infinitude of primes, FTA (existence or uniqueness),
+Euclid's lemma, Dirichlet/Bertrand/analytic input.
+
+**Quantifier audit.** The proven statement is `∀ n ∈ ℕ ∃ p ∈ P, p > n`
+(unboundedness) and the cardinality statement "`P` is infinite". The false
+swapped form is never asserted.
+
+**Boundary audit.** `1` is not prime (`D2`, `p > 1`); `2` is the least prime
+(E11); the empty and finite cases of "infinitely many" are handled by L5/L5c and
+the reduction to the non-finite reading.
+
+---
+
+## 9. Status and unresolved issues
+
+Every step above is discharged by an explicit argument from `D1`, `D2`, and
+(AR1)–(AR5); the obligation ledger `obligations.md` maps each named obligation
+of the plan to its discharge. **No unresolved gap remains in this proof
+attempt**, apart from the following caveats, which are limitations of scope
+rather than gaps:
+
+* The proof is written for the reading `ℕ = {1,2,…}` (`N1`); the transfer to a
+  reading in which `0 ∈ ℕ` is argued in §0.2/§5 and rests only on `p > 1` for
+  primes.
+* `L5c` / `O-DEF2` (equivalence `D2 ⟺ D3`, and `bounded ⟺ finite`) are supplied
+  for completeness / to discharge ambiguity `A1`; `O-DEF2` is not needed by the
+  route and is not proved here (it is recorded as an optional completeness item
+  in `obligations.md`).
+* Acceptance is **not** claimed by the author. A fresh independent
+  `math-nl-verifier` must check this candidate in a separate task.

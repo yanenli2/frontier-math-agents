@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+    "hash-object",
+    "Mathlib/NumberTheory/SumTwoSquares.lean"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib hash-object Mathlib/NumberTheory/SumTwoSquares.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T10:10:56.934254+00:00",
+  "elapsed_seconds": 0.012,
+  "exit_status": 0,
+  "expected_exit_status": 0,
+  "timeout_seconds": 600,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v1-SumTwoSquares-actual-blob.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v1-SumTwoSquares-actual-blob.stderr",
+  "stdout_sha256": "f9d3b6e2ebda87d9aa88b193735295053bff4364e2ad075989ce484eeda3a5c1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

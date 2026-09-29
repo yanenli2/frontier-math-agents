@@ -1,0 +1,308 @@
+Mode: CERTIFICATION — mechanical integration of ACCEPTED PARTIAL results only.
+Owner: fl-integrator, math-team; task 197f419f93e6.
+
+RESULT
+
+PASS for mechanical integration and rechecking of the exact approved candidate.
+The original conjecture remains UNRESOLVED. No final theorem liouville_goldbach
+or pointwise_keystone exists in the built environment. This report neither
+certifies a changed statement nor substitutes for final independent regulation.
+
+P = .clawcodex/math-team/problems/liouville-goldbach-jul2026
+L = P/lean
+D = P/formal/integration
+Q = .clawcodex/math-team/review-inputs/r20260924-v1
+
+Checks ran 2026-09-25 UTC against externally sourced mathematical versions
+publicly available no later than the inclusive cutoff 2026-07-31. The checking
+date is not a new mathematical source revision.
+
+1. OWNERSHIP, GATES, AND EXACT SNAPSHOT
+
+TaskGet was reread before work. Because its abbreviated response omitted owner,
+work waited for the leader's assignment; TaskList then confirmed fl-integrator
+as owner, in_progress, with no blocked dependencies. No agent was spawned.
+The skill protocol and lean workflow, original request, current master/base,
+protected signatures, literal readbacks, independent candidate gate and NL
+partial review were read before the merge.
+
+Pre-integration gate: P/formal/reviews/candidate-audit-v1.md
+SHA-256 b6b315abb960fd385f614aea01e2f5b3ead76057d2f345ea5af2abee5eb011f5.
+It approves all actual 42 proved partial/helper theorems and eight definitions;
+it excludes the unimplemented endpoint signatures. Its independent exact-file
+compile and trust-zero compile both exited 0. Gate evidence identities:
+  candidate-audit-v1.log: f9be352c079cf3addf5b43988f35c59650fef2e84dd38988576bdb6274ea9523
+  candidate-audit-v1.json: cf36dd42c567308de978da49921092b994d95cc31184d12e6aeb9896b4e437ec
+These exact identities and successful candidate commands were mechanically
+rechecked by preflight-v1.json, not merely accepted from a filename.
+
+Candidate and integrated master, byte-identical:
+  P/formal/generator/Candidate.lean
+  P/lean/Statement/Partial.lean
+  SHA-256 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0
+
+Protected definition snapshot and unchanged production base:
+  P/formal/approved-v1/Definitions.lean
+  P/lean/Statement/Definitions.lean
+  SHA-256 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+
+Protected helper signature snapshot:
+  P/formal/blueprinter/interfaces-v1.lean
+  SHA-256 89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc
+
+Literal readbacks:
+  Q/readback.md
+  SHA-256 dbe6c1e5ff159fd8f2f5e21e0c95981829ebb6e6133598a94597975d8b563ca6
+  Q/interfaces-readback.md
+  SHA-256 88a3bb1152043c2eb245914cbec5a569cbf81ab47e4031f1330e1ba27d139e9e
+The neutral Declaration.lean and Interfaces.lean inputs were independently
+compared to the exact base/helper snapshots. The integration adds no changed
+statement requiring a new interpretation by this integrator.
+
+NL evidence: P/nl/reviews/partial-proof-review-v1.md passes the relevant partial
+proofs and equivalences, not Target or unproved optional bridges. It refutes
+O-M5 (universal strict partial-sum negativity) at q=5. That route was corrected
+in proof-v2.md and is not a Lean dependency. Integration does not extend the
+v1 prose review to unreviewed altered mathematics.
+
+2. PATHS AND MECHANICAL DIFF
+
+Source changes, exclusively within the assigned master paths:
+  NEW P/lean/Statement/Partial.lean: 471-line byte-identical candidate copy,
+      including all imports, namespace, proof bodies and 82 #print axioms.
+  EDIT P/lean/Statement.lean: append exactly one line:
+      import Statement.Partial
+  UNCHANGED lakefile.toml, lean-toolchain, lake-manifest.json,
+      Statement/Definitions.lean, Statement/Scaffold.lean, Statement/Smoke.lean.
+
+Before editing, Partial.lean was confirmed absent and root contained exactly:
+  import Statement.Definitions
+  import Statement.Scaffold
+  import Statement.Smoke
+That root is preserved verbatim at D/Statement.before.lean, with hashes in
+D/preflight-v1.json. No existing accepted theorem body was overwritten.
+
+Exact copy action (P expanded to the absolute path above in the actual command):
+  test ! -e P/lean/Statement/Partial.lean &&
+  cp P/formal/generator/Candidate.lean P/lean/Statement/Partial.lean &&
+  cmp P/formal/generator/Candidate.lean P/lean/Statement/Partial.lean
+Exit 0, no output. The existing root was edited by one exact-string replacement,
+retaining its three imports and appending the fourth; no Lake configuration edit
+was necessary. Import placement, declaration names and namespaces required no
+proof changes or collision resolution.
+
+Full unified diff: D/integration-v1.diff
+SHA-256 3afe5307290d5020ff4752adfa67f0fb920090cc49395891d590f19f6043d4d4.
+Integrated root SHA-256:
+426a0b62a141387e22f0e5481a705e3ffe3d64e0f8ad100daea3101c802e8458.
+
+The pre-existing UnfinishedScaffold is a structure whose constructor requires
+a Target proof. No such inhabitant is supplied. Root's existing Scaffold/Smoke
+imports were retained but never used as proof evidence or converted to axioms.
+Partial imports only Definitions and the five pinned Mathlib modules. Neither
+the signature-only interface snapshot nor an OPEN endpoint is imported.
+
+No concurrent source/pin/input edits were detected by the before/after hashes.
+No check failed, so rollback was unnecessary. The preintegration root and all
+prior accepted artifacts remain preserved. No generator, source ledger, shared
+LEMMA_MAP, approved snapshot, or pinned configuration was edited.
+
+3. EXACT COMMANDS AND EXIT RESULTS
+
+Runner (from the project root, absolute script path used):
+  python3 D/check_integration.py preflight                 exit 0
+  python3 D/check_integration.py verify v1                 exit 0
+
+All Lean/Lake/Git subprocesses below ran with cwd L. Every command's exact argv,
+expanded cwd, UTC time, timeout, duration, exit status, stdout/stderr paths and
+SHA-256 are stored in its v1-*.json record and D/audit-v1.json.
+
+Command                                             Exit   Seconds   Log stem
+lake env lean --version                              0      3.800    v1-00-lean-version
+lake --version                                       0      0.038    v1-01-lake-version
+lake env lean --print-prefix                         0      0.606    v1-02-prefix
+lake env printenv LEAN_PATH                          0      0.625    v1-03-lean-path
+lake build                                           0      7.389    v1-04-default-build
+lake build Statement.Partial                         0      1.102    v1-05-partial-build
+lake env lean Statement/Partial.lean                 0      2.887    v1-06-partial-direct
+lake env lean -t 0 Statement/Partial.lean             0      2.056    v1-07-partial-trust-zero
+lake env lean --stdin [root diagnostics below]       0      1.866    v1-08-root-import-check
+lake env lean --stdin [endpoint absence below]       1      1.671    v1-09-absent-endpoints
+
+For each of the nine packages named in section 6, both commands exited 0:
+  git -C L/.lake/packages/NAME rev-parse HEAD
+  git -C L/.lake/packages/NAME status --porcelain=v1 --untracked-files=no
+All returned exact manifest revisions and empty tracked-change output.
+Individual records are v1-git-NAME-{head,status}.{json,stdout,stderr}.
+
+Default build includes final module:
+  v1-04-default-build.stdout:48: Built Statement.Partial
+  v1-04-default-build.stdout:151: Built Statement
+  v1-04-default-build.stdout:152: Build completed successfully (925 jobs).
+The explicit module build also passes. This checks the relevant project build,
+not all Mathlib modules or every dependency's upstream test suite.
+
+Root diagnostic stdin is saved verbatim as
+D/v1-08-root-import-check.stdin.lean. It imports only Statement, then checks all
+50 added declarations with @, prints all 11 local/base definitions, and prints
+all 82 axiom sets again from the built root import. It supplies no proof body,
+axiom, assumption, namespace override or alternate definition.
+
+The endpoint absence stdin is saved as D/v1-09-absent-endpoints.stdin.lean:
+  import Statement
+  #check ArithmeticStatement.pointwise_keystone
+  #check ArithmeticStatement.liouville_goldbach
+Its exit 1 is intentional and separately expected. The only two diagnostics are
+Unknown identifier for those two names; it is not a failed proof admitted into
+the master. All affirmative build/compile/type/axiom checks exited 0.
+
+4. STATEMENT, DEFINITION AND ADMISSION CHECKS
+
+All 42 theorem headers match their exact approved signatures after removing
+only the proof assignment/body and trailing separator whitespace. All eight
+helper definitions include their entire body in the exact comparison. Internal
+signature text is preserved. The script records all comparison text, line spans,
+comparison hashes and full-declaration hashes in audit-v1.json. Candidate and
+master equality additionally protects every proof byte and diagnostic command.
+
+Production base, isolated blind base, and approved base are byte-identical.
+Helper snapshot and blind interface input are byte-identical. Their existing
+independent fidelity/readback evidence therefore applies to the unchanged
+statements; no statement is newly self-certified by this integration.
+
+The only snapshot-only theorem signatures are pointwise_keystone and
+liouville_goldbach. They remain unimplemented, not silently assumed. The root
+runtime absence check corroborates the source check.
+
+Local accepted closure was inspected and mechanically scanned for sorry,
+admit, sorryAx, native_decide, Lean.ofReduceBool, implemented_by, unsafe,
+custom axiom, and opaque postulate. No matches occurred. Compiler output
+contains no admission or error diagnostic. Four unused-variable lints remain
+at lines 51:29, 171:35, 187:5 and 291:46; preserving them avoids changing the
+approved guard list. No golfing or mathematical repair occurred.
+
+5. TRANSITIVE AXIOMS AND TRUST BOUNDARY
+
+Each of three independent integrated observations (exact source compilation,
+trust-zero exact source compilation, and root-import axiom query) returned the
+same 82-name axiom map:
+  42 theorem declarations
+  11 local/base definitions (eight new plus omega, lambda, Target)
+  29 named upstream declarations.
+
+Every local theorem/definition has exactly:
+  {propext, Classical.choice, Quot.sound}
+All 29 upstream declarations have subsets of this set. pow_add and List.prod_cons
+have no axioms. Finset.sum_nbij' retains its final apostrophe in the parsed map
+and has {propext, Quot.sound}. The complete per-name sets are in audit-v1.json
+under axioms_direct, axioms_trust_zero, axioms_root_import and in the raw outputs.
+There is no sorryAx, unsupported custom axiom, native-evaluation axiom, or extra
+mathematical assumption in these transitive proof closures.
+
+Trusted mechanisms are the pinned Lean implementation/kernel, the three listed
+foundational axioms, and the pinned installed library/toolchain artifacts.
+simp, omega, ring and ordinary decide generate checked proof terms here. The
+trust-zero check passed but is not an independently implemented kernel or a
+from-source rebuild of every upstream binary artifact. Printing axioms of the
+Target definition does not create or certify a proof of Target.
+
+6. PIN, SOURCE CUTOFF AND CACHE AUDIT
+
+Actual Lean: v4.32.2, arm64-apple-darwin24.6.0,
+commit f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+Actual Lake: 5.0.0-src+f3b06c7.
+
+Package          Manifest = actual revision                    Public witness date
+mathlib          905b95818eb32af7874a58b427f50c1711a5e96c        2026-07-28
+plausible        e12c1910fe855cbfc38803cd4e55543906d5fa62        2026-07-13
+LeanSearchClient c5d5b8fe6e5158def25cd28eb94e4141ad97c843        2026-02-12
+importGraph      7e9612bf0b9ee66db3cb5b9988a35afc706f5a12        2026-07-13
+proofwidgets     6e311e2a844da9b2cc3971187df2fe0066947b93        2026-07-13
+aesop            a7dbf0c63b694e47f425f3dcddbc0e178bb432d3        2026-07-15
+Qq               38d591e778f100aec9762bb582f9c7f55f50e9dc        2026-07-13
+batteries        023ce7d62a0531e22a5331e20b587817a80d49ff        2026-07-15
+Cli              88679d088c9720c27ebdf2ba4dafe17341747f94        2026-07-13
+
+Every row was bound to an exact-head-SHA pre-cutoff Actions record in
+formal/environment/public-availability-witnesses.json, then compared with its
+preserved raw public-ci-NAME.stdout response (including public repository flag).
+Raw-response hashes, exact witness URLs and timestamps are in audit-v1.json.
+For example Mathlib run 30385574037 records the exact pin on July 28, and Lean
+run 30368480005 records its exact binary/source commit on July 28. Availability
+is established by the dated exact-SHA record, not merely a commit author date
+or the mutable release tag. CI success is not asserted as our local proof check.
+
+Both original cache command records were rechecked, including exit 0 and hashes
+of their preserved stdout/stderr:
+  cache-factors.json: 664-artifact initial factor/even import closure;
+  fl-generator-cache-required-v1.json: same-pin extra integer/interval/sum/ring
+    closure, with 240 previously missing artifacts.
+Their source-hash-addressed cache and MATHLIB_CACHE_DIR are unchanged. No cache
+command was rerun during integration. The cache container label mathlib4-master
+in historical logs is not a fetched main-branch mathematical revision.
+
+All recorded source-file identities in source-file-identities.json were rehashed
+and match. All nine package tracked trees are clean at the pinned revisions.
+Direct import resolution and actual olean hashes are recorded; the protected
+base's loaded definitions were also printed after importing root Statement.
+Original eligible source/cache provenance is preserved without claiming a new
+from-source upstream build or a repeated historical network query.
+
+Protected configuration hashes remain:
+  lean-toolchain: 2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273
+  lakefile.toml: 0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4
+  lake-manifest.json: de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03
+No package/toolchain update, network fetch, newer mathematical text, paper theorem,
+current documentation lookup or external mathematical oracle was used. No known
+post-cutoff mathematical contamination occurred in this integration.
+
+7. DELIVERABLES AND REMAINING OBLIGATIONS
+
+Produced:
+  P/lean/Statement/Partial.lean, P/lean/Statement.lean
+  P/REPRODUCE.md: exact pins, all available theorem names, actual checking commands,
+      explicit absent target and remaining goals; first authored as requested.
+  D/source-proof-map-v1.txt: complete informal/Lean/status/source/review map.
+  D/check_integration.py: read-only mechanical audit runner for master inputs.
+  D/preflight-v1.json and Statement.before.lean: preserved prior master/identities.
+  D/audit-v1.json: complete command, snapshot, comparison, axiom, pin evidence.
+  D/integration-v1.diff and v1-* raw command/exit records.
+  D/integration-report-v1.txt: this report.
+  D/artifact-hashes-v1.json: final delivery identities (created after this report).
+
+Audit identity:
+  audit-v1.json SHA-256 4d32b5248d82c827edcb958ecd63ea62d68504bedf9fb396aa56edbcc7ca4db3
+  preflight-v1.json SHA-256 7349a8c199f50c08bac5cc3c7fa9cefd9a038340d202f34161ce0d361ab1fbaa
+  check_integration.py SHA-256 923c2f76419fa295c4c120bae95b9a169061772ebf25dedc983592b1df9fde8a
+
+The exact outstanding protected Lean goals, NOT declarations in the master:
+
+  ArithmeticStatement.pointwise_keystone
+    (N : Nat) (hEven : Even N) (hN : 2 < N) :
+    2 * ArithmeticStatement.L (N - 1) - ((N : Int) - 1) <
+      ArithmeticStatement.C N
+
+  ArithmeticStatement.liouville_goldbach : ArithmeticStatement.Target
+
+Equivalently, by the proved core reduction:
+  |- forall p q : Nat, Nat.Prime p -> Nat.Prime q ->
+       ArithmeticStatement.HasRepresentation (2 * p * q)
+
+The prime-core theorem is an equivalence, not a proof of that universal core.
+The count identity is an identity, not a strict positivity estimate. The diagonal
+sign family and every positive multiple of eight are established, but do not
+cover all remaining even inputs. No effective large-N threshold plus rigorous
+finite remainder, uniform keystone estimate, or unconditional full Target proof
+exists in this delivery. No separately formalized integer/natural transport
+lemma is claimed beyond the already reviewed natural-domain normalization.
+
+Next owners:
+  - team-lead/independent regulator: exact integrated-wave audit and publication
+    of the partial-only status; mathematical acceptance is separate from task
+    artifact completion.
+  - mathematical generators: genuinely missing pointwise/core theorem, retaining
+    all protected hypotheses. Any semantic change requires new fidelity/readback.
+  - source/LEMMA_MAP owner: incorporate links to this integrator-owned evidence.
+
+Mechanical integration obligations are complete. Original success conditions
+are not met. Remain available for a new authorized integration or review query.

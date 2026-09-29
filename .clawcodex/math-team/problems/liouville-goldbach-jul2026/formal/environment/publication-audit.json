@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit_publication.py"
+  ],
+  "shell_display": "python3 .clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit_publication.py",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:12:10.519236+00:00",
+  "elapsed_seconds": 7.013907875,
+  "timeout_seconds": 120,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-audit.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-audit.stderr",
+  "stdout_sha256": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Algebra/Group/Even.lean&per_page=1"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Algebra/Group/Even.lean&per_page=1'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:04.555292+00:00",
+  "elapsed_seconds": 0.469584,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-history.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-history.stderr",
+  "stdout_sha256": "6e685d9c8669ec767ab24c7d6bbb5ed210229bc0df2516db4069eb9c4720d89d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,40 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:27:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (-1) ^ ?m.18
+in the target expression
+  (-1) ^ omega n = 1 ∨ (-1) ^ omega n = -1
+
+n : ℕ
+hn : 0 < n
+⊢ (-1) ^ omega n = 1 ∨ (-1) ^ omega n = -1
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:54:53: error: Expected type must not contain metavariables
+  0 < ?m.18
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:54:65: error: Expected type must not contain metavariables
+  0 < ?m.19
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:63:45: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  -1 * ?a
+in the target expression
+  -1 * lambda m = -lambda m
+
+m : ℕ
+hm : 0 < m
+⊢ -1 * lambda m = -lambda m
+'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

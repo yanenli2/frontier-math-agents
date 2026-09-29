@@ -1,0 +1,216 @@
+Mode: CERTIFICATION — exact-candidate mechanical integration and actual Lean gate.
+Owner: fl-integrator-final. Task: 047e2ef62825.
+RESULT: PASS. No integration blocker or mathematical repair required.
+Final regulator/publication acceptance remains leader-owned.
+
+PATHS
+P=.clawcodex/math-team/problems/liouville-goldbach-jul2026
+W=P/waves/multiples-four
+L=P/lean
+I=W/formal/integration-full
+
+Only master edit: L/Statement.lean, appending this line:
+  import Statement.FourWork.Assembly
+
+The approved actual proof remains in L/Statement/FourWork/Assembly.lean:21-24.
+No declaration was copied, duplicated, rewritten, moved, renamed, repaired or
+simplified. Its five checked dependencies are promoted by the unchanged import
+closure. Earlier Definitions/Partial/FourPartial, pins, original documents and
+wave PROOF.md remain unchanged. No concurrent mathematical edit was detected.
+The previous root is preserved at I/Statement.before.lean.txt.
+
+EXACT RESULT
+ArithmeticStatement.representation_multiple_four (m : Nat) (hm : 0 < m) :
+  ArithmeticStatement.HasRepresentation (4 * m)
+
+For each natural m>0 this gives natural a,b>0 with 4*m=a+b and each integer
+(-1)^primeFactorsList.length equal to -1. Includes m=1; equal witnesses allowed.
+No sign/parity/congruence/prime/coprimality/core/antireflection premise remains.
+Prime endpoint: ArithmeticStatement.representation_four_prime_three_mod_four,
+for prime p>=7 with p%4=3, in Assembly.lean:10-19.
+THE ORIGINAL ALL-EVEN ArithmeticStatement.Target IS NOT PROVED BY THIS RESULT.
+
+DIFF
+I/integration.diff is the complete master diff:
+--- before/lean/Statement.lean
++++ after/lean/Statement.lean
+@@ -3,3 +3,4 @@
+ import Statement.Smoke
+ import Statement.Partial
+ import Statement.FourPartial
++import Statement.FourWork.Assembly
+
+SNAPSHOT AND APPROVAL IDENTITIES (SHA-256)
+Root before dc72b845dbb045593ef3a6212b03a54cc0797a29baac132e870aff324cdc5853
+Root after  cd6a1dd9bff63ef400559805123c5e6cb7d2d4c9af28cf7f7c24f2cc640abc3c
+Assembly    fb279bfbb469022b119c37d011cfcf47852a3fe25dea03fac966379351437066
+Cyclic      09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290
+Ternary     d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753
+ResidueValue 3df5a3f0a6de6a60c2b8b8ba89dd6e44fa4d47cb28e98c33f1e31d1dfb7d84dd
+ResiduePrime 518f28a33ab98d1a44ea7b544ca7f695e28c48893982caaf72eb4879956763dd
+Rigidity    843e4ee562071ef4729a61c715b77510b378add7f19b8c02d1e3d36fa9165f88
+FourPartial 4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325
+Definitions 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+Partial     9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0
+PROOF.md    205df4c7b85c9ce40cccf1b42aa92f174fb0365b058466a3c4f2d3ba6968831b
+Full protected snapshot W/formal/descent-blueprint/Readback.lean.txt:
+  372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763
+Earlier snapshot W/formal/generator/four-interfaces-v1.lean:
+  be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee
+Original endpoint snapshot W/formal/approved-v1/Declaration.lean:
+  bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed
+Exact full candidate approval W/formal/reviews/full-candidate-review-v1.md:
+  8557e4bf5269adbbbc6609a274a9243920cd025041687f15aca9c50e26f91587
+Literal readback at math-team/review-inputs/r20260924-four-v1/descent-readback.md:
+  460c911b32d72948da676c52e3f0edba52ad724aa505bd4d650b94375165e6ab
+Statement protection W/formal/reviews/descent-fidelity-v1.md:
+  02500f9a05e68f42c4eebeec074ee58a7cfbcb5b56a2fe01492b3fb231ef0411
+
+All nineteen full theorem headers and both new definitions match the protected
+snapshot internally byte-for-byte after excluding proof assignments/bodies and
+outer whitespace. The four fixed definitions also match. All nineteen earlier
+wave theorem headers match their snapshot. The original endpoint snapshot
+agrees after whitespace removal only. No statement was recertified or changed
+by the integrator. I/signatures-integrated.json contains every comparison,
+exact text, per-declaration hash, full name and source/snapshot line locator.
+
+ACTUAL COMMANDS AND EXITS
+Working directory for all Lean/Lake commands below: L.
+Every saved command record carries argv, cwd, start time, elapsed time, exit,
+stdout/stderr paths and hashes; stdin inputs are preserved verbatim.
+
+Record / exact command / exit:
+pre-lean-version / lake env lean --version / 0
+pre-lake-version / lake --version / 0
+01-default-build / lake build / 0
+02-assembly-build / lake build Statement.FourWork.Assembly / 0
+03-assembly-direct / lake env lean Statement/FourWork/Assembly.lean / 0
+04-assembly-trust0 / lake env lean -t0 Statement/FourWork/Assembly.lean / 0
+05-trust0-00-Statement-Definitions / lake env lean -t0 Statement/Definitions.lean / 0
+05-trust0-01-Statement-Scaffold / lake env lean -t0 Statement/Scaffold.lean / 0
+05-trust0-02-Statement-Smoke / lake env lean -t0 Statement/Smoke.lean / 0
+05-trust0-03-Statement-Partial / lake env lean -t0 Statement/Partial.lean / 0
+05-trust0-04-Statement-FourPartial / lake env lean -t0 Statement/FourPartial.lean / 0
+05-trust0-05-Statement-FourWork-Descent-Ternary / lake env lean -t0 Statement/FourWork/Descent/Ternary.lean / 0
+05-trust0-06-Statement-FourWork-Character-ResidueValue / lake env lean -t0 Statement/FourWork/Character/ResidueValue.lean / 0
+05-trust0-07-Statement-FourWork-Descent-Cyclic / lake env lean -t0 Statement/FourWork/Descent/Cyclic.lean / 0
+05-trust0-08-Statement-FourWork-Character-Rigidity / lake env lean -t0 Statement/FourWork/Character/Rigidity.lean / 0
+05-trust0-09-Statement-FourWork-Character-ResiduePrime / lake env lean -t0 Statement/FourWork/Character/ResiduePrime.lean / 0
+05-trust0-11-Statement / lake env lean -t0 Statement.lean / 0
+06-root-import / lake env lean -t0 --stdin < I/06-root-import.stdin.lean / 0
+07-original-endpoints-absent / lake env lean -t0 --stdin < I/07-original-endpoints-absent.stdin.lean / 1 EXPECTED
+08-root-expanded-type / lake env lean -t0 --stdin < I/08-root-expanded-type.stdin.lean / 0
+
+The displayed I paths are abbreviations for the absolute evidence directory.
+W/REPRODUCE.md gives runnable relative-path commands from L.
+
+Default build completed 2850 jobs. Raw log lines284-382 explicitly include
+Assembly; line383 says Built Statement; line384 records success. All twelve
+local modules were separately re-elaborated at trust level zero. Assembly's
+69 printed axiom queries passed on direct and trust-zero runs. The root-only
+06 inspection prints all38 theorem types and all156 distinct axiom queries.
+The root-only08 inspection displays the fully expanded positive-witness and
+factor-list-power type (using id with that explicit type, no new declaration).
+Only four old unused-variable warnings in Partial:51,171,187,291 occur.
+
+The deliberately failing07 check has exactly the two expected unknown names:
+ArithmeticStatement.pointwise_keystone and ArithmeticStatement.liouville_goldbach.
+It establishes scope of declarations, not impossibility of the broader target.
+
+AXIOMS, ADMISSIONS AND IMPORT CLOSURE
+Each new theorem, including both endpoints, has exactly:
+  {propext, Classical.choice, Quot.sound}
+All printed supporting sets are subsets. Across saved Lean/Lake commands,
+1003 printed occurrences were reconciled, covering156 distinct names including
+apostrophe-suffixed Finset.sum_nbij'. No unsupported/custom/native-reduction
+axiom or sorryAx was found. Actual direct compiler checks and axiom reports,
+not just text searches, establish no admitted obligation in the target closure.
+
+The twelve-file local source closure is acyclic; no helper imports Assembly or
+the root, and no final conclusion is assumed or encoded into GoodMultiplier.
+The exact defining bodies remain protected and printed. Nonrepresentation is
+introduced/discharged inside the prime-endpoint contradiction. Earlier
+conditional helpers retain their explicit premises and do not use that endpoint.
+Source scans find no sorry/admit/custom axiom/native_decide/unsafe/extern/
+implemented_by/custom elaborator or macro shortcut in local closure files.
+Scaffold's unprovided Target field is not a target proof; Smoke #eval is not a
+proof oracle. Library tactic implementation internals are not claimed unsafe-free.
+
+ENVIRONMENT / PROVENANCE / TRUST
+Lean4.32.2, arm64 Apple Darwin, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+Mathlib905b95818eb32af7874a58b427f50c1711a5e96c. Manifest hash:
+  de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03
+All9 package pins and clean worktrees were checked with git rev-parse HEAD and
+git status --porcelain --untracked-files=all, before/after; all36 commands exit0.
+Nested manifests agree. Retained exact-SHA public CI witnesses establish every
+external version before2026-08-01. No fetch/update/install/new lookup occurred.
+
+I/library-inventory-v1.json inventories4326 source modules and their imports;
+all were rehashed unchanged. I/new-library-modules-v1.txt supplies titles,
+authors, immutable URLs/versions, eligible public witness dates and URLs,
+line locators and hashes for all1983 library modules newly imported by this
+whole wave (929 added after FourPartial). W/sources.md supplies exact usable
+load-bearing statements/preconditions and links the frozen original ledger.
+The inventory is a source-import graph, not a claim all imported theorems are
+used or that its module count equals Lake's build-job count.
+
+The actual trusted boundary includes the installed compiler/kernel, Lake,
+elaborator/tactic implementations and existing pinned imported .olean/build
+artifacts. A cold bootstrap or complete from-source upstream-library rebuild
+was not repeated. Local -t0 checks do not eliminate that imported-artifact
+boundary. Historical same-pin cache use is disclosed in W/REPRODUCE.md.
+
+Lean uses proved Fermat two-squares and quadratic-reciprocity APIs, whereas
+PROOF.md's elementary-only statements concern its own floor-parity/inverse-
+pairing proof. Cyclic uses an equivalent bin/pigeonhole implementation. These
+reviewed proof-method differences are explicit in W/sources.md and LEMMA_MAP.md;
+no assertion of line-by-line formalization of all generic-function prose is made.
+
+INTERRUPTIONS AND PRESERVATION
+1. Recorder-only preflight exit1: it assumed nonexistent original P/PROOF.md;
+   corrected evidence-inventory path to original P/FINAL_ARGUMENT.md. No Lean
+   command/root edit had yet occurred. Raw trace: recorder-attempt-0.txt.
+2. All16 principal integrated Lean commands passed; recorder then exited1 because
+   its quoted-name parser missed Finset.sum_nbij'. Provider interruption followed.
+   Raw trace: recorder-attempt-1.raw.txt. resume-integration-v1.py revalidated
+   source/log hashes, fixed only interpretation of the diagnostic identifier,
+   completed missing checks and reported PASS. No passed build was repeated.
+3. Source-inventory parser exit1 encountered a JavaScript import in a Lean string;
+   restricted parser to the module import header. Raw trace is preserved at
+   library-inventory-attempt-0.txt. No mathematical source was modified.
+No Lean proof/build/axiom gate failed. The old root and every prior log remain.
+
+FINAL EVIDENCE AND CHECKLIST
+[PASS] exact approved actual candidate and five dependencies unchanged
+[PASS] root-only master change, old baseline preserved, no concurrent proof edit
+[PASS] 38 theorem headers +6 definitions match snapshots; literal/fidelity coverage
+[PASS] default/explicit/direct/trust-zero builds on integrated source
+[PASS] root-only checks, displayed expanded final type, all156 axiom queries
+[PASS] no admissions/custom/native proof axiom or encoded target assumption
+[PASS] acyclic local closure and original all-even target not claimed
+[PASS] fixed eligible source versions, complete wave provenance and method distinction
+[PASS] W/REPRODUCE.md updated with old draft preserved
+[PASS] W/sources.md and W/LEMMA_MAP.md produced
+
+I/audit-v1.json SHA-256:
+  a77cb430fad838343a91b4db630cf01ce20933b13d8bd65af4383fa9ce578c52
+I/all-commands-audit-v1.json SHA-256:
+  ef6f41b4811067a025ba164c6f98d74f2063f15b082babba65a6f1927298069a
+I/artifact-hashes-v1.json records final delivery identities, including this report,
+three wave documents, reviewed sources and exact independent review files.
+
+NEW FINAL NL REVIEWS (separate mathematical evidence, not kernel verification)
+W/nl/reviews/final-four-review-a-v1.md: PASS; exact PROOF/Assembly/dependency hashes;
+observes the permitted root-only change.
+  f8a73c44d01e7f8e09657c004341e73a86f7cff61707bdfc5e077aa5513542bd
+W/nl/reviews/final-four-review-b-v1.md: PASS; same mathematical files and integrated root.
+  7bf8a90a16d1b20a14142095892d11d23abb4deb8f82daf25aa7d46dfa6971c4
+These arrived after audit-v1's historical pending-NL note; current handoff status
+is both NL reviews complete, final regulator/publication gate still pending.
+
+REMAINING OBLIGATIONS / NEXT OWNER
+No missing proof, compile, integration, provenance, or documentation obligation
+for this assigned deliverable. Team-lead owns routing the finished snapshot to
+the final regulator and publication. No claim is made for the original all-even
+Target. Any subsequent mathematical edit invalidates affected snapshot review;
+return semantic repair to fl-generator and fresh reviewers, not this integrator.

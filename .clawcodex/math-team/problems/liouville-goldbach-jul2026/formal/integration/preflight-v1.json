@@ -1,0 +1,532 @@
+{
+  "mode": "CERTIFICATION mechanical integration",
+  "utc": "2026-09-25T03:56:12.403722+00:00",
+  "input_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/approved-v1/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/blueprinter/interfaces-v1.lean": "89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Declaration.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Interfaces.lean": "89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/readback.md": "dbe6c1e5ff159fd8f2f5e21e0c95981829ebb6e6133598a94597975d8b563ca6",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/interfaces-readback.md": "88a3bb1152043c2eb245914cbec5a569cbf81ab47e4031f1330e1ba27d139e9e",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/reviews/candidate-audit-v1.json": "cf36dd42c567308de978da49921092b994d95cc31184d12e6aeb9896b4e437ec",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/reviews/candidate-audit-v1.log": "f9be352c079cf3addf5b43988f35c59650fef2e84dd38988576bdb6274ea9523",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Scaffold.lean": "0bd0952096ebf027fa956458dfb1c1bb08e6396cd89c77b24a3eaadbe1070d1a",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Smoke.lean": "50fcf1606d7bf7c52cf84cc7ebc60f0e05a151745339f295c86c1a37ffab8e19",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/reviews/candidate-audit-v1.md": "b6b315abb960fd385f614aea01e2f5b3ead76057d2f345ea5af2abee5eb011f5",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/reviews/partial-proof-review-v1.md": "199feafd2fa03956516c7142861cb3ebb61bdf61bad2ec7acc159cc3287f2a2a",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/generator/proof-v1.md": "eb6974f5493f7b77773ba5e685240e8d608f43e6fb2a1156d627d7a0dbca86f5",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/generator/proof-v2.md": "bdcf57b670ed1e1410bacad5a2f9182c565add056714ef85e0155f939a6b7735",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-file-identities.json": "1853289c7fd475c3483c68eec07c254c2fd1949e8fb50603ed89a1966b36eaff",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache-factors.json": "a113e4efaf91a29162f3ffb19aaa3fe41918e9f53531f2f4ee8fc404d774f960",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/fl-generator-cache-required-v1.json": "39a43dd7a23a5b3af206c23e50255ed085e68ee8729a26782ce4cdb8dda61de0"
+  },
+  "root_before_sha256": "984a08ec38a92b62ca687fc123cd12cbe8337a00d8fdbf067a9cdb0c126bef7a",
+  "root_before_text": "import Statement.Definitions\nimport Statement.Scaffold\nimport Statement.Smoke\n",
+  "partial_before": "absent",
+  "candidate_comparisons": {
+    "HasSignedRepresentation": {
+      "kind": "def",
+      "line": 14,
+      "comparison": "def HasSignedRepresentation (s : ℤ) (N : ℕ) : Prop :=\n  ∃ a b : ℕ,\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = s ∧ lambda b = s",
+      "comparison_sha256": "58968768e8d905026ca69cd0e1c2f6d3fcd77659b3a1c619172b1c828ffd6901",
+      "declaration_sha256": "58968768e8d905026ca69cd0e1c2f6d3fcd77659b3a1c619172b1c828ffd6901",
+      "approved_line": 11,
+      "exact_comparison_passed": true
+    },
+    "HasRepresentation": {
+      "kind": "def",
+      "line": 19,
+      "comparison": "def HasRepresentation (N : ℕ) : Prop :=\n  HasSignedRepresentation (-1 : ℤ) N",
+      "comparison_sha256": "e872dcf3dfcefdda5674e80f596f12a7c306d73c28f02859e866b40f7ca0f311",
+      "declaration_sha256": "e872dcf3dfcefdda5674e80f596f12a7c306d73c28f02859e866b40f7ca0f311",
+      "approved_line": 16,
+      "exact_comparison_passed": true
+    },
+    "I": {
+      "kind": "def",
+      "line": 22,
+      "comparison": "def I (N : ℕ) : Finset ℕ :=\n  Finset.Ico 1 N",
+      "comparison_sha256": "93ddc60478d7c2fcb200895077663b7ced91121b87445b48f07ca7940bb4b7ff",
+      "declaration_sha256": "93ddc60478d7c2fcb200895077663b7ced91121b87445b48f07ca7940bb4b7ff",
+      "approved_line": 19,
+      "exact_comparison_passed": true
+    },
+    "representationIndices": {
+      "kind": "def",
+      "line": 25,
+      "comparison": "def representationIndices (N : ℕ) : Finset ℕ :=\n  (I N).filter (fun a =>\n    lambda a = (-1 : ℤ) ∧ lambda (N - a) = (-1 : ℤ))",
+      "comparison_sha256": "700e228cd9dece30a74042b93c246b30f7841df83347ddf0743f63fb0e729d80",
+      "declaration_sha256": "700e228cd9dece30a74042b93c246b30f7841df83347ddf0743f63fb0e729d80",
+      "approved_line": 22,
+      "exact_comparison_passed": true
+    },
+    "orderedRepresentations": {
+      "kind": "def",
+      "line": 29,
+      "comparison": "def orderedRepresentations (N : ℕ) : Finset (ℕ × ℕ) :=\n  ((I N).product (I N)).filter (fun ab =>\n    N = ab.1 + ab.2 ∧\n      lambda ab.1 = (-1 : ℤ) ∧ lambda ab.2 = (-1 : ℤ))",
+      "comparison_sha256": "81d033d44204b63d0768a57f1b55d0e1802f99f526f118e1d637f03fdf361c66",
+      "declaration_sha256": "81d033d44204b63d0768a57f1b55d0e1802f99f526f118e1d637f03fdf361c66",
+      "approved_line": 26,
+      "exact_comparison_passed": true
+    },
+    "R": {
+      "kind": "def",
+      "line": 34,
+      "comparison": "def R (N : ℕ) : ℕ :=\n  (orderedRepresentations N).card",
+      "comparison_sha256": "664a4409e63f748846bb0944ffd8db4208212f4b57e907916e2a161ab218b0d2",
+      "declaration_sha256": "664a4409e63f748846bb0944ffd8db4208212f4b57e907916e2a161ab218b0d2",
+      "approved_line": 31,
+      "exact_comparison_passed": true
+    },
+    "L": {
+      "kind": "def",
+      "line": 37,
+      "comparison": "def L (x : ℕ) : ℤ :=\n  ∑ a ∈ Finset.Icc 1 x, lambda a",
+      "comparison_sha256": "0e0315cea800a0c2a65aa7fa4f4de4b19f613c8fd896ae33b4a832cc79e971a6",
+      "declaration_sha256": "0e0315cea800a0c2a65aa7fa4f4de4b19f613c8fd896ae33b4a832cc79e971a6",
+      "approved_line": 34,
+      "exact_comparison_passed": true
+    },
+    "C": {
+      "kind": "def",
+      "line": 40,
+      "comparison": "def C (N : ℕ) : ℤ :=\n  ∑ a ∈ I N, lambda a * lambda (N - a)",
+      "comparison_sha256": "52903306fdfb3fa27d49a79495768b35db4d4c509031216612fddce3f197aad2",
+      "declaration_sha256": "52903306fdfb3fa27d49a79495768b35db4d4c509031216612fddce3f197aad2",
+      "approved_line": 37,
+      "exact_comparison_passed": true
+    },
+    "omega_one": {
+      "kind": "theorem",
+      "line": 43,
+      "comparison": "theorem omega_one :\n  omega 1 = 0",
+      "comparison_sha256": "292b70583714468b4a438ccf70137e932bb631c297485150aeb73bed294b834a",
+      "declaration_sha256": "9d8d243a61b5b6d2a3dea1cf6b7d5c2eb959a9b02037bd317a857d2d4209e3b9",
+      "approved_line": 40,
+      "exact_comparison_passed": true
+    },
+    "lambda_one": {
+      "kind": "theorem",
+      "line": 47,
+      "comparison": "theorem lambda_one :\n  lambda 1 = (1 : ℤ)",
+      "comparison_sha256": "507a9e37ec48c48c54d7ca76ecd1d6c2086463e38ea1f38446212b1ecdf957c9",
+      "declaration_sha256": "df3cb6110c80032796655bb2fa53a84b745c89b58e7b79e1749880d4f8eee81f",
+      "approved_line": 43,
+      "exact_comparison_passed": true
+    },
+    "lambda_sign": {
+      "kind": "theorem",
+      "line": 51,
+      "comparison": "theorem lambda_sign {n : ℕ} (hn : 0 < n) :\n  lambda n = (1 : ℤ) ∨ lambda n = (-1 : ℤ)",
+      "comparison_sha256": "f5a39c499e415f9b660d3285b4c5d592f0a8ef963e7a2940ce19c98910e7bc84",
+      "declaration_sha256": "3bdf9ac5fafa9c871e5dd67cab431b93c88f6157d6a1c3c24064e012926ef8a3",
+      "approved_line": 46,
+      "exact_comparison_passed": true
+    },
+    "omega_mul": {
+      "kind": "theorem",
+      "line": 57,
+      "comparison": "theorem omega_mul {u v : ℕ} (hu : 0 < u) (hv : 0 < v) :\n  omega (u * v) = omega u + omega v",
+      "comparison_sha256": "3933dffb41eae445e8aaa9506ac4b7bff23ac8ba8b080536156a564809d36c2b",
+      "declaration_sha256": "a628cbcb9d126a05f9348d0463628e122a0354dc29479b6d7171443b0c152887",
+      "approved_line": 49,
+      "exact_comparison_passed": true
+    },
+    "lambda_mul": {
+      "kind": "theorem",
+      "line": 62,
+      "comparison": "theorem lambda_mul {u v : ℕ} (hu : 0 < u) (hv : 0 < v) :\n  lambda (u * v) = lambda u * lambda v",
+      "comparison_sha256": "7caea7df77514b83fd9404975ad8e640c2cb2d8c4049622029046adb72081f6a",
+      "declaration_sha256": "fd19e5ee32055bfe774d17914b7564ddc262b059e825b1e3bea5249bbbbfc64a",
+      "approved_line": 52,
+      "exact_comparison_passed": true
+    },
+    "lambda_prime": {
+      "kind": "theorem",
+      "line": 66,
+      "comparison": "theorem lambda_prime {p : ℕ} (hp : Nat.Prime p) :\n  lambda p = (-1 : ℤ)",
+      "comparison_sha256": "e72e274ec168a849202d7a1e82def7138cdb5ab7ec9021b00bb048064e0a32ab",
+      "declaration_sha256": "5cda90da435c49160544cb7a01ff14c68765d707b9f4431773b6d3f6b868c51e",
+      "approved_line": 55,
+      "exact_comparison_passed": true
+    },
+    "lambda_two": {
+      "kind": "theorem",
+      "line": 70,
+      "comparison": "theorem lambda_two :\n  lambda 2 = (-1 : ℤ)",
+      "comparison_sha256": "af1ab615d371b399e8764115a3729416df6765b2252480e8478a129c188c57dc",
+      "declaration_sha256": "34a940d9e4611f707f95e6818890ee3ecb9d2ffd6fb11c5300063922c4c154b2",
+      "approved_line": 58,
+      "exact_comparison_passed": true
+    },
+    "lambda_three": {
+      "kind": "theorem",
+      "line": 74,
+      "comparison": "theorem lambda_three :\n  lambda 3 = (-1 : ℤ)",
+      "comparison_sha256": "07077ea7601ff0c2be91ded376d1656b93c9b9fc64f74354b0b70beb48f4a922",
+      "declaration_sha256": "ae885ab4871adad3cb75b1e64ca8ebb5dc3e5ff1ca54c17081cf6ffae043c98f",
+      "approved_line": 61,
+      "exact_comparison_passed": true
+    },
+    "lambda_four": {
+      "kind": "theorem",
+      "line": 78,
+      "comparison": "theorem lambda_four :\n  lambda 4 = (1 : ℤ)",
+      "comparison_sha256": "599f164d92c562c98ab29c6da8ef608cbdde40b1b26319b46b8547f2fa6e3d57",
+      "declaration_sha256": "da9c436350d41aac5cb4ea4b65e65aaa02ec1e737987eb26f53ff74830d492f7",
+      "approved_line": 64,
+      "exact_comparison_passed": true
+    },
+    "lambda_five": {
+      "kind": "theorem",
+      "line": 84,
+      "comparison": "theorem lambda_five :\n  lambda 5 = (-1 : ℤ)",
+      "comparison_sha256": "31c1b950bd3f5784f6ea7508480c936d044db908b6ab4bf4a81460199b8f9d72",
+      "declaration_sha256": "2d95422621788a9fb4877c134db684baba70763da89df51e60298938fc3f9e3c",
+      "approved_line": 67,
+      "exact_comparison_passed": true
+    },
+    "lambda_two_mul": {
+      "kind": "theorem",
+      "line": 88,
+      "comparison": "theorem lambda_two_mul {m : ℕ} (hm : 0 < m) :\n  lambda (2 * m) = -lambda m",
+      "comparison_sha256": "c8cff31141001c170940e3e652d6745edcf7e04c2b96aa39f70f44ba01a88cad",
+      "declaration_sha256": "76d270173030cb1ffa5cc25a1a6e8f4206824e4910e0bddbf3cf0f0f5d0a601a",
+      "approved_line": 70,
+      "exact_comparison_passed": true
+    },
+    "lambda_square": {
+      "kind": "theorem",
+      "line": 93,
+      "comparison": "theorem lambda_square {t : ℕ} (ht : 0 < t) :\n  lambda (t ^ 2) = (1 : ℤ)",
+      "comparison_sha256": "32b9404759668b9647dd8f31505a894ecb6ea5c50a3bdb7588e8195099c64917",
+      "declaration_sha256": "2a1e6cd5c8e1b43e274fb168c2560d2b8303b74541e121220abf73578532f90a",
+      "approved_line": 73,
+      "exact_comparison_passed": true
+    },
+    "target_iff_forall_hasRepresentation": {
+      "kind": "theorem",
+      "line": 98,
+      "comparison": "theorem target_iff_forall_hasRepresentation :\n  Target ↔ ∀ N : ℕ, Even N → 2 < N → HasRepresentation N",
+      "comparison_sha256": "a91fe850324b7cd485dd91adc0d8022e80d8bbe790b00c95d63172740362a0c3",
+      "declaration_sha256": "dfa73c5fa6bafe6b5c01e7a67b1dcd853116275440f6fcc247349f593cc65829",
+      "approved_line": 76,
+      "exact_comparison_passed": true
+    },
+    "hasSignedRepresentation_mul": {
+      "kind": "theorem",
+      "line": 102,
+      "comparison": "theorem hasSignedRepresentation_mul {s : ℤ} {N d : ℕ}\n    (hd : 0 < d) (h : HasSignedRepresentation s N) :\n  HasSignedRepresentation (lambda d * s) (d * N)",
+      "comparison_sha256": "2e1ef91222ce4c341fb49c7f984fb3b97efa9a0efca44d4d65d598a28469a162",
+      "declaration_sha256": "5c701e1143e8f3dfd2e3a891acbef23265f700437d9304a4e2df393cae02a608",
+      "approved_line": 79,
+      "exact_comparison_passed": true
+    },
+    "representation_scaled_sign": {
+      "kind": "theorem",
+      "line": 111,
+      "comparison": "theorem representation_scaled_sign {u v m : ℕ} {s : ℤ}\n    (hu : 0 < u) (hv : 0 < v) (hm : 0 < m)\n    (hs : s = (1 : ℤ) ∨ s = (-1 : ℤ))\n    (huSign : lambda u = s) (hvSign : lambda v = s)\n    (hmSign : lambda m = -s) :\n  HasRepresentation (m * (u + v))",
+      "comparison_sha256": "9aa50eb653d3499bde5f1effebb81884b3eb33ef4c7d636215a0500c4cb4011b",
+      "declaration_sha256": "3a9348a217db71008e6ee856a809e6938bebe31a534c5dc03de8d26bee215606",
+      "approved_line": 83,
+      "exact_comparison_passed": true
+    },
+    "representation_double": {
+      "kind": "theorem",
+      "line": 124,
+      "comparison": "theorem representation_double {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ)) :\n  HasRepresentation (2 * m)",
+      "comparison_sha256": "026ae22296c698d5ee7c6ab715dcd2f03f19a450f1e25b2d85509428dfe63472",
+      "declaration_sha256": "f51bf56bf23ab8cf83c554bac5df2584cb6ee246241ee919cfba75537cd8aee2",
+      "approved_line": 90,
+      "exact_comparison_passed": true
+    },
+    "representation_diagonal": {
+      "kind": "theorem",
+      "line": 129,
+      "comparison": "theorem representation_diagonal {N : ℕ}\n    (hEven : Even N) (hN : 2 < N) (hSign : lambda N = (1 : ℤ)) :\n  HasRepresentation N",
+      "comparison_sha256": "a239c76f12a1888b12f95e3b7dadd5f84c104f5ab9f975bbbeeb73afffc61590",
+      "declaration_sha256": "9d8ce753a4189b2877dc45e2ba710ee4f6574ecbb15cf151335d3fdaf2283cd9",
+      "approved_line": 94,
+      "exact_comparison_passed": true
+    },
+    "representation_two_sign_seed": {
+      "kind": "theorem",
+      "line": 139,
+      "comparison": "theorem representation_two_sign_seed {d : ℕ}\n    (hminus : HasSignedRepresentation (-1 : ℤ) d)\n    (hplus : HasSignedRepresentation (1 : ℤ) d)\n    (m : ℕ) (hm : 0 < m) :\n  HasRepresentation (d * m)",
+      "comparison_sha256": "c0df4946244d4bd84e713eb715a9916b05aa0d6247353ede590c490889b330b9",
+      "declaration_sha256": "78a141b4b56abdf277d009e1e03941cc176c430cb611c0c0c0d4d6bbbd549699",
+      "approved_line": 98,
+      "exact_comparison_passed": true
+    },
+    "eight_two_sign_seed": {
+      "kind": "theorem",
+      "line": 150,
+      "comparison": "theorem eight_two_sign_seed :\n  HasSignedRepresentation (-1 : ℤ) 8 ∧\n    HasSignedRepresentation (1 : ℤ) 8",
+      "comparison_sha256": "f194bf035e1b8863bde9f633b91b41a418a0d63aa2d36d9df89d6791c2ff1216",
+      "declaration_sha256": "06f64475d19692a05e738c08ff68be5b9d338130e83e8554ae890b5b5ffe44ae",
+      "approved_line": 104,
+      "exact_comparison_passed": true
+    },
+    "representation_multiple_eight": {
+      "kind": "theorem",
+      "line": 157,
+      "comparison": "theorem representation_multiple_eight (m : ℕ) (hm : 0 < m) :\n  HasRepresentation (8 * m)",
+      "comparison_sha256": "14cd405d22b504deb4572b1d2612d1c0841d7fe6cbd7fdd4ab929a41f2582684",
+      "declaration_sha256": "ed6e77a3a419be52243786ea49894aa14e4eee0c0509c84b6f6b00990dbd68bb",
+      "approved_line": 108,
+      "exact_comparison_passed": true
+    },
+    "mem_I_iff": {
+      "kind": "theorem",
+      "line": 161,
+      "comparison": "theorem mem_I_iff {N a : ℕ} :\n  a ∈ I N ↔ 0 < a ∧ a < N",
+      "comparison_sha256": "bad43b9c8981d23144de7fd0a12a5f2e216a974ac14662df0f243d6fc2cc009e",
+      "declaration_sha256": "fd6239af5d077b3caead8d4dbe9d17c0948f53a11db7b1398c91b20f03b992e7",
+      "approved_line": 111,
+      "exact_comparison_passed": true
+    },
+    "interval_eq_Icc": {
+      "kind": "theorem",
+      "line": 165,
+      "comparison": "theorem interval_eq_Icc {N : ℕ} (hN : 2 ≤ N) :\n  I N = Finset.Icc 1 (N - 1)",
+      "comparison_sha256": "8d975f742ed63fdd5a9f2ca11cce743ebdae0b3f680507d10a9dd61a7a045bac",
+      "declaration_sha256": "75fb383f3f6cc634a8d88900c1504beb3be13b15120575a3a1547238683fc054",
+      "approved_line": 114,
+      "exact_comparison_passed": true
+    },
+    "interval_bounds": {
+      "kind": "theorem",
+      "line": 171,
+      "comparison": "theorem interval_bounds {N a : ℕ} (hN : 2 ≤ N) (ha : a ∈ I N) :\n  0 < a ∧ a < N ∧ 0 < N - a ∧ N - a < N",
+      "comparison_sha256": "80fa6527c7fedf58bc55c1b61df0ca765818189c59e01dd8025a2e17a9f9fc8b",
+      "declaration_sha256": "08830d9c9e66be89bf3e5d4685fabf45fa0ad6f937a9d5e62107ae267df26b4a",
+      "approved_line": 117,
+      "exact_comparison_passed": true
+    },
+    "interval_card_cast": {
+      "kind": "theorem",
+      "line": 176,
+      "comparison": "theorem interval_card_cast {N : ℕ} (hN : 2 ≤ N) :\n  ((I N).card : ℤ) = (N : ℤ) - 1",
+      "comparison_sha256": "8d0fcce5e65086a0d4b45394ee246f2820568460d14cc80632bc823d746d670c",
+      "declaration_sha256": "3d77587e2d9c4eb3dc8224bc062891b10a2a4e0ddd453d1d096512c813a3a018",
+      "approved_line": 120,
+      "exact_comparison_passed": true
+    },
+    "reflection_mem": {
+      "kind": "theorem",
+      "line": 182,
+      "comparison": "theorem reflection_mem {N a : ℕ} (hN : 2 ≤ N) (ha : a ∈ I N) :\n  N - a ∈ I N",
+      "comparison_sha256": "fe7c0e8fe9cc299af5b7838db4851bf5c7d084ffd45760a58e7580de0bd84303",
+      "declaration_sha256": "7c713cb4945ef3713a1b45afa813f4e751e9816b0323b2e16724360fb0b24d66",
+      "approved_line": 123,
+      "exact_comparison_passed": true
+    },
+    "reflection_involutive": {
+      "kind": "theorem",
+      "line": 186,
+      "comparison": "theorem reflection_involutive {N a : ℕ}\n    (hN : 2 ≤ N) (ha : a ∈ I N) :\n  N - (N - a) = a",
+      "comparison_sha256": "231d1e2525b722e20396ae3880d756e1bb64d3f49bad8fc94fbbf7c950c5e86d",
+      "declaration_sha256": "9879f1123b148b6b0a39113a8fa70519448cbb940cd481dd3718d121971dd2e0",
+      "approved_line": 126,
+      "exact_comparison_passed": true
+    },
+    "reflection_bijection": {
+      "kind": "theorem",
+      "line": 191,
+      "comparison": "theorem reflection_bijection {N : ℕ} (hN : 2 ≤ N) :\n  Set.BijOn (fun a : ℕ => N - a) (I N : Set ℕ) (I N : Set ℕ)",
+      "comparison_sha256": "a421f73aa47ced2a25bcba37b51664cc14058c893f8324a842756fc9783cdd2d",
+      "declaration_sha256": "7ed0cd32b47b92ca3ee514acb891528de0c2d92d3d4530b57820b9117c86463f",
+      "approved_line": 130,
+      "exact_comparison_passed": true
+    },
+    "sum_lambda_interval": {
+      "kind": "theorem",
+      "line": 200,
+      "comparison": "theorem sum_lambda_interval {N : ℕ} (hN : 2 ≤ N) :\n  (∑ a ∈ I N, lambda a) = L (N - 1)",
+      "comparison_sha256": "1c1a2bbb0908b274551d08508eba8fdfe35f3eacbbac895b345e2c42bdda86cc",
+      "declaration_sha256": "2a56cec2d2241908b8b524e253e3ae1b23157a2514d2a586b4028a19cb339f9c",
+      "approved_line": 133,
+      "exact_comparison_passed": true
+    },
+    "sum_lambda_reflection": {
+      "kind": "theorem",
+      "line": 205,
+      "comparison": "theorem sum_lambda_reflection {N : ℕ} (hN : 2 ≤ N) :\n  (∑ a ∈ I N, lambda (N - a)) = L (N - 1)",
+      "comparison_sha256": "8fd711cae82276b33168189bf42c73b5461e2d63318b06b6162ba4379e373f62",
+      "declaration_sha256": "58a8398eef22b913c536faaeddf693d6ea25e5d056835cc81bde411ef1951a0d",
+      "approved_line": 136,
+      "exact_comparison_passed": true
+    },
+    "mem_orderedRepresentations": {
+      "kind": "theorem",
+      "line": 215,
+      "comparison": "theorem mem_orderedRepresentations {N a b : ℕ} :\n  (a, b) ∈ orderedRepresentations N ↔\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = (-1 : ℤ) ∧ lambda b = (-1 : ℤ)",
+      "comparison_sha256": "61ba6f1504a38cfe4b1c5874e99264eb9d1e12b26275dfee86c825df99e19453",
+      "declaration_sha256": "8001b08062cf6c86e3305833fbbf6e38c00f079699c2da29751de60dab68b9ef",
+      "approved_line": 139,
+      "exact_comparison_passed": true
+    },
+    "orderedRepresentations_eq_image": {
+      "kind": "theorem",
+      "line": 227,
+      "comparison": "theorem orderedRepresentations_eq_image {N : ℕ} (hN : 2 ≤ N) :\n  orderedRepresentations N =\n    (representationIndices N).image (fun a : ℕ => (a, N - a))",
+      "comparison_sha256": "e2c5d96c323f72a1360aeb092924a72aad2a826126afee3b1a65866ab5531878",
+      "declaration_sha256": "aaa89e10cacee1429d40c84ae4c549b547eb043f0de274211b5191a76f6d201e",
+      "approved_line": 144,
+      "exact_comparison_passed": true
+    },
+    "representation_count_eq_card_indices": {
+      "kind": "theorem",
+      "line": 247,
+      "comparison": "theorem representation_count_eq_card_indices {N : ℕ} (hN : 2 ≤ N) :\n  R N = (representationIndices N).card",
+      "comparison_sha256": "73f8b246f168a056ac205d68af0a51bc4266a047217036c49058360e3da8fb6d",
+      "declaration_sha256": "776316e266d0330923482943783be05e66ba43164196bd11f2a33ae84d77e75a",
+      "approved_line": 148,
+      "exact_comparison_passed": true
+    },
+    "two_sign_indicator": {
+      "kind": "theorem",
+      "line": 252,
+      "comparison": "theorem two_sign_indicator {a b : ℕ} (ha : 0 < a) (hb : 0 < b) :\n  (4 : ℤ) *\n      (if lambda a = (-1 : ℤ) ∧ lambda b = (-1 : ℤ) then (1 : ℤ) else 0) =\n    (1 - lambda a) * (1 - lambda b)",
+      "comparison_sha256": "1511573d6c72981e5aaeed68bba779b23ff041e24191c7af3aae3c707e260f0d",
+      "declaration_sha256": "462ced1768428eca98eda22d26f62d034bd4160489120c5e9f081a84ee3754db",
+      "approved_line": 151,
+      "exact_comparison_passed": true
+    },
+    "representation_count_eq_indicator_sum": {
+      "kind": "theorem",
+      "line": 259,
+      "comparison": "theorem representation_count_eq_indicator_sum {N : ℕ} (hN : 2 ≤ N) :\n  (R N : ℤ) =\n    ∑ a ∈ I N,\n      if lambda a = (-1 : ℤ) ∧ lambda (N - a) = (-1 : ℤ)\n      then (1 : ℤ) else 0",
+      "comparison_sha256": "ad739036e38e8d1692a8f233f1a2f1f6cce1f640233b5d22bcb30c22ec64253d",
+      "declaration_sha256": "90240ba8abafe0956b0925c361a877da81bf5ba7786c7e3d5e8084b31b953576",
+      "approved_line": 156,
+      "exact_comparison_passed": true
+    },
+    "four_mul_representation_count": {
+      "kind": "theorem",
+      "line": 268,
+      "comparison": "theorem four_mul_representation_count {N : ℕ} (hN : 2 ≤ N) :\n  4 * (R N : ℤ) = ((N : ℤ) - 1) - 2 * L (N - 1) + C N",
+      "comparison_sha256": "a4c1fbc578406009c0cc4eaf26bd8eee05f6e77b3016ff69a2ce8aed426a152d",
+      "declaration_sha256": "35e24ff727cbc8cf5480e993aa974f0339caac527d3300ab8cf1cbb35b8b9d16",
+      "approved_line": 162,
+      "exact_comparison_passed": true
+    },
+    "representation_count_pos_iff": {
+      "kind": "theorem",
+      "line": 291,
+      "comparison": "theorem representation_count_pos_iff {N : ℕ} (hN : 2 ≤ N) :\n  0 < R N ↔ HasRepresentation N",
+      "comparison_sha256": "d3c3ac59c99ed3733d94f0f088c52cac0ea9f419c0d0582edf8a258e2f24c3ee",
+      "declaration_sha256": "9e366e7f2c5732c2075ca198f1de4c823e17489a3c47be9f59e06e080ee3fb34",
+      "approved_line": 165,
+      "exact_comparison_passed": true
+    },
+    "count_pos_iff_keystone": {
+      "kind": "theorem",
+      "line": 300,
+      "comparison": "theorem count_pos_iff_keystone {N : ℕ} (hN : 2 ≤ N) :\n  0 < R N ↔ 2 * L (N - 1) - ((N : ℤ) - 1) < C N",
+      "comparison_sha256": "34aca39ec8e8c915fe752478e343d10c8fe903cd7ce308ded50d99fdd4fc73bc",
+      "declaration_sha256": "ae42169ff64982e305909a00e4a46e74a32821357c9e3e86e311cbda3885ce4c",
+      "approved_line": 168,
+      "exact_comparison_passed": true
+    },
+    "keystone_ge_four_iff": {
+      "kind": "theorem",
+      "line": 305,
+      "comparison": "theorem keystone_ge_four_iff {N : ℕ} (hN : 2 ≤ N) :\n  0 < R N ↔ 4 ≤ ((N : ℤ) - 1) - 2 * L (N - 1) + C N",
+      "comparison_sha256": "c97fc7fdff954cac2831f46c1e23717465bbc975e06599ccf14baf60cc8e602a",
+      "declaration_sha256": "e5fbcb4067d30a698ad080348d1b74c99ab83dbefea75290132c61f1addd5fa4",
+      "approved_line": 171,
+      "exact_comparison_passed": true
+    },
+    "target_iff_count_pos": {
+      "kind": "theorem",
+      "line": 310,
+      "comparison": "theorem target_iff_count_pos :\n  Target ↔ ∀ N : ℕ, Even N → 2 < N → 0 < R N",
+      "comparison_sha256": "744e6b4a062aff104e05d565752bffff703fb6b7b4f240a6a33b8fac465be4c2",
+      "declaration_sha256": "9807c185495777f5a540c716ee80339760eed761076899ee167ef6ccdf6ef756",
+      "approved_line": 174,
+      "exact_comparison_passed": true
+    },
+    "target_iff_pointwise_keystone": {
+      "kind": "theorem",
+      "line": 319,
+      "comparison": "theorem target_iff_pointwise_keystone :\n  Target ↔ ∀ N : ℕ, Even N → 2 < N →\n    2 * L (N - 1) - ((N : ℤ) - 1) < C N",
+      "comparison_sha256": "6dec31f43b8103f4ef178e7770bf39cc2c6546ed4b6ef9a49501739111f61000",
+      "declaration_sha256": "5c091fdee705e858f406941cf815211212f5f2867e7413b6080fea602baf4e0f",
+      "approved_line": 177,
+      "exact_comparison_passed": true
+    },
+    "exists_prime_pair_factor_of_lambda_one": {
+      "kind": "theorem",
+      "line": 329,
+      "comparison": "theorem exists_prime_pair_factor_of_lambda_one {m : ℕ}\n    (hm : 1 < m) (hSign : lambda m = (1 : ℤ)) :\n  ∃ p q d : ℕ,\n    Nat.Prime p ∧ Nat.Prime q ∧ 0 < d ∧\n      lambda d = (1 : ℤ) ∧ m = d * (p * q)",
+      "comparison_sha256": "6336919d7c11253e7dfd9c0218db2aef99b5779829a59adc74bacf494a15b50d",
+      "declaration_sha256": "722dd0ff525349a2d787e3dfc8050f6f5f1eb3bf43cce4e30b6c526e4ff70406",
+      "approved_line": 181,
+      "exact_comparison_passed": true
+    },
+    "target_iff_prime_product_core": {
+      "kind": "theorem",
+      "line": 362,
+      "comparison": "theorem target_iff_prime_product_core :\n  Target ↔ ∀ p q : ℕ,\n    Nat.Prime p → Nat.Prime q → HasRepresentation (2 * p * q)",
+      "comparison_sha256": "aa800bcc8cefa81ce74c06732d3b377a4a679227428f8973dd0ec2e8c79f5c79",
+      "declaration_sha256": "ad8a060dd121090500fac88415730fc4c9d5ebdbbfbc50af865bb9f7609ce312",
+      "approved_line": 187,
+      "exact_comparison_passed": true
+    }
+  },
+  "exact_candidate_gate_commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "started_utc": "2026-09-25T03:42:02.980115+00:00",
+      "elapsed_seconds": 0.631,
+      "exit_status": 0,
+      "stdout": "~/.elan/toolchains/leanprover--lean4---v4.32.2/lib/lean/Init.olean\n~/.elan/toolchains/leanprover--lean4---v4.32.2/lib/lean/Init.olean\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Definitions.olean\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Ring/Parity.olean\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Ring/Int/Defs.olean\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Interval/Finset/Nat.olean\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Ring/Finset.olean\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "started_utc": "2026-09-25T03:42:03.613598+00:00",
+      "elapsed_seconds": 5.694,
+      "exit_status": 0,
+      "stdout": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:51:29: warning: Variable name `hn` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:171:35: warning: Variable name `hN` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:187:5: warning: Variable name `hN` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:291:46: warning: Variable name `hN` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'List.Perm.length_eq' depends on axioms: [propext]\n'List.length_append' depends on axioms: [propext]\n'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n'pow_add' does not depend on any axioms\n'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.sub_sub_self' depends on axioms: [propext]\n'Nat.cast_sub' depends on axioms: [propext]\n'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.mem_filter' depends on axioms: [propext, Quot.sound]\n'Finset.card_pos' depends on axioms: [propext, Quot.sound]\n'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]\n'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.sum_const' depends on axioms: [propext, Quot.sound]\n'Finset.mul_sum' depends on axioms: [propext, Quot.sound]\n'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]\n'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]\n'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]\n'List.prod_cons' does not depend on any axioms\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t",
+        "0",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "started_utc": "2026-09-25T03:44:24.827382+00:00",
+      "elapsed_seconds": 9.083,
+      "exit_status": 0,
+      "stdout": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:51:29: warning: Variable name `hn` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:171:35: warning: Variable name `hN` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:187:5: warning: Variable name `hN` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:291:46: warning: Variable name `hN` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'List.Perm.length_eq' depends on axioms: [propext]\n'List.length_append' depends on axioms: [propext]\n'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]\n'pow_add' does not depend on any axioms\n'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.sub_sub_self' depends on axioms: [propext]\n'Nat.cast_sub' depends on axioms: [propext]\n'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.mem_filter' depends on axioms: [propext, Quot.sound]\n'Finset.card_pos' depends on axioms: [propext, Quot.sound]\n'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]\n'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Finset.sum_const' depends on axioms: [propext, Quot.sound]\n'Finset.mul_sum' depends on axioms: [propext, Quot.sound]\n'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]\n'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]\n'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]\n'List.prod_cons' does not depend on any axioms\n",
+      "stderr": ""
+    }
+  ]
+}

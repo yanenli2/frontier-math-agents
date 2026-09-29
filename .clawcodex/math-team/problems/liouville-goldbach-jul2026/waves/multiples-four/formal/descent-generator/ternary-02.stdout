@@ -1,0 +1,60 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean:75:58: error: unsolved goals
+case inl.inl
+p x y : ℕ
+hp : Nat.Prime p
+hp3 : ¬p = 3
+hno : ¬HasRepresentation (4 * p)
+hx : 0 < x
+hxy : x < y
+hsum : x + y = p
+hxsign : lambda x = 1
+hysign : lambda y = 1
+hy : 0 < y
+hxThree : ¬3 ∣ x
+hyThree : ¬3 ∣ y
+hpThree : ¬3 ∣ p
+hpModSum : p % 3 = 2
+hxres : x % 3 = 1
+hyres : y % 3 = 1
+⊢ (p + y) % 3 = 0
+
+case inr.inr
+p x y : ℕ
+hp : Nat.Prime p
+hp3 : ¬p = 3
+hno : ¬HasRepresentation (4 * p)
+hx : 0 < x
+hxy : x < y
+hsum : x + y = p
+hxsign : lambda x = 1
+hysign : lambda y = 1
+hy : 0 < y
+hxThree : ¬3 ∣ x
+hyThree : ¬3 ∣ y
+hpThree : ¬3 ∣ p
+hpModSum : p % 3 = 1
+hxres : x % 3 = 2
+hyres : y % 3 = 2
+⊢ (p + y) % 3 = 0
+'ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.positive_pair_gap_step' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.FourWork.no_positive_pair' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.strong_induction_on' does not depend on any axioms

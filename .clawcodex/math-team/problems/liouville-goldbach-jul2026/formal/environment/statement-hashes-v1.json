@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "shasum",
+    "-a",
+    "256",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Scaffold.lean",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Declaration.lean",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Dependencies.lean",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/ListOperations.lean"
+  ],
+  "shell_display": "shasum -a 256 .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Scaffold.lean .clawcodex/math-team/review-inputs/r20260924-v1/Declaration.lean .clawcodex/math-team/review-inputs/r20260924-v1/Dependencies.lean .clawcodex/math-team/review-inputs/r20260924-v1/ListOperations.lean",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:13:11.968763+00:00",
+  "elapsed_seconds": 0.038180874999999996,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/statement-hashes-v1.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/statement-hashes-v1.stderr",
+  "stdout_sha256": "ca6d12a29d6ab69f4d328df8db4a6fee1ebc35671b51e249984d80233c17f503",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

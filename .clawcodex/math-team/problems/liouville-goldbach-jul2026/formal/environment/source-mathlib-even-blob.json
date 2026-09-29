@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+    "rev-parse",
+    "905b95818eb32af7874a58b427f50c1711a5e96c:Mathlib/Algebra/Group/Even.lean"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib rev-parse 905b95818eb32af7874a58b427f50c1711a5e96c:Mathlib/Algebra/Group/Even.lean",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:05.095380+00:00",
+  "elapsed_seconds": 0.028473458,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-blob.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-blob.stderr",
+  "stdout_sha256": "870fcc389389871fdf91b0dcae685bedd9285742e52fb03005c472495b27d1ca",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,446 @@
+{
+  "ca76ab6f021e": {
+    "id": "ca76ab6f021e",
+    "subject": "Verify pinned Lean environment and encode exact target",
+    "description": "Problem liouville-goldbach-jul2026. Intended owner fl-formalizer, role math-fl-formalizer. Inputs request.md and protocols under .clawcodex/skills/math-team/references/. Output ownership: problem/formal/formalizer/, problem/formal/environment/, preliminary Lean project configuration/statement module; no accepted master proofs. Must verify cutoff-eligible versions and actual compilation, encode exact statement with multiplicity and integer codomain, produce code-only neutral blind-review bundle. Production only, not acceptance. Source cutoff 2026-07-31.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-formalizer",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "completion_scope": "Artifact production only; no target proof or statement acceptance",
+      "handoff": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/review-request-v1.txt",
+      "snapshot": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/snapshot-v1.json",
+      "snapshot_sha256": "2e8491dd569211fba587cbe425be6d69ab39d8e1084df8b2bfa5d07ead047526",
+      "target_status": "ArithmeticStatement.Target defined as Prop, unproved",
+      "build": "lake build Statement.Definitions Statement.Scaffold Statement.Smoke Statement; exit 0",
+      "mathlib_revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "review_status": "Fresh blind readback and source-fidelity approval requested"
+    },
+    "output": ""
+  },
+  "058f7f3988b0": {
+    "id": "058f7f3988b0",
+    "subject": "Draft exact informal contract and dependency plan",
+    "description": "Problem liouville-goldbach-jul2026. Intended owner nl-sketcher, role math-nl-sketcher. Inputs problem/request.md and protocols. Outputs solely problem/nl/sketcher/. Record exact target, lemma graph including proposed counting identity route, explicit obligations and alternative routes. DISCOVERY, no self-certification. All external source versions must predate or equal 2026-07-31; unsupported recollection is not evidence. Production task only.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "nl-sketcher",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "deliverable_status": "Artifacts produced; mathematical acceptance pending; all lemma proof obligations remain open.",
+      "artifact_root": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/sketcher",
+      "artifact_entrypoint": "decomposition-v1.md",
+      "key_artifacts": [
+        "target-contract-v1.md",
+        "decomposition-v1.md",
+        "lemmas/counting-v1.md",
+        "lemmas/keystone-v1.md",
+        "lemmas/elementary-families-v1.md",
+        "lemmas/residual-v1.md",
+        "obligation-ledger-v1.md",
+        "branch-queue-v1.md",
+        "formal-handoff-v1.md",
+        "source-scope-v1.md"
+      ]
+    },
+    "output": ""
+  },
+  "e885c3f26ed2": {
+    "id": "e885c3f26ed2",
+    "subject": "Review and snapshot exact formal statement",
+    "description": "Owner team-lead. Problem liouville-goldbach-jul2026. Dispatch fresh synchronous anonymous math-fl-statement-readback receiving only neutral code/signature/transitive-definition paths; then independent fresh math-fl-f-reviewer comparing literal readback against original request. Snapshot exact accepted statement and dependencies. Mathematical proof work blocked on fidelity approval; no scaffold is a theorem.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "team-lead",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "definition_sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+      "fidelity_report": "formal/reviews/statement-fidelity-v1.md",
+      "readback_report": "formal/reviews/statement-readback-v1.md",
+      "scope": "Statement fidelity only, target not proved"
+    },
+    "output": ""
+  },
+  "987c8d91ddff": {
+    "id": "987c8d91ddff",
+    "subject": "Prove elementary informal lemmas and counting identity",
+    "description": "Owner nl-generator (math-nl-generator); problem liouville-goldbach-jul2026. Exact inputs request.md, nl/sketcher/, nl/explorer/attempt-v1.md, cutoff eligible Lean factor definitions. Own nl/generator/ only. Produce detailed locally justified sign/multiplicativity/scaling/diagonal/all-8m proofs and integer counting identity with count-existence bridge. Attempt prime-product-core reduction without silently assuming it. Preserve exact universal target and gaps. Acceptance separate fresh NL verification; no source after 2026-07-31.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "nl-generator",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-assigned to fl-formalizer, but description explicitly requires nl-generator role and nl/generator ownership. No work performed; returned to leader under protocol task-routing rule.",
+      "delivery_scope": "Candidate production only; independent NL review and Lean acceptance pending.",
+      "artifacts": [
+        "nl/generator/proof-v1.md",
+        "nl/generator/obligation-ledger-v1.md"
+      ],
+      "sha256": {
+        "proof-v1.md": "eb6974f5493f7b77773ba5e685240e8d608f43e6fb2a1156d627d7a0dbca86f5",
+        "obligation-ledger-v1.md": "69c2efa85c08e5d14437cb66f663784bc59d89fc61dce81dc7c91f10a9f7b48b"
+      },
+      "remaining_math": "Uniform Core / equivalent pointwise strict bound unresolved. PB and LS sufficient bridges not proved.",
+      "v2_repair": "Leader-requested O-M5 correction delivered. Universal L(q-1)<0 for prime q>=5 refuted by q=5 with L(4)=0; no replacement proposed. Passed partial derivations unchanged, v1 hashes preserved.",
+      "v2_artifacts": [
+        "nl/generator/proof-v2.md",
+        "nl/generator/obligation-ledger-v2.md"
+      ],
+      "v2_sha256": {
+        "proof-v2.md": "bdcf57b670ed1e1410bacad5a2f9182c565add056714ef85e0155f939a6b7735",
+        "obligation-ledger-v2.md": "6174a7337d5852b4b33652d19e874b1c7440dfd8f15775ec18c9011d77329cd8"
+      },
+      "v2_review_status": "Correction candidate only; review v1 scope and refutation explicitly recorded; no self-acceptance."
+    },
+    "output": ""
+  },
+  "4da258fcd6e7": {
+    "id": "4da258fcd6e7",
+    "subject": "Compile approved elementary and counting lemmas",
+    "description": "Intended owner fl-generator, role math-fl-f-generator. Problem liouville-goldbach-jul2026. Exact approved base formal/approved-v1/Definitions.lean and helper formal/blueprinter/interfaces-v1.lean, fidelity formal/reviews/helper-fidelity-v1.md. Own formal/generator/ and lean scratch modules only, never master. Prove early sign/multiplicativity/8m then ordered count identity and count-existence/keystone reductions, optional prime-core. Actual pinned compilation after changes, no sorry/custom axioms, print all accepted declaration axioms, preserve logs/hash/snapshots. Full Target remains missing unless honestly proved. Source cutoff 2026-07-31. Artifact production, separate acceptance.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-generator",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "candidate": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean",
+      "candidate_sha256": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+      "report": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/proof-status-map.txt",
+      "compiled_helper_theorems": 42,
+      "compiled_helper_definitions": 8,
+      "final_build_exit_status": 0,
+      "acceptance": "separate independent review and integration required",
+      "full_target": "OPEN; no endpoint declaration/axiom/admission supplied"
+    },
+    "output": ""
+  },
+  "197f419f93e6": {
+    "id": "197f419f93e6",
+    "subject": "Integrate accepted partial Lean development and recheck",
+    "description": "Intended owner fl-integrator, role math-fl-integrator. Problem liouville-goldbach-jul2026. Approved candidate formal/generator/Candidate.lean hash 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0. Formal integration gate formal/reviews/candidate-audit-v1.md; NL partial review nl/reviews/partial-proof-review-v1.md covers mathematics except a refuted optional prose route not in Lean. Only this role may merge into lean/Statement/Partial.lean and update root import/build inclusion; preserve base/manifest. Rebuild integrated project, direct compile module, repeat type/definition snapshot/no admissions/axioms/hash/pin checks, record final module inclusion and missing full theorem. Own formal/integration/ and REPRODUCE draft. User cutoff 2026-07-31.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-integrator",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-generator, but intended role fl-integrator exclusively owns master integration. Returned without acting or editing integration/master files.",
+      "artifact_status": "Mechanical partial integration and all assigned evidence delivered; independent mathematical acceptance and original target remain separate.",
+      "master_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean",
+      "master_sha256": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+      "report_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/integration/integration-report-v1.txt",
+      "reproduce_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/REPRODUCE.md",
+      "verification": "Default build, explicit Partial build, direct compile, trust-zero compile and root-import diagnostics exit 0. 50 exact signature/body comparisons. Three equal 82-name axiom maps, only standard foundations. Endpoint absence expected exit 1. Pins and protected files unchanged."
+    },
+    "output": ""
+  },
+  "aa7d226b5a7e": {
+    "id": "aa7d226b5a7e",
+    "subject": "Review exact integrated partial argument and final evidence",
+    "description": "Owner team-lead. Problem liouville-goldbach-jul2026. Completed fresh synchronous anonymous final math-nl-verifier reviews A-v2 and B-v1 of FINAL_ARGUMENT.md hash 1b93364b818b0eae95875d391ca6f944614f00b963a1e384ba1a0fe2533957a9 and integrated Statement/Partial.lean hash 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0. Final math-fl-regulator accepts partial wave, no mechanical blocker. A-v1 excluded for metadata/review-packet issues; replacement exact packets clean. Sources/map/status/handoff/reproduction preserved. This completes partial-evidence certification, NOT the original target, whose uniform mathematical goal remains unresolved.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "team-lead",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-generator despite explicit team-lead-only final acceptance role. Returned untouched; author has not performed independent review or spawned reviewers.",
+      "outcome": "Partial evidence accepted; original target unresolved",
+      "regulator": "formal/reviews/final-regulator-v1.md",
+      "review_a": "nl/reviews/final-review-a-v2.md",
+      "review_b": "nl/reviews/final-review-b-v1.md"
+    },
+    "output": ""
+  },
+  "51f2150a1f9a": {
+    "id": "51f2150a1f9a",
+    "subject": "Encode and review the all-multiples-of-four lemma",
+    "description": "Owner team-lead; ordinary formalizer one-shot then fresh anonymous reviewers, never an idle author. Problem liouville-goldbach-jul2026/waves/multiples-four. Exact lemma ∀m:Nat,0<m→HasRepresentation(4*m) with fixed definitions. Produce signature/baseline check, blind readback, fidelity approval before proof work. Output wave/formal/ and neutral r20260924-four-v1. Preserve old master and cutoff2026-07-31.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "team-lead",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "scope": "Statement fidelity only; proof not supplied",
+      "review": "waves/multiples-four/formal/reviews/statement-fidelity-v1.md"
+    },
+    "output": ""
+  },
+  "3917a50c810c": {
+    "id": "3917a50c810c",
+    "subject": "Construct an unconditional all-multiples-of-four proof",
+    "description": "Owner team-lead dispatches one-shot math-nl-generator; not idle Lean workers. Problem liouville-goldbach-jul2026/waves/multiples-four. Exact approved theorem ∀m>0,HasRepresentation(4*m); use prior all8m/diagonal/multiplicativity/core proofs. Outputs wave/nl/generator/ exact candidate or gap/failed-route record; mathematical acceptance separate. Source cutoff2026-07-31. Try multiple uniform elementary routes, no numerical proof or extra premise.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "team-lead",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-generator, but description explicitly requires team-lead dispatch to one-shot math-nl-generator, not idle Lean worker. Returned without proof work or artifact edits.",
+      "outcome": "Attempt delivered, requested theorem NOT proved",
+      "candidate": "waves/multiples-four/nl/generator/proof-attempt-v1.md",
+      "gap": "All prime p>=7 congruent3mod4: HasRepresentation(4*p)"
+    },
+    "output": ""
+  },
+  "30751e67dd70": {
+    "id": "30751e67dd70",
+    "subject": "Attempt the approved multiples-four theorem in Lean",
+    "description": "Intended owner fl-generator, role math-fl-f-generator. Problem liouville-goldbach-jul2026/waves/multiples-four. Statement fidelity wave/formal/reviews/statement-fidelity-v1.md. Exact representation_multiple_four(m:Nat)(hm:0<m):HasRepresentation(4*m). Own wave/formal/generator scratch only. Preserve masters/pins. Coordinate NL candidate; no sorry/custom assumptions accepted; compile exact candidates, axioms/types/hash logs. Report genuine math gap separately from library obstacles. Source cutoff2026-07-31.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-generator",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-integrator, but task explicitly requires fl-generator proof search. Returned without reading scratch inputs or editing any files; master remains preserved.",
+      "artifact_status": "Focused attempt and explicit mathematical-gap deliverable complete; new theorem NOT proved",
+      "report": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/gap-report-v1.txt",
+      "attempt_1_sha256": "84565442e7cfd05a582ecf09fcd13b332639e30b6e9e9b3482a28a09a33a2dd7",
+      "attempt_2_sha256": "e6025881f81a63a65d31ff8c6a4bc7e82cf87f29e277319c033d91cafe354ab9",
+      "target_compile_status": "Both exact-target attempts exit 1 solely at explicit unsolved mathematical goal",
+      "dependency_audit_status": "Exit 0; 17 accepted dependencies have standard-only axioms",
+      "residual": "For every odd prime p, construct HasRepresentation(4*p)",
+      "integration": "No new theorem or module offered for integration; master preserved"
+    },
+    "output": ""
+  },
+  "c58d66c51213": {
+    "id": "c58d66c51213",
+    "subject": "Compile reviewed multiples-four residue-family helpers",
+    "description": "Intended owner fl-generator. W=liouville-goldbach-jul2026/waves/multiples-four. Approved four-interfaces-v1.lean hashbe55b4df..., fresh helper-fidelity-v1.md. Prove19 exact signatures in scratch using pinned environment, preserve old master, actual builds/axioms/types/hashes. Covers allm%4≠3 and exact T4↔remainingprimecore, NOT fullT4. Record SumTwoSquares pinned provenance/imports. Acceptance and integrator merge separate.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-generator",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "candidate": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/FourCandidate.lean",
+      "candidate_sha256": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+      "report": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-proof-status-map-v1.txt",
+      "audit": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-audit-v1.json",
+      "compiled_helpers": 19,
+      "new_definitions": 0,
+      "final_compile_exit": 0,
+      "axiom_reports": 48,
+      "axiom_union": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "headers": "All19 internal header bytes identical to approved snapshot",
+      "master": "Unchanged; independent acceptance and integrator merge still separate",
+      "full_target": "OPEN; residual all prime p>=7 with p%4=3; no unconditional endpoint declared"
+    },
+    "output": ""
+  },
+  "357fd078ec63": {
+    "id": "357fd078ec63",
+    "subject": "Integrate checked four-family helper baseline",
+    "description": "Intended owner fl-integrator. W=liouville-goldbach-jul2026/waves/multiples-four. Reviewed FourCandidate.lean hash4b5e430f..., four-candidate-review-v1.md. Merge byte-identical into new lean/Statement/FourPartial.lean, preserve oldPartial/Definitions, root imports newmodule; pinned default/direct/axiom/typechecks logs. This is 19 checked partialhelpers for new fullproof, not T4. Output W/formal/integration-partial/ and wave reproduction draft, no modification frozen old proof/reports/source ledger.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-integrator",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-generator, but task explicitly assigns master integration to fl-integrator. Returned without reading integration inputs or modifying files; frozen candidate preserved.",
+      "artifact_status": "Exact nineteen-helper baseline integrated and all required evidence delivered; full T4 proof and independent integrated acceptance are separate.",
+      "master_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+      "master_sha256": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+      "report_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/integration-report-v1.txt",
+      "audit_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/audit-v2.json",
+      "checks": "Default/explicit builds, direct/trust-zero compile, root type/axiom checks pass. 19 exact headers; 48 new and all 82 old axiom queries (114 distinct) standard-only. Full T4 and original endpoints absent. Original master baselines/pins/docs unchanged. First recorder multiline parsing failure repaired without any Lean change; v1 evidence preserved."
+    },
+    "output": ""
+  },
+  "8770ba99c0f5": {
+    "id": "8770ba99c0f5",
+    "subject": "Prove cyclic and ternary descent lemmas",
+    "description": "Intended owner fl-generator, math-fl-f-generator. W=liouville-goldbach-jul2026/waves/multiples-four. Fullproofinterfaces approved descent-fidelity-v1; exact Readback.lean.txt. Own scratch lean/Statement/FourWork/Descent/{Cyclic,Ternary}.lean and wave/formal/descent-generator/. Prove cyclic_short_multiple FIRST then six ternary/no-pair/antireflection helpers. Pinnedcompile/axiom/snapshotchecks, no axioms/admissions. Do not edit master/root/otherworkerfiles. Mathematicalsource nl/descent/proof-attempt-v1 §§1–4. Allsourcescutoff2026-07-31.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-generator",
+    "blocks": [
+      "2db45639290a"
+    ],
+    "blockedBy": [],
+    "metadata": {
+      "artifact_status": "All7 approved helper proofs complete; actual direct and Lake builds succeed; acceptance separate",
+      "cyclic_module": "Statement.FourWork.Descent.Cyclic",
+      "cyclic_sha256": "09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290",
+      "ternary_module": "Statement.FourWork.Descent.Ternary",
+      "ternary_sha256": "d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753",
+      "audit": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/audit-v1.json",
+      "report": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/proof-status-map-v1.txt",
+      "axiom_reports": 18,
+      "axiom_union": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "statement_comparison": "All7 textual signature hashes match approved Readback/fidelity",
+      "master_changes": "none"
+    },
+    "output": ""
+  },
+  "bcd3df25ac7d": {
+    "id": "bcd3df25ac7d",
+    "subject": "Prove residue-prime and modular sign rigidity lemmas",
+    "description": "Intended owner fl-character, math-fl-f-generator. Candidate artifact production complete: exact approved two definitions plus C1–C2 and B1–B8 proved in lean/Statement/FourWork/Character/{ResiduePrime,ResidueValue,Rigidity}.lean. Actual pinned builds and direct source checks exit 0; all ten theorem axiom sets exactly propext/Classical.choice/Quot.sound; no admitted obligations. Exact statement/definition comparison passes. Actual compiled Cyclic dependency SHA256 09fbee47... imported with no added premise. Final handoff and evidence: waves/multiples-four/formal/character-generator/handoff-v1.txt, statement-comparison-v1.json, provenance-v1.json, *-final.{log,json}, snapshots. No master/root/pin/other-worker edits. Independent proof acceptance and integration remain separate leader-owned gates.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-character",
+    "blocks": [
+      "2db45639290a"
+    ],
+    "blockedBy": [],
+    "metadata": {},
+    "output": ""
+  },
+  "2db45639290a": {
+    "id": "2db45639290a",
+    "subject": "Assemble and compile the exact multiples-four theorem",
+    "description": "Intended owner fl-generator. Blocked until tasks8770ba99c0f5 andbcd3df25ac7d complete with actual compiled A/B/C modules. Own scratch lean/Statement/FourWork/Assembly.lean and wave/formal/assembly-generator/. Implement only approved final D1representation_four_prime_three_mod_four andD2representation_multiple_four; no new assumptions, exact Readbackheaders. Import actual Descent/Character modules and integrated FourPartial. Compile/axioms/sourceheaders/protectedhashes with actual logs. NOT authorized root/master integration; later integrator handles it. Sourcecutoff2026-07-31.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-generator",
+    "blocks": [
+      "79921be483cb"
+    ],
+    "blockedBy": [
+      "8770ba99c0f5",
+      "bcd3df25ac7d"
+    ],
+    "metadata": {
+      "candidate": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Assembly.lean",
+      "candidate_sha256": "fb279bfbb469022b119c37d011cfcf47852a3fe25dea03fac966379351437066",
+      "artifact_status": "Exact D1 and unrestricted all-positive-multiples-of-four D2 proved; direct/Lake/trust-zero checks pass",
+      "report": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/assembly-generator/proof-status-map-v1.txt",
+      "audit": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/assembly-generator/audit-v1.json",
+      "full_graph_statement_comparison": "All19 theorems and both new definitions match approved snapshot; legacy target equal up to whitespace",
+      "axiom_reports": 69,
+      "endpoint_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "admitted_obligations": [],
+      "source_freeze": "Assembly plus all5 dependency files frozen at notified hashes",
+      "master_status": "No root promotion or changes to existing master/pins",
+      "original_all_even_target": "Not proved by this candidate",
+      "acceptance_status": "Independent review and integrator promotion remain separate"
+    },
+    "output": ""
+  },
+  "79921be483cb": {
+    "id": "79921be483cb",
+    "subject": "Accept and integrate the complete multiples-four proof",
+    "description": "Completed exact positive-multiples-of-four acceptance: approved statement and all helper snapshots, actual full Lean candidate review, integrator-only root promotion with successful default/explicit/direct/trust-zero/root checks, two fresh final mathematical reviews of frozen PROOF/Assembly/dependencies, and final regulator PASS. All 38 new theorem statements preserved; standard foundational axioms only, no admitted or circular obligations. Cutoff2026-07-31 provenance validated. Final status/handoff/map and parent summary reconciled without altering proof/source/review snapshots. Success is ONLY ∀m>0,HasRepresentation(4*m); original all-even Target remains unresolved.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "team-lead",
+    "blocks": [],
+    "blockedBy": [
+      "2db45639290a"
+    ],
+    "metadata": {
+      "outcome": "Proved and accepted exact multiples-of-four lemma",
+      "theorem": "ArithmeticStatement.representation_multiple_four",
+      "proof_sha256": "fb279bfbb469022b119c37d011cfcf47852a3fe25dea03fac966379351437066",
+      "exposition_sha256": "205df4c7b85c9ce40cccf1b42aa92f174fb0365b058466a3c4f2d3ba6968831b",
+      "final_regulator": "waves/multiples-four/formal/reviews/final-four-regulator-v1.md",
+      "reviews": [
+        "waves/multiples-four/nl/reviews/final-four-review-a-v1.md",
+        "waves/multiples-four/nl/reviews/final-four-review-b-v1.md"
+      ]
+    },
+    "output": ""
+  },
+  "047e2ef62825": {
+    "id": "047e2ef62825",
+    "subject": "Promote and recheck the full multiples-four theorem",
+    "description": "Intended owner fl-integrator-final, math-fl-integrator. Exact candidate accepted by wave/formal/reviews/full-candidate-review-v1.md. Promote unchanged Statement.FourWork.Assembly (hashfb279bfb...) and its5checked dependencies into masterroot by root import only; no duplicate/rewritten declarations. Rebuild default and explicitfinalmodule/direct/trust-zero/rootimports; exactstatements/admissions/axioms/provenance/hashes. Ownwave/formal/integration-full/, waveREPRODUCE/sources/LEMMA_MAP records. Preserveoldmathfiles/pins/PROOF.md; originalall-evenTargetnotclaimed.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "fl-integrator-final",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-generator, but explicit intended role is fl-integrator-final for exclusive master/root promotion. Returned without edits; all frozen proof artifacts preserved.",
+      "deliverable": "waves/multiples-four/formal/integration-full/integration-report-v1.txt",
+      "report_sha256": "ac04869b274a7c8ae47b96c5324b4c280b106d984d38295dec598331f326eb96",
+      "manifest_sha256": "d8e79e1ca76cbf6af2eacb4df322b42432d13fe79c4ac00075af2249a4d32e71",
+      "root_sha256": "cd6a1dd9bff63ef400559805123c5e6cb7d2d4c9af28cf7f7c24f2cc640abc3c",
+      "remaining": "Leader-owned final regulator/publication; original all-even Target not claimed"
+    },
+    "output": ""
+  },
+  "324ed7d5675c": {
+    "id": "324ed7d5675c",
+    "subject": "Convert the verified proof to readable HTML",
+    "description": "Owner team-lead; presentation conversion only, not a math worker task. Convert waves/multiples-four/PROOF.md into offline readable PROOF.html with typeset equations. Preserve exact prose/formulas/source hashes; no Lean/math/proof edits. Validate content equivalence and rendered equations in browser. Do not edit global toolchain or proof state.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "team-lead",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-generator, but task explicitly belongs to team-lead and concerns presentation conversion outside the Lean proof-generator role. Returned untouched; accepted proof hashes preserved.",
+      "output": "waves/multiples-four/PROOF.html",
+      "source_unchanged": true,
+      "source_sha256": "205df4c7b85c9ce40cccf1b42aa92f174fb0365b058466a3c4f2d3ba6968831b",
+      "html_sha256": "50ec1a132f9288ddb6c10f1f6e48a472d8309f2a21f7006f537e0b2490bb4d06",
+      "math_expressions": 401,
+      "display_equations": 75,
+      "inline_expressions": 326,
+      "formula_annotation_sha256": "d1401f4f857ac4d16ecc959f8a5bfa70d9243caef94e5f0a6239d3d52e31fbb3",
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "browser_errors": 0,
+      "network_resources": 0,
+      "critic": "PASS, static conversion review"
+    },
+    "output": ""
+  },
+  "63fbbcf96460": {
+    "id": "63fbbcf96460",
+    "subject": "Prepare, verify, publish, and merge the proof changes",
+    "description": "Committed the proof/evidence archive, offline HTML, initial v0.1.0.0 metadata and metadata-only publication notes as four logical commits. Fresh Lean build/direct trust-zero and 401-formula artifact checks passed; native/specialist/outside reviews and credential scan completed. Created PR #1 in the private upstream repository and merged it normally with exact head matching, no administrative/protection bypass. Verified MERGED and safely updated local main. Caches, live runtime, third-party PDF and unrelated my-prompts files remain local; no deployment or force push.",
+    "activeForm": "",
+    "status": "completed",
+    "owner": "team-lead",
+    "blocks": [],
+    "blockedBy": [],
+    "metadata": {
+      "routing_note": "Auto-offered to fl-generator despite explicit team-lead-only shipping assignment. Returned untouched; no repository inspection, commit, PR, merge, or artifact changes performed.",
+      "gate": "Completed",
+      "repository": "(redacted private upstream repository)",
+      "default_branch": "main",
+      "visibility": "private",
+      "pr_number": 1,
+      "pr_url": "(redacted)",
+      "merge_commit": "33f981d79fb7577fe351866212ea15ad9b30ba82",
+      "version": "0.1.0.0",
+      "branch": "main",
+      "verification": "Lean and artifact checks passed; no repository CI configured; ordinary merge protections respected",
+      "excluded_local_paths": [
+        ".clawcodex/team.json",
+        ".clawcodex/tasks/math-team.json",
+        "my-prompts/PROOF.html",
+        "my-prompts/screenshots/"
+      ]
+    },
+    "output": ""
+  }
+}

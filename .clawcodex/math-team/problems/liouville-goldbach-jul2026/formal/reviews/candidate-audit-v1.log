@@ -1,0 +1,740 @@
+Fresh independent candidate audit v1
+{
+  "theorems_exact": 42,
+  "new_definitions_exact": 8,
+  "production_base_equals_snapshot": true,
+  "blind_base_equals_snapshot": true,
+  "blind_interfaces_equals_snapshot": true
+}
+Missing actual endpoint declarations: liouville_goldbach, pointwise_keystone
+
+COMMAND: lake env lean --version
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:41:57.953787+00:00
+EXIT: 0
+STDOUT:
+Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)
+
+STDERR:
+
+
+COMMAND: lake env lean --print-prefix
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:01.618345+00:00
+EXIT: 0
+STDOUT:
+~/.elan/toolchains/leanprover--lean4---v4.32.2
+
+STDERR:
+
+
+COMMAND: lake env printenv LEAN_PATH
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.201575+00:00
+EXIT: 0
+STDOUT:
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean:.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean:~/.elan/toolchains/leanprover--lean4---v4.32.2/lib/lean
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.784796+00:00
+EXIT: 0
+STDOUT:
+e12c1910fe855cbfc38803cd4e55543906d5fa62
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.795806+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.808667+00:00
+EXIT: 0
+STDOUT:
+c5d5b8fe6e5158def25cd28eb94e4141ad97c843
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.818062+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.828725+00:00
+EXIT: 0
+STDOUT:
+7e9612bf0b9ee66db3cb5b9988a35afc706f5a12
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.838065+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.848641+00:00
+EXIT: 0
+STDOUT:
+6e311e2a844da9b2cc3971187df2fe0066947b93
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.857437+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.867835+00:00
+EXIT: 0
+STDOUT:
+a7dbf0c63b694e47f425f3dcddbc0e178bb432d3
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.876631+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.887189+00:00
+EXIT: 0
+STDOUT:
+38d591e778f100aec9762bb582f9c7f55f50e9dc
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.897469+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.909813+00:00
+EXIT: 0
+STDOUT:
+023ce7d62a0531e22a5331e20b587817a80d49ff
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.919373+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.930948+00:00
+EXIT: 0
+STDOUT:
+88679d088c9720c27ebdf2ba4dafe17341747f94
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.940169+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib rev-parse HEAD
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.950890+00:00
+EXIT: 0
+STDOUT:
+905b95818eb32af7874a58b427f50c1711a5e96c
+
+STDERR:
+
+
+COMMAND: git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib status --porcelain=v1 --untracked-files=no
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.959923+00:00
+EXIT: 0
+STDOUT:
+
+STDERR:
+
+
+COMMAND: lake env lean --deps .clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:02.980115+00:00
+EXIT: 0
+STDOUT:
+~/.elan/toolchains/leanprover--lean4---v4.32.2/lib/lean/Init.olean
+~/.elan/toolchains/leanprover--lean4---v4.32.2/lib/lean/Init.olean
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Definitions.olean
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Ring/Parity.olean
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Ring/Int/Defs.olean
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Interval/Finset/Nat.olean
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Ring/Finset.olean
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean
+
+STDERR:
+
+
+COMMAND: lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:03.613598+00:00
+EXIT: 0
+STDOUT:
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:51:29: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:171:35: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:187:5: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:291:46: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.Perm.length_eq' depends on axioms: [propext]
+'List.length_append' depends on axioms: [propext]
+'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'pow_add' does not depend on any axioms
+'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.sub_sub_self' depends on axioms: [propext]
+'Nat.cast_sub' depends on axioms: [propext]
+'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_filter' depends on axioms: [propext, Quot.sound]
+'Finset.card_pos' depends on axioms: [propext, Quot.sound]
+'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]
+'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_const' depends on axioms: [propext, Quot.sound]
+'Finset.mul_sum' depends on axioms: [propext, Quot.sound]
+'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]
+'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.prod_cons' does not depend on any axioms
+
+STDERR:
+
+
+COMMAND: lake env lean --stdin
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:42:09.308781+00:00
+EXIT: 0
+STDOUT:
+<stdin>:51:29: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<stdin>:171:35: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<stdin>:187:5: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<stdin>:291:46: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.Perm.length_eq' depends on axioms: [propext]
+'List.length_append' depends on axioms: [propext]
+'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'pow_add' does not depend on any axioms
+'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.sub_sub_self' depends on axioms: [propext]
+'Nat.cast_sub' depends on axioms: [propext]
+'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_filter' depends on axioms: [propext, Quot.sound]
+'Finset.card_pos' depends on axioms: [propext, Quot.sound]
+'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]
+'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_const' depends on axioms: [propext, Quot.sound]
+'Finset.mul_sum' depends on axioms: [propext, Quot.sound]
+'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]
+'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.prod_cons' does not depend on any axioms
+def ArithmeticStatement.omega : ℕ → ℕ :=
+fun n => List.length.{0} n.primeFactorsList
+def ArithmeticStatement.lambda : ℕ → ℤ :=
+fun n => HPow.hPow.{0, 0, 0} (-1) (ArithmeticStatement.omega n)
+def ArithmeticStatement.Target : Prop :=
+∀ (N : ℕ),
+  Even.{0} N →
+    LT.lt.{0} 2 N →
+      ∃ a b,
+        LT.lt.{0} 0 a ∧
+          LT.lt.{0} 0 b ∧
+            Eq.{1} N (HAdd.hAdd.{0, 0, 0} a b) ∧
+              Eq.{1} (ArithmeticStatement.lambda a) (-1) ∧ Eq.{1} (ArithmeticStatement.lambda b) (-1)
+def Even.{u_2} : {α : Type u_2} → [Add.{u_2} α] → α → Prop :=
+fun {α} [Add.{u_2} α] a => ∃ r, Eq.{u_2 + 1} a (HAdd.hAdd.{u_2, u_2, u_2} r r)
+ArithmeticStatement.HasSignedRepresentation : ℤ → ℕ → Prop
+ArithmeticStatement.HasRepresentation : ℕ → Prop
+ArithmeticStatement.I : ℕ → Finset.{0} ℕ
+ArithmeticStatement.representationIndices : ℕ → Finset.{0} ℕ
+ArithmeticStatement.orderedRepresentations : ℕ → Finset.{0} (Prod.{0, 0} ℕ ℕ)
+ArithmeticStatement.R : ℕ → ℕ
+ArithmeticStatement.L : ℕ → ℤ
+ArithmeticStatement.C : ℕ → ℤ
+ArithmeticStatement.omega_one : Eq.{1} (ArithmeticStatement.omega 1) 0
+ArithmeticStatement.lambda_one : Eq.{1} (ArithmeticStatement.lambda 1) 1
+@ArithmeticStatement.lambda_sign : ∀ {n : ℕ},
+  LT.lt.{0} 0 n → Eq.{1} (ArithmeticStatement.lambda n) 1 ∨ Eq.{1} (ArithmeticStatement.lambda n) (-1)
+@ArithmeticStatement.omega_mul : ∀ {u v : ℕ},
+  LT.lt.{0} 0 u →
+    LT.lt.{0} 0 v →
+      Eq.{1} (ArithmeticStatement.omega (HMul.hMul.{0, 0, 0} u v))
+        (HAdd.hAdd.{0, 0, 0} (ArithmeticStatement.omega u) (ArithmeticStatement.omega v))
+@ArithmeticStatement.lambda_mul : ∀ {u v : ℕ},
+  LT.lt.{0} 0 u →
+    LT.lt.{0} 0 v →
+      Eq.{1} (ArithmeticStatement.lambda (HMul.hMul.{0, 0, 0} u v))
+        (HMul.hMul.{0, 0, 0} (ArithmeticStatement.lambda u) (ArithmeticStatement.lambda v))
+@ArithmeticStatement.lambda_prime : ∀ {p : ℕ}, Nat.Prime p → Eq.{1} (ArithmeticStatement.lambda p) (-1)
+ArithmeticStatement.lambda_two : Eq.{1} (ArithmeticStatement.lambda 2) (-1)
+ArithmeticStatement.lambda_three : Eq.{1} (ArithmeticStatement.lambda 3) (-1)
+ArithmeticStatement.lambda_four : Eq.{1} (ArithmeticStatement.lambda 4) 1
+ArithmeticStatement.lambda_five : Eq.{1} (ArithmeticStatement.lambda 5) (-1)
+@ArithmeticStatement.lambda_two_mul : ∀ {m : ℕ},
+  LT.lt.{0} 0 m →
+    Eq.{1} (ArithmeticStatement.lambda (HMul.hMul.{0, 0, 0} 2 m)) (Neg.neg.{0} (ArithmeticStatement.lambda m))
+@ArithmeticStatement.lambda_square : ∀ {t : ℕ},
+  LT.lt.{0} 0 t → Eq.{1} (ArithmeticStatement.lambda (HPow.hPow.{0, 0, 0} t 2)) 1
+ArithmeticStatement.target_iff_forall_hasRepresentation : ArithmeticStatement.Target ↔
+  ∀ (N : ℕ), Even.{0} N → LT.lt.{0} 2 N → ArithmeticStatement.HasRepresentation N
+@ArithmeticStatement.hasSignedRepresentation_mul : ∀ {s : ℤ} {N d : ℕ},
+  LT.lt.{0} 0 d →
+    ArithmeticStatement.HasSignedRepresentation s N →
+      ArithmeticStatement.HasSignedRepresentation (HMul.hMul.{0, 0, 0} (ArithmeticStatement.lambda d) s)
+        (HMul.hMul.{0, 0, 0} d N)
+@ArithmeticStatement.representation_scaled_sign : ∀ {u v m : ℕ} {s : ℤ},
+  LT.lt.{0} 0 u →
+    LT.lt.{0} 0 v →
+      LT.lt.{0} 0 m →
+        Eq.{1} s 1 ∨ Eq.{1} s (-1) →
+          Eq.{1} (ArithmeticStatement.lambda u) s →
+            Eq.{1} (ArithmeticStatement.lambda v) s →
+              Eq.{1} (ArithmeticStatement.lambda m) (Neg.neg.{0} s) →
+                ArithmeticStatement.HasRepresentation (HMul.hMul.{0, 0, 0} m (HAdd.hAdd.{0, 0, 0} u v))
+@ArithmeticStatement.representation_double : ∀ {m : ℕ},
+  LT.lt.{0} 0 m →
+    Eq.{1} (ArithmeticStatement.lambda m) (-1) → ArithmeticStatement.HasRepresentation (HMul.hMul.{0, 0, 0} 2 m)
+@ArithmeticStatement.representation_diagonal : ∀ {N : ℕ},
+  Even.{0} N → LT.lt.{0} 2 N → Eq.{1} (ArithmeticStatement.lambda N) 1 → ArithmeticStatement.HasRepresentation N
+@ArithmeticStatement.representation_two_sign_seed : ∀ {d : ℕ},
+  ArithmeticStatement.HasSignedRepresentation (-1) d →
+    ArithmeticStatement.HasSignedRepresentation 1 d →
+      ∀ (m : ℕ), LT.lt.{0} 0 m → ArithmeticStatement.HasRepresentation (HMul.hMul.{0, 0, 0} d m)
+ArithmeticStatement.eight_two_sign_seed : ArithmeticStatement.HasSignedRepresentation (-1) 8 ∧
+  ArithmeticStatement.HasSignedRepresentation 1 8
+ArithmeticStatement.representation_multiple_eight : ∀ (m : ℕ),
+  LT.lt.{0} 0 m → ArithmeticStatement.HasRepresentation (HMul.hMul.{0, 0, 0} 8 m)
+@ArithmeticStatement.mem_I_iff : ∀ {N a : ℕ},
+  Membership.mem.{0, 0} (ArithmeticStatement.I N) a ↔ LT.lt.{0} 0 a ∧ LT.lt.{0} a N
+@ArithmeticStatement.interval_eq_Icc : ∀ {N : ℕ},
+  LE.le.{0} 2 N → Eq.{1} (ArithmeticStatement.I N) (Finset.Icc.{0} 1 (HSub.hSub.{0, 0, 0} N 1))
+@ArithmeticStatement.interval_bounds : ∀ {N a : ℕ},
+  LE.le.{0} 2 N →
+    Membership.mem.{0, 0} (ArithmeticStatement.I N) a →
+      LT.lt.{0} 0 a ∧ LT.lt.{0} a N ∧ LT.lt.{0} 0 (HSub.hSub.{0, 0, 0} N a) ∧ LT.lt.{0} (HSub.hSub.{0, 0, 0} N a) N
+@ArithmeticStatement.interval_card_cast : ∀ {N : ℕ},
+  LE.le.{0} 2 N → Eq.{1} (↑(Finset.card.{0} (ArithmeticStatement.I N))) (HSub.hSub.{0, 0, 0} (↑N) 1)
+@ArithmeticStatement.reflection_mem : ∀ {N a : ℕ},
+  LE.le.{0} 2 N →
+    Membership.mem.{0, 0} (ArithmeticStatement.I N) a →
+      Membership.mem.{0, 0} (ArithmeticStatement.I N) (HSub.hSub.{0, 0, 0} N a)
+@ArithmeticStatement.reflection_involutive : ∀ {N a : ℕ},
+  LE.le.{0} 2 N →
+    Membership.mem.{0, 0} (ArithmeticStatement.I N) a → Eq.{1} (HSub.hSub.{0, 0, 0} N (HSub.hSub.{0, 0, 0} N a)) a
+@ArithmeticStatement.reflection_bijection : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    Set.BijOn.{0, 0} (fun a => HSub.hSub.{0, 0, 0} N a) ↑(ArithmeticStatement.I N) ↑(ArithmeticStatement.I N)
+@ArithmeticStatement.sum_lambda_interval : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    Eq.{1} (∑ a ∈ ArithmeticStatement.I N, ArithmeticStatement.lambda a)
+      (ArithmeticStatement.L (HSub.hSub.{0, 0, 0} N 1))
+@ArithmeticStatement.sum_lambda_reflection : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    Eq.{1} (∑ a ∈ ArithmeticStatement.I N, ArithmeticStatement.lambda (HSub.hSub.{0, 0, 0} N a))
+      (ArithmeticStatement.L (HSub.hSub.{0, 0, 0} N 1))
+@ArithmeticStatement.mem_orderedRepresentations : ∀ {N a b : ℕ},
+  Membership.mem.{0, 0} (ArithmeticStatement.orderedRepresentations N) (Prod.mk.{0, 0} a b) ↔
+    LT.lt.{0} 0 a ∧
+      LT.lt.{0} 0 b ∧
+        Eq.{1} N (HAdd.hAdd.{0, 0, 0} a b) ∧
+          Eq.{1} (ArithmeticStatement.lambda a) (-1) ∧ Eq.{1} (ArithmeticStatement.lambda b) (-1)
+@ArithmeticStatement.orderedRepresentations_eq_image : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    Eq.{1} (ArithmeticStatement.orderedRepresentations N)
+      (Finset.image.{0, 0} (fun a => Prod.mk.{0, 0} a (HSub.hSub.{0, 0, 0} N a))
+        (ArithmeticStatement.representationIndices N))
+@ArithmeticStatement.representation_count_eq_card_indices : ∀ {N : ℕ},
+  LE.le.{0} 2 N → Eq.{1} (ArithmeticStatement.R N) (Finset.card.{0} (ArithmeticStatement.representationIndices N))
+@ArithmeticStatement.two_sign_indicator : ∀ {a b : ℕ},
+  LT.lt.{0} 0 a →
+    LT.lt.{0} 0 b →
+      Eq.{1}
+        (HMul.hMul.{0, 0, 0} 4
+          (ite.{1} (Eq.{1} (ArithmeticStatement.lambda a) (-1) ∧ Eq.{1} (ArithmeticStatement.lambda b) (-1)) 1 0))
+        (HMul.hMul.{0, 0, 0} (HSub.hSub.{0, 0, 0} 1 (ArithmeticStatement.lambda a))
+          (HSub.hSub.{0, 0, 0} 1 (ArithmeticStatement.lambda b)))
+@ArithmeticStatement.representation_count_eq_indicator_sum : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    Eq.{1} (↑(ArithmeticStatement.R N))
+      (∑ a ∈ ArithmeticStatement.I N,
+        ite.{1}
+          (Eq.{1} (ArithmeticStatement.lambda a) (-1) ∧
+            Eq.{1} (ArithmeticStatement.lambda (HSub.hSub.{0, 0, 0} N a)) (-1))
+          1 0)
+@ArithmeticStatement.four_mul_representation_count : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    Eq.{1} (HMul.hMul.{0, 0, 0} 4 ↑(ArithmeticStatement.R N))
+      (HAdd.hAdd.{0, 0, 0}
+        (HSub.hSub.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑N) 1)
+          (HMul.hMul.{0, 0, 0} 2 (ArithmeticStatement.L (HSub.hSub.{0, 0, 0} N 1))))
+        (ArithmeticStatement.C N))
+@ArithmeticStatement.representation_count_pos_iff : ∀ {N : ℕ},
+  LE.le.{0} 2 N → (LT.lt.{0} 0 (ArithmeticStatement.R N) ↔ ArithmeticStatement.HasRepresentation N)
+@ArithmeticStatement.count_pos_iff_keystone : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    (LT.lt.{0} 0 (ArithmeticStatement.R N) ↔
+      LT.lt.{0}
+        (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (ArithmeticStatement.L (HSub.hSub.{0, 0, 0} N 1)))
+          (HSub.hSub.{0, 0, 0} (↑N) 1))
+        (ArithmeticStatement.C N))
+@ArithmeticStatement.keystone_ge_four_iff : ∀ {N : ℕ},
+  LE.le.{0} 2 N →
+    (LT.lt.{0} 0 (ArithmeticStatement.R N) ↔
+      LE.le.{0} 4
+        (HAdd.hAdd.{0, 0, 0}
+          (HSub.hSub.{0, 0, 0} (HSub.hSub.{0, 0, 0} (↑N) 1)
+            (HMul.hMul.{0, 0, 0} 2 (ArithmeticStatement.L (HSub.hSub.{0, 0, 0} N 1))))
+          (ArithmeticStatement.C N)))
+ArithmeticStatement.target_iff_count_pos : ArithmeticStatement.Target ↔
+  ∀ (N : ℕ), Even.{0} N → LT.lt.{0} 2 N → LT.lt.{0} 0 (ArithmeticStatement.R N)
+ArithmeticStatement.target_iff_pointwise_keystone : ArithmeticStatement.Target ↔
+  ∀ (N : ℕ),
+    Even.{0} N →
+      LT.lt.{0} 2 N →
+        LT.lt.{0}
+          (HSub.hSub.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (ArithmeticStatement.L (HSub.hSub.{0, 0, 0} N 1)))
+            (HSub.hSub.{0, 0, 0} (↑N) 1))
+          (ArithmeticStatement.C N)
+@ArithmeticStatement.exists_prime_pair_factor_of_lambda_one : ∀ {m : ℕ},
+  LT.lt.{0} 1 m →
+    Eq.{1} (ArithmeticStatement.lambda m) 1 →
+      ∃ p q d,
+        Nat.Prime p ∧
+          Nat.Prime q ∧
+            LT.lt.{0} 0 d ∧
+              Eq.{1} (ArithmeticStatement.lambda d) 1 ∧ Eq.{1} m (HMul.hMul.{0, 0, 0} d (HMul.hMul.{0, 0, 0} p q))
+ArithmeticStatement.target_iff_prime_product_core : ArithmeticStatement.Target ↔
+  ∀ (p q : ℕ),
+    Nat.Prime p → Nat.Prime q → ArithmeticStatement.HasRepresentation (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 p) q)
+
+STDERR:
+
+
+AXIOM PARSING: all 82 names, including Finset.sum_nbij with trailing apostrophe, accounted for.
+
+COMMAND: lake env lean -t 0 .clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean
+CWD: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+STARTED: 2026-09-25T03:44:24.827382+00:00
+EXIT: 0
+STDOUT:
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:51:29: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:171:35: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:187:5: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean:291:46: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.Perm.length_eq' depends on axioms: [propext]
+'List.length_append' depends on axioms: [propext]
+'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'pow_add' does not depend on any axioms
+'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.sub_sub_self' depends on axioms: [propext]
+'Nat.cast_sub' depends on axioms: [propext]
+'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_filter' depends on axioms: [propext, Quot.sound]
+'Finset.card_pos' depends on axioms: [propext, Quot.sound]
+'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]
+'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_const' depends on axioms: [propext, Quot.sound]
+'Finset.mul_sum' depends on axioms: [propext, Quot.sound]
+'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]
+'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.prod_cons' does not depend on any axioms
+
+STDERR:
+

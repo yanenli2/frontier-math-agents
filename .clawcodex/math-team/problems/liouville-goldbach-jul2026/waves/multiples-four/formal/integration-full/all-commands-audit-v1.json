@@ -1,0 +1,5498 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-27T17:09:11.816150+00:00",
+  "commands": [
+    {
+      "record": "01-default-build.json",
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 262,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.Target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.UnfinishedScaffold.mk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.primeFactorsList_pow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_pair_factor_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_prime_product_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.two_sign_indicator": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_indicator_sum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.four_mul_representation_count": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.count_pos_iff_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.keystone_ge_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_count_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_pointwise_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_I_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_eq_Icc": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_card_cast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_mem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_involutive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_bijection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_reflection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations_eq_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_card_indices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_pos_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_forall_hasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.hasSignedRepresentation_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_scaled_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_double": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.eight_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_eight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasSignedRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.I": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representationIndices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.R": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.L": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.C": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.perm_primeFactorsList_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "List.Perm.length_eq": [
+          "propext"
+        ],
+        "List.length_append": [
+          "propext"
+        ],
+        "Nat.primeFactorsList_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "pow_add": [],
+        "neg_one_pow_eq_ite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.sub_sub_self": [
+          "propext"
+        ],
+        "Nat.cast_sub": [
+          "propext"
+        ],
+        "Nat.card_Ico": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.product_eq_sprod": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_filter": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_image_of_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_nbij'": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_filter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_const": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mul_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_add_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_sub_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "List.prod_cons": [],
+        "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.sq_add_sq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_one_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_six": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.twelve_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_twelve": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_even": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.exists_eq_add_of_le": [
+          "propext"
+        ],
+        "Nat.exists_prime_and_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.dvd_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.eq_two_or_odd": [
+          "propext"
+        ],
+        "Nat.odd_mod_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.odd_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.not_even_iff_odd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_mod": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.cast_pow": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.no_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.strong_induction_on": [],
+        "ArithmeticStatement.FourWork.residueLambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.GoodMultiplier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.instField": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "mul_ne_zero": [],
+        "ArithmeticStatement.FourWork.residueLambda_natCast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_natCast_of_lt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_lt": [
+          "propext"
+        ],
+        "ZMod.neg_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_zmod_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.eq_one_or_self_of_dvd": [
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_natCast_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.natAbs_pos": [
+          "propext"
+        ],
+        "Int.natAbs_eq": [],
+        "mul_left_cancel₀": [],
+        "ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.exists_small_prime_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_neg_one_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_two_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_eq_zero_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.le_of_dvd": [
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_three_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "02-assembly-build.json",
+      "argv": [
+        "lake",
+        "build",
+        "Statement.FourWork.Assembly"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 253,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.exists_prime_pair_factor_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_prime_product_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.two_sign_indicator": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_indicator_sum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.four_mul_representation_count": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.count_pos_iff_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.keystone_ge_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_count_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_pointwise_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_I_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_eq_Icc": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_card_cast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_mem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_involutive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_bijection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_reflection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations_eq_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_card_indices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_pos_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_forall_hasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.hasSignedRepresentation_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_scaled_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_double": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.eight_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_eight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.Target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasSignedRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.I": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representationIndices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.R": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.L": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.C": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.perm_primeFactorsList_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "List.Perm.length_eq": [
+          "propext"
+        ],
+        "List.length_append": [
+          "propext"
+        ],
+        "Nat.primeFactorsList_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "pow_add": [],
+        "neg_one_pow_eq_ite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.sub_sub_self": [
+          "propext"
+        ],
+        "Nat.cast_sub": [
+          "propext"
+        ],
+        "Nat.card_Ico": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.product_eq_sprod": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_filter": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_image_of_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_nbij'": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_filter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_const": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mul_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_add_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_sub_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "List.prod_cons": [],
+        "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.sq_add_sq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_one_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_six": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.twelve_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_twelve": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_even": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.exists_eq_add_of_le": [
+          "propext"
+        ],
+        "Nat.exists_prime_and_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.dvd_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.eq_two_or_odd": [
+          "propext"
+        ],
+        "Nat.odd_mod_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.odd_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.not_even_iff_odd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_mod": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.cast_pow": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.no_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.strong_induction_on": [],
+        "ArithmeticStatement.FourWork.residueLambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.GoodMultiplier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.instField": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "mul_ne_zero": [],
+        "ArithmeticStatement.FourWork.residueLambda_natCast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_natCast_of_lt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_lt": [
+          "propext"
+        ],
+        "ZMod.neg_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_zmod_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.eq_one_or_self_of_dvd": [
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_natCast_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.natAbs_pos": [
+          "propext"
+        ],
+        "Int.natAbs_eq": [],
+        "mul_left_cancel₀": [],
+        "ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.exists_small_prime_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_neg_one_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_two_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_eq_zero_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.le_of_dvd": [
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_three_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "03-assembly-direct.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Statement/FourWork/Assembly.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 69,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.representation_four_prime_three_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.no_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.GoodMultiplier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_natCast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_natCast_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.exists_small_prime_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_six": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.twelve_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_twelve": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_even": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_one_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasSignedRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.hasSignedRepresentation_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_double": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_eight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.perm_primeFactorsList_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.sq_add_sq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_neg_one_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_two_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.instField": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.strong_induction_on": []
+      }
+    },
+    {
+      "record": "04-assembly-trust0.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Assembly.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 69,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.representation_four_prime_three_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.no_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.GoodMultiplier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_natCast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_natCast_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.exists_small_prime_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_six": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.twelve_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_twelve": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_even": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_one_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasSignedRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.hasSignedRepresentation_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_double": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_eight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.perm_primeFactorsList_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.sq_add_sq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_neg_one_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_two_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.instField": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.strong_induction_on": []
+      }
+    },
+    {
+      "record": "05-trust0-00-Statement-Definitions.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/Definitions.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "05-trust0-01-Statement-Scaffold.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/Scaffold.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "05-trust0-02-Statement-Smoke.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/Smoke.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 9,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.Target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.UnfinishedScaffold.mk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.primeFactorsList_pow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "05-trust0-03-Statement-Partial.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/Partial.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 82,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.exists_prime_pair_factor_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_prime_product_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.two_sign_indicator": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_indicator_sum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.four_mul_representation_count": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.count_pos_iff_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.keystone_ge_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_count_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_pointwise_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_I_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_eq_Icc": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_card_cast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_mem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_involutive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_bijection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_reflection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations_eq_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_card_indices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_pos_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_forall_hasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.hasSignedRepresentation_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_scaled_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_double": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.eight_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_eight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.Target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasSignedRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.I": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representationIndices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.R": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.L": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.C": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.perm_primeFactorsList_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "List.Perm.length_eq": [
+          "propext"
+        ],
+        "List.length_append": [
+          "propext"
+        ],
+        "Nat.primeFactorsList_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "pow_add": [],
+        "neg_one_pow_eq_ite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.sub_sub_self": [
+          "propext"
+        ],
+        "Nat.cast_sub": [
+          "propext"
+        ],
+        "Nat.card_Ico": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.product_eq_sprod": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_filter": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_image_of_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_nbij'": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_filter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_const": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mul_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_add_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_sub_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "List.prod_cons": []
+      }
+    },
+    {
+      "record": "05-trust0-04-Statement-FourPartial.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourPartial.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 48,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.sq_add_sq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_one_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_six": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.twelve_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_twelve": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_even": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasSignedRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.hasSignedRepresentation_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_double": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_eight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.exists_eq_add_of_le": [
+          "propext"
+        ],
+        "Nat.exists_prime_and_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.dvd_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.eq_two_or_odd": [
+          "propext"
+        ],
+        "Nat.odd_mod_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.odd_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.not_even_iff_odd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_mod": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.cast_pow": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "05-trust0-05-Statement-FourWork-Descent-Ternary.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Descent/Ternary.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 12,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.no_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.strong_induction_on": []
+      }
+    },
+    {
+      "record": "05-trust0-06-Statement-FourWork-Character-ResidueValue.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Character/ResidueValue.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 15,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.FourWork.residueLambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.GoodMultiplier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.instField": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "mul_ne_zero": [],
+        "ArithmeticStatement.FourWork.residueLambda_natCast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_natCast_of_lt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_lt": [
+          "propext"
+        ],
+        "ZMod.neg_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "05-trust0-07-Statement-FourWork-Descent-Cyclic.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Descent/Cyclic.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 6,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_lt": [
+          "propext"
+        ],
+        "ZMod.natCast_zmod_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_natCast_of_lt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.eq_one_or_self_of_dvd": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "05-trust0-08-Statement-FourWork-Character-Rigidity.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Character/Rigidity.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 10,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.FourWork.goodMultiplier_natCast_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.natAbs_pos": [
+          "propext"
+        ],
+        "Int.natAbs_eq": [],
+        "Nat.strong_induction_on": [],
+        "ZMod.natCast_zmod_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "mul_left_cancel₀": []
+      }
+    },
+    {
+      "record": "05-trust0-09-Statement-FourWork-Character-ResiduePrime.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Character/ResiduePrime.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 11,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.exists_small_prime_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_neg_one_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_two_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_eq_zero_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.exists_prime_and_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.le_of_dvd": [
+          "propext"
+        ],
+        "Nat.Prime.eq_two_or_odd": [
+          "propext"
+        ],
+        "Nat.odd_mod_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "05-trust0-11-Statement.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "06-root-import.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "--stdin"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 156,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.C": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.GoodMultiplier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.exists_small_prime_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_natCast_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.goodMultiplier_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.no_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_natCast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.residueLambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.HasSignedRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.I": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.L": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.R": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.Target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.UnfinishedScaffold.mk": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.count_pos_iff_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.eight_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.exists_prime_pair_factor_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.four_mul_representation_count": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.hasSignedRepresentation_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_bounds": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_card_cast": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.interval_eq_Icc": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.keystone_ge_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_six": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.lambda_two_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_I_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.mem_orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.omega_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.orderedRepresentations_eq_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_bijection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_involutive": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.reflection_mem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representationIndices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_card_indices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_eq_indicator_sum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_count_pos_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_double": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_one_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_four_prime_three_mod_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_eight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_even": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_multiple_twelve": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_scaled_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.representation_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_interval": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.sum_lambda_reflection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_count_pos": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_forall_hasRepresentation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_pointwise_keystone": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.target_iff_prime_product_core": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.twelve_two_sign_seed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ArithmeticStatement.two_sign_indicator": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_image_of_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.card_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_filter": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_image": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mem_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.mul_sum": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.product_eq_sprod": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_add_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_const": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_filter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_nbij'": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Finset.sum_sub_distrib": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.cast_pow": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Int.natAbs_eq": [],
+        "Int.natAbs_pos": [
+          "propext"
+        ],
+        "List.Perm.length_eq": [
+          "propext"
+        ],
+        "List.length_append": [
+          "propext"
+        ],
+        "List.prod_cons": [],
+        "Nat.Prime.eq_one_or_self_of_dvd": [
+          "propext"
+        ],
+        "Nat.Prime.eq_two_or_odd": [
+          "propext"
+        ],
+        "Nat.Prime.primeFactorsList_pow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.Prime.sq_add_sq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.card_Ico": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.cast_sub": [
+          "propext"
+        ],
+        "Nat.dvd_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.exists_eq_add_of_le": [
+          "propext"
+        ],
+        "Nat.exists_prime_and_dvd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.le_of_dvd": [
+          "propext"
+        ],
+        "Nat.not_even_iff_odd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.odd_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.odd_mod_four_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.perm_primeFactorsList_mul": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.primeFactorsList_prime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_of_mem_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prime_two": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.prod_primeFactorsList": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Nat.strong_induction_on": [],
+        "Nat.sub_sub_self": [
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_neg_one_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.exists_sq_eq_two_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.instField": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_eq_zero_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_mod": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.natCast_zmod_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.neg_val": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_lt": [
+          "propext"
+        ],
+        "ZMod.val_natCast_of_lt": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ZMod.val_pos": [
+          "Quot.sound",
+          "propext"
+        ],
+        "mul_left_cancel₀": [],
+        "mul_ne_zero": [],
+        "neg_one_pow_eq_ite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "pow_add": []
+      }
+    },
+    {
+      "record": "07-original-endpoints-absent.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "--stdin"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 1,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "08-root-expanded-type.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "--stdin"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 1,
+      "distinct_printed_axioms": {
+        "ArithmeticStatement.representation_multiple_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    {
+      "record": "post-clean-Cli.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-LeanSearchClient.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-Qq.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-aesop.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-batteries.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-importGraph.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-mathlib.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-plausible.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-clean-proofwidgets.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-Cli.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-LeanSearchClient.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-Qq.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-aesop.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-batteries.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-importGraph.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-mathlib.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-plausible.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "post-pin-proofwidgets.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-Cli.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-LeanSearchClient.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-Qq.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-aesop.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-batteries.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-importGraph.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-mathlib.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-plausible.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-clean-proofwidgets.json",
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=all"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-lake-version.json",
+      "argv": [
+        "lake",
+        "--version"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-lean-version.json",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-Cli.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-LeanSearchClient.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-Qq.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-aesop.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-batteries.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-importGraph.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-mathlib.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-plausible.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    },
+    {
+      "record": "pre-pin-proofwidgets.json",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_code": 0,
+      "axiom_print_occurrences": 0,
+      "distinct_printed_axioms": {}
+    }
+  ],
+  "axiom_print_occurrences": 1003,
+  "distinct_axioms_printed": 156,
+  "axioms": {
+    "ArithmeticStatement.omega": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.Target": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.UnfinishedScaffold.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.primeFactorsList": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.primeFactorsList_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.prime_of_mem_primeFactorsList": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.prod_primeFactorsList": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.Prime.primeFactorsList_pow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.exists_prime_pair_factor_of_lambda_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.target_iff_prime_product_core": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.two_sign_indicator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_count_eq_indicator_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.four_mul_representation_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.count_pos_iff_keystone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.keystone_ge_four_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.target_iff_count_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.target_iff_pointwise_keystone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.mem_I_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.interval_eq_Icc": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.interval_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.interval_card_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.reflection_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.reflection_involutive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.reflection_bijection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.sum_lambda_interval": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.sum_lambda_reflection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.mem_orderedRepresentations": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.orderedRepresentations_eq_image": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_count_eq_card_indices": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_count_pos_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.omega_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_sign": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.omega_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_prime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_five": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_two_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_square": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.target_iff_forall_hasRepresentation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.hasSignedRepresentation_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_scaled_sign": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_double": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_diagonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_two_sign_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.eight_two_sign_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_eight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.HasSignedRepresentation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.HasRepresentation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.I": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representationIndices": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.orderedRepresentations": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.R": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.L": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.C": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.perm_primeFactorsList_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "List.Perm.length_eq": [
+      "propext"
+    ],
+    "List.length_append": [
+      "propext"
+    ],
+    "Nat.primeFactorsList_prime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "pow_add": [],
+    "neg_one_pow_eq_ite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.prime_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.prime_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.prime_five": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.sub_sub_self": [
+      "propext"
+    ],
+    "Nat.cast_sub": [
+      "propext"
+    ],
+    "Nat.card_Ico": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.product_eq_sprod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.mem_product": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.mem_filter": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.card_pos": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.mem_image": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.card_image_of_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.sum_nbij'": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.sum_filter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.sum_const": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.mul_sum": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.sum_add_distrib": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.sum_sub_distrib": [
+      "Quot.sound",
+      "propext"
+    ],
+    "List.prod_cons": [],
+    "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.Prime.sq_add_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_four_prime_one_mod_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_six": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.lambda_seven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.twelve_two_sign_seed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_twelve": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_even": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.prime_seven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.exists_eq_add_of_le": [
+      "propext"
+    ],
+    "Nat.exists_prime_and_dvd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.dvd_of_mem_primeFactorsList": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.Prime.eq_two_or_odd": [
+      "propext"
+    ],
+    "Nat.odd_mod_four_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.odd_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.not_even_iff_odd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.natCast_mod": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Int.cast_pow": [
+      "Quot.sound",
+      "propext"
+    ],
+    "GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.positive_pair_gap_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.no_positive_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.strong_induction_on": [],
+    "ArithmeticStatement.FourWork.residueLambda": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.GoodMultiplier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.instField": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "mul_ne_zero": [],
+    "ArithmeticStatement.FourWork.residueLambda_natCast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.residueLambda_sign": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.residueLambda_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.goodMultiplier_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.goodMultiplier_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.val_natCast_of_lt": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.val_pos": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.val_lt": [
+      "propext"
+    ],
+    "ZMod.neg_val": [
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.cyclic_short_multiple": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Finset.exists_ne_map_eq_of_card_lt_of_maps_to": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.natCast_zmod_val": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.Prime.eq_one_or_self_of_dvd": [
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.goodMultiplier_natCast_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.residueLambda_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.lambda_eq_one_of_isSquare": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Int.natAbs_pos": [
+      "propext"
+    ],
+    "Int.natAbs_eq": [],
+    "mul_left_cancel₀": [],
+    "ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.FourWork.exists_small_prime_isSquare": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.exists_sq_eq_neg_one_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.exists_sq_eq_two_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ZMod.natCast_eq_zero_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Nat.le_of_dvd": [
+      "propext"
+    ],
+    "ArithmeticStatement.representation_four_prime_three_mod_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ArithmeticStatement.representation_multiple_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "warnings": {
+    "01-default-build": [
+      "warning: Statement/Partial.lean:51:29: Variable name `hn` is not explicitly referenced.",
+      "warning: Statement/Partial.lean:171:35: Variable name `hN` is not explicitly referenced.",
+      "warning: Statement/Partial.lean:187:5: Variable name `hN` is not explicitly referenced.",
+      "warning: Statement/Partial.lean:291:46: Variable name `hN` is not explicitly referenced."
+    ],
+    "02-assembly-build": [
+      "warning: Statement/Partial.lean:51:29: Variable name `hn` is not explicitly referenced.",
+      "warning: Statement/Partial.lean:171:35: Variable name `hN` is not explicitly referenced.",
+      "warning: Statement/Partial.lean:187:5: Variable name `hN` is not explicitly referenced.",
+      "warning: Statement/Partial.lean:291:46: Variable name `hN` is not explicitly referenced."
+    ],
+    "03-assembly-direct": [],
+    "04-assembly-trust0": [],
+    "05-trust0-00-Statement-Definitions": [],
+    "05-trust0-01-Statement-Scaffold": [],
+    "05-trust0-02-Statement-Smoke": [],
+    "05-trust0-03-Statement-Partial": [
+      "Statement/Partial.lean:51:29: warning: Variable name `hn` is not explicitly referenced.",
+      "Statement/Partial.lean:171:35: warning: Variable name `hN` is not explicitly referenced.",
+      "Statement/Partial.lean:187:5: warning: Variable name `hN` is not explicitly referenced.",
+      "Statement/Partial.lean:291:46: warning: Variable name `hN` is not explicitly referenced."
+    ],
+    "05-trust0-04-Statement-FourPartial": [],
+    "05-trust0-05-Statement-FourWork-Descent-Ternary": [],
+    "05-trust0-06-Statement-FourWork-Character-ResidueValue": [],
+    "05-trust0-07-Statement-FourWork-Descent-Cyclic": [],
+    "05-trust0-08-Statement-FourWork-Character-Rigidity": [],
+    "05-trust0-09-Statement-FourWork-Character-ResiduePrime": [],
+    "05-trust0-11-Statement": [],
+    "06-root-import": [],
+    "07-original-endpoints-absent": [],
+    "08-root-expanded-type": [],
+    "post-clean-Cli": [],
+    "post-clean-LeanSearchClient": [],
+    "post-clean-Qq": [],
+    "post-clean-aesop": [],
+    "post-clean-batteries": [],
+    "post-clean-importGraph": [],
+    "post-clean-mathlib": [],
+    "post-clean-plausible": [],
+    "post-clean-proofwidgets": [],
+    "post-pin-Cli": [],
+    "post-pin-LeanSearchClient": [],
+    "post-pin-Qq": [],
+    "post-pin-aesop": [],
+    "post-pin-batteries": [],
+    "post-pin-importGraph": [],
+    "post-pin-mathlib": [],
+    "post-pin-plausible": [],
+    "post-pin-proofwidgets": [],
+    "pre-clean-Cli": [],
+    "pre-clean-LeanSearchClient": [],
+    "pre-clean-Qq": [],
+    "pre-clean-aesop": [],
+    "pre-clean-batteries": [],
+    "pre-clean-importGraph": [],
+    "pre-clean-mathlib": [],
+    "pre-clean-plausible": [],
+    "pre-clean-proofwidgets": [],
+    "pre-lake-version": [],
+    "pre-lean-version": [],
+    "pre-pin-Cli": [],
+    "pre-pin-LeanSearchClient": [],
+    "pre-pin-Qq": [],
+    "pre-pin-aesop": [],
+    "pre-pin-batteries": [],
+    "pre-pin-importGraph": [],
+    "pre-pin-mathlib": [],
+    "pre-pin-plausible": [],
+    "pre-pin-proofwidgets": []
+  },
+  "protected_files_unchanged_except_root_import": true,
+  "wave_theorems_exact_standard_axioms": 38,
+  "source_inventory_records_rehashed": 4326,
+  "source_changes": [],
+  "wave_added_library_modules": 1983,
+  "final_stage_added_library_modules": 929,
+  "all_external_versions_before_cutoff": true,
+  "local_document_links": [
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/REPRODUCE.md",
+      "href": "formal/integration-full/REPRODUCE.before.md.txt",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/REPRODUCE.md",
+      "href": "sources.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/REPRODUCE.md",
+      "href": "../../sources.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/REPRODUCE.md",
+      "href": "formal/reviews/full-candidate-review-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/REPRODUCE.md",
+      "href": "LEMMA_MAP.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/REPRODUCE.md",
+      "href": "formal/integration-full/",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "../../sources.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "REPRODUCE.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "../../formal/environment/public-availability-witnesses.json",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "formal/integration-full/new-library-modules-v1.txt",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "formal/integration-full/library-inventory-v1.json",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "../../sources.md#mathematical-source-locators-at-the-pinned-mathlib-version",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "request.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "PROOF.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "nl/generator/proof-attempt-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "nl/descent/proof-attempt-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "formal/descent-blueprint/Readback.lean.txt",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "formal/reviews/full-candidate-review-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "LEMMA_MAP.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/sources.md",
+      "href": "REPRODUCE.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "../../LEMMA_MAP.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/integration-full/signatures-integrated.json",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "request.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "PROOF.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "nl/generator/proof-attempt-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "nl/descent/proof-attempt-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "../../LEMMA_MAP.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "../../sources.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/generator/four-interfaces-v1.lean",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/descent-blueprint/Readback.lean.txt",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/reviews/helper-fidelity-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/reviews/four-candidate-review-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "../../../../review-inputs/r20260924-four-v1/interfaces-readback.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "nl/reviews/partial-review-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/reviews/descent-fidelity-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "../../../../review-inputs/r20260924-four-v1/descent-readback.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/reviews/full-candidate-review-v1.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "sources.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "formal/integration-full/audit-v1.json",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "REPRODUCE.md",
+      "exists": true
+    },
+    {
+      "from": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/LEMMA_MAP.md",
+      "href": "sources.md",
+      "exists": true
+    }
+  ]
+}

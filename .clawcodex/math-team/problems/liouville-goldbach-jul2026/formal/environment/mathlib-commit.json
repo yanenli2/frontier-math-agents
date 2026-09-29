@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/mathlib4/commits/905b95818eb32af7874a58b427f50c1711a5e96c"
+  ],
+  "shell_display": "gh api repos/leanprover-community/mathlib4/commits/905b95818eb32af7874a58b427f50c1711a5e96c",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T01:59:01.435317+00:00",
+  "elapsed_seconds": 0.39080729200000003,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-commit.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-commit.stderr",
+  "stdout_sha256": "dc9005a7eb9bb63fbfa9b52c5d8372bad83808c250069029da2e0b83f148705b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

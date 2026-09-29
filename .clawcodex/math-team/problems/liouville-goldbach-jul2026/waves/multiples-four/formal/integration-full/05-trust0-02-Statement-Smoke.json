@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "-t0",
+    "Statement/Smoke.lean"
+  ],
+  "shell_display": "lake env lean -t0 Statement/Smoke.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T11:11:31.725838+00:00",
+  "seconds": 1.7045173749999947,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "5b8c1a1851d424c5fbdde201762265efa60618f4fa2a225954c2b47914f019cd",
+    "bytes": 2675
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

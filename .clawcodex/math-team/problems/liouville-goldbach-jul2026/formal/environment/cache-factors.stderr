@@ -1,0 +1,27 @@
+✔ [2/26] Built Cache.Cli (407ms)
+✔ [5/26] Built Cache.Lean (425ms)
+✔ [6/26] Built Cache.Infra (342ms)
+✔ [7/26] Built Cache.Cli:c.o (312ms)
+✔ [8/26] Built Cache.Lean:c.o (295ms)
+✔ [9/26] Built Cache.Infra:c.o (120ms)
+✔ [10/26] Built Batteries.Tactic.OpenPrivate (637ms)
+✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (608ms)
+✔ [12/26] Built Cache.IO (853ms)
+✔ [13/26] Built Cache.Hashing (643ms)
+✔ [14/26] Built Cache.IO:c.o (865ms)
+✔ [15/26] Built Cache.Hashing:c.o (248ms)
+✔ [16/26] Built Cache.Requests (1.2s)
+✔ [17/26] Built Cache.Marker (441ms)
+✔ [18/26] Built Cache.Marker:c.o (82ms)
+✔ [19/26] Built Cache.Query (534ms)
+✔ [20/26] Built Cache.Query:c.o (175ms)
+✔ [21/26] Built Cache.Warning (488ms)
+✔ [22/26] Built Cache.Requests:c.o (1.4s)
+✔ [23/26] Built Cache.Warning:c.o (148ms)
+✔ [24/26] Built Cache.Main (1.2s)
+✔ [25/26] Built Cache.Main:c.o (465ms)
+ℹ [26/26] Built cache:exe (1.6s)
+info: stderr:
+ld64.lld: warning: directory not found for option -L/usr/local/lib
+Downloaded: 0 file(s) [attempted 1/664 = 0%, 0 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 83/664 = 12%, 3 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 149/664 = 22%, 3 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 242/664 = 36%, 2 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 345/664 = 51%, 2 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 439/664 = 66%, 3 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 504/664 = 75%, 3 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 589/664 = 88%, 3 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 663/664 = 99%, 3 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 664/664 = 100%, 3 KB/s], Decompressed: 0[K
+Downloaded: 1 file(s) [attempted 1/664 = 0%, 16 KB/s], Decompressed: 0[KDownloaded: 31 file(s) [attempted 31/664 = 4%, 31 KB/s], Decompressed: 22[KDownloaded: 50 file(s) [attempted 50/664 = 7%, 61 KB/s], Decompressed: 43[KDownloaded: 68 file(s) [attempted 68/664 = 10%, 284 KB/s], Decompressed: 59[KDownloaded: 87 file(s) [attempted 87/664 = 13%, 258 KB/s], Decompressed: 68[KDownloaded: 93 file(s) [attempted 93/664 = 14%, 106 KB/s], Decompressed: 92[KDownloaded: 117 file(s) [attempted 117/664 = 17%, 136 KB/s], Decompressed: 116[KDownloaded: 142 file(s) [attempted 142/664 = 21%, 82 KB/s], Decompressed: 139[KDownloaded: 157 file(s) [attempted 157/664 = 23%, 83 KB/s], Decompressed: 148[KDownloaded: 167 file(s) [attempted 167/664 = 25%, 55 KB/s], Decompressed: 157[KDownloaded: 183 file(s) [attempted 183/664 = 27%, 258 KB/s], Decompressed: 167[KDownloaded: 185 file(s) [attempted 185/664 = 27%, 609 KB/s], Decompressed: 167[KDownloaded: 204 file(s) [attempted 204/664 = 30%, 197 KB/s], Decompressed: 195[KDownloaded: 223 file(s) [attempted 223/664 = 33%, 348 KB/s], Decompressed: 214[KDownloaded: 242 file(s) [attempted 242/664 = 36%, 176 KB/s], Decompressed: 233[KDownloaded: 261 file(s) [attempted 261/664 = 39%, 154 KB/s], Decompressed: 251[KDownloaded: 286 file(s) [attempted 286/664 = 43%, 64 KB/s], Decompressed: 284[KDownloaded: 304 file(s) [attempted 304/664 = 45%, 887 KB/s], Decompressed: 295[KDownloaded: 323 file(s) [attempted 323/664 = 48%, 560 KB/s], Decompressed: 314[KDownloaded: 339 file(s) [attempted 339/664 = 51%, 59 KB/s], Decompressed: 331[KDownloaded: 357 file(s) [attempted 357/664 = 53%, 168 KB/s], Decompressed: 348[KDownloaded: 376 file(s) [attempted 376/664 = 56%, 114 KB/s], Decompressed: 367[KDownloaded: 395 file(s) [attempted 395/664 = 59%, 92 KB/s], Decompressed: 386[KDownloaded: 405 file(s) [attempted 405/664 = 60%, 164 KB/s], Decompressed: 395[KDownloaded: 423 file(s) [attempted 423/664 = 63%, 220 KB/s], Decompressed: 414[KDownloaded: 433 file(s) [attempted 433/664 = 65%, 502 KB/s], Decompressed: 423[KDownloaded: 442 file(s) [attempted 442/664 = 66%, 62 KB/s], Decompressed: 433[KDownloaded: 461 file(s) [attempted 461/664 = 69%, 92 KB/s], Decompressed: 452[KDownloaded: 480 file(s) [attempted 480/664 = 72%, 15 KB/s], Decompressed: 471[KDownloaded: 499 file(s) [attempted 499/664 = 75%, 314 KB/s], Decompressed: 490[KDownloaded: 518 file(s) [attempted 518/664 = 78%, 731 KB/s], Decompressed: 499[KDownloaded: 537 file(s) [attempted 537/664 = 80%, 17 KB/s], Decompressed: 508[KDownloaded: 556 file(s) [attempted 556/664 = 83%, 230 KB/s], Decompressed: 546[KDownloaded: 574 file(s) [attempted 574/664 = 86%, 497 KB/s], Decompressed: 565[KDownloaded: 603 file(s) [attempted 603/664 = 90%, 370 KB/s], Decompressed: 593[KDownloaded: 622 file(s) [attempted 622/664 = 93%, 650 KB/s], Decompressed: 612[KDownloaded: 640 file(s) [attempted 640/664 = 96%, 151 KB/s], Decompressed: 631[KDownloaded: 650 file(s) [attempted 650/664 = 97%, 245 KB/s], Decompressed: 640[KDownloaded: 659 file(s) [attempted 659/664 = 99%, 384 KB/s], Decompressed: 650[KDownloaded: 664 file(s) [attempted 664/664 = 100%, 384 KB/s], Decompressed: 650[K

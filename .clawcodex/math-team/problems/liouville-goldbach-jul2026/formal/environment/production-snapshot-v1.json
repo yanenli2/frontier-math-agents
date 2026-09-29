@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/snapshot_v1.py"
+  ],
+  "shell_display": "python3 .clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/snapshot_v1.py",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:22:48.203882+00:00",
+  "elapsed_seconds": 0.08485383299999999,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/production-snapshot-v1.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/production-snapshot-v1.stderr",
+  "stdout_sha256": "61993e9b6b3ee0a9c03d88e7a3cceba694e3c2823383d9f5b45babe44120bd7f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

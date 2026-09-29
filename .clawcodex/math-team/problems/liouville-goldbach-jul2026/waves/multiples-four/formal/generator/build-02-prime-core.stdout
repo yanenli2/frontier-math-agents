@@ -1,0 +1,16 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/Attempt-v2.lean:51:10: error: unsolved goals
+case neg.inr.cons
+m : ℕ
+hm : 0 < m
+hEven : ¬Even m
+hminus : lambda m = -1
+hprod : m.primeFactorsList.prod = m
+p : ℕ
+t : List ℕ
+hlist : m.primeFactorsList = p :: t
+hp : Nat.Prime p
+hd : 0 < t.prod
+hfactor : m = t.prod * p
+hdSign : lambda t.prod = 1
+hpne : p ≠ 2
+⊢ HasRepresentation (4 * p)

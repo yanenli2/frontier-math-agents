@@ -1,0 +1,718 @@
+{
+  "mode": "CERTIFICATION compiled candidate; independent acceptance and integration separate",
+  "task_id": "c58d66c51213",
+  "created_utc": "2026-09-25T09:12:32.816479+00:00",
+  "candidate": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/FourCandidate.lean",
+  "candidate_sha256": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+  "theorem_count": 19,
+  "new_definition_count": 0,
+  "statement_comparison": "Outer whitespace stripped only; all internal bytes of all 19 headers identical.",
+  "comparisons": [
+    {
+      "name": "ArithmeticStatement.lambda_six",
+      "candidate_line": 8,
+      "approved_line": 7,
+      "header_identical": true,
+      "header": "theorem lambda_six :\n  lambda 6 = (1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_seven",
+      "candidate_line": 14,
+      "approved_line": 10,
+      "header_identical": true,
+      "header": "theorem lambda_seven :\n  lambda 7 = (-1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.twelve_two_sign_seed",
+      "candidate_line": 18,
+      "approved_line": 13,
+      "header_identical": true,
+      "header": "theorem twelve_two_sign_seed :\n  HasSignedRepresentation (-1 : ℤ) 12 ∧\n    HasSignedRepresentation (1 : ℤ) 12"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_twelve",
+      "candidate_line": 25,
+      "approved_line": 17,
+      "header_identical": true,
+      "header": "theorem representation_multiple_twelve (t : ℕ) (ht : 0 < t) :\n  HasRepresentation (12 * t)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_lambda_one",
+      "candidate_line": 29,
+      "approved_line": 20,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_lambda_one {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (1 : ℤ)) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_even",
+      "candidate_line": 37,
+      "approved_line": 24,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_even {m : ℕ}\n    (hm : 0 < m) (hEven : Even m) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_three_dvd",
+      "candidate_line": 46,
+      "approved_line": 28,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_three_dvd {m : ℕ}\n    (hm : 0 < m) (hThree : 3 ∣ m) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_sum_two_squares",
+      "candidate_line": 55,
+      "approved_line": 32,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_sum_two_squares {m u v : ℕ}\n    (hm : 0 < m) (hSum : m = u ^ 2 + v ^ 2) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares",
+      "candidate_line": 81,
+      "approved_line": 36,
+      "header_identical": true,
+      "header": "theorem prime_one_mod_four_eq_sum_two_squares {p : ℕ}\n    (hp : Nat.Prime p) (hMod : p % 4 = 1) :\n  ∃ u v : ℕ, p = u ^ 2 + v ^ 2"
+    },
+    {
+      "name": "ArithmeticStatement.representation_four_prime_one_mod_four",
+      "candidate_line": 88,
+      "approved_line": 40,
+      "header_identical": true,
+      "header": "theorem representation_four_prime_one_mod_four {p : ℕ}\n    (hp : Nat.Prime p) (hMod : p % 4 = 1) :\n  HasRepresentation (4 * p)"
+    },
+    {
+      "name": "ArithmeticStatement.prime_divisor_positive_sign_cofactor",
+      "candidate_line": 94,
+      "approved_line": 44,
+      "header_identical": true,
+      "header": "theorem prime_divisor_positive_sign_cofactor {m p : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ))\n    (hp : Nat.Prime p) (hDiv : p ∣ m) :\n  ∃ d : ℕ, 0 < d ∧ lambda d = (1 : ℤ) ∧ m = d * p"
+    },
+    {
+      "name": "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one",
+      "candidate_line": 109,
+      "approved_line": 49,
+      "header_identical": true,
+      "header": "theorem exists_prime_factor_of_lambda_neg_one {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ)) :\n  ∃ p d : ℕ,\n    Nat.Prime p ∧ 0 < d ∧ lambda d = (1 : ℤ) ∧ m = d * p"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_prime_divisor",
+      "candidate_line": 121,
+      "approved_line": 54,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_prime_divisor {m p : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ))\n    (hp : Nat.Prime p) (hDiv : p ∣ m)\n    (hCore : HasRepresentation (4 * p)) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd",
+      "candidate_line": 131,
+      "approved_line": 60,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_prime_one_mod_four_dvd {m p : ℕ}\n    (hm : 0 < m) (hp : Nat.Prime p)\n    (hDiv : p ∣ m) (hMod : p % 4 = 1) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one",
+      "candidate_line": 140,
+      "approved_line": 65,
+      "header_identical": true,
+      "header": "theorem exists_prime_one_mod_four_of_lambda_neg_one {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 = 1)\n    (hSign : lambda m = (-1 : ℤ)) :\n  ∃ p : ℕ, Nat.Prime p ∧ p ∣ m ∧ p % 4 = 1"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_mod_four_one",
+      "candidate_line": 190,
+      "approved_line": 70,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_mod_four_one {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 = 1) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three",
+      "candidate_line": 198,
+      "approved_line": 74,
+      "header_identical": true,
+      "header": "theorem representation_multiple_four_of_mod_four_ne_three {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 ≠ 3) :\n  HasRepresentation (4 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.multiple_four_iff_odd_prime_core",
+      "candidate_line": 207,
+      "approved_line": 78,
+      "header_identical": true,
+      "header": "theorem multiple_four_iff_odd_prime_core :\n  (∀ m : ℕ, 0 < m → HasRepresentation (4 * m)) ↔\n    ∀ p : ℕ, Nat.Prime p → p ≠ 2 → HasRepresentation (4 * p)"
+    },
+    {
+      "name": "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core",
+      "candidate_line": 226,
+      "approved_line": 82,
+      "header_identical": true,
+      "header": "theorem multiple_four_iff_prime_three_mod_four_core :\n  (∀ m : ℕ, 0 < m → HasRepresentation (4 * m)) ↔\n    ∀ p : ℕ, Nat.Prime p → 7 ≤ p → p % 4 = 3 →\n      HasRepresentation (4 * p)"
+    }
+  ],
+  "reviewed_input_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/nl/generator/proof-attempt-v1.md": "1730e39b6ef4eb33bc4621e26642d63b4c775415a4cdeec7de00ccff71fa89ef",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/nl/reviews/partial-review-v1.md": "a692b264bf9185f3f067d7c15804a6ff7e743a6ff295db50058d32d151727ddc",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/helper-fidelity-v1.md": "ad4612c5f35e0e0b75b1b06913b756605f4fe62557346be0ee2f6cdfbd35f517",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean": "be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed"
+  },
+  "final_build": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-build-04-final-axioms.json",
+  "final_build_sha256": "1c75b83360f4b0e0f28016e3aa23db2d25e96fd73e62e12fee82351212820bdf",
+  "final_build_exit_status": 0,
+  "stdout_sha256": "2275f1fe8774affbdf27f43476dbb493b1dfd8f820f2e7a63c28ce3390816b12",
+  "axiom_report_count": 48,
+  "axioms": {
+    "ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_mod_four_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.Prime.sq_add_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_four_prime_one_mod_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.prime_divisor_positive_sign_cofactor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.exists_prime_factor_of_lambda_neg_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_prime_divisor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.multiple_four_iff_odd_prime_core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.twelve_two_sign_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_twelve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_lambda_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_even": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_three_dvd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_four_of_sum_two_squares": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.omega": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.HasSignedRepresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.HasRepresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_two_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.hasSignedRepresentation_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_double": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_two_sign_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_eight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prime_seven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.exists_eq_add_of_le": [
+      "propext"
+    ],
+    "Nat.exists_prime_and_dvd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prod_primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prime_of_mem_primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.dvd_of_mem_primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.Prime.eq_two_or_odd": [
+      "propext"
+    ],
+    "Nat.odd_mod_four_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.odd_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.not_even_iff_odd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ZMod.natCast_mod": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Int.cast_pow": [
+      "propext",
+      "Quot.sound"
+    ],
+    "GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "admitted_or_native_trust_tokens": [],
+  "diagnostic_warnings": [],
+  "imports": [
+    "Statement.Partial",
+    "Mathlib.NumberTheory.SumTwoSquares"
+  ],
+  "protected_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean": "be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/approved-v1/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+  },
+  "library_source_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/SumTwoSquares.lean": "ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/Zsqrtd/GaussianInt.lean": "3b1ad71a44a0ba95fe172fff4adb35c1c3d0ab3dacc0cacca37d6024c51fd12b",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/Zsqrtd/QuadraticReciprocity.lean": "8b1fa86e4d60240ff76e788a41fa711a762103b08bd3975b00d6f8eb18f38e88",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Factors.lean": "3e64e2c8ba907c05209966a7bba8754cf2ab33f328a3010667ffe58c95e0bca3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Defs.lean": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Basic.lean": "b97e83d65681b68b3ad1f4bdfd36defd0a30aa173cf726b3d2807acf8bde5027",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/ModEq.lean": "678c7d5030c056efb633aaab3a1b44ceec599332b9f70f694b08f4cce27d1fea",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/ZMod/Basic.lean": "9a57047615cf4231f3561aef5c75ededf5a6ed6559308f31e241d1d27b2bc00c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Ring/Int/Defs.lean": "f363497ba585975055a545e863e6c6d1842855037b7ca4824220791116b52866"
+  },
+  "checkouts": [
+    {
+      "package": "plausible",
+      "pin": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "actual_head": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "clean": true
+    },
+    {
+      "package": "LeanSearchClient",
+      "pin": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "actual_head": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "clean": true
+    },
+    {
+      "package": "importGraph",
+      "pin": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "actual_head": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "clean": true
+    },
+    {
+      "package": "proofwidgets",
+      "pin": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "actual_head": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "clean": true
+    },
+    {
+      "package": "aesop",
+      "pin": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "actual_head": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "clean": true
+    },
+    {
+      "package": "Qq",
+      "pin": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "actual_head": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "clean": true
+    },
+    {
+      "package": "batteries",
+      "pin": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "actual_head": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "clean": true
+    },
+    {
+      "package": "Cli",
+      "pin": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "actual_head": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "clean": true
+    },
+    {
+      "package": "mathlib",
+      "pin": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "actual_head": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "clean": true
+    }
+  ],
+  "compiler_version": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "shell_display": "lake env lean --version",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_status": 0,
+      "stdout": "e12c1910fe855cbfc38803cd4e55543906d5fa62\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_status": 0,
+      "stdout": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_status": 0,
+      "stdout": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_status": 0,
+      "stdout": "6e311e2a844da9b2cc3971187df2fe0066947b93\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_status": 0,
+      "stdout": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_status": 0,
+      "stdout": "38d591e778f100aec9762bb582f9c7f55f50e9dc\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_status": 0,
+      "stdout": "023ce7d62a0531e22a5331e20b587817a80d49ff\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_status": 0,
+      "stdout": "88679d088c9720c27ebdf2ba4dafe17341747f94\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "cache_record": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-cache-sum-two-squares-v1.json",
+  "cache_record_sha256": "3387a2b3b1d01addbc58aa3d2b5b0965e6c0f9ed54c2cbd70267c8d12c530dd5",
+  "full_target_status": "OPEN and not declared as a theorem in this candidate",
+  "residual_goal": "p : ℕ; hp : Nat.Prime p; hLower : 7 ≤ p; hMod : p % 4 = 3; ⊢ HasRepresentation (4 * p)",
+  "integration_status": "No master edit; exact candidate offered for independent review before integrator merge"
+}

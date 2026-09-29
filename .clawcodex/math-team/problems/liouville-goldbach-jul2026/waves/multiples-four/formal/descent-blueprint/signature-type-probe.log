@@ -1,0 +1,410 @@
+∀ {p n : ℕ}, ¬HasRepresentation (4 * p) → 0 < n → n < p → lambda n = -1 → lambda (p - n) = 1 : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:16:5: warning: Variable name `hno` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:17:5: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:17:18: warning: Variable name `hnp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:17:32: warning: Variable name `hs` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p n : ℕ}, ¬HasRepresentation (4 * p) → 0 < n → n < 2 * p → lambda n = 1 → lambda (2 * p - n) = -1 : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:21:5: warning: Variable name `hno` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:22:5: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:22:18: warning: Variable name `hnp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:22:36: warning: Variable name `hs` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p x y : ℕ}, ¬HasRepresentation (4 * p) → 0 < x → 0 < y → x + y = p → lambda x = 1 → lambda y = 1 → ¬3 ∣ x : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:26:5: warning: Variable name `hno` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:27:5: warning: Variable name `hx` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:27:18: warning: Variable name `hy` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:27:31: warning: Variable name `hsum` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:28:5: warning: Variable name `hxsign` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:28:35: warning: Variable name `hysign` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p x y : ℕ},
+  Nat.Prime p →
+    p ≠ 3 →
+      ¬HasRepresentation (4 * p) →
+        0 < x →
+          x < y →
+            x + y = p →
+              lambda x = 1 →
+                lambda y = 1 → ∃ u v, 0 < u ∧ u < v ∧ u + v = p ∧ lambda u = 1 ∧ lambda v = 1 ∧ v - u < y - x : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:32:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:32:24: warning: Variable name `hp3` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:33:5: warning: Variable name `hno` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:34:5: warning: Variable name `hx` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:34:18: warning: Variable name `hxy` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:34:32: warning: Variable name `hsum` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:35:5: warning: Variable name `hxsign` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:35:35: warning: Variable name `hysign` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ},
+  Nat.Prime p →
+    p ≠ 2 →
+      p ≠ 3 →
+        ¬HasRepresentation (4 * p) → ∀ {x y : ℕ}, 0 < x → 0 < y → x + y = p → ¬(lambda x = 1 ∧ lambda y = 1) : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:40:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:40:24: warning: Variable name `hp2` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:40:38: warning: Variable name `hp3` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:41:5: warning: Variable name `hno` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:42:15: warning: Variable name `hx` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:42:28: warning: Variable name `hy` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:42:41: warning: Variable name `hsum` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ},
+  Nat.Prime p →
+    p ≠ 2 → p ≠ 3 → ¬HasRepresentation (4 * p) → ∀ (n : ℕ), 0 < n → n < p → lambda (p - n) = -lambda n : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:46:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:46:24: warning: Variable name `hp2` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:46:38: warning: Variable name `hp3` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:47:5: warning: Variable name `hno` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p n : ℕ},
+  Nat.Prime p →
+    2 ≤ n → n < p → ∀ (z : ZMod p), z ≠ 0 → ∃ k d, k ≠ 0 ∧ k.natAbs < n ∧ 0 < d ∧ n * d < p ∧ ↑k * z = ↑d : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:51:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:51:24: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:51:37: warning: Variable name `hnp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:52:18: warning: Variable name `hz` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p n : ℕ}, n < p → residueLambda p ↑n = lambda n : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:56:20: warning: Variable name `hnp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ} {z : ZMod p}, z ≠ 0 → residueLambda p z = 1 ∨ residueLambda p z = -1 : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:59:31: warning: Variable name `hz` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ},
+  Nat.Prime p →
+    (∀ (n : ℕ), 0 < n → n < p → lambda (p - n) = -lambda n) →
+      ∀ {z : ZMod p}, z ≠ 0 → residueLambda p (-z) = -residueLambda p z : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:62:18: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:63:5: warning: Variable name `hanti` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:64:18: warning: Variable name `hz` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ}, Nat.Prime p → GoodMultiplier p 1 : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:67:18: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ},
+  Nat.Prime p →
+    (∀ (n : ℕ), 0 < n → n < p → lambda (p - n) = -lambda n) →
+      ∀ {a : ZMod p}, GoodMultiplier p a → GoodMultiplier p (-a) : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:70:18: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:71:5: warning: Variable name `hanti` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:72:18: warning: Variable name `ha` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p n : ℕ},
+  Nat.Prime p →
+    (∀ (j : ℕ), 0 < j → j < p → lambda (p - j) = -lambda j) →
+      0 < n → n < p → (∀ (j : ℕ), 0 < j → j < n → GoodMultiplier p ↑j) → GoodMultiplier p ↑n : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:75:20: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:76:5: warning: Variable name `hanti` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:77:5: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:77:18: warning: Variable name `hnp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:78:5: warning: Variable name `hsmall` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ},
+  Nat.Prime p →
+    (∀ (n : ℕ), 0 < n → n < p → lambda (p - n) = -lambda n) →
+      ∀ {a b : ZMod p}, a ≠ 0 → b ≠ 0 → residueLambda p (a * b) = residueLambda p a * residueLambda p b : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:81:18: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:82:5: warning: Variable name `hanti` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:83:20: warning: Variable name `ha` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:83:33: warning: Variable name `hb` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p n : ℕ},
+  Nat.Prime p →
+    (∀ (j : ℕ), 0 < j → j < p → lambda (p - j) = -lambda j) → 0 < n → n < p → IsSquare ↑n → lambda n = 1 : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:86:20: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:87:5: warning: Variable name `hanti` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:88:5: warning: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:88:18: warning: Variable name `hnp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:88:32: warning: Variable name `hsquare` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p r : ℕ}, Nat.Prime p → 7 ≤ p → p % 4 = 3 → Nat.Prime r → r ∣ (p + 1) / 4 → IsSquare ↑r : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:92:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:92:24: warning: Variable name `hLower` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:92:41: warning: Variable name `hMod` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:93:5: warning: Variable name `hr` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:93:24: warning: Variable name `hdiv` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ},
+  Nat.Prime p → 7 ≤ p → p % 4 = 3 → ∃ r, Nat.Prime r ∧ r ∣ (p + 1) / 4 ∧ r ≤ (p + 1) / 4 ∧ r < p ∧ IsSquare ↑r : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:97:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:97:24: warning: Variable name `hLower` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:97:41: warning: Variable name `hMod` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ {p : ℕ}, Nat.Prime p → 7 ≤ p → p % 4 = 3 → HasRepresentation (4 * p) : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:106:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:106:24: warning: Variable name `hLower` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:106:41: warning: Variable name `hMod` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+∀ (m : ℕ), 0 < m → HasRepresentation (4 * m) : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean:109:18: warning: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

@@ -1,0 +1,1173 @@
+{
+  "mode": "CERTIFICATION candidate evidence; separate independent acceptance and integration required",
+  "created_utc": "2026-09-25T03:26:07.842656+00:00",
+  "candidate": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean",
+  "candidate_sha256": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+  "approved_interfaces": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/blueprinter/interfaces-v1.lean",
+  "approved_interfaces_sha256": "89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc",
+  "definitions_count": 8,
+  "theorems_count": 42,
+  "statement_comparison_scope": "Only outer whitespace stripped. All internal bytes of definition bodies and theorem headers match approved snapshot.",
+  "comparisons": [
+    {
+      "name": "ArithmeticStatement.HasSignedRepresentation",
+      "kind": "def",
+      "candidate_line": 14,
+      "approved_line": 11,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def HasSignedRepresentation (s : ℤ) (N : ℕ) : Prop :=\n  ∃ a b : ℕ,\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = s ∧ lambda b = s"
+    },
+    {
+      "name": "ArithmeticStatement.HasRepresentation",
+      "kind": "def",
+      "candidate_line": 19,
+      "approved_line": 16,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def HasRepresentation (N : ℕ) : Prop :=\n  HasSignedRepresentation (-1 : ℤ) N"
+    },
+    {
+      "name": "ArithmeticStatement.I",
+      "kind": "def",
+      "candidate_line": 22,
+      "approved_line": 19,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def I (N : ℕ) : Finset ℕ :=\n  Finset.Ico 1 N"
+    },
+    {
+      "name": "ArithmeticStatement.representationIndices",
+      "kind": "def",
+      "candidate_line": 25,
+      "approved_line": 22,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def representationIndices (N : ℕ) : Finset ℕ :=\n  (I N).filter (fun a =>\n    lambda a = (-1 : ℤ) ∧ lambda (N - a) = (-1 : ℤ))"
+    },
+    {
+      "name": "ArithmeticStatement.orderedRepresentations",
+      "kind": "def",
+      "candidate_line": 29,
+      "approved_line": 26,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def orderedRepresentations (N : ℕ) : Finset (ℕ × ℕ) :=\n  ((I N).product (I N)).filter (fun ab =>\n    N = ab.1 + ab.2 ∧\n      lambda ab.1 = (-1 : ℤ) ∧ lambda ab.2 = (-1 : ℤ))"
+    },
+    {
+      "name": "ArithmeticStatement.R",
+      "kind": "def",
+      "candidate_line": 34,
+      "approved_line": 31,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def R (N : ℕ) : ℕ :=\n  (orderedRepresentations N).card"
+    },
+    {
+      "name": "ArithmeticStatement.L",
+      "kind": "def",
+      "candidate_line": 37,
+      "approved_line": 34,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def L (x : ℕ) : ℤ :=\n  ∑ a ∈ Finset.Icc 1 x, lambda a"
+    },
+    {
+      "name": "ArithmeticStatement.C",
+      "kind": "def",
+      "candidate_line": 40,
+      "approved_line": 37,
+      "identical_stripped_text": true,
+      "comparison": "full definition",
+      "header_or_definition": "def C (N : ℕ) : ℤ :=\n  ∑ a ∈ I N, lambda a * lambda (N - a)"
+    },
+    {
+      "name": "ArithmeticStatement.omega_one",
+      "kind": "theorem",
+      "candidate_line": 43,
+      "approved_line": 40,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem omega_one :\n  omega 1 = 0"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_one",
+      "kind": "theorem",
+      "candidate_line": 47,
+      "approved_line": 43,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_one :\n  lambda 1 = (1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_sign",
+      "kind": "theorem",
+      "candidate_line": 51,
+      "approved_line": 46,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_sign {n : ℕ} (hn : 0 < n) :\n  lambda n = (1 : ℤ) ∨ lambda n = (-1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.omega_mul",
+      "kind": "theorem",
+      "candidate_line": 57,
+      "approved_line": 49,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem omega_mul {u v : ℕ} (hu : 0 < u) (hv : 0 < v) :\n  omega (u * v) = omega u + omega v"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_mul",
+      "kind": "theorem",
+      "candidate_line": 62,
+      "approved_line": 52,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_mul {u v : ℕ} (hu : 0 < u) (hv : 0 < v) :\n  lambda (u * v) = lambda u * lambda v"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_prime",
+      "kind": "theorem",
+      "candidate_line": 66,
+      "approved_line": 55,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_prime {p : ℕ} (hp : Nat.Prime p) :\n  lambda p = (-1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_two",
+      "kind": "theorem",
+      "candidate_line": 70,
+      "approved_line": 58,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_two :\n  lambda 2 = (-1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_three",
+      "kind": "theorem",
+      "candidate_line": 74,
+      "approved_line": 61,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_three :\n  lambda 3 = (-1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_four",
+      "kind": "theorem",
+      "candidate_line": 78,
+      "approved_line": 64,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_four :\n  lambda 4 = (1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_five",
+      "kind": "theorem",
+      "candidate_line": 84,
+      "approved_line": 67,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_five :\n  lambda 5 = (-1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_two_mul",
+      "kind": "theorem",
+      "candidate_line": 88,
+      "approved_line": 70,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_two_mul {m : ℕ} (hm : 0 < m) :\n  lambda (2 * m) = -lambda m"
+    },
+    {
+      "name": "ArithmeticStatement.lambda_square",
+      "kind": "theorem",
+      "candidate_line": 93,
+      "approved_line": 73,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem lambda_square {t : ℕ} (ht : 0 < t) :\n  lambda (t ^ 2) = (1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.target_iff_forall_hasRepresentation",
+      "kind": "theorem",
+      "candidate_line": 98,
+      "approved_line": 76,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem target_iff_forall_hasRepresentation :\n  Target ↔ ∀ N : ℕ, Even N → 2 < N → HasRepresentation N"
+    },
+    {
+      "name": "ArithmeticStatement.hasSignedRepresentation_mul",
+      "kind": "theorem",
+      "candidate_line": 102,
+      "approved_line": 79,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem hasSignedRepresentation_mul {s : ℤ} {N d : ℕ}\n    (hd : 0 < d) (h : HasSignedRepresentation s N) :\n  HasSignedRepresentation (lambda d * s) (d * N)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_scaled_sign",
+      "kind": "theorem",
+      "candidate_line": 111,
+      "approved_line": 83,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_scaled_sign {u v m : ℕ} {s : ℤ}\n    (hu : 0 < u) (hv : 0 < v) (hm : 0 < m)\n    (hs : s = (1 : ℤ) ∨ s = (-1 : ℤ))\n    (huSign : lambda u = s) (hvSign : lambda v = s)\n    (hmSign : lambda m = -s) :\n  HasRepresentation (m * (u + v))"
+    },
+    {
+      "name": "ArithmeticStatement.representation_double",
+      "kind": "theorem",
+      "candidate_line": 124,
+      "approved_line": 90,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_double {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ)) :\n  HasRepresentation (2 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_diagonal",
+      "kind": "theorem",
+      "candidate_line": 129,
+      "approved_line": 94,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_diagonal {N : ℕ}\n    (hEven : Even N) (hN : 2 < N) (hSign : lambda N = (1 : ℤ)) :\n  HasRepresentation N"
+    },
+    {
+      "name": "ArithmeticStatement.representation_two_sign_seed",
+      "kind": "theorem",
+      "candidate_line": 139,
+      "approved_line": 98,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_two_sign_seed {d : ℕ}\n    (hminus : HasSignedRepresentation (-1 : ℤ) d)\n    (hplus : HasSignedRepresentation (1 : ℤ) d)\n    (m : ℕ) (hm : 0 < m) :\n  HasRepresentation (d * m)"
+    },
+    {
+      "name": "ArithmeticStatement.eight_two_sign_seed",
+      "kind": "theorem",
+      "candidate_line": 150,
+      "approved_line": 104,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem eight_two_sign_seed :\n  HasSignedRepresentation (-1 : ℤ) 8 ∧\n    HasSignedRepresentation (1 : ℤ) 8"
+    },
+    {
+      "name": "ArithmeticStatement.representation_multiple_eight",
+      "kind": "theorem",
+      "candidate_line": 157,
+      "approved_line": 108,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_multiple_eight (m : ℕ) (hm : 0 < m) :\n  HasRepresentation (8 * m)"
+    },
+    {
+      "name": "ArithmeticStatement.mem_I_iff",
+      "kind": "theorem",
+      "candidate_line": 161,
+      "approved_line": 111,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem mem_I_iff {N a : ℕ} :\n  a ∈ I N ↔ 0 < a ∧ a < N"
+    },
+    {
+      "name": "ArithmeticStatement.interval_eq_Icc",
+      "kind": "theorem",
+      "candidate_line": 165,
+      "approved_line": 114,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem interval_eq_Icc {N : ℕ} (hN : 2 ≤ N) :\n  I N = Finset.Icc 1 (N - 1)"
+    },
+    {
+      "name": "ArithmeticStatement.interval_bounds",
+      "kind": "theorem",
+      "candidate_line": 171,
+      "approved_line": 117,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem interval_bounds {N a : ℕ} (hN : 2 ≤ N) (ha : a ∈ I N) :\n  0 < a ∧ a < N ∧ 0 < N - a ∧ N - a < N"
+    },
+    {
+      "name": "ArithmeticStatement.interval_card_cast",
+      "kind": "theorem",
+      "candidate_line": 176,
+      "approved_line": 120,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem interval_card_cast {N : ℕ} (hN : 2 ≤ N) :\n  ((I N).card : ℤ) = (N : ℤ) - 1"
+    },
+    {
+      "name": "ArithmeticStatement.reflection_mem",
+      "kind": "theorem",
+      "candidate_line": 182,
+      "approved_line": 123,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem reflection_mem {N a : ℕ} (hN : 2 ≤ N) (ha : a ∈ I N) :\n  N - a ∈ I N"
+    },
+    {
+      "name": "ArithmeticStatement.reflection_involutive",
+      "kind": "theorem",
+      "candidate_line": 186,
+      "approved_line": 126,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem reflection_involutive {N a : ℕ}\n    (hN : 2 ≤ N) (ha : a ∈ I N) :\n  N - (N - a) = a"
+    },
+    {
+      "name": "ArithmeticStatement.reflection_bijection",
+      "kind": "theorem",
+      "candidate_line": 191,
+      "approved_line": 130,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem reflection_bijection {N : ℕ} (hN : 2 ≤ N) :\n  Set.BijOn (fun a : ℕ => N - a) (I N : Set ℕ) (I N : Set ℕ)"
+    },
+    {
+      "name": "ArithmeticStatement.sum_lambda_interval",
+      "kind": "theorem",
+      "candidate_line": 200,
+      "approved_line": 133,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem sum_lambda_interval {N : ℕ} (hN : 2 ≤ N) :\n  (∑ a ∈ I N, lambda a) = L (N - 1)"
+    },
+    {
+      "name": "ArithmeticStatement.sum_lambda_reflection",
+      "kind": "theorem",
+      "candidate_line": 205,
+      "approved_line": 136,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem sum_lambda_reflection {N : ℕ} (hN : 2 ≤ N) :\n  (∑ a ∈ I N, lambda (N - a)) = L (N - 1)"
+    },
+    {
+      "name": "ArithmeticStatement.mem_orderedRepresentations",
+      "kind": "theorem",
+      "candidate_line": 215,
+      "approved_line": 139,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem mem_orderedRepresentations {N a b : ℕ} :\n  (a, b) ∈ orderedRepresentations N ↔\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = (-1 : ℤ) ∧ lambda b = (-1 : ℤ)"
+    },
+    {
+      "name": "ArithmeticStatement.orderedRepresentations_eq_image",
+      "kind": "theorem",
+      "candidate_line": 227,
+      "approved_line": 144,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem orderedRepresentations_eq_image {N : ℕ} (hN : 2 ≤ N) :\n  orderedRepresentations N =\n    (representationIndices N).image (fun a : ℕ => (a, N - a))"
+    },
+    {
+      "name": "ArithmeticStatement.representation_count_eq_card_indices",
+      "kind": "theorem",
+      "candidate_line": 247,
+      "approved_line": 148,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_count_eq_card_indices {N : ℕ} (hN : 2 ≤ N) :\n  R N = (representationIndices N).card"
+    },
+    {
+      "name": "ArithmeticStatement.two_sign_indicator",
+      "kind": "theorem",
+      "candidate_line": 252,
+      "approved_line": 151,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem two_sign_indicator {a b : ℕ} (ha : 0 < a) (hb : 0 < b) :\n  (4 : ℤ) *\n      (if lambda a = (-1 : ℤ) ∧ lambda b = (-1 : ℤ) then (1 : ℤ) else 0) =\n    (1 - lambda a) * (1 - lambda b)"
+    },
+    {
+      "name": "ArithmeticStatement.representation_count_eq_indicator_sum",
+      "kind": "theorem",
+      "candidate_line": 259,
+      "approved_line": 156,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_count_eq_indicator_sum {N : ℕ} (hN : 2 ≤ N) :\n  (R N : ℤ) =\n    ∑ a ∈ I N,\n      if lambda a = (-1 : ℤ) ∧ lambda (N - a) = (-1 : ℤ)\n      then (1 : ℤ) else 0"
+    },
+    {
+      "name": "ArithmeticStatement.four_mul_representation_count",
+      "kind": "theorem",
+      "candidate_line": 268,
+      "approved_line": 162,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem four_mul_representation_count {N : ℕ} (hN : 2 ≤ N) :\n  4 * (R N : ℤ) = ((N : ℤ) - 1) - 2 * L (N - 1) + C N"
+    },
+    {
+      "name": "ArithmeticStatement.representation_count_pos_iff",
+      "kind": "theorem",
+      "candidate_line": 291,
+      "approved_line": 165,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem representation_count_pos_iff {N : ℕ} (hN : 2 ≤ N) :\n  0 < R N ↔ HasRepresentation N"
+    },
+    {
+      "name": "ArithmeticStatement.count_pos_iff_keystone",
+      "kind": "theorem",
+      "candidate_line": 300,
+      "approved_line": 168,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem count_pos_iff_keystone {N : ℕ} (hN : 2 ≤ N) :\n  0 < R N ↔ 2 * L (N - 1) - ((N : ℤ) - 1) < C N"
+    },
+    {
+      "name": "ArithmeticStatement.keystone_ge_four_iff",
+      "kind": "theorem",
+      "candidate_line": 305,
+      "approved_line": 171,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem keystone_ge_four_iff {N : ℕ} (hN : 2 ≤ N) :\n  0 < R N ↔ 4 ≤ ((N : ℤ) - 1) - 2 * L (N - 1) + C N"
+    },
+    {
+      "name": "ArithmeticStatement.target_iff_count_pos",
+      "kind": "theorem",
+      "candidate_line": 310,
+      "approved_line": 174,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem target_iff_count_pos :\n  Target ↔ ∀ N : ℕ, Even N → 2 < N → 0 < R N"
+    },
+    {
+      "name": "ArithmeticStatement.target_iff_pointwise_keystone",
+      "kind": "theorem",
+      "candidate_line": 319,
+      "approved_line": 177,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem target_iff_pointwise_keystone :\n  Target ↔ ∀ N : ℕ, Even N → 2 < N →\n    2 * L (N - 1) - ((N : ℤ) - 1) < C N"
+    },
+    {
+      "name": "ArithmeticStatement.exists_prime_pair_factor_of_lambda_one",
+      "kind": "theorem",
+      "candidate_line": 329,
+      "approved_line": 181,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem exists_prime_pair_factor_of_lambda_one {m : ℕ}\n    (hm : 1 < m) (hSign : lambda m = (1 : ℤ)) :\n  ∃ p q d : ℕ,\n    Nat.Prime p ∧ Nat.Prime q ∧ 0 < d ∧\n      lambda d = (1 : ℤ) ∧ m = d * (p * q)"
+    },
+    {
+      "name": "ArithmeticStatement.target_iff_prime_product_core",
+      "kind": "theorem",
+      "candidate_line": 362,
+      "approved_line": 187,
+      "identical_stripped_text": true,
+      "comparison": "header before proof assignment",
+      "header_or_definition": "theorem target_iff_prime_product_core :\n  Target ↔ ∀ p q : ℕ,\n    Nat.Prime p → Nat.Prime q → HasRepresentation (2 * p * q)"
+    }
+  ],
+  "absent_open_endpoints": [
+    "liouville_goldbach",
+    "pointwise_keystone"
+  ],
+  "final_build": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/build-09-final-axioms.json",
+  "final_build_sha256": "0b678900771d60e1a70b136977c821f6ac64b485e1126e0cc9f0d17680278e35",
+  "final_build_exit_status": 0,
+  "final_stdout_sha256": "15362807421188c87a16086669e7e91db4ad450cba6280f112f3ecf36ed8736e",
+  "axiom_report_count": 82,
+  "axioms": {
+    "ArithmeticStatement.exists_prime_pair_factor_of_lambda_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.target_iff_prime_product_core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.two_sign_indicator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_count_eq_indicator_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.four_mul_representation_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.count_pos_iff_keystone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.keystone_ge_four_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.target_iff_count_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.target_iff_pointwise_keystone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.mem_I_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.interval_eq_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.interval_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.interval_card_cast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.reflection_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.reflection_involutive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.reflection_bijection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.sum_lambda_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.sum_lambda_reflection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.mem_orderedRepresentations": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.orderedRepresentations_eq_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_count_eq_card_indices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_count_pos_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.omega_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.omega_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_two_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.target_iff_forall_hasRepresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.hasSignedRepresentation_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_scaled_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_double": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_two_sign_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.eight_two_sign_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representation_multiple_eight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.omega": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.lambda": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.Target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.HasSignedRepresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.HasRepresentation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.I": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.representationIndices": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.orderedRepresentations": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.R": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.L": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ArithmeticStatement.C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.primeFactorsList_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.perm_primeFactorsList_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "List.Perm.length_eq": [
+      "propext"
+    ],
+    "List.length_append": [
+      "propext"
+    ],
+    "Nat.primeFactorsList_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "pow_add": [],
+    "neg_one_pow_eq_ite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prime_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prime_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prime_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.sub_sub_self": [
+      "propext"
+    ],
+    "Nat.cast_sub": [
+      "propext"
+    ],
+    "Nat.card_Ico": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Finset.product_eq_sprod": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Finset.mem_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Finset.mem_filter": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Finset.card_pos": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Finset.mem_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Finset.card_image_of_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Finset.sum_nbij'": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Finset.sum_filter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Finset.sum_const": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Finset.mul_sum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Finset.sum_add_distrib": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Finset.sum_sub_distrib": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Nat.prod_primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Nat.prime_of_mem_primeFactorsList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "List.prod_cons": []
+  },
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "admitted_or_native_trust_tokens": [],
+  "candidate_imports": [
+    "Statement.Definitions",
+    "Mathlib.Algebra.Ring.Parity",
+    "Mathlib.Algebra.Ring.Int.Defs",
+    "Mathlib.Order.Interval.Finset.Nat",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Tactic.Ring"
+  ],
+  "protected_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/approved-v1/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/blueprinter/interfaces-v1.lean": "89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+  },
+  "checkouts": [
+    {
+      "name": "plausible",
+      "manifest_pin": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "actual_head": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "manifest_pin": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "actual_head": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "clean": true
+    },
+    {
+      "name": "importGraph",
+      "manifest_pin": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "actual_head": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "manifest_pin": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "actual_head": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "clean": true
+    },
+    {
+      "name": "aesop",
+      "manifest_pin": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "actual_head": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "clean": true
+    },
+    {
+      "name": "Qq",
+      "manifest_pin": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "actual_head": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "clean": true
+    },
+    {
+      "name": "batteries",
+      "manifest_pin": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "actual_head": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "clean": true
+    },
+    {
+      "name": "Cli",
+      "manifest_pin": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "actual_head": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "clean": true
+    },
+    {
+      "name": "mathlib",
+      "manifest_pin": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "actual_head": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "clean": true
+    }
+  ],
+  "lean_version": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)",
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "shell_display": "lake env lean --version",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit_status": 0,
+      "stdout": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_status": 0,
+      "stdout": "e12c1910fe855cbfc38803cd4e55543906d5fa62\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_status": 0,
+      "stdout": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_status": 0,
+      "stdout": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_status": 0,
+      "stdout": "6e311e2a844da9b2cc3971187df2fe0066947b93\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_status": 0,
+      "stdout": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_status": 0,
+      "stdout": "38d591e778f100aec9762bb582f9c7f55f50e9dc\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_status": 0,
+      "stdout": "023ce7d62a0531e22a5331e20b587817a80d49ff\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_status": 0,
+      "stdout": "88679d088c9720c27ebdf2ba4dafe17341747f94\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "shell_display": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "shell_display": "git status --short",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "residual_goal": "N : ℕ; hEven : Even N; hN : 2 < N; ⊢ 2 * L (N - 1) - ((N : ℤ) - 1) < C N",
+  "final_target_status": "OPEN: no declaration ArithmeticStatement.liouville_goldbach and no proof of Target"
+}

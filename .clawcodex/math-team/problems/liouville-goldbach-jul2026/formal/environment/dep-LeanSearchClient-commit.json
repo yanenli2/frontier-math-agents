@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/LeanSearchClient/git/commits/c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+  ],
+  "shell_display": "gh api repos/leanprover-community/LeanSearchClient/git/commits/c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:00:11.640312+00:00",
+  "elapsed_seconds": 0.34156475000000003,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-commit.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-commit.stderr",
+  "stdout_sha256": "1c666af04eea35948eab8e751547596b6e0dbc4574c261f0e59e5efd2a112447",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

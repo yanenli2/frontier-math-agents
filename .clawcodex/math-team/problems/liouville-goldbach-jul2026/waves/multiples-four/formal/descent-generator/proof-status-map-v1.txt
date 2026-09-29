@@ -1,0 +1,209 @@
+Mode: CERTIFICATION — compiled candidate production; independent acceptance separate.
+Owner: fl-generator; task 8770ba99c0f5.
+P=.clawcodex/math-team/problems/liouville-goldbach-jul2026
+W=P/waves/multiples-four
+G=W/formal/descent-generator
+
+RESULT
+
+All seven assigned exact signatures are proved and compiled in the two owned
+scratch modules. Both modules have also been built by Lake and have importable
+olean artifacts. No new definitions, axioms, endpoint assumptions, or admitted
+obligations were introduced. Existing master modules and root imports remain
+untouched. The full endpoints are NOT supplied by these two modules; the leader
+must separately authorize Assembly after the other proof package is ready.
+
+1. P/lean/Statement/FourWork/Descent/Cyclic.lean
+   Import: Statement.FourWork.Descent.Cyclic
+   SHA-256 09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290
+   Direct evidence: G/cyclic-02.{lean,json,stdout,stderr}
+   Actual module build: G/cyclic-03-lake-build.{lean,json,stdout,stderr}
+
+2. P/lean/Statement/FourWork/Descent/Ternary.lean
+   Import: Statement.FourWork.Descent.Ternary
+   SHA-256 d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753
+   Direct evidence: G/ternary-03.{lean,json,stdout,stderr}
+   Actual module build: G/ternary-04-lake-build.{lean,json,stdout,stderr}
+
+Exact statement, build, axiom, olean-hash, pin and ownership audit:
+G/audit-v1.json, reproducible by G/audit-v1.py.
+The cyclic module was completed and made importable FIRST; fl-character and
+team-lead were notified before Ternary proof work. Cyclic has remained frozen
+at its notified hash.
+
+PROTECTED STATEMENT AND INPUT IDENTITY
+
+Approved code-only statement snapshot:
+W/formal/descent-blueprint/Readback.lean.txt
+SHA-256 372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763
+Fresh gate: W/formal/reviews/descent-fidelity-v1.md.
+Source: W/nl/descent/proof-attempt-v1.md, §§1–4 with the baseline at lines31–42.
+Whole-source SHA-256:
+23fc6ad19d1c45dd432945aa84756b190700b8c15394b1554ebb3ecaff82235e
+
+The audit compares every exported theorem header before := against the exact
+approved text, stripping only outer whitespace. It also recomputes each of the
+seven textual signature hashes from the fidelity report. All seven match,
+including namespace, signed coefficient type, strict bounds, hypothesis order,
+and integer-valued sign equalities. No protected signature was changed.
+
+No defining dependency is redefined in either module. They reuse the fixed
+omega, lambda and HasRepresentation from Statement.Partial. The residueLambda
+and GoodMultiplier definitions belong exclusively to the other worker and are
+not reproduced or imported here.
+
+THEOREM MAP AND PROOF SCOPE
+
+All seven rows have status COMPILED CANDIDATE, direct exit0 and Lake build exit0;
+all have transitive axiom set {propext, Classical.choice, Quot.sound}.
+
+Module   Declaration
+Cyclic   ArithmeticStatement.FourWork.cyclic_short_multiple
+Ternary  ArithmeticStatement.FourWork.lambda_reflection_eq_one_of_neg
+Ternary  ArithmeticStatement.FourWork.lambda_double_reflection_eq_neg_one_of_pos
+Ternary  ArithmeticStatement.FourWork.three_not_dvd_of_positive_pair
+Ternary  ArithmeticStatement.FourWork.positive_pair_gap_step
+Ternary  ArithmeticStatement.FourWork.no_positive_pair
+Ternary  ArithmeticStatement.FourWork.lambda_antireflection_of_no_representation
+
+Cyclic construction, matching source §4.2 / blueprint §6:
+- Install Fact p.Prime locally from the explicit hp. Set r(i)=((i:ZMod p)*z).val
+  and b(i)=n*r(i)/p. Prove r(i)<p and b(i)<n.
+- On indices below n<p, equal representatives imply equal residue multiples;
+  cancel the nonzero z using the prime-modulus field structure, then compare
+  canonical values below p. Thus distinct indices have distinct representatives.
+- If some b(i)=n-1, take k=-(i:Int) and d=p-r(i). The final-bin condition forces
+  i≠0. The lower floor bound gives n*d≤p. Equality would imply n divides the
+  prime p, contradicted by 2≤n<p. Thus n*d<p, strictly. The residue equality
+  handles the wrapping gap by casting the bounded natural difference p-r(i).
+- Otherwise b maps range n into range(n-1). The exact finite-cardinality
+  pigeonhole API produces distinct equal-bin indices. Order their values and
+  take d=r(j)-r(i), k=(j:Int)-(i:Int). The common-bin lower and strict upper
+  bounds give n*d<p. The two indices in [0,n) give k≠0 and k.natAbs<n; this is
+  proved through integer absolute-value inequalities, not a non-strict bound.
+- The residue equation follows by casting the bounded representative difference.
+  Signed k is essential: the value ordering need not equal the index ordering.
+
+No lambda, nonrepresentation, antireflection, character law, or final endpoint
+is a premise or proof dependency of cyclic_short_multiple. The strict product
+bound and nonzero/strict small coefficient are exactly the protected statement.
+
+Ternary construction, matching source §§1–3 / blueprint §5:
+- A1: if lambda(p-n) were negative too, the positive witnesses4n and4(p-n)
+  would contradict hno. The multiplier4 has positive sign.
+- A2: if lambda(2p-n) were positive too, the doubled positive-sign arguments
+  would produce two negative witnesses of total4p. Both natural differences
+  are proved strictly positive before using lambda's positive-input facts.
+- A3: a positive-sign member x=3u would force lambda u=-1. A1 then makes
+  lambda(p-u)=1, hence lambda(3(p-u))=-1. A2 at y supplies another negative
+  argument2p-y, and these positive arguments sum to4p, contradicting hno.
+- A4: apply A3 to both entries. Primality and p≠3 exclude divisibility of p
+  by3. Explicitly split the two possible nonzero residues of x and y modulo3;
+  opposite residues contradict p's nonzero remainder. This proves exact
+  divisibility of p+x and p+y by3. Let u=(p+x)/3 and v=(p+y)/3. The exact
+  equations3u=p+x and3v=p+y establish positive ordered members, totalp and a
+  smaller natural gap. A2 and lambda_three give both new signs+1.
+- A5: use strong induction on the positive-pair gap, with both entries quantified
+  in the induction predicate. A4 supplies the strictly smaller gap. For an
+  arbitrary pair, swap entries if needed; equality of entries is impossible
+  because hp and p≠2 give oddness of p. This rules out ALL positive-positive
+  pairs of totalp, not merely a chosen ordered pair.
+- A6: split lambda n. Its negative branch is A1; its positive branch uses A5
+  and sign dichotomy to force the negative complement. The resulting
+  antireflection conclusion holds on every0<n<p, not just the local third-range.
+
+The gap-step implementation uses the exact source quotient witnesses, but its
+public theorem is only the approved existential strictly smaller-gap interface.
+No new quantitative contraction declaration is claimed. None of these proofs
+uses the eventual representation theorem to make hno vacuous; the import graph
+and final axiom evidence are independent of both new endpoint names.
+
+ACTUAL COMMANDS AND DIAGNOSTICS
+
+All commands ran from P/lean with its pinned toolchain. Exact absolute argv/cwd,
+source snapshots, timings, exit codes, stream hashes and protected-file checks
+are preserved by G/check.py in every named JSON record.
+
+Successful direct commands:
+lake env lean P/lean/Statement/FourWork/Descent/Cyclic.lean
+lake env lean P/lean/Statement/FourWork/Descent/Ternary.lean
+Both exit0, with no warnings/errors in their direct logs.
+
+Successful importable module commands:
+lake build Statement.FourWork.Descent.Cyclic
+lake build Statement.FourWork.Descent.Ternary
+Both exit0. Lake replays the four pre-existing unused-variable warnings from
+Statement.Partial; neither new module has such a warning. Lake output was fully
+preserved, even where the terminal display was abbreviated.
+
+Every new theorem and load-bearing checked dependency is covered by #print
+axioms: 6 reports in Cyclic and12 in Ternary, 18 total. The union is exactly
+propext, Classical.choice, Quot.sound; Nat.strong_induction_on has no axioms.
+No sorryAx, custom axiom, unsafe/native trust, native_decide, or admitted proof
+appears in either final module. The audit checks both source tokens and actual
+successful transitive axiom reports; it is not only a text scan. Kernel tactics
+include omega, nlinarith, ring, simp and ordinary decide on small closed values.
+
+Failed diagnostics retained without overwrite:
+- cyclic-01: exit1. Cancellation lacked IsRightCancelMulZero (ZMod p) because
+  Data.ZMod.Basic alone does not install the prime-field instance. This was an
+  import/setup issue, not a mathematical gap. It was fixed by importing the
+  already-cached pinned Mathlib.Algebra.Field.ZMod module.
+- ternary-01: exit1. A single omega call did not discharge the modulo3 finite
+  case distinction. Replaced by the explicit two-by-two residue split.
+- ternary-02: exit1. Two unspecialized rewrites both targeted the first modular
+  expression; specialized Nat.add_mod to p,x,3 and p,y,3 separately.
+- cyclic-02, cyclic-03-lake-build, ternary-03, ternary-04-lake-build: exit0.
+Failed snapshots may contain Lean's generated error-placeholder/sorryAx output;
+none is imported into the final built modules or offered for integration.
+
+PINNED IMPORTS AND PROVENANCE
+
+Cyclic imports only Statement.Partial, Mathlib.Algebra.Field.ZMod and
+Mathlib.Tactic.Linarith. Ternary imports only Statement.Partial. Neither imports
+FourPartial, Character, Rigidity, an Assembly module, or any new endpoint.
+The already accepted FourPartial file was protected but not needed here.
+
+Key finite source APIs:
+- Finset.exists_ne_map_eq_of_card_lt_of_maps_to:
+  Mathlib/Data/Finset/Card.lean:447–458; source/guards previously inspected in
+  W/formal/descent-blueprint/api-audit.md §3, and now actually applied/axiom-printed.
+- ZMod.val_lt, natCast_zmod_val, val_natCast_of_lt:
+  Mathlib/Data/ZMod/Basic.lean, exact preconditions recorded in that API audit §5.
+- Prime field instance:
+  Mathlib/Algebra/Field/ZMod.lean:18–39, author Chris Hughes. Its only extra
+  hypothesis is the local Fact p.Prime derived from the theorem's hp. Full
+  source hash is in audit-v1.json. No stronger independent typeclass premise
+  was added to the protected theorem type.
+- Prime divisor classification, floor bounds, bounded cast subtraction, and
+  natural strong induction are the exact pinned APIs from API audit §6.
+
+Compiler: Lean4.32.2, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+Mathlib pin: 905b95818eb32af7874a58b427f50c1711a5e96c.
+No cache fetch, install, external lookup, moving-branch operation, or dependency
+source change was needed by this worker. All required objects were available.
+The existing accepted cutoff remains2026-07-31. The audit verifies all9 package
+HEADs against the frozen manifest and checks each package's clean Git status.
+
+Protected hashes verified before/after runs and again in final audit:
+Definitions.lean 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+Partial.lean 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0
+FourPartial.lean 4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325
+lake-manifest.json de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03
+lakefile.toml 0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4
+lean-toolchain 2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273
+
+HANDOFF AND REMAINING WORK
+
+The two scratch modules are candidate artifacts, not yet a publication verdict.
+They are importable for the authorized other proof worker and eventual Assembly.
+Only the integrator may perform master/root integration after review. No root
+module was edited and no other worker's source path was read or changed by this
+assignment. The leader has been notified of the Cyclic cross-worker handoff.
+
+There is no remaining proof obligation in these seven declarations. Remaining
+full-graph work belongs to the separately assigned Character package and the
+subsequently authorized endpoint Assembly proof. These modules do not themselves
+prove representation_four_prime_three_mod_four, representation_multiple_four,
+or the original all-even Target. This task's artifact production is complete;
+final acceptance and endpoint completion remain separate gates.

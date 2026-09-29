@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Data/Nat/Factors.lean&per_page=1"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Data/Nat/Factors.lean&per_page=1'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:03.202644+00:00",
+  "elapsed_seconds": 0.634606333,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-history.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-history.stderr",
+  "stdout_sha256": "9a504058aba16a9fb2c93d201be7bdf7cf4757adcc010131ab6044264b2e743d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
