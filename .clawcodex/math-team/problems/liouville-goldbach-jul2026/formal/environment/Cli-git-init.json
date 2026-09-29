@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "git",
+    "init",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli"
+  ],
+  "shell_display": "git init .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:02:07.764577+00:00",
+  "elapsed_seconds": 0.017746249999999998,
+  "timeout_seconds": 180,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-init.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-init.stderr",
+  "stdout_sha256": "8d06024be461aa494d9358e8cdcc4f22e111f3bf0e97d8b8ffbc136e6e855a90",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

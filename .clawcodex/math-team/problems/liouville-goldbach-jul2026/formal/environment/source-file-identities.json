@@ -1,0 +1,130 @@
+[
+  {
+    "label": "mathlib-factors",
+    "repository": "leanprover-community/mathlib4",
+    "snapshot_sha": "905b95818eb32af7874a58b427f50c1711a5e96c",
+    "source_path": "Mathlib/Data/Nat/Factors.lean",
+    "local_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Factors.lean",
+    "immutable_url": "https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/Data/Nat/Factors.lean",
+    "latest_change_at_or_before_snapshot": "9ab11f2ea8c6fc8fe27fcdbcf143d6a3517f2c2c",
+    "change_dates": {
+      "author": "2026-03-25T05:05:33Z",
+      "committer": "2026-03-25T05:05:33Z"
+    },
+    "git_blob": "292355d305be37499c8415d15b430aa241132c9b",
+    "local_matches_pin": true,
+    "sha256": "3e64e2c8ba907c05209966a7bba8754cf2ab33f328a3010667ffe58c95e0bca3"
+  },
+  {
+    "label": "mathlib-prime-defs",
+    "repository": "leanprover-community/mathlib4",
+    "snapshot_sha": "905b95818eb32af7874a58b427f50c1711a5e96c",
+    "source_path": "Mathlib/Data/Nat/Prime/Defs.lean",
+    "local_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Defs.lean",
+    "immutable_url": "https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/Data/Nat/Prime/Defs.lean",
+    "latest_change_at_or_before_snapshot": "2a3f6b952cac82834211eaa2be2cbb6a560ae88a",
+    "change_dates": {
+      "author": "2026-06-30T14:45:11Z",
+      "committer": "2026-06-30T14:45:11Z"
+    },
+    "git_blob": "5a4bb9cd22784d65a0ade53b88c3641f38c19f85",
+    "local_matches_pin": true,
+    "sha256": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61"
+  },
+  {
+    "label": "mathlib-even",
+    "repository": "leanprover-community/mathlib4",
+    "snapshot_sha": "905b95818eb32af7874a58b427f50c1711a5e96c",
+    "source_path": "Mathlib/Algebra/Group/Even.lean",
+    "local_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Even.lean",
+    "immutable_url": "https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/Algebra/Group/Even.lean",
+    "latest_change_at_or_before_snapshot": "6a54a80825b060ab20dc31751ebdce78b3a3b518",
+    "change_dates": {
+      "author": "2025-11-19T06:07:02Z",
+      "committer": "2025-11-19T06:07:02Z"
+    },
+    "git_blob": "de3397af958e079008db2a0126fff3fe64e73b06",
+    "local_matches_pin": true,
+    "sha256": "1180fa9ac282e55257e95c8402acd7314fcbd0a18bcfdede92a3cde16e1db630"
+  },
+  {
+    "label": "mathlib-irreducible",
+    "repository": "leanprover-community/mathlib4",
+    "snapshot_sha": "905b95818eb32af7874a58b427f50c1711a5e96c",
+    "source_path": "Mathlib/Algebra/Group/Irreducible/Defs.lean",
+    "local_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Irreducible/Defs.lean",
+    "immutable_url": "https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/Algebra/Group/Irreducible/Defs.lean",
+    "latest_change_at_or_before_snapshot": "fc93712792c3349716feb04000843c37fff55b50",
+    "change_dates": {
+      "author": "2026-06-01T10:22:19Z",
+      "committer": "2026-06-01T10:22:19Z"
+    },
+    "git_blob": "000241400ae3f3d294a071708f7026cc7f7da2f8",
+    "local_matches_pin": true,
+    "sha256": "77937179ccfec6ca8acdd4b660525a7f313d4fb0b9c6dc4296d1301fb9e1e731"
+  },
+  {
+    "label": "mathlib-units",
+    "repository": "leanprover-community/mathlib4",
+    "snapshot_sha": "905b95818eb32af7874a58b427f50c1711a5e96c",
+    "source_path": "Mathlib/Algebra/Group/Units/Defs.lean",
+    "local_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Units/Defs.lean",
+    "immutable_url": "https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/Algebra/Group/Units/Defs.lean",
+    "latest_change_at_or_before_snapshot": "68b30e537da83f057bd4f15dae11632af0a198eb",
+    "change_dates": {
+      "author": "2026-06-25T19:06:39Z",
+      "committer": "2026-06-25T19:06:39Z"
+    },
+    "git_blob": "3a7b7dd89014d1888c1fd6b1d56d7a512c997712",
+    "local_matches_pin": true,
+    "sha256": "09489226154d6558ad44614501b55883f0dc31b4504f1bb29e6190b2df456bce"
+  },
+  {
+    "label": "lean-prelude",
+    "repository": "leanprover/lean4",
+    "snapshot_sha": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+    "source_path": "src/Init/Prelude.lean",
+    "local_path": "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Prelude.lean",
+    "immutable_url": "https://github.com/leanprover/lean4/blob/f3b06c705e6c85f5314019d5d3baab0fec5b580c/src/Init/Prelude.lean",
+    "latest_change_at_or_before_snapshot": "efbd4b885752759c646ed5e87d549562fd15865d",
+    "change_dates": {
+      "author": "2026-06-09T09:54:48Z",
+      "committer": "2026-06-09T09:54:48Z"
+    },
+    "git_blob": "0993d7689d2ffde6eaa31eb662e5fb8fc7d4f53d",
+    "local_matches_pin": true,
+    "sha256": "44f86ebbb9ab743a05c6ebe2c674aadbf2c822bee874f1b16d7e6c8d56318dc9"
+  },
+  {
+    "label": "lean-list-basic",
+    "repository": "leanprover/lean4",
+    "snapshot_sha": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+    "source_path": "src/Init/Data/List/Basic.lean",
+    "local_path": "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/List/Basic.lean",
+    "immutable_url": "https://github.com/leanprover/lean4/blob/f3b06c705e6c85f5314019d5d3baab0fec5b580c/src/Init/Data/List/Basic.lean",
+    "latest_change_at_or_before_snapshot": "efbd4b885752759c646ed5e87d549562fd15865d",
+    "change_dates": {
+      "author": "2026-06-09T09:54:48Z",
+      "committer": "2026-06-09T09:54:48Z"
+    },
+    "git_blob": "68823c0da5667f584d2ca66232d1afcadb8daac6",
+    "local_matches_pin": true,
+    "sha256": "c6b61f1b5fcac4ea4339625f2e66916d1f2c1ae2531c10ee45b401846ffb6061"
+  },
+  {
+    "label": "lean-int-basic",
+    "repository": "leanprover/lean4",
+    "snapshot_sha": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+    "source_path": "src/Init/Data/Int/Basic.lean",
+    "local_path": "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/Int/Basic.lean",
+    "immutable_url": "https://github.com/leanprover/lean4/blob/f3b06c705e6c85f5314019d5d3baab0fec5b580c/src/Init/Data/Int/Basic.lean",
+    "latest_change_at_or_before_snapshot": "7f5fac9d9f78067d1aa95600d706ac86b4a1a154",
+    "change_dates": {
+      "author": "2026-04-27T10:33:58Z",
+      "committer": "2026-04-27T10:33:58Z"
+    },
+    "git_blob": "7098c0dad87934cd2c5471f849a92ef236d20f76",
+    "local_matches_pin": true,
+    "sha256": "e3a3b503e2f89a7dc5dfbfdf610c5b9927ddc0c61809bbb8110053b7982021e5"
+  }
+]

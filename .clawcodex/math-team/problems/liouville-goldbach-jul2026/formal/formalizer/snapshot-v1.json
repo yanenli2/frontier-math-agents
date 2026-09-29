@@ -1,0 +1,2352 @@
+{
+  "snapshot_kind": "Unapproved production snapshot, not a theorem proof or acceptance record",
+  "created_utc": "2026-09-25T02:22:48.284705+00:00",
+  "task": "ca76ab6f021e",
+  "role": "fl-formalizer",
+  "target": "ArithmeticStatement.Target (definition of Prop only; no proof)",
+  "mathlib_revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "lean_revision": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+  "neutral_declaration_byte_identical_to_compiled_definition": true,
+  "files": [
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/RUN.md",
+      "bytes": 1711,
+      "sha256": "9184eddb3daece43886c4b50ddef4bb28af62805e6c024fb430e46078bbd7a6f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-checkout.json",
+      "bytes": 969,
+      "sha256": "98d23f29996052689b8e126255caa0f40eccbf123bbd976f7e39467a0a34c9a2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-checkout.stderr",
+      "bytes": 62,
+      "sha256": "7ac74442ea6c292509b62718c44062dc371495efca7827df43d2dab4be2002ab"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-fetch.json",
+      "bytes": 1022,
+      "sha256": "c75e886773a7e73be11f01c53f7917423b91020f20edc0ecf8cdf3e505e8d5f0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-fetch.stderr",
+      "bytes": 121,
+      "sha256": "b3ec35adb8a55ee9ac868869daf8a49cd85c4432faa0d197e42d2da72877ba51"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-identity.json",
+      "bytes": 937,
+      "sha256": "179593d7af4bcd583d5c03e7190e27b5544e6e9e1654bae40dbd97e0c2d7460b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-identity.stdout",
+      "bytes": 93,
+      "sha256": "30be9fc91c6968898c06663aab0e997d9e7dd02b96b706780a98c4f6de00766e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-init.json",
+      "bytes": 835,
+      "sha256": "9888a47038ea2fde62df05087008e82f3d36e780dd08c907b3343b8aaf6ab1c3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-init.stdout",
+      "bytes": 123,
+      "sha256": "8d06024be461aa494d9358e8cdcc4f22e111f3bf0e97d8b8ffbc136e6e855a90"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-remote.json",
+      "bytes": 979,
+      "sha256": "3c5b5a6d51b497b81d8e6d25a1c130a798e762fa2eb1a13fb913e705b0216184"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Cli-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-checkout.json",
+      "bytes": 1030,
+      "sha256": "034adbff8de94c33165e38903b634f8f3cfd2d8ca882c0b573d45f56adeb0510"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-checkout.stderr",
+      "bytes": 68,
+      "sha256": "218d48879abee781db75c9b0c91aa3e431c5bab7b4219f30333da0d048baa5be"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-fetch.json",
+      "bytes": 1066,
+      "sha256": "ffe213d4ffea2c04c5233173d419ebf006d8a8371cf93a5a60b94e633cc01fa2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-fetch.stderr",
+      "bytes": 138,
+      "sha256": "a30c137da7add82c2364ecc3315e242d6a385e85bd0c3de04f2ca9884ade9d2f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-identity.json",
+      "bytes": 980,
+      "sha256": "1e0eb0a1d3d1d8e16bf02687e36caec1fd0271841aef8cd4a9bfd5b5c2c99fc4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-identity.stdout",
+      "bytes": 93,
+      "sha256": "5f7a6a96a296b480b79993dabb2a6193bbf4d23669b99c01c15c38f69556a72d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-init.json",
+      "bytes": 887,
+      "sha256": "1a3f8c4d5b5d95e7834cf2d3351f3ef0058bbee2fdf2548f0182a1dd35271939"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-init.stdout",
+      "bytes": 136,
+      "sha256": "3cf5ded9b9a260b74b001f30aafd266c12c3cf4eb2c29681fd710e50d67e79b0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-remote.json",
+      "bytes": 1056,
+      "sha256": "6dee232da51a6fdd45c555925b7ca234db6a4786b92733f6dc1995c11be47d0c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/LeanSearchClient-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-checkout.json",
+      "bytes": 962,
+      "sha256": "64a168496dc59f082a3153a45c732f781efdf6b61570737668756d3f3e285e28"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-checkout.stderr",
+      "bytes": 63,
+      "sha256": "6339f4bc78a42f161f67b085dc8ed015e630f8ad160ee8c35b0a4f12e95bc9b0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-fetch.json",
+      "bytes": 1010,
+      "sha256": "27769560de1941136c5330530a372af9bd9730997874e3c81c917a13654dcbab"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-fetch.stderr",
+      "bytes": 128,
+      "sha256": "ae4dfec8bab325c86583adfe2464c6a006df3503e3e504e865265baf7de80884"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-identity.json",
+      "bytes": 922,
+      "sha256": "e05b8cc65ca815f59eb6e97cbee1911b4596a4757e3fc3f5296369e832991819"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-identity.stdout",
+      "bytes": 93,
+      "sha256": "86d2f550a5d2226504fd97850ea2ad5886a832c805e4788a647c956872c19dfe"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-init.json",
+      "bytes": 822,
+      "sha256": "a80ae335048df76e64ae866190232b4c62be4b0f877751a0b66ca7c18405b205"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-init.stdout",
+      "bytes": 122,
+      "sha256": "e4bca6ae264f92205965c03a1bba614d2cb1e23ec24bcdc4b2322ca8e914d2ae"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-remote.json",
+      "bytes": 989,
+      "sha256": "b56e5e120fb089b07b8b1836c8ccb2351f83cef71264c407a4aeb0cedd369f35"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/Qq-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/REPRODUCE.md",
+      "bytes": 4066,
+      "sha256": "a54aab6c21ed566884f9b303ce7d25da254f00928af7707e34a93de5d15b697c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-checkout.json",
+      "bytes": 985,
+      "sha256": "da4194ab5b3b952007ed8863a89e6f9055290cf29aa1f98c62c4dfe74c927169"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-checkout.stderr",
+      "bytes": 63,
+      "sha256": "f59042fdb177b1e7c46f2943dd9076058341021bbfca881a8437d65a7ebd6bc3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-fetch.json",
+      "bytes": 1029,
+      "sha256": "77b66db03582422cd2298382a04072efa43b1de633250173231d7fef05f03639"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-fetch.stderr",
+      "bytes": 127,
+      "sha256": "9aa78ed0efed41198761cb3151a23c973de5369b9dbd8436b3510c455213bf34"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-identity.json",
+      "bytes": 945,
+      "sha256": "44a4e58800ba92db8e9335043719cc171c6122572cbec4ed310fdb3c0a8a5be9"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-identity.stdout",
+      "bytes": 88,
+      "sha256": "bb5b4000f96033ef8cde43e6a01d2edd65a2058bc2629003326c1b6436257bba"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-init.json",
+      "bytes": 843,
+      "sha256": "59c1e4faeabb0ce0586966a871fcfc1a733993cc1df2f4bd9ebb982ca23b68f7"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-init.stdout",
+      "bytes": 125,
+      "sha256": "ff9c24b31b3b87c6b6fb745b0df4e23998a6d7023a73e7e4e00a3eb63f11b029"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-remote.json",
+      "bytes": 990,
+      "sha256": "40b48f5849b2307dc53fc6257b06343e23a8b9622812d772e8e014ec41c11aa0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/aesop-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit-source-files.json",
+      "bytes": 863,
+      "sha256": "d804ace86677755b374093eebdea1548293e4b9eaaf7faa6680218ecf96b27d2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit-source-files.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit-source-files.stdout",
+      "bytes": 6782,
+      "sha256": "1853289c7fd475c3483c68eec07c254c2fd1949e8fb50603ed89a1966b36eaff"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit_dependencies.py",
+      "bytes": 2591,
+      "sha256": "2dfd958c3c39c83bcb9881bd69a734aabd67799d1b4884c8a00689d379dee3ae"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit_publication.py",
+      "bytes": 1544,
+      "sha256": "ef1a2bd4749658e67961c1c7e7b3866df957e6e2f1123510da8f1e7d31981a2a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit_source_files.py",
+      "bytes": 3557,
+      "sha256": "e6f27766b9e5bf0bba40c784d23c07fb4b84571cf634ab5f31b0a02061cbe340"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-checkout.json",
+      "bytes": 1002,
+      "sha256": "377694bd604b841f6d5192b0cfbcbf4fd070292c5c053856257a4f64911826b4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-checkout.stderr",
+      "bytes": 64,
+      "sha256": "b6760668935bc5f6e83b465bf11af5c62185549317d1e4b91ebf9cb3afd86d67"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-fetch.json",
+      "bytes": 1038,
+      "sha256": "5520b9791c28b2f6b693440e56f575a33dcc02ad261196c9f47d9beb1e266167"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-fetch.stderr",
+      "bytes": 131,
+      "sha256": "12e61cf5f3e960ab7479df7eca4470a3faa780491286fa498e5c5492b6ee36a8"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-identity.json",
+      "bytes": 961,
+      "sha256": "ef1dc66e44de8b4295e3ae952f5e16db7a74c18a126fab5f5fb0829716d43f46"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-identity.stdout",
+      "bytes": 88,
+      "sha256": "a1c92e26bd41b3b4df44b6d633acf8b34149727ecb2aa4ca869934c7d32f3e29"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-init.json",
+      "bytes": 859,
+      "sha256": "8e2659078434226b576ce295f7bf3c9b4537db0bb507b21fbddf9a97187547c1"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-init.stdout",
+      "bytes": 129,
+      "sha256": "b792e1acccbd4f43d1935453d6ac1212823295dc9b0bfdfc7fcd20556f160d79"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-remote.json",
+      "bytes": 1023,
+      "sha256": "bb413fb04dd963bf07e5cb23dee09c0e368996248a31a44e08c11ccd48d506e2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/batteries-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/build-statement-v1.json",
+      "bytes": 937,
+      "sha256": "49e7b3ddecd416a217e9181e2aa968308429d8fe747e97064bca9121c8946b65"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/build-statement-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/build-statement-v1.stdout",
+      "bytes": 3780,
+      "sha256": "63ef09b64bf82d57eb25fbb43c0fbf92b1415427f6426cc5c30b54ee06ee0e9b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache-factors.json",
+      "bytes": 1023,
+      "sha256": "a113e4efaf91a29162f3ffb19aaa3fe41918e9f53531f2f4ee8fc404d774f960"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache-factors.stderr",
+      "bytes": 5025,
+      "sha256": "056cab59c74e14817ddea16c738932b55a2d4a7e8a620e7bc791e79392782aa3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache-factors.stdout",
+      "bytes": 404,
+      "sha256": "7301c279e2b82f729fa0b9b615ff0fb09c2a7ef900df961bee6c15935df4e4e9"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/checkout-audit.json",
+      "bytes": 1535,
+      "sha256": "28457ca90b8f120f1c078625417eea998e52b843fd9cb279bf3354141344216c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-commit.json",
+      "bytes": 824,
+      "sha256": "4dd7d7aa221d9779e1659205b1855fdbad2f40c4b4872bd82566ef5c48acef4d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-commit.stdout",
+      "bytes": 2187,
+      "sha256": "8fdce8b9e3b735d26b7094421726fdb5f2130e26c12cabea74b08e6159e04c99"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-lakefile.json",
+      "bytes": 962,
+      "sha256": "743f637b6907882ee3000599c33bcb14c4f5139c05eca510f615ad2c037ecba0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-lakefile.stdout",
+      "bytes": 182,
+      "sha256": "188aaec6ddb57f411c11b95c3ece85ff26ab9ae8085371fee47e1dc855c4e186"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-manifest.json",
+      "bytes": 970,
+      "sha256": "8924f48cdb70cc6e2996bf955eb4ad4916bce94c470810fe16f928633980ff9a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-manifest.stdout",
+      "bytes": 109,
+      "sha256": "f608bac5ccb22b59292584eb7fb4497c327e780a17e7afb8d584ce5d79ad0b70"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-toolchain.json",
+      "bytes": 974,
+      "sha256": "17d813098f86d8bf32e2f5d5e79e01d108ee016cd9273626807e9d129dc22d67"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Cli-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-commit.json",
+      "bytes": 892,
+      "sha256": "b1c4ef5f31356bb2f3f95b0bfa8bc64e42d8e844bb77f956c9f57743b192fd28"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-commit.stdout",
+      "bytes": 2360,
+      "sha256": "1c666af04eea35948eab8e751547596b6e0dbc4574c261f0e59e5efd2a112447"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-lakefile.json",
+      "bytes": 1022,
+      "sha256": "506d93bd6b4780278ba573b945399bd83515860fd71fdf72595cc0148d6a31c8"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-lakefile.stdout",
+      "bytes": 184,
+      "sha256": "cb5d6c80c4ffd4b3be99294a911ebf2f6a2fee4eb9f840d96f0f813bd484c05d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-manifest.json",
+      "bytes": 1032,
+      "sha256": "3cf9d29d6e48afe535238d46a964e53222dc3197224ec6b1b23b75c56b9d623a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-manifest.stdout",
+      "bytes": 122,
+      "sha256": "a9b5fc5e76254f415e49b04b7049f58c6cb42e76a0e31b0aed2ddf4af6882033"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-toolchain.json",
+      "bytes": 1034,
+      "sha256": "15d6009c367c24dba963965d055e3bccbac44df5f0ff07cac2890858b31d6a51"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-LeanSearchClient-toolchain.stdout",
+      "bytes": 29,
+      "sha256": "194fcae7a59d3268baa175bd3e352dafab6954fe08a5b7caec13bedf36f80315"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-commit.json",
+      "bytes": 844,
+      "sha256": "4f94dd6d8ae4e20a21714074c4f627b6fef0cea87ef05c8ff207d6b84cac0eb4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-commit.stdout",
+      "bytes": 2224,
+      "sha256": "02e81e447692a2dc30facc9886e633663f3ba50a7615baa156b66a335cfb74dd"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-lakefile.json",
+      "bytes": 974,
+      "sha256": "eabb309b60e0d996cf63d75a23cca67d70b9e6797bcb4e487840380e44564f5b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-lakefile.stdout",
+      "bytes": 135,
+      "sha256": "42826e4e06221f41fcd863e19d937a0a68be7d54df90abd7800a3c09f4557a15"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-manifest.json",
+      "bytes": 984,
+      "sha256": "996c9d2feeb836bc647fcd2382b5cb56d78aa14cf89effccf0abb3b189b7f409"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-manifest.stdout",
+      "bytes": 108,
+      "sha256": "460e7ce76c58edfd8ba59428f23e908c5860e8bbca8883ff6c1262980e364d30"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-toolchain.json",
+      "bytes": 978,
+      "sha256": "dcceccb83653622a19df4c38cda3e4bacc02100ad06f6773079b7f9ef344aa45"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-Qq-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-commit.json",
+      "bytes": 848,
+      "sha256": "ebeb9dd9c3bfc650213bfb33bbb59454107507d33bea76098150dacf4fe57848"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-commit.stdout",
+      "bytes": 2219,
+      "sha256": "c3ebec0ef3989e9fdf41ae5a1612c98bb31b1be0c59df3d6796646b6a1b25865"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-lakefile.json",
+      "bytes": 978,
+      "sha256": "995b7bd72f7859f3497db6de195b34a538ee5622b333cd7266e2be96b872227b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-lakefile.stdout",
+      "bytes": 398,
+      "sha256": "1e341b858f1375729626764e6206853896d86876956c30fcf9ebe020dd96afe4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-manifest.json",
+      "bytes": 988,
+      "sha256": "165d9dc98dda4ce33d0fa8d73c9193ddd7f3472f1edbec01611a874435a9405b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-manifest.stdout",
+      "bytes": 473,
+      "sha256": "d2bdbc6c14453f7ab86baee6fc23111588531bdbdddd0e5f56179f34c89994bb"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-toolchain.json",
+      "bytes": 982,
+      "sha256": "5f0409393ab662461eaab88013c66541ae9ddd2a2c19f6be8936729ea07847ff"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-aesop-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-commit.json",
+      "bytes": 864,
+      "sha256": "33f3ea29a98e6ac2d2f8253c2493772140b8596fc97bc1fee17b6c1a0f4ecbb1"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-commit.stdout",
+      "bytes": 2241,
+      "sha256": "c162d97517087de87471bfeedd0c868b2f24cf46759cacd752269df97f76fdcb"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-lakefile.json",
+      "bytes": 994,
+      "sha256": "54db1a316a4279c3504cae1f9faf04789f5f120ba5c118a590465728d0d068e6"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-lakefile.stdout",
+      "bytes": 424,
+      "sha256": "acadcd8beb13a53a4ac9399e6706c829309d2380f338d13b037886666f978015"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-manifest.json",
+      "bytes": 1004,
+      "sha256": "8b69c6bab0c99f6c8608f2f965c1089afe05bec338cb465335086698ca1e118c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-manifest.stdout",
+      "bytes": 141,
+      "sha256": "67a8bbfcd0c742e05e198714b2d0f3602a3103d838e7427d773a5587555f88a2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-toolchain.json",
+      "bytes": 998,
+      "sha256": "8e8b631ae6b427f84130e0516789c8ad6e1448de853a01c8dd47b0745e90ea6d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-batteries-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-commit.json",
+      "bytes": 874,
+      "sha256": "04cfd0a0688940c5dad9ac5b23ba3eb39e213ca23236e4dbf55af0739f8ad733"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-commit.stdout",
+      "bytes": 2254,
+      "sha256": "25feecab9dad24e309bc65dde16cc9d8f9c1f69d8711bf3e1fb88175167567f2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-lakefile.json",
+      "bytes": 1004,
+      "sha256": "1a2438126956b0c4f68e335dc5fe256c60b7b93b1d0113162252843e97edf395"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-lakefile.stdout",
+      "bytes": 948,
+      "sha256": "fdd58c5f7fa7d1377e7ede7eec3a358a977aaad958705c5b7640659c23e05751"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-manifest.json",
+      "bytes": 1014,
+      "sha256": "bc605851ca6e9a16a78cf5d481b3af3583ecb230d603579d0d57421ec6f910bc"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-manifest.stdout",
+      "bytes": 453,
+      "sha256": "c8028cb25d859d531af43c02ca1ead5cd95a95f34f180f1544cee17316dd1703"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-toolchain.json",
+      "bytes": 1008,
+      "sha256": "8fee7e9c6b89a8e3b887c8e612b0eb1a97f2afff8cf06464d86ce56de929ac64"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-commit.json",
+      "bytes": 855,
+      "sha256": "ee946baf2edaa0c53f94560c3c837cbfd75a9e2e3287e1f42dd04f7dac5bdb3f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-commit.stdout",
+      "bytes": 2237,
+      "sha256": "547c29f023e5bb7681deefb13ded0c91357335885fa7c9d262c39045fa70da2c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-lakefile.json",
+      "bytes": 994,
+      "sha256": "92c44e243fb944317626221a9b1a4b6353ff9662f4f2eeaaf9ff5c74b76e5d56"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-lakefile.stdout",
+      "bytes": 167,
+      "sha256": "4147957012320a3afe8f041662202b7a3453c8a0df4311c1698da029a3b4834f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-manifest.json",
+      "bytes": 1004,
+      "sha256": "4b45a9847dc00e4fdf2a6ff829fd9ab5dfaa739e92f7747bcbe039dc064efa77"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-manifest.stdout",
+      "bytes": 115,
+      "sha256": "99a17603b60cd9af445e5689b572b8441aaeaed149f3760dc52595a0c4b128db"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-toolchain.json",
+      "bytes": 998,
+      "sha256": "f9697bf27179025615d78a8b8aa06670d8788ab2f5189b19c28344352881cae2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-commit.json",
+      "bytes": 870,
+      "sha256": "8e8e711967a6e7e5ac7dd7f5f4374fbf40e5493966b6b14c61381e2df3a30d2d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-commit.stdout",
+      "bytes": 2259,
+      "sha256": "b27a17afdce7de48662cf3b3d1f1ae68d65eacd5ba6b99324ca3540cfbee9444"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-lakefile.json",
+      "bytes": 1008,
+      "sha256": "a1d7e7235c5fe1728ac79ca82333151f7a20f665fd98bb51d9fff3d6e85fdd1a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-lakefile.stdout",
+      "bytes": 3486,
+      "sha256": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-manifest.json",
+      "bytes": 1017,
+      "sha256": "1cdc4d8636ded9ffbbd7f96a27d6e914df862c33d3109f9c63642087b8417d3e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-manifest.stdout",
+      "bytes": 118,
+      "sha256": "cfa8a1535cd79fbd868bcc67eb22efdab57568248a437fa5dda567234f1f03e2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-toolchain.json",
+      "bytes": 1012,
+      "sha256": "90e3e7422fac65fe4627e6b54d983f66c3cef586f68a3023c8c4bf250de3337c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-proofwidgets-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dependency-audit.json",
+      "bytes": 860,
+      "sha256": "bce350c33f666aafd4b675cab101f3e09932d415f58fd17b625b8ea83c69c867"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dependency-audit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dependency-audit.stdout",
+      "bytes": 6896,
+      "sha256": "b673009d545f1876d74a7213edc269de574632666c7e68f37116aa77efcb64ae"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/environment-report.txt",
+      "bytes": 8594,
+      "sha256": "05e10971b80acab2a04139ec6a0647e5f8fbd4a09bb516b1db205b084adac71a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Cli-head.json",
+      "bytes": 879,
+      "sha256": "6bd4f5e8020bd561f003931dd5c88e08611bcf5763f52716eb486b7a764a5f2e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Cli-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Cli-head.stdout",
+      "bytes": 41,
+      "sha256": "6b7b34bef1258176724f28d101e1b6d471f3babe750a27dea06b4be8acd8092e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Cli-status.json",
+      "bytes": 937,
+      "sha256": "698db772922ed3a128532468bafe20f667d411a7955d83d55bfcf43849f83f53"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Cli-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Cli-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-LeanSearchClient-head.json",
+      "bytes": 931,
+      "sha256": "425de44cdc41a525fd5fedaf63498ea74517a7ab0661a69f46bc675c77b00625"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-LeanSearchClient-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-LeanSearchClient-head.stdout",
+      "bytes": 41,
+      "sha256": "2f23612cfb656f77475dd72b6fef961ef026cc564e4255e8888522b0c64e145e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-LeanSearchClient-status.json",
+      "bytes": 989,
+      "sha256": "5e0bbcf505840abd10381a38f339bb73fd896126465a9457ac1fea5de8efe290"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-LeanSearchClient-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-LeanSearchClient-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Qq-head.json",
+      "bytes": 875,
+      "sha256": "b894b04357184abf63a4c5bc0dbcc17c5a1b7eed09778260940020327da48890"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Qq-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Qq-head.stdout",
+      "bytes": 41,
+      "sha256": "7f1cf8c5f7dd9a385e52557b73af007aa95210bd8366c0a890d6ae9213cff261"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Qq-status.json",
+      "bytes": 933,
+      "sha256": "9ee2c8b0ed6401b5ada3978dab9a7b56e47463ff60f39bd06b29b318c687d4fe"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Qq-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-Qq-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-aesop-head.json",
+      "bytes": 887,
+      "sha256": "e99582894cc177bab85596bd2cfebf5f8118e4349e6ab9d615ab1912ecedefa5"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-aesop-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-aesop-head.stdout",
+      "bytes": 41,
+      "sha256": "2304afd36008163858c59420ea1fb9ef74aa885a6ffbba7b24f0b241d91bc4bc"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-aesop-status.json",
+      "bytes": 954,
+      "sha256": "32d22e53f59bccec8ee51fa3e1ed88fe08b790971ec975c60fa45dddc45fdda8"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-aesop-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-aesop-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-batteries-head.json",
+      "bytes": 903,
+      "sha256": "3afae7f627db67dcc5ed1f40421468075f7cff8b7d815ffe6210486b64662e51"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-batteries-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-batteries-head.stdout",
+      "bytes": 41,
+      "sha256": "98faf784c924f7f13beec999848fe89db799c87e56f7cf1cae5e91eafa8c62b1"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-batteries-status.json",
+      "bytes": 961,
+      "sha256": "374ed956a6a1bae2c8037862b65f157b07f92f64068652612935604a37ad023e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-batteries-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-batteries-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-checkouts.json",
+      "bytes": 853,
+      "sha256": "e8a5182b26f60bea1f7b590ea761fd82fc00be4fd32dd57af4be66f1bf122a0b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-checkouts.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-checkouts.stdout",
+      "bytes": 1535,
+      "sha256": "28457ca90b8f120f1c078625417eea998e52b843fd9cb279bf3354141344216c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-importGraph-head.json",
+      "bytes": 911,
+      "sha256": "98633cdd1506cd1a2f0c1da23c6e0d75fa92d9b812bf7b3b97c4cbccba2484b7"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-importGraph-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-importGraph-head.stdout",
+      "bytes": 41,
+      "sha256": "401d5e1d35a4c42f6e1ea99dcb2c77fa6577700442e092894eed41cf6460ef7c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-importGraph-status.json",
+      "bytes": 978,
+      "sha256": "38d0945d27035ef630f5c3a54a48b15aa8d9bd3f35ebc1b9542ef8bb2cfd7fe9"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-importGraph-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-importGraph-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-mathlib-head.json",
+      "bytes": 895,
+      "sha256": "262f30aa4c37af338809e5babc623fa7bd6d7384e3b36229d99fc6f9ca28b132"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-mathlib-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-mathlib-head.stdout",
+      "bytes": 41,
+      "sha256": "3e05b0a27d80e9c865b8f36158aaf09c9ab65f59c9ee1d06714de9f821fff73f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-mathlib-status.json",
+      "bytes": 953,
+      "sha256": "fccd0f465be905ed91dd1ea46f98f8378ed39d024f325a551888a5e5ade61839"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-mathlib-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-mathlib-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-plausible-head.json",
+      "bytes": 902,
+      "sha256": "cbd4f81574dc8a1d66edb92d07f3c060a619ab7d748f850c1ac6a5995decd3c0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-plausible-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-plausible-head.stdout",
+      "bytes": 41,
+      "sha256": "d9b2d7ea62c84693551e557206be45d658fbf1548a2ecd1f2f36047c6f07611a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-plausible-status.json",
+      "bytes": 961,
+      "sha256": "21821ed94ee5511365d0f9588dc12c63080822362b7a71e2e92210264237a0a6"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-plausible-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-plausible-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-proofwidgets-head.json",
+      "bytes": 906,
+      "sha256": "0629c996b3ce3ae9aa6d03a380961b239baba24657810155646e360271d5e803"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-proofwidgets-head.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-proofwidgets-head.stdout",
+      "bytes": 41,
+      "sha256": "eec76185ab5d27d7f4c25e6e4a8142872fd6cfbee4eb107418b68d379931695d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-proofwidgets-status.json",
+      "bytes": 973,
+      "sha256": "5ccb2278fb44659697e513f5b84bbe7eb98d97847be2c489e63f1a3636e82236"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-proofwidgets-status.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/final-proofwidgets-status.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-checkout.json",
+      "bytes": 998,
+      "sha256": "93e2af496fe43ddc17d3a84f0eaf39f99e8a81c87718f8be4639359fbc5023aa"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-checkout.stderr",
+      "bytes": 63,
+      "sha256": "aa6e0a586e726192b8faa9f2609fd5e03674c6ca591a1cba93cbeecc7bd7bada"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-fetch.json",
+      "bytes": 1053,
+      "sha256": "98152e5bfeb4041891482de04fa0b2d7c456e9f39f64edf73956855d3b01217e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-fetch.stderr",
+      "bytes": 134,
+      "sha256": "c088707eebae8024525408b36cd8f4e1cc12f6a81ca1fa8301b2f8732e747c8b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-identity.json",
+      "bytes": 969,
+      "sha256": "8ad3da148e28f4bbf8c7304cfcc5f4e4edddd14ab8aee368d579c97e3e3bc4c5"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-identity.stdout",
+      "bytes": 93,
+      "sha256": "060d06e3cdd77a27a4d501d6a2ffa18d4e88e98ee3baa3e12026828045fd0fc5"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-init.json",
+      "bytes": 858,
+      "sha256": "cbf99e8e8e8bd9b72fd8e59ac5581c075766521fc8085c5bdc7f4b0f2d7f738a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-init.stdout",
+      "bytes": 131,
+      "sha256": "40ac690df456ede113f5564c48a11b9cf724eb777086e69297e8a43ad9ac9e9d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-remote.json",
+      "bytes": 1037,
+      "sha256": "421028343a860760c9cab96323ed463656f52b4a516fd12cf1c266d1fa16cdb2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/initial-observations.txt",
+      "bytes": 2177,
+      "sha256": "1ed5e647e352a2b85a6ee22f97779aafd8223e0fc415527e431c8543167c5392"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lake-env-version.json",
+      "bytes": 769,
+      "sha256": "e40ea1e258a57f84bc197dbc22283c98c0b840cc4b69ae6dfc95d8e2f0b72e7d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lake-env-version.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lake-env-version.stdout",
+      "bytes": 106,
+      "sha256": "562cd1632273e7efc3f67a6754fa51bd59ec9cf369d6d9bf1d6472593ba5d8b4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-commit.json",
+      "bytes": 818,
+      "sha256": "15cfea810b018ae4b376fa08f887a71af2551333650e1cd1a17938924d72d366"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-commit.stdout",
+      "bytes": 1075,
+      "sha256": "ff0788e9b76e1d06e0b3b43b9258d3dda859c3433c79ba54a88d219e02b66d60"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-prefix.json",
+      "bytes": 685,
+      "sha256": "1363dc691a1bd5b7e055448b861167dd9cbe45233ad57f4c31f6858da83dbaaa"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-prefix.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-prefix.stdout",
+      "bytes": 47,
+      "sha256": "ab824f36c3f255e3209f4e7b86c0bf4f51cdf42213e04b44df1246592eccbdc3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-release.json",
+      "bytes": 748,
+      "sha256": "7a388bd7e90426448f1d11b281979bcabc81f0e513fabc0201950d0b6b359200"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-release.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-release.stdout",
+      "bytes": 18602,
+      "sha256": "8c58bfbff7a6fca95e743e7de64de75561d605accd9d31e1179b9e3f17c6cbe2"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-review-declaration-v1.json",
+      "bytes": 905,
+      "sha256": "55e817ec57ba2030d8809ec16d5cb581937f58689bc9b0efba50d7ceb06f20ed"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-review-declaration-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-review-declaration-v1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-scaffold-v1.json",
+      "bytes": 804,
+      "sha256": "901dbbde1c7b23e3bfd2a0114a52b552c24b96bd17becc0f446bda987a8c8079"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-scaffold-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-scaffold-v1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-smoke-v1.json",
+      "bytes": 785,
+      "sha256": "1fb1061e043cb1fbe6333f70f9cb5c147f9703f1af1a4eee38110e32a8e461a4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-smoke-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-smoke-v1.stdout",
+      "bytes": 2675,
+      "sha256": "5b8c1a1851d424c5fbdde201762265efa60618f4fa2a225954c2b47914f019cd"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-tag.json",
+      "bytes": 740,
+      "sha256": "2c1ef437db280b40f87200bb93aefa49aec43631da0b88196b6f866f8a5dcc73"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-tag.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/lean-tag.stdout",
+      "bytes": 343,
+      "sha256": "4628281beec64d5f20c18d62f1004f8675be4f437be6263eb30e72fae9813db4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-commit.json",
+      "bytes": 842,
+      "sha256": "8d3c0ef5c1c34cd0422e6365ba27c93fce5dc65cf4ecbfd4ccd18fa8e3c34910"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-commit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-commit.stdout",
+      "bytes": 3976,
+      "sha256": "dc9005a7eb9bb63fbfa9b52c5d8372bad83808c250069029da2e0b83f148705b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-checkout.json",
+      "bytes": 992,
+      "sha256": "f9468ef9c283fad2846d1d4535524d8eade1680a6f1abe0685de966ea23f636d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-checkout.stderr",
+      "bytes": 56,
+      "sha256": "9317ccf6210b6c2ef7c51ef34ebe67867ec5f1b434100d5047eb306279ed4bc9"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-fetch.json",
+      "bytes": 1030,
+      "sha256": "205320c428098a14db7046fbcd8b3b2e90501028ffa10afff9239457e3d0a1d3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-fetch.stderr",
+      "bytes": 130,
+      "sha256": "07d3a14d88b4a877a7d45cbb13db022ec8c4c5bff39ec4d172b64314d0ab0327"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-identity.json",
+      "bytes": 953,
+      "sha256": "bc771d5fe07253ad22c9b26b89c3b6fdb24dd50b6e308af7d54aa6380b7d5812"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-identity.stdout",
+      "bytes": 93,
+      "sha256": "2c17b5a9785ebc70bc588cc607ebe96b80433813b63a9b03b0b1279d3e327d4d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-init.json",
+      "bytes": 851,
+      "sha256": "6b64c096a9182cb73e66324cba13b7df8439cf4374c86a5162a07c97b8df360e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-init.stdout",
+      "bytes": 127,
+      "sha256": "346ac10492ae64c8d31e3f5d6a3fc3458a3167c968bfbd951de591a291093652"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-remote.json",
+      "bytes": 1013,
+      "sha256": "e432cca867f382f3444ca37f805b7478cffae11752686c8e1bc943d579bb439d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-lakefile.json",
+      "bytes": 980,
+      "sha256": "2ee0fda2b2cacc95e356271869c3f9b9775596d29281b1f199448ebcc6b2bcb7"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-lakefile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-lakefile.stdout",
+      "bytes": 6815,
+      "sha256": "e3e8ac4d3ea441b062dbd29a2910165e55d8463c8bd9a3feb830cf6fb64a1b7a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-manifest.json",
+      "bytes": 998,
+      "sha256": "08cd543a32e964a39b5d3c38d25c799c112534c977ee4f0f865d6428ca8b0051"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-manifest.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-manifest.stdout",
+      "bytes": 2811,
+      "sha256": "015c7e00ead0f05f2a72b32d9bdef782d4689d05a6297f0ceb0ab5d196c164bd"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-release.json",
+      "bytes": 782,
+      "sha256": "57fcfa8203b22f0d4dcd8a209d956524d6b738771a3838697896f0bb8634ee1c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-release.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-release.stdout",
+      "bytes": 2183,
+      "sha256": "c301e835f278ccfd3a89aaea81d9a549923c846b819832a332845abcb61ab6ef"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-tag.json",
+      "bytes": 772,
+      "sha256": "b627259bb51fcfd4d06240f09b6069db3f16d606c5005ab35a479aed77a571c4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-tag.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-tag.stdout",
+      "bytes": 369,
+      "sha256": "f30a5c0414145175309c6c691bb7760c55347bf6b7d8192f29d3ef69cce0b79a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-toolchain.json",
+      "bytes": 984,
+      "sha256": "87048f846fb9d9b9f9e2d1d4475c1c6937d0bd31d9ddd51621345eb0c9428e97"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-toolchain.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-toolchain.stdout",
+      "bytes": 25,
+      "sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mkdir-project.json",
+      "bytes": 971,
+      "sha256": "dba51569fa854a928a11de0682b1ced9e627d921dbd755c615d5c403ffd9216a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mkdir-project.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mkdir-project.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-checkout.json",
+      "bytes": 1002,
+      "sha256": "59dc06b4b684e8dd8de76e907868d579de61eb2889d2fdd131c8ebaeee8f7b80"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-checkout.stderr",
+      "bytes": 62,
+      "sha256": "554f933b7f4c8d7a5b31209719eba2bfb0368d4d6917330e50cdb1e0d32dd790"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-fetch.json",
+      "bytes": 1038,
+      "sha256": "895f4e6efdb4ad819251aac106a24d5f545cdc955388a7042d51d2091492524f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-fetch.stderr",
+      "bytes": 131,
+      "sha256": "fa5cf3b20888e7a63acc5faf25bf93ccf3c947ee579f5f69abf8623c96487469"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-identity.json",
+      "bytes": 961,
+      "sha256": "94a8665c1b98450252ef34b37ea887b7e7dee8a350e8c0bcd1fea0623f95a775"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-identity.stdout",
+      "bytes": 93,
+      "sha256": "baaad3acd7b6958a12a077ccf1e800d2fda3f9b2ee6a942e06babdb374726b2f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-init.json",
+      "bytes": 859,
+      "sha256": "bfc3167d80f1dcd48c0b78cfe8278c8aac9ec14eeaf47688968186f78e4838f6"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-init.stdout",
+      "bytes": 129,
+      "sha256": "502d4e17dc246ff61b30eaa53a0c6a6701edfbba72099072eedafebe3d6f7815"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-remote.json",
+      "bytes": 1023,
+      "sha256": "9c173de53c3405a963ea4681019a4fe1c27580eaf35f4339328a7f399e08cacc"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-checkout.json",
+      "bytes": 1005,
+      "sha256": "26927ab7168b7cb1e77695ad75decc9a57830282b2cbc2ad33b1e33e18017cb0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-checkout.stderr",
+      "bytes": 63,
+      "sha256": "d5f1ab6c44aafd466188bf07f4cffe42b96619189d86e6787aaf824c9c43459d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-checkout.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-fetch.json",
+      "bytes": 1050,
+      "sha256": "d95dfc62b7cb685a043223fe79a37f1c234493954b90acc8b826c2df29b1ef67"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-fetch.stderr",
+      "bytes": 135,
+      "sha256": "fc41ad7ef41eebb614f48a5ee0fa8664b33eee5776206bcd81006e436e3cf7d3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-fetch.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-identity.json",
+      "bytes": 964,
+      "sha256": "c1cf1891f395d0f37441218d216684e16406d7fe5260c229f0b91a7ecb19a381"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-identity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-identity.stdout",
+      "bytes": 93,
+      "sha256": "ab2dce91ad88231b72fbe45ccc2cfa476257966d88b7023032f347df1c519406"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-init.json",
+      "bytes": 862,
+      "sha256": "09fbb55ce7919546adce924dd9573e956bc8688e38ecb702ac93dcaa0a4a6b61"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-init.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-init.stdout",
+      "bytes": 132,
+      "sha256": "5f8624c1e48c78ac34f5436fe4976d6e27079655c766856be52141cdbda7846c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-remote.json",
+      "bytes": 1043,
+      "sha256": "6cfe0c97f933e022c2651d5fc89ae36d19888faa1212f4c7a9c17f65696d5c22"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-remote.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/proofwidgets-git-remote.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json",
+      "bytes": 53996,
+      "sha256": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Cli.json",
+      "bytes": 878,
+      "sha256": "b2ffee0bba69c9a019afe0f7a97d4b9f32ea1942935d4c2f0f39397195b15460"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Cli.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Cli.stdout",
+      "bytes": 24732,
+      "sha256": "7db04e1305e996408659d75f8c28ea7d2c4415dcb337834ec3c93a4ee7b36844"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-LeanSearchClient.json",
+      "bytes": 930,
+      "sha256": "36e3a9858cb8c504781881b8c18bc33e0e8cc13e5773674df19cbbd698dde1d4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-LeanSearchClient.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-LeanSearchClient.stdout",
+      "bytes": 14397,
+      "sha256": "3abdd2daec49091e23e2601a2d77322759da75c6967c6ef67d76cd806ad2d5af"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Qq.json",
+      "bytes": 882,
+      "sha256": "85ff62d3ed47b5a6434b9021748ebba431ae8602086f2d850c2ec88c384fb7b3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Qq.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Qq.stdout",
+      "bytes": 39357,
+      "sha256": "e8ff8f4e5970e6943179a83cc2be235f3296ef5153f1d550a3dabf86e69a575b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-aesop.json",
+      "bytes": 886,
+      "sha256": "f955e0be176664bc65cf81b19f2b9c04a37c3d80d6e0bfb188f88de5511362bf"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-aesop.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-aesop.stdout",
+      "bytes": 39596,
+      "sha256": "83bc912b7caf04c68210490e75285c2eba39396aad9cad151c68f2322a36c06d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-batteries.json",
+      "bytes": 902,
+      "sha256": "bed0b1b5d11fe06fa133b85679b3d6b60ea0e475862af03aa1374d9d75761264"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-batteries.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-batteries.stdout",
+      "bytes": 1371417,
+      "sha256": "3bb8ca7972a48ad427bab042620fed56c5a2a71813ec02621723647adc7fa741"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-importGraph.json",
+      "bytes": 912,
+      "sha256": "79420d8fc87b7aa6a6adaae2036a59291a7a32e5b1ed6589594b0a489b12056b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-importGraph.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-importGraph.stdout",
+      "bytes": 13629,
+      "sha256": "5551743d19c9b24dc50743a216975cc324b4bb94618b36fd2839785fbc5fb575"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-lean.json",
+      "bytes": 872,
+      "sha256": "ab20b13c1a5bd4b511a1c4b32e4b8b5c2a4576c59520c72aa713837c4f3c9272"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-lean.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-lean.stdout",
+      "bytes": 12058,
+      "sha256": "aeaea1b78e78521606c013a4fafc4b9c0bcaae068cd63f6e97a57bbd26a43826"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-mathlib.json",
+      "bytes": 895,
+      "sha256": "bc12929af93d0eafc008d4d56e287842ef6f682d797b6bb50e7f1481d6f0eeba"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-mathlib.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-mathlib.stdout",
+      "bytes": 79565,
+      "sha256": "4337fdc10284dc0c90165a0e4926fde19ebb6ce78dfef2505a3112a277452e00"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-plausible.json",
+      "bytes": 902,
+      "sha256": "347c5dd0c0a457c264730b4204e873dd2f119f1c4a290932a7a4cfefce8f011f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-plausible.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-plausible.stdout",
+      "bytes": 26540,
+      "sha256": "7db3a5d1c95ca7d1b1906ec25958d6f1d490a9953154fdf3180f09fd57195e7b"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-proofwidgets.json",
+      "bytes": 916,
+      "sha256": "d999f8dbb5e943a1c5ed884db326d0a1808eab552d0ce0a6945c2adefc6fbc95"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-proofwidgets.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-proofwidgets.stdout",
+      "bytes": 27423,
+      "sha256": "0af1983970539258f9627cde04d59047e20557b9b5d39248ae2018f728f2cce6"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-audit.json",
+      "bytes": 859,
+      "sha256": "15caa2ce9bdffae66926440d7176a01c23e027e9b32beb693dd643fc0cdf68a0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-audit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-audit.stdout",
+      "bytes": 53996,
+      "sha256": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-summary.json",
+      "bytes": 1370,
+      "sha256": "451e898c14443208b7bd6119fc424c02ea7e2f51ee6c1080c91684f6a9432f69"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-summary.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-summary.stdout",
+      "bytes": 4907,
+      "sha256": "e886408ba69b5855d573c51873785d1662574204fc7af04c71fb142b9aad75c8"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/run.py",
+      "bytes": 2290,
+      "sha256": "ce4b8d130cff4d895fe13a43a6a41f24862ae26ba3d573bb0cb4d120b3149832"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/setup-pinned.json",
+      "bytes": 840,
+      "sha256": "63b4a1ff6e8d1e0a15a581131bf87ec22ed01adbee0aafe91d3d18d558cc57fa"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/setup-pinned.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/setup-pinned.stdout",
+      "bytes": 560,
+      "sha256": "2dfc1d103e7047f363c37ad8fd50a8aa86a860da014071bfc9703878d80276ac"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/setup_pinned.py",
+      "bytes": 2224,
+      "sha256": "d5ee38775e52a6cf0cc5d141da2287ae6431fc98e1e1314a62b0544238a21227"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-file-identities.json",
+      "bytes": 6782,
+      "sha256": "1853289c7fd475c3483c68eec07c254c2fd1949e8fb50603ed89a1966b36eaff"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-history.json",
+      "bytes": 938,
+      "sha256": "20e92b9d6538dfd6d8b335c030c500acfc367c99af019ce020addf7247604df6"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-history.stdout",
+      "bytes": 5467,
+      "sha256": "9ebe37073cfac4b640a7a3c0c226654d724fa3c278c1cad0b11330be633a3470"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-raw.json",
+      "bytes": 1002,
+      "sha256": "e3ccc4754231949fdfdedf05e4e67a1090a2ed8d85e07600c0d980a72eefe4a5"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-raw.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-raw.stdout",
+      "bytes": 12767,
+      "sha256": "e3a3b503e2f89a7dc5dfbfdf610c5b9927ddc0c61809bbb8110053b7982021e5"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-list-basic-history.json",
+      "bytes": 942,
+      "sha256": "03e75cb4ce6510cfd759623dd0a5fad4c723b115b5d6cd2b71dbf15af29b7704"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-list-basic-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-list-basic-history.stdout",
+      "bytes": 3770,
+      "sha256": "149b1ee22ef293b2984657f6718347bf36aa5603e93c4ad08bd7acac58469b3f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-list-basic-raw.json",
+      "bytes": 1006,
+      "sha256": "bd9c9bd94893e15d3af5b962553ab79f7c8f26277ecf6044682a8a2857d117e3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-list-basic-raw.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-list-basic-raw.stdout",
+      "bytes": 86920,
+      "sha256": "c6b61f1b5fcac4ea4339625f2e66916d1f2c1ae2531c10ee45b401846ffb6061"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-prelude-history.json",
+      "bytes": 928,
+      "sha256": "74a4901737ba44886b04feecdd239e9be84038ee92949b421b17a867aa1d8211"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-prelude-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-prelude-history.stdout",
+      "bytes": 3770,
+      "sha256": "149b1ee22ef293b2984657f6718347bf36aa5603e93c4ad08bd7acac58469b3f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-prelude-raw.json",
+      "bytes": 984,
+      "sha256": "c2895d7264eaf74c9658855759c5332c2020a4a2c40b5e80c8b6beb8addfc11f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-prelude-raw.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-prelude-raw.stdout",
+      "bytes": 233421,
+      "sha256": "44f86ebbb9ab743a05c6ebe2c674aadbf2c822bee874f1b16d7e6c8d56318dc9"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-blob.json",
+      "bytes": 1034,
+      "sha256": "972dcea8382ca72755735220230d9ffa59dd44767f351080cfc59bb7ec155abe"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-blob.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-blob.stdout",
+      "bytes": 41,
+      "sha256": "870fcc389389871fdf91b0dcae685bedd9285742e52fb03005c472495b27d1ca"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-history.json",
+      "bytes": 963,
+      "sha256": "c21f1e2104c4ed9eb7009cc634e8567023212fa860a6a5753de558fa6f2623ab"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-even-history.stdout",
+      "bytes": 3564,
+      "sha256": "6e685d9c8669ec767ab24c7d6bbb5ed210229bc0df2516db4069eb9c4720d89d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-blob.json",
+      "bytes": 1045,
+      "sha256": "9360230f35bfdd5ee42129b79ab1fc9fcdbf13baae20730649fd91b2353d41af"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-blob.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-blob.stdout",
+      "bytes": 41,
+      "sha256": "55df025577dfa6df85de7daec500c78f219e4219f2b0dbb66396601cc86e4db4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-history.json",
+      "bytes": 968,
+      "sha256": "c9baac9d024120712fa1c0fd4d7aebb99c1f9ced61995cfbe3339f73c5ffa6cc"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-factors-history.stdout",
+      "bytes": 4144,
+      "sha256": "9a504058aba16a9fb2c93d201be7bdf7cf4757adcc010131ab6044264b2e743d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-blob.json",
+      "bytes": 1081,
+      "sha256": "2815d1a3798bc9311c9502dc73a480ce38cc1a9544554224295c8fd9b0aa4cdb"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-blob.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-blob.stdout",
+      "bytes": 41,
+      "sha256": "2b356f6499da7fbeb06e489a0107e0e4bda99b74b1fa2dac8f793ef1dab2b26e"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-history.json",
+      "bytes": 1004,
+      "sha256": "1733600296b485cc68b8b858e2f940f99b16908e19b8ffa3fc41f19507a9bded"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-history.stdout",
+      "bytes": 3442,
+      "sha256": "8a7691f232c298dc1fc2d59a7fa0f8e248cfce3b35e9cc520691d7b4aa4e93f1"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-blob.json",
+      "bytes": 1057,
+      "sha256": "2bc01dfaac9a7fadf389c45e4c472c30b4b3b94ee5fae713b5c28208b1e43ea3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-blob.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-blob.stdout",
+      "bytes": 41,
+      "sha256": "d1676c0367d9f8c5b00daf3a80ef252ad934dc4f4da83b9c4644d291d07fa417"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-history.json",
+      "bytes": 980,
+      "sha256": "100e4607095b3711062a5e814827a873d66b0418c0fee94fee1473821af2c4bf"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-history.stdout",
+      "bytes": 3504,
+      "sha256": "fc6dfd2e49016f9415bbc16a12911482447f99aef3e82bd8e921b809787e2230"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-blob.json",
+      "bytes": 1048,
+      "sha256": "79ee3a4fcb152b0e1440e49cf5aef2e1c68e5b84767505c3f58b42f6349c2efc"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-blob.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-blob.stdout",
+      "bytes": 41,
+      "sha256": "076da7238538197b9e647c94c67e343a8f7ececd5b2a64f4a8e499b2d0f5a770"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-history.json",
+      "bytes": 979,
+      "sha256": "d56e846ee412f4cdbd5194383f48c9954404514aedae1ea1f41bc91ff1725934"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-history.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-history.stdout",
+      "bytes": 4623,
+      "sha256": "f628810065e9bc0332215820692523ea45f87d15f6a5812b661b164c2294f921"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/statement-hashes-v1.json",
+      "bytes": 1480,
+      "sha256": "9af70e38de28ca2c0352e55d25cbbba1c994c060fd6f19dae82f153000e55682"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/statement-hashes-v1.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/statement-hashes-v1.stdout",
+      "bytes": 704,
+      "sha256": "ca6d12a29d6ab69f4d328df8db4a6fee1ebc35671b51e249984d80233c17f503"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/verify_checkouts.py",
+      "bytes": 1471,
+      "sha256": "7526a5abc7f13da4f373f7d54ec60838bf660d7188b4a03458d76cd419c241a5"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/definition-audit-v1.txt",
+      "bytes": 11879,
+      "sha256": "c4abe9f0d774a16e0faa6365d2ec05527fe075b63b5462c69e0c55237b888b3c"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/proposed-sources-additions.txt",
+      "bytes": 7728,
+      "sha256": "93cbd9580d20fdf03220ce11ccd0a84abb4bf284e98bf3ee676ed420d377d02d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/review-request-v1.txt",
+      "bytes": 3356,
+      "sha256": "079804049caf97fd772dc6c5d6fc2d9455dc7648c268c2826430e477e4b53f7f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/snapshot_v1.py",
+      "bytes": 2204,
+      "sha256": "966ea6a746ff9aebd5a7373612a78e57e0c285aa92c7eb28a15fdb492ab30ab0"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/formalizer/source-map-v1.json",
+      "bytes": 4632,
+      "sha256": "a60855cbe4cd00798743a13f1d65f23165a05d044944fa79192d9137801143e4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Definitions.olean",
+      "bytes": 18928,
+      "sha256": "c31d1d835f8f24aafa879b65d83c2d6b3461669e203c345bcdb3ac4f64f91ab8"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Scaffold.olean",
+      "bytes": 10448,
+      "sha256": "42682f40994ab47b45d044858188539d1255e1d84b97b71aa0d47b69d955d9c5"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Smoke.olean",
+      "bytes": 2560,
+      "sha256": "95f9675ff1681b3e5d6c1ef5a0ad992c4953e66b67ec469ba73246528b8ab2e3"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement.olean",
+      "bytes": 1800,
+      "sha256": "9f139452e9e2f0574ef8c285327e675cd477b82e44229a9e16ed93a7ad542c5f"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean",
+      "bytes": 403,
+      "sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Scaffold.lean",
+      "bytes": 343,
+      "sha256": "0bd0952096ebf027fa956458dfb1c1bb08e6396cd89c77b24a3eaadbe1070d1a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Smoke.lean",
+      "bytes": 1648,
+      "sha256": "50fcf1606d7bf7c52cf84cc7ebc60f0e05a151745339f295c86c1a37ffab8e19"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement.lean",
+      "bytes": 78,
+      "sha256": "984a08ec38a92b62ca687fc123cd12cbe8337a00d8fdbf067a9cdb0c126bef7a"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json",
+      "bytes": 3548,
+      "sha256": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml",
+      "bytes": 282,
+      "sha256": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain",
+      "bytes": 25,
+      "sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273"
+    },
+    {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md",
+      "bytes": 7762,
+      "sha256": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f"
+    },
+    {
+      "path": ".clawcodex/math-team/review-inputs/r20260924-v1/Declaration.lean",
+      "bytes": 403,
+      "sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d"
+    },
+    {
+      "path": ".clawcodex/math-team/review-inputs/r20260924-v1/Dependencies.lean",
+      "bytes": 1384,
+      "sha256": "55b5480511d2a2cb749cebafa9b8da29f744090a269bd0ece94df1b37ab0d07c"
+    },
+    {
+      "path": ".clawcodex/math-team/review-inputs/r20260924-v1/ListOperations.lean",
+      "bytes": 406,
+      "sha256": "925cbf08a1aac0870075ad56ff2d95c7b0eb94c87853ace32d0043a9c094e2bc"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "scope": "Statement/interface elaboration only; no theorem proof or old-proof rebuild.",
+  "commands": [
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit": 0,
+      "stdout": "e12c1910fe855cbfc38803cd4e55543906d5fa62\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit": 0,
+      "stdout": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/LeanSearchClient",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit": 0,
+      "stdout": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit": 0,
+      "stdout": "6e311e2a844da9b2cc3971187df2fe0066947b93\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/proofwidgets",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit": 0,
+      "stdout": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/aesop",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit": 0,
+      "stdout": "38d591e778f100aec9762bb582f9c7f55f50e9dc\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Qq",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit": 0,
+      "stdout": "023ce7d62a0531e22a5331e20b587817a80d49ff\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/batteries",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit": 0,
+      "stdout": "88679d088c9720c27ebdf2ba4dafe17341747f94\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/Cli",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --porcelain=v1 --untracked-files=no",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "lake env lean --version",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit": 0,
+      "stdout": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)\n",
+      "stderr": ""
+    },
+    {
+      "command": "lean --print-prefix",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit": 0,
+      "stdout": "~/.elan/toolchains/leanprover--lean4---v4.32.2\n",
+      "stderr": ""
+    },
+    {
+      "command": "lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.lean",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit": 0,
+      "stdout": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.lean:8:13: warning: Variable name `hm` is not explicitly referenced.\n\nThe binding can be removed (if unused) or named `_` (if used implicitly).\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\ndef MultipleFourStatementInterface.statement : Prop :=\n∀ (m : ℕ), 0 < m → ArithmeticStatement.HasRepresentation (4 * m)\n'MultipleFourStatementInterface.statement' depends on axioms: [propext, Classical.choice, Quot.sound]\nfun h m hm =>\n  have this := h m hm;\n  this : statement → ∀ (m : ℕ), 0 < m → ArithmeticStatement.HasRepresentation (4 * m)\nfun h hm =>\n  have this := h 1 hm;\n  this : statement → 0 < 1 → ArithmeticStatement.HasRepresentation 4\n",
+      "stderr": ""
+    },
+    {
+      "command": "lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Check.lean",
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "exit": 0,
+      "stdout": "def ArithmeticStatement.omega : ℕ → ℕ :=\nfun n => n.primeFactorsList.length\ndef ArithmeticStatement.lambda : ℕ → ℤ :=\nfun n => (-1) ^ ArithmeticStatement.omega n\ndef ArithmeticStatement.HasSignedRepresentation : ℤ → ℕ → Prop :=\nfun s N => ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = s ∧ ArithmeticStatement.lambda b = s\ndef ArithmeticStatement.HasRepresentation : ℕ → Prop :=\nfun N => ArithmeticStatement.HasSignedRepresentation (-1) N\n'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]\nfun N h =>\n  have this := h;\n  this : ∀ (N : ℕ),\n  ArithmeticStatement.HasRepresentation N →\n    ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda b = -1\nfun N h =>\n  have this := h;\n  this : ∀ (N : ℕ),\n  (∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda b = -1) →\n    ArithmeticStatement.HasRepresentation N\nfun a ha hSign =>\n  have this := Exists.intro a (Exists.intro a ⟨ha, ⟨ha, ⟨rfl, ⟨hSign, hSign⟩⟩⟩⟩);\n  this : ∀ (a : ℕ), 0 < a → ArithmeticStatement.lambda a = -1 → ArithmeticStatement.HasRepresentation (a + a)\n[]\n0\n1\n[2]\n-1\n[2, 2]\n2\n1\ntrue\nfalse\ntrue\n",
+      "stderr": ""
+    }
+  ],
+  "protected_before": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Factors.lean": "3e64e2c8ba907c05209966a7bba8754cf2ab33f328a3010667ffe58c95e0bca3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Defs.lean": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Even.lean": "1180fa9ac282e55257e95c8402acd7314fcbd0a18bcfdede92a3cde16e1db630",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Irreducible/Defs.lean": "77937179ccfec6ca8acdd4b660525a7f313d4fb0b9c6dc4296d1301fb9e1e731",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Units/Defs.lean": "09489226154d6558ad44614501b55883f0dc31b4504f1bb29e6190b2df456bce",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Prelude.lean": "44f86ebbb9ab743a05c6ebe2c674aadbf2c822bee874f1b16d7e6c8d56318dc9",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/List/Basic.lean": "c6b61f1b5fcac4ea4339625f2e66916d1f2c1ae2531c10ee45b401846ffb6061",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/Int/Basic.lean": "e3a3b503e2f89a7dc5dfbfdf610c5b9927ddc0c61809bbb8110053b7982021e5",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Definitions.olean": "c31d1d835f8f24aafa879b65d83c2d6b3461669e203c345bcdb3ac4f64f91ab8",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Definitions.trace": "e742365416308bda78f78b1c1f55918c04894cb9550d56189c98123437493d63",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Partial.olean": "c239710722453f4204a38ee700016adbaeca4806c34f5b2c7d5c994a0f231e4c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Partial.trace": "c5772190d9124229dc8df6183f1340ee92482b09a7cff7e9d254bb1e93ba9111",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Declaration.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Dependencies.lean": "55b5480511d2a2cb749cebafa9b8da29f744090a269bd0ece94df1b37ab0d07c",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/ListOperations.lean": "925cbf08a1aac0870075ad56ff2d95c7b0eb94c87853ace32d0043a9c094e2bc"
+  },
+  "expected_hashes_match": true,
+  "neutral_exact_custom_definitions_and_signature": true,
+  "factor_supplement_exact_prior_lines_5_53": true,
+  "list_supplement_exact_prior_copy": true,
+  "packages": [
+    {
+      "name": "plausible",
+      "manifest_revision": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "head": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "manifest_revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "head": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "importGraph",
+      "manifest_revision": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "head": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "manifest_revision": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "head": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "aesop",
+      "manifest_revision": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "head": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "Qq",
+      "manifest_revision": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "head": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "batteries",
+      "manifest_revision": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "head": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "Cli",
+      "manifest_revision": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "head": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    },
+    {
+      "name": "mathlib",
+      "manifest_revision": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "head": "905b95818eb32af7874a58b427f50c1711a5e96c",
+      "matches_manifest": true,
+      "tracked_checkout_clean": true
+    }
+  ],
+  "protected_after": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Factors.lean": "3e64e2c8ba907c05209966a7bba8754cf2ab33f328a3010667ffe58c95e0bca3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Defs.lean": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Even.lean": "1180fa9ac282e55257e95c8402acd7314fcbd0a18bcfdede92a3cde16e1db630",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Irreducible/Defs.lean": "77937179ccfec6ca8acdd4b660525a7f313d4fb0b9c6dc4296d1301fb9e1e731",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Units/Defs.lean": "09489226154d6558ad44614501b55883f0dc31b4504f1bb29e6190b2df456bce",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Prelude.lean": "44f86ebbb9ab743a05c6ebe2c674aadbf2c822bee874f1b16d7e6c8d56318dc9",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/List/Basic.lean": "c6b61f1b5fcac4ea4339625f2e66916d1f2c1ae2531c10ee45b401846ffb6061",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/Int/Basic.lean": "e3a3b503e2f89a7dc5dfbfdf610c5b9927ddc0c61809bbb8110053b7982021e5",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Definitions.olean": "c31d1d835f8f24aafa879b65d83c2d6b3461669e203c345bcdb3ac4f64f91ab8",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Definitions.trace": "e742365416308bda78f78b1c1f55918c04894cb9550d56189c98123437493d63",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Partial.olean": "c239710722453f4204a38ee700016adbaeca4806c34f5b2c7d5c994a0f231e4c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/build/lib/lean/Statement/Partial.trace": "c5772190d9124229dc8df6183f1340ee92482b09a7cff7e9d254bb1e93ba9111",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Declaration.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/Dependencies.lean": "55b5480511d2a2cb749cebafa9b8da29f744090a269bd0ece94df1b37ab0d07c",
+    ".clawcodex/math-team/review-inputs/r20260924-v1/ListOperations.lean": "925cbf08a1aac0870075ad56ff2d95c7b0eb94c87853ace32d0043a9c094e2bc"
+  },
+  "protected_unchanged": true,
+  "all_commands_exit_zero": true,
+  "artifacts_sha256": {
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/Declaration.lean": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed",
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/Dependencies.lean": "fd4ec312622db449d27d6ac0b18b1decd62a9f76e18f8251bb40ffbabdef7981",
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/ListOperations.lean": "925cbf08a1aac0870075ad56ff2d95c7b0eb94c87853ace32d0043a9c094e2bc",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.lean": "d8d4a87650d077b5b28f289055a0f11e58f9579c73b5343c5fa6a0748a27ea7d",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Check.lean": "dd7cda0504cb56099a4a1c2f0430e4fd59da03b351d8af156467e7009ef05039",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/run-check.py": "f358974e730af782202d41d581b6376248e2a3464300a2dc58bcca9100e1671f",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.stdout": "155b5c6f1955f0c7294b899722b569051ba5bfe0f5d557d5864e149ffc7e6be9",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Check.stdout": "33c2fc8eb38092c7a1a622ba0401e8ababedf2be3ce6115fb42ed6c73f202c91",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/request.md": "a812fb01fe4e29e0c6e0fc4737fb3e98a730091f35e32f08ceba740bc30ec96f",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/sources.md": "9df552348f03fd84ffe0e203f1340f26e6a902f8424f924068fe6fb86c1a7dbb",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-file-identities.json": "1853289c7fd475c3483c68eec07c254c2fd1949e8fb50603ed89a1966b36eaff"
+  }
+}

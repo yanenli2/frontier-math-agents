@@ -1,0 +1,16 @@
+cwd: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+argv: ["lake", "env", "lean", "Statement/FourWork/Character/ResiduePrime.lean"]
+command: lake env lean Statement/FourWork/Character/ResiduePrime.lean
+
+'ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.FourWork.exists_small_prime_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_neg_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_two_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.exists_prime_and_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.le_of_dvd' depends on axioms: [propext]
+'Nat.Prime.eq_two_or_odd' depends on axioms: [propext]
+'Nat.odd_mod_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+exit_status: 0

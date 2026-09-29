@@ -1,0 +1,6 @@
+'ArithmeticStatement.FourWork.cyclic_short_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.exists_ne_map_eq_of_card_lt_of_maps_to' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.val_lt' depends on axioms: [propext]
+'ZMod.natCast_zmod_val' depends on axioms: [propext, Quot.sound]
+'ZMod.val_natCast_of_lt' depends on axioms: [propext, Quot.sound]
+'Nat.Prime.eq_one_or_self_of_dvd' depends on axioms: [propext]

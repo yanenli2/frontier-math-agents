@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+    "rev-parse",
+    "905b95818eb32af7874a58b427f50c1711a5e96c:Mathlib/Data/Nat/Prime/Defs.lean"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib rev-parse 905b95818eb32af7874a58b427f50c1711a5e96c:Mathlib/Data/Nat/Prime/Defs.lean",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:04.499796+00:00",
+  "elapsed_seconds": 0.014855041999999999,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-blob.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-prime-defs-blob.stderr",
+  "stdout_sha256": "d1676c0367d9f8c5b00daf3a80ef252ad934dc4f4da83b9c4644d291d07fa417",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

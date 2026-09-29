@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "git",
+    "-C",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph",
+    "checkout",
+    "--detach",
+    "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+  ],
+  "shell_display": "git -C .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/importGraph checkout --detach 7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:02:03.356020+00:00",
+  "elapsed_seconds": 0.032216,
+  "timeout_seconds": 180,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-checkout.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/importGraph-git-checkout.stderr",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "aa6e0a586e726192b8faa9f2609fd5e03674c6ca591a1cba93cbeecc7bd7bada"
+}

@@ -1,0 +1,253 @@
+Mode: CERTIFICATION — compiled candidate production, not independent acceptance.
+Owner: fl-generator; task 4da258fcd6e7; team math-team.
+Problem root P: .clawcodex/math-team/problems/liouville-goldbach-jul2026
+
+RESULT AND SCOPE
+
+Candidate.lean implements all 8 approved helper definitions and all 42 approved
+helper theorems, including the optional prime-product-core equivalence. The exact
+file compiled with pinned Lean v4.32.2. No master development was edited. The full
+conjecture remains OPEN: neither pointwise_keystone nor liouville_goldbach is a
+candidate declaration, axiom, assumed helper, or admitted proof.
+
+Candidate SHA-256:
+9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0
+
+Authoritative compiled file:
+P/formal/generator/Candidate.lean
+Immutable identical snapshot:
+P/formal/generator/build-09-final-axioms.lean
+Final command record:
+P/formal/generator/build-09-final-axioms.json
+  SHA-256 0b678900771d60e1a70b136977c821f6ac64b485e1126e0cc9f0d17680278e35
+Axiom/compiler diagnostic stream:
+P/formal/generator/build-09-final-axioms.stdout
+  SHA-256 15362807421188c87a16086669e7e91db4ad450cba6280f112f3ecf36ed8736e
+P/formal/generator/build-09-final-axioms.stderr is empty.
+Full statement/axiom/pin audit:
+P/formal/generator/audit-v1.json
+  SHA-256 17dd76347b5dbcb340db298e530ee89aa5e92e94cb5ad7413e5d2f1875146cad
+
+UNCHANGED-STATEMENT COMPARISON
+
+Protected base:
+P/formal/approved-v1/Definitions.lean
+P/lean/Statement/Definitions.lean
+Both retain SHA-256:
+79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+
+Approved helper snapshot:
+P/formal/blueprinter/interfaces-v1.lean
+SHA-256 89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc
+Fidelity report:
+P/formal/reviews/helper-fidelity-v1.md
+SHA-256 3bf59c63779bd22ce610c2c4667e983362d2cfa724ff512ce377329ef5eb8bec
+That report also binds the blind readback to these exact interface/base bytes.
+
+The mechanical audit compares each of the 42 theorem headers before its proof
+assignment and each of the 8 entire helper definitions against the approved
+snapshot. Only outer whitespace is stripped. Every remaining internal byte,
+including binders, guard names, quantifiers, constants, and definition bodies,
+matches. No semantic changes were proposed or made. All eight definitions are
+in ArithmeticStatement, with autoImplicit false, as approved.
+
+The helper snapshot is signature text, not an imported assumption module.
+Candidate imports only Statement.Definitions and the five narrow pinned Mathlib
+modules listed below. It neither imports Statement.Scaffold nor uses its field.
+The NL candidate P/nl/generator/proof-v1.md and blueprint guided proof construction;
+no assertion in either prose artifact was treated as a Lean assumption.
+
+DEFINITION MAP (line numbers refer to final Candidate.lean)
+
+14 HasSignedRepresentation — positive witnesses, arbitrary integer sign.
+19 HasRepresentation — negative-sign specialization.
+22 I — half-open interval Finset.Ico 1 N.
+25 representationIndices — auxiliary first-coordinate sign filter.
+29 orderedRepresentations — actual ordered positive pair filter.
+34 R — natural cardinality of orderedRepresentations, not an algebraic formula.
+37 L — integer inclusive sum over Finset.Icc 1 x.
+40 C — integer signed correlation over I N.
+
+THEOREM MAP
+
+Every row below has status COMPILED CANDIDATE, final exit 0. Every row's transitive
+axiom set is exactly {propext, Classical.choice, Quot.sound}. No row establishes
+the universal pointwise keystone or the final Target. Dependencies below are the
+main mathematical steps, not a full compiler dependency graph; the printed
+transitive axiom audit covers every theorem.
+
+Line  Declaration                                  Main proof/dependencies
+43    omega_one                                    primeFactorsList_one, length
+47    lambda_one                                   omega_one, zeroth power
+51    lambda_sign                                  neg_one_pow_eq_ite, sign cases
+57    omega_mul                                    perm_primeFactorsList_mul, length
+62    lambda_mul                                   omega_mul, pow_add
+66    lambda_prime                                 primeFactorsList_prime
+70    lambda_two                                   lambda_prime, prime_two
+74    lambda_three                                 lambda_prime, prime_three
+78    lambda_four                                  lambda_mul at 2, lambda_two
+84    lambda_five                                  lambda_prime, prime_five
+88    lambda_two_mul                               lambda_mul, lambda_two
+93    lambda_square                                lambda_mul, lambda_sign
+98    target_iff_forall_hasRepresentation           definitional equivalence only
+102   hasSignedRepresentation_mul                  multiply positive witnesses
+111   representation_scaled_sign                   scaling, exhaustive seed sign
+124   representation_double                        diagonal witnesses (m,m)
+129   representation_diagonal                      Even witness, lambda_two_mul
+139   representation_two_sign_seed                 lambda_sign, scaling
+150   eight_two_sign_seed                          witnesses (3,5) and (4,4)
+157   representation_multiple_eight                two-sign seed transfer, all m>0
+161   mem_I_iff                                    interval membership
+165   interval_eq_Icc                              guarded natural arithmetic
+171   interval_bounds                              positive complement bounds
+176   interval_card_cast                           Nat.card_Ico, justified cast_sub
+182   reflection_mem                               interval_bounds
+186   reflection_involutive                        Nat.sub_sub_self under bound
+191   reflection_bijection                         reflection map and its inverse
+200   sum_lambda_interval                          exact inclusive endpoint
+205   sum_lambda_reflection                        Finset.sum_nbij' on involution
+215   mem_orderedRepresentations                   filter/product membership
+227   orderedRepresentations_eq_image              a -> (a,N-a), first-coordinate inverse
+247   representation_count_eq_card_indices         image injective by first projection
+252   two_sign_indicator                           four exhaustive sign cases
+259   representation_count_eq_indicator_sum        pair cardinality, sum_filter
+268   four_mul_representation_count                indicators, sums, reflection, ring
+291   representation_count_pos_iff                 Finset.card_pos, exact pair membership
+300   count_pos_iff_keystone                        identity and integer/natural arithmetic
+305   keystone_ge_four_iff                          identity and integral count margin
+310   target_iff_count_pos                          representation_count_pos_iff
+319   target_iff_pointwise_keystone                 target_iff_count_pos, strict bound
+329   exists_prime_pair_factor_of_lambda_one        two prime-list entries, positive remainder
+362   target_iff_prime_product_core                 diagonal or positive-sign core scaling
+
+Important guards are retained exactly. lambda multiplication requires both
+inputs positive; the protected value at zero is never used to remove a guard.
+The image map is globally injective by its first coordinate, so off-diagonal
+orientations are counted separately and the diagonal is counted once. Every use
+of lambda(N-a) in a positive-input sign lemma has interval-derived positivity.
+The identity covers all N>=2, not only even N, and uses signed integer subtraction
+outside the guarded natural indices. The optional factorization allows p=q and
+d=1; no distinctness or strict d>1 requirement has been added.
+
+EXACT BUILD AND AXIOM EVIDENCE
+
+Working directory:
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+Exact argv:
+["lake", "env", "lean", ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/Candidate.lean"]
+Exit status: 0. Final elapsed time: 5.5034625 seconds. Timeout: 180 seconds.
+Compiler:
+Lean 4.32.2, arm64-apple-darwin24.6.0,
+commit f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+Mathlib revision:
+905b95818eb32af7874a58b427f50c1711a5e96c.
+
+The final file contains #print axioms for every one of its 42 theorems, the 8 new
+and 3 protected definitions, and 29 key upstream declarations: 82 reports total.
+Their union is only propext, Classical.choice, Quot.sound. No sorryAx, custom
+axiom, unchecked native trust, unsafe code, native_decide, or assumed endpoint
+occurs. The candidate source has no sorry/admit/axiom declaration. The final
+successful compiler output has no error/admitted-obligation diagnostic. Kernel
+proof-producing tactics used include simp, omega, ring, and ordinary decide for
+closed small arithmetic; no external solver code was used. Printing axioms of
+Target audits the definition only and does not supply a proof of Target.
+
+Four final warnings are unused-variable lints at lines 51,171,187,291. The approved
+positive/lower-bound premises are intentionally preserved, even where the proof
+works without them. They were not deleted, renamed, or silently weakened.
+
+The runner check.py records source snapshots, exact command/cwd, exit, streams,
+hashes, and protected-file checks before/after each candidate compilation. Some
+Bash invocations contain '|| test "$?" -eq 1' only to allow a failed Lean attempt
+to be displayed without triggering tool-error shutdown; the saved JSON always
+records the actual Lean exit status, including every failure.
+
+AUDITED ENVIRONMENT AND CACHE
+
+Imports in the candidate:
+Statement.Definitions
+Mathlib.Algebra.Ring.Parity
+Mathlib.Algebra.Ring.Int.Defs
+Mathlib.Order.Interval.Finset.Nat
+Mathlib.Algebra.BigOperators.Ring.Finset
+Mathlib.Tactic.Ring
+
+The last audit verifies all manifest package HEADs equal their frozen revisions
+and all package git status outputs are clean. lean-toolchain, lakefile.toml,
+lake-manifest.json, protected base, and interface hashes remained unchanged.
+No main/latest fetch, lake update, unpinned docs, full Mathlib import, broad cache,
+or dependency source modification occurred. The supplied pre-2026-08-01 provenance
+review is retained; no newly dated mathematical source was introduced.
+
+A source-hash-addressed same-pin cache fetch supplied the required missing integer
+ring/interval/sum/tactic closure (240 missing artifacts). Exact argv, cwd, exit 0,
+environment variable, and download/decompression diagnostics are preserved in:
+P/formal/environment/fl-generator-cache-required-v1.{json,stdout,stderr}
+Command:
+lake exe cache get Mathlib.Algebra.Ring.Int.Defs Mathlib.Order.Interval.Finset.Nat Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Tactic.Ring
+MATHLIB_CACHE_DIR=P/formal/environment/cache.
+The cache tool's mathlib4-master container name was tried then legacy mathlib4
+succeeded; this did not fetch or resolve a moving source branch. Standard pinned
+Mathlib build artifacts are used; upstream libraries were not all rebuilt from
+source in this assignment.
+
+PRESERVED ATTEMPTS, MILESTONES, AND FAILURE CLASSIFICATION
+
+Each label below has .lean snapshot, .json metadata, .stdout, and .stderr here.
+Only the final Candidate.lean is proposed for integration; diagnostic snapshots
+and probes are not modules to import.
+
+build-01-elementary: exit 1. Two generic integer negation rewrites lacked the
+integer-ring instance; one multiplication lemma needed explicit numeral inputs.
+build-02-elementary: exit 1. Explicit type specialization exposed missing
+HasDistribNeg Int. Setup/import issue, not a mathematical obstruction.
+build-03-elementary: exit 0 after narrow Int ring import. All 20 arithmetic and
+representation helpers through all-8m; all printed axioms standard.
+probe-01-count: exit 1. Actual sum/card APIs printed successfully; guessed names
+Nat.cast_pos, List.prod_pos, Nat.prod_pos were absent. No proof claim; the final
+candidate uses neither guessed API nor any unproved auxiliary.
+build-04-count-bridges: exit 1. mem_product simplification required the pinned
+product_eq_sprod rewrite. Proof elaboration/API issue, no definition change.
+build-05-count-bridges: exit 0. Reflection, pair image/card, and count-existence.
+build-06-count-identity: exit 0. All 40 non-optional helpers including exact signed
+identity and keystone/target reductions; preserved baseline before optional work.
+build-07-prime-core: exit 1. prime_of_mem_primeFactorsList needed explicit n=m;
+its conclusion alone did not infer the factorization input.
+build-08-prime-core: exit 0. Both optional helpers, all 42 theorem proofs.
+build-09-final-axioms: exit 0. Same mathematics as build 08, with all definition and
+key-dependency axiom prints added. Final candidate bytes are identical to this
+snapshot. Failed compiler elaborations contain generated sorryAx diagnostics; no
+such failed declaration is imported into or present in the final candidate.
+
+EXACT RESIDUAL GOALS — NOT DECLARED OR ASSUMED IN LEAN
+
+Pointwise keystone:
+N : Nat
+hEven : Even N
+hN : 2 < N
+|- 2 * L (N - 1) - ((N : Int) - 1) < C N
+
+Equivalently, the proved prime-core reduction leaves:
+|- forall p q : Nat, Nat.Prime p -> Nat.Prime q ->
+     HasRepresentation (2 * p * q)
+
+Final source target remains:
+|- Target
+where Target is exactly the protected forall N, Even N -> 2<N -> existence of
+positive a,b with N=a+b and lambda a=lambda b=-1. No theorem here discharges the
+uniform core/keystone proposition. The diagonal and all-8m theorems are partial
+families only; the equivalences are reductions only.
+
+INTEGRATION HANDOFF
+
+Next owners: independent reviewer for the exact candidate hash, then the
+math-fl-integrator if accepted. This artifact is candidate production, not a
+review verdict or master integration result. Integrate only Candidate.lean's
+approved definitions and theorem proofs after review; retain narrow imports and
+autoImplicit false. Namespace is ArithmeticStatement. Only the integrator may
+write Statement/master modules, arrange imports, and repeat compilation and the
+82 axiom checks in the integrated environment. Do not integrate any failed
+snapshot, the signature-only interface bundle as assumptions, or an OPEN endpoint.
+
+The task's artifact-producing deliverable is complete. Mathematical acceptance,
+master build, and the full conjecture are distinct outstanding responsibilities.

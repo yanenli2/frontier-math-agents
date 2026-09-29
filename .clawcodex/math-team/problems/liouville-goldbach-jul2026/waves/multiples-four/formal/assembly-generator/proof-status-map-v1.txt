@@ -1,0 +1,210 @@
+Mode: CERTIFICATION — compiled exact endpoint candidate; independent acceptance and root promotion separate.
+Owner: fl-generator; task 2db45639290a.
+P=.clawcodex/math-team/problems/liouville-goldbach-jul2026
+W=P/waves/multiples-four
+G=W/formal/assembly-generator
+
+RESULT
+
+The exact requested all-positive-multiples-of-four theorem now has a complete
+Lean proof in the authorized scratch development. No mathematical obligation
+remains in either assigned endpoint. The source and all five helper files are
+frozen for independent review. No root/master promotion has been performed.
+The original broader all-even Target is NOT proved by this candidate.
+
+Frozen source: P/lean/Statement/FourWork/Assembly.lean
+SHA-256 fb279bfbb469022b119c37d011cfcf47852a3fe25dea03fac966379351437066
+Importable built module: Statement.FourWork.Assembly.
+
+Exact exported endpoints, namespace ArithmeticStatement:
+
+theorem representation_four_prime_three_mod_four {p : ℕ}
+    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3) :
+    HasRepresentation (4 * p)
+
+theorem representation_multiple_four (m : ℕ) (hm : 0 < m) :
+    HasRepresentation (4 * m)
+
+The second theorem has no sign, parity, congruence, primality, threshold, core,
+antireflection, or quadratic-residue premise on m. It includes m=1. Its fixed
+conclusion is exactly existence of positive natural a,b with 4*m=a+b and both
+lambda values -1. Equal witnesses are permitted. No definition was changed.
+
+MAIN EVIDENCE
+
+G/assembly-01-direct.{lean,json,stdout,stderr}: direct source compile, exit0.
+JSON SHA-256 62c173e91954b94a85784dfbb9ff89e98ef2627b36d39089ea0b7c34ee43de22
+
+G/assembly-02-lake-build.{lean,json,stdout,stderr}: actual importable module build,
+exit0. JSON SHA-256
+8e12f988a1fbe151c464de874eb5e7039df4945d8c354855bfe0bedb6bd4bf44
+
+G/assembly-03-trust-zero.{lean,json,stdout,stderr}: exact source with --trust=0,
+exit0. JSON SHA-256
+5098fc93177c73f4f86ffe5629532d3b869587a7f9f5066fca2c237caa12db88
+
+Both direct compiler/axiom streams have SHA-256:
+c5521b5f017771799eb20205ab92731e45bb20ee241ec108db562d32983e20fd
+All three stderr files are empty. All snapshots are byte-identical to the frozen
+Assembly source. No endpoint attempt failed and no source revision was required
+after its first actual compilation.
+
+G/audit-v1.json: complete local-graph statement/definition comparison, final build
+and axiom evidence, olean/source hashes, import graph, protected files and pins.
+SHA-256 2ef37d2d5ad5b5b3d8d6f3253754b73eead05f04b106eb6086826b37dd3c0d92
+Reproducible audit program: G/audit-v1.py. Build runner: G/check.py.
+
+UNCHANGED STATEMENT EVIDENCE
+
+Protected full graph: W/formal/descent-blueprint/Readback.lean.txt
+SHA-256 372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763
+Fresh source-fidelity gate: W/formal/reviews/descent-fidelity-v1.md
+SHA-256 02500f9a05e68f42c4eebeec074ee58a7cfbcb5b56a2fe01492b3fb231ef0411
+
+Both endpoint headers are internally byte-identical to this snapshot after
+removing the proof assignment/body and outer whitespace. Their exact signature
+hashes, including final LF, match the fidelity report:
+D1 dfd44352a26873c9bdcf1991d5e5c5df3911e1e96f1cff87f8c0e6113fb7e22a
+D2 7a9e41b3137280c725f18e0fa08aa019a0103351b40f3e0440675c0356ec88bd
+
+The same audit compares ALL19 full-graph theorem headers and BOTH new defining
+bodies across the six modules against the approved snapshot. All match exactly
+internally. The original wave target snapshot
+W/formal/approved-v1/Declaration.lean, SHA-256
+bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed,
+is unchanged; its target header and D2 are equal after whitespace normalization
+(the full-graph snapshot uses a different indentation only).
+
+No theorem is obtained by importing the body-erased snapshot. All actual
+imports refer to compiled proof modules. The mathematical source is the supplied
+W/nl/descent/proof-attempt-v1.md, especially lines297–303 and319–332,
+whole-file SHA-2562283de94dc669f51194b3572319896b14985a9853fedbdc56f596145bf379fef.
+
+ENDPOINT PROOF MAP
+
+Assembly.lean:10–19 — representation_four_prime_three_mod_four.
+1. Suppose the precise required representation of4p is absent.
+2. Since p≥7, the explicit prime is neither2 nor3. The independently proved
+   ternary-descent theorem supplies full antireflection under this supposition.
+   Antireflection is derived here, not an endpoint hypothesis.
+3. The independent small-square-prime theorem gives a prime r with0<r<p and
+   IsSquare(r:ZMod p). It does not assume nonrepresentation or antireflection.
+4. The proved rigidity/square-positive consequence, applied with the derived
+   antireflection, gives lambda r=1. Fixed lambda_prime gives lambda r=-1.
+5. Integer contradiction discharges nonrepresentation. This is an ordinary
+   classical existence proof with exactly the approved positive-witness type.
+
+Assembly.lean:21–24 — representation_multiple_four.
+Apply .mpr of the integrated multiple_four_iff_prime_three_mod_four_core to the
+just-proved universal prime endpoint, then specialize to the arbitrary m,hm.
+Thus the former residual core premise is fully proved, not appended to the final
+statement. The previously checked FourPartial reduction supplies all other
+cases, including positive-sign m, even m, prime3, and primes1 modulo4.
+
+There is no new mathematical helper, axiom, definition, or hidden global variable
+in Assembly. The only two new declarations are D1 and D2. The strong-induction
+and cyclic/ternary arguments remain in the independently produced helper modules;
+Assembly does not alter, duplicate, or repair them.
+
+FROZEN DEPENDENCY MANIFEST
+
+P/lean/Statement/FourWork/Descent/Cyclic.lean
+09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290
+P/lean/Statement/FourWork/Descent/Ternary.lean
+d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753
+P/lean/Statement/FourWork/Character/ResiduePrime.lean
+518f28a33ab98d1a44ea7b544ca7f695e28c48893982caaf72eb4879956763dd
+P/lean/Statement/FourWork/Character/ResidueValue.lean
+3df5a3f0a6de6a60c2b8b8ba89dd6e44fa4d47cb28e98c33f1e31d1dfb7d84dd
+P/lean/Statement/FourWork/Character/Rigidity.lean
+843e4ee562071ef4729a61c715b77510b378add7f19b8c02d1e3d36fa9165f88
+
+The actual dependency tasks8770ba99c0f5 andbcd3df25ac7d were re-read and verified
+completed, and their compiled-module handoffs were inspected before starting.
+Source hashes above were verified before and after every endpoint compile.
+Their detailed proof/status/provenance records are in:
+W/formal/descent-generator/{audit-v1.json,proof-status-map-v1.txt}
+W/formal/character-generator/{handoff-v1.txt,statement-comparison-v1.json,provenance-v1.json}
+
+The local import graph is acyclic:
+- Ternary -> accepted Partial only.
+- Cyclic -> accepted Partial and narrow pinned arithmetic/field infrastructure.
+- ResidueValue -> accepted Partial and prime-modulus field infrastructure.
+- Rigidity -> ResidueValue and Cyclic.
+- ResiduePrime -> pinned reciprocity/ring infrastructure, independent of lambda
+  reflection/character or either representation endpoint.
+- Assembly -> integrated FourPartial, Ternary, Rigidity, ResiduePrime.
+
+No helper imports Assembly or an endpoint proof. No final theorem is used to
+make its own conditional nonrepresentation helper vacuous. The audit records
+this source import graph and actual rebuilt artifact identities.
+
+ACTUAL COMMANDS, AXIOMS, AND ADMISSIONS
+
+All working directories: P/lean.
+Exact commands, with absolute Assembly path in the saved argv:
+
+lake env lean P/lean/Statement/FourWork/Assembly.lean
+lake build Statement.FourWork.Assembly
+lake env lean --trust=0 P/lean/Statement/FourWork/Assembly.lean
+
+All exit0. Direct and trust-zero runs have no warnings/errors. The module build
+replays only the pre-existing unused-variable warnings from untouched Partial.
+Exact stdout/stderr, commands, timeouts, source snapshots and hashes are retained;
+no failed output has been discarded. No endpoint source change occurred after
+its freeze announcement to team-lead.
+
+The actual compiler prints both endpoint types and69 transitive axiom reports:
+all19 new full-graph theorems, both new definitions, all19 integrated FourPartial
+helpers, fixed definitions/arithmetic/representation dependencies, and the major
+Fermat/reciprocity/pigeonhole/field/induction library APIs. Each report is a subset
+of {propext, Classical.choice, Quot.sound}. Each endpoint has exactly that set.
+#print axioms on an endpoint recursively inspects its full proof dependency
+closure; the additional individual prints expose the named helper layers.
+
+No sorryAx, custom axiom, admitted obligation, native_decide, unsafe proof,
+unchecked native trust, external solver proof, or conditional endpoint parameter
+occurs. The audit checks all six source files for admissions/native-trust tokens,
+checks successful compiler diagnostics, checks every approved graph declaration
+has a printed axiom set, and verifies standard-only transitive endpoint axioms.
+This is actual Lean evidence, not a source-token-only or NL-verdict claim.
+
+PINNED ENVIRONMENT AND SOURCE CUTOFF
+
+Compiler: Lean4.32.2, arm64-apple-darwin24.6.0,
+commit f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+Mathlib: immutable905b95818eb32af7874a58b427f50c1711a5e96c.
+All9 package HEADs still match their frozen manifest revisions; all package Git
+status outputs are clean. Exact commands/results are in audit-v1.json.
+
+The already audited source cutoff remains2026-07-31 inclusive. Assembly adds no
+library import beyond the actual proof modules and integrated reduction. No
+fetch, update, cache acquisition, installation, external lookup, or new source
+was needed during Assembly. The earlier authorized pinned Fermat/reciprocity
+proof-method choices are preserved with source hashes and usable preconditions
+in the FourPartial and Character provenance records. No unreviewed explorer
+norm/form assertion, asymptotic estimate, or numerical exhaustion is a dependency.
+
+Protected active masters remain byte-identical:
+Definitions.lean 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+Partial.lean 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0
+FourPartial.lean 4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325
+Root Statement.lean dc72b845dbb045593ef3a6212b03a54cc0797a29baac132e870aff324cdc5853
+lake-manifest.json de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03
+lakefile.toml 0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4
+lean-toolchain 2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273
+
+INTEGRATION HANDOFF AND SCOPE
+
+The exact all-positive-multiples-of-four candidate is complete and importable.
+Independent final proof/statement/provenance review remains leader-owned; this
+artifact is not the author's self-acceptance. Preserve all six frozen source
+hashes during review. Only the separate integrator may promote the module into
+the root/default development, keeping proofs unchanged, and repeat default
+project/import/axiom checks. The root currently does NOT import Assembly.
+
+No mathematical obligation remains for representation_multiple_four in this
+candidate. No new theorem proves the original broader all-even Target or
+liouville_goldbach, and that original task must not be marked solved by this
+multiples-of-four result alone. The completed task2db45639290a concerns these two
+compiled endpoints and their evidence, not root promotion or the broader target.

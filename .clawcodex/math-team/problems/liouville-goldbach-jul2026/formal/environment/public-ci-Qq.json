@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/quote4/actions/runs?head_sha=38d591e778f100aec9762bb582f9c7f55f50e9dc&per_page=100"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/quote4/actions/runs?head_sha=38d591e778f100aec9762bb582f9c7f55f50e9dc&per_page=100'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:12:14.511438+00:00",
+  "elapsed_seconds": 0.490515375,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Qq.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-Qq.stderr",
+  "stdout_sha256": "e8ff8f4e5970e6943179a83cc2be235f3296ef5153f1d550a3dabf86e69a575b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

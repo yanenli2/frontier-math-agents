@@ -1,0 +1,258 @@
+Mode: CERTIFICATION — compiled partial candidate; acceptance and integration separate.
+Owner: fl-generator; task c58d66c51213.
+P=.clawcodex/math-team/problems/liouville-goldbach-jul2026
+W=P/waves/multiples-four
+G=W/formal/generator
+
+RESULT
+
+G/FourCandidate.lean proves all 19 exact approved helper signatures. It includes
+representation for every positive m with m%4≠3, all positive sums of two squares,
+all12t, extraction/scaling, and the exact equivalence of the unrestricted all-four
+assertion with the residual prime family p≥7, p%4=3. It introduces no definitions.
+
+It does NOT prove the requested unrestricted representation_multiple_four or the
+original all-even Target. Those endpoints are not declared, admitted, or assumed
+as facts. No new result from the separate unreviewed explorer was used.
+
+Final candidate SHA-256:
+4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325
+Identical immutable snapshot: G/four-build-04-final-axioms.lean.
+
+Final build record: G/four-build-04-final-axioms.json
+  SHA-256 1c75b83360f4b0e0f28016e3aa23db2d25e96fd73e62e12fee82351212820bdf
+Compiler/axiom stream: G/four-build-04-final-axioms.stdout
+  SHA-256 2275f1fe8774affbdf27f43476dbb493b1dfd8f820f2e7a63c28ce3390816b12
+G/four-build-04-final-axioms.stderr is empty.
+Mechanical statement/axiom/pin/source audit: G/four-audit-v1.json
+  SHA-256 0d994360b9d9fc375489ef21dfc601a6cd71419226caba7a6662eca7956d4575
+
+APPROVED STATEMENTS AND UNCHANGED BASE
+
+Approved interface: G/four-interfaces-v1.lean
+  SHA-256 be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee
+Fresh fidelity gate: W/formal/reviews/helper-fidelity-v1.md
+  SHA-256 ad4612c5f35e0e0b75b1b06913b756605f4fe62557346be0ee2f6cdfbd35f517
+The gate binds the matching neutral interface/readback, with readback hash
+693e7d4a45e5e3e0e1afefbee6c4232b2f4b5a5eb308c85344881afe0e0f1a6d.
+
+For each of all19 declarations, four-audit-v1.json compares the entire theorem
+header before := with the approved signature text, stripping ONLY outer
+whitespace. Every internal byte matches. No domain, quantifier, hypothesis,
+constant, modulus, bound, sign, typeclass premise, or conclusion changed.
+
+Protected P/lean/Statement/Definitions.lean remains:
+79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d
+Protected P/lean/Statement/Partial.lean remains:
+9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0
+The original Definitions snapshot matches the active copy. The full new target
+snapshot W/formal/approved-v1/Declaration.lean remains:
+bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed
+
+The candidate imports the actual accepted Statement.Partial, not a body-erased
+interface, a failed attempt, a proposition scaffold, or a conjectural assumption
+module. Namespace is ArithmeticStatement, autoImplicit=false. Only additional
+import: Mathlib.NumberTheory.SumTwoSquares.
+
+PROOF-STATUS MAP
+
+All rows have status COMPILED CANDIDATE, exit0, no remaining obligation, and
+transitive axioms exactly {propext, Classical.choice, Quot.sound}. Candidate line
+numbers below refer to the final frozen file. The source is
+W/nl/generator/proof-attempt-v1.md §§1–4, hash
+1730e39b6ef4eb33bc4621e26642d63b4c775415a4cdeec7de00ccff71fa89ef.
+The source partial mathematical review is W/nl/reviews/partial-review-v1.md,
+hasha692b264bf9185f3f067d7c15804a6ff7e743a6ff295db50058d32d151727ddc.
+Neither prose file is imported as a theorem premise.
+
+Line  Declaration                                      Main mechanism
+8     lambda_six                                       multiplicativity, signs at2,3
+14    lambda_seven                                     prime_seven, prime sign
+18    twelve_two_sign_seed                             witnesses(5,7) and(6,6)
+25    representation_multiple_twelve                   accepted two-sign seed scaling
+29    representation_multiple_four_of_lambda_one       lambda(2m)=-1, diagonal
+37    representation_multiple_four_of_even             m=2k, accepted all8k
+46    representation_multiple_four_of_three_dvd        m=3t, all12t
+55    representation_multiple_four_of_sum_two_squares  doubled-square pair, equal case8u²
+81    prime_one_mod_four_eq_sum_two_squares             pinned Fermat theorem
+88    representation_four_prime_one_mod_four           preceding two helpers
+94    prime_divisor_positive_sign_cofactor             positive cofactor, lambda signs
+109   exists_prime_factor_of_lambda_neg_one            prime divisor existence, cofactor
+121   representation_multiple_four_of_prime_divisor    conditional sign-preserving scaling
+131   representation_multiple_four_of_prime_one_mod_four_dvd sign split, prime1 family
+140   exists_prime_one_mod_four_of_lambda_neg_one       factor-list product in ZMod4
+190   representation_multiple_four_of_mod_four_one    sign split and prime1 divisor
+198   representation_multiple_four_of_mod_four_ne_three even or residue1
+207   multiple_four_iff_odd_prime_core                 exact specialization/scaling iff
+226   multiple_four_iff_prime_three_mod_four_core       remove prime3 and residue1
+
+IMPORTANT PROOF DETAILS
+
+Square-sum helper (line55): no roots are assumed positive or unequal in its
+interface. For unequal roots the proof orders them, writes the larger as the
+smaller plus a positive w, and uses 2(u+v)² and2w². Both roots used by lambda_square
+are proved positive. The equality of the total follows by ring arithmetic, with
+no unguarded natural subtraction. If u=v, m>0 gives u²>0 and4m=8u²; accepted
+all8t supplies the representation. Either single root may be zero, and equal
+output witnesses are allowed. The prohibited double-zero total never occurs.
+
+Prime extraction/scaling (lines94–139): the prime divisor is arbitrary. Positive
+m and m=p*d force d>0. From lambda m=-1 and lambda p=-1, positive-domain complete
+multiplicativity gives lambda d=+1. Only multiplication of positive witnesses is
+used. No division of representations, coprimality, distinct prime occurrences,
+or condition d>1 is assumed. d=1 is permitted. The displayed hCore premise in
+line121 is precisely the approved conditional scaling rule, not a new global
+assumption attached to the all-four target.
+
+Residue extraction (lines140–189): under the negation of the desired existence,
+every entry of m.primeFactorsList must be3 modulo4. Each is prime and divides m;
+2 cannot divide m when m%4=1. A local list induction proves its product, cast to
+ZMod4, equals (-1)^length. The actual length is omega m, with all repeated prime
+occurrences retained. The product is m because m>0. Casting the exact integer
+lambda-sign equality into ZMod4 therefore makes the same element both1 and-1,
+contradicted by kernel decide in the concrete finite ring. This implements the
+source product/parity argument without introducing a second lambda definition
+or a new exported helper. No field or primality assumption on modulus4 is used.
+
+The all-m-not3 conclusion (line198) covers m≡0,1,2 mod4, including m=1. It is a
+partial sufficient result, not a statement of failure at residue3. Other helpers
+also cover some numbers in that class (for example multiples of3). For positive
+N=4m, the only residue class not uniformly covered here is N≡12 mod16.
+
+The last theorem is an equivalence of whole universal propositions. Its reverse
+direction classifies an odd prime as residue1 or3. Residue1 uses the proved
+Fermat/square-sum family. Prime3 uses all12t at t=1. The remaining primes satisfy
+p≥7 andp%4=3 and are covered ONLY under the local right-hand assumption of this
+iff direction. That assumption is discharged into the equivalence; neither
+universal endpoint is separately asserted.
+
+PINNED FERMAT API AND PROVENANCE
+
+Imported module:
+Mathlib.NumberTheory.SumTwoSquares
+Local source:
+P/lean/.lake/packages/mathlib/Mathlib/NumberTheory/SumTwoSquares.lean
+Title: Sums of two squares. Authors: Chris Hughes, Michael Stoll.
+Pinned revision: 905b95818eb32af7874a58b427f50c1711a5e96c.
+Source SHA-256:
+ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9
+Exact locator: lines35–38.
+Immutable URL:
+https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/Mathlib/NumberTheory/SumTwoSquares.lean#L35-L38
+
+Exact API, actually checked by the final compiler:
+Nat.Prime.sq_add_sq {p : ℕ} [Fact p.Prime] (hp : p % 4 ≠ 3) :
+  ∃ a b : ℕ, a ^ 2 + b ^ 2 = p
+
+The candidate creates a local Fact p.Prime from its explicit hp and proves the
+modulus inequality from p%4=1. It reverses the returned equality to the approved
+p=u²+v² orientation. Thus no Fact or decomposition hypothesis leaks into the
+exported theorem. The broader library input allows prime2, but the reviewed
+helper retains exactly its source residue1 hypothesis.
+
+The named library proof uses Gaussian integers. This is the explicitly permitted
+pinned-library derivation, not a claim to formalize the prose's factorial/grid
+proof line-for-line. Its key imported dependencies are also printed:
+- GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible,
+  NumberTheory/Zsqrtd/GaussianInt.lean:243–244;
+- GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime,
+  NumberTheory/Zsqrtd/QuadraticReciprocity.lean:83–85.
+All three transitive axiom sets are standard-only. Full source hashes for these
+files and the Nat factor/prime/modulus, ZMod, and integer-cast sources are recorded
+in four-audit-v1.json. No unreviewed norm/form claim or external solver code was
+used. The library/source revision is the same audited pre-cutoff July2026 pin;
+no current documentation or moving source branch was fetched.
+
+CACHE SETUP
+
+The SumTwoSquares object was absent at design time. The now-authorized fetch used
+only its required source-hash-addressed dependency closure at the exact pin:
+
+argv=["lake","exe","cache","get","Mathlib.NumberTheory.SumTwoSquares"]
+cwd=P/lean
+MATHLIB_CACHE_DIR=G/cache
+exit_status=0
+
+Evidence: G/four-cache-sum-two-squares-v1.{json,stdout,stderr}
+JSON SHA-256:
+3387a2b3b1d01addbc58aa3d2b5b0965e6c0f9ed54c2cbd70267c8d12c530dd5
+The cache root was within the assigned generator output area; 1950 files in this
+specific module closure were downloaded/decompressed. This was not a whole
+Mathlib cache or umbrella import. The cache server's mathlib4-master container
+lookup fell back to mathlib4; these are artifact-container names, not source
+branch updates. The manifest/source hashes were checked before and after.
+Standard source-hash build artifacts are trusted as in the accepted environment;
+this worker did not independently rebuild all upstream libraries from source.
+
+ACTUAL COMPILATION AND AXIOM AUDIT
+
+Working directory:
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+Exact final argv:
+["lake","env","lean",".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/FourCandidate.lean"]
+
+Final exit0; elapsed13.534302875seconds; timeout120seconds. No warnings or errors.
+Compiler: Lean4.32.2, arm64-apple-darwin24.6.0,
+commit f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+
+Final #print axioms coverage: all19 new theorems, the load-bearing Fermat theorem,
+and28 defining/baseline/library dependencies =48 reports. Their union is only
+propext, Classical.choice, Quot.sound. No sorryAx, custom axiom, native_decide,
+unsafe code, unchecked native trust, or admitted obligation appears. The proof
+uses kernel-producing ring/omega/simp reasoning and ordinary decide on small
+closed statements. No numerical search is used as proof of an infinite family.
+
+four-audit-v1.json verifies every new theorem has an axiom report, checks the
+admission/native-trust token scan in the candidate, checks final compiler
+success/diagnostics/source-log hashes, and compares all19 approved headers. The
+transitive axiom check is the proof-dependency check, not merely a text scan.
+
+Actual milestones, each with preserved .lean/.json/.stdout/.stderr files:
+- four-build-01-seeds-squares: exit0, first8 helpers;
+  source hash7747d0cd86ba840095a8b83b4636953d608f283fd9275b7cdd47de734dd83e5d.
+- four-build-02-prime-one-scaling: exit0, first14 plus odd-prime equivalence;
+  source hash2decb0e9662cc297254319b5fdbbb2806a3186d5540d7bdaa793860b4fe76917.
+- four-build-03-residue-core: exit0, all19 helpers;
+  source hash5554eacdfe82d9993548593d23babd1480cb58a47b26e400fd73321d3c80e945.
+- four-build-04-final-axioms: exit0, same mathematics with complete dependency
+  axiom prints; final hash4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325.
+
+No helper-production compilation failed in this task. Older Attempt-v1/v2 and
+build-01-residual/build-02-prime-core files from the earlier bounded FULL-target
+attempt remain preserved, explicitly incomplete. They are not dependencies of
+FourCandidate and must not be imported or integrated. Their earlier gap reports
+remain historical evidence, not a claim that the new partial helpers failed.
+
+All nine package HEADs still equal their frozen manifest revisions, and each
+checkout's git status is clean. The audit records exact commands/results. The
+protected base, old partial module, approved interfaces/target, toolchain,
+lakefile, and manifest hashes are unchanged. No master or root import was edited.
+
+EXACT RESIDUAL AND INTEGRATION HANDOFF
+
+The still-missing uniform construction is:
+
+p : ℕ
+hp : Nat.Prime p
+hLower : 7 ≤ p
+hMod : p % 4 = 3
+⊢ HasRepresentation (4 * p)
+
+Equivalently after the new closed equivalence:
+⊢ ∀ m : ℕ, 0 < m → HasRepresentation (4 * m)
+
+No proof of these obligations is supplied. In particular no closed theorem
+named ArithmeticStatement.representation_multiple_four is in the final candidate.
+The original all-even Target remains unproved as well.
+
+Next owners: independent proof/audit reviewer for the exact final candidate
+hash, followed by math-fl-integrator if accepted. Only the integrator may copy
+these19 proofs to a master module, extend root imports/build inclusion, and
+repeat integrated compilation, all axiom checks, and statement/base comparisons.
+The simplest module body is the frozen FourCandidate file, retaining its two
+imports and ArithmeticStatement namespace. Do not import body-erased interface
+text, failed full-target attempts, or any unresolved endpoint. No duplicate
+lambda/representation definitions need to be merged.
+
+Artifact-producing task c58d66c51213 is complete at this delivery. Acceptance,
+master integration, and proof of the full multiples-four assertion are separate.

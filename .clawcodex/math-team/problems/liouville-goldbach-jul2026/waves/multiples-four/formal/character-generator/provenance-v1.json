@@ -1,0 +1,126 @@
+{
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_status": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+        "show",
+        "-s",
+        "--format=%H%n%cI",
+        "HEAD"
+      ],
+      "exit_status": 0,
+      "stdout": "905b95818eb32af7874a58b427f50c1711a5e96c\n2026-07-28T18:36:13+02:00\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib",
+        "status",
+        "--porcelain"
+      ],
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_status": 0,
+      "stdout": "Lean (version 4.32.2, arm64-apple-darwin24.6.0, commit f3b06c705e6c85f5314019d5d3baab0fec5b580c, Release)\n",
+      "stderr": ""
+    }
+  ],
+  "source_hashes": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/Basic.lean": "9ac75516bf1585b7af0c71340344ecb3e4c135ac3c06f959d6a3f1e8c2ebd95c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean": "24ffbf256f6f6f7a2617901323c2d532e2d7871c826a8b11f0580b283e994302",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Field/ZMod.lean": "417e8776440d058896b5f05a65d534041a1b7f0b8adb90c011b75486f3e1de22",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/ZMod/Basic.lean": "9a57047615cf4231f3561aef5c75ededf5a6ed6559308f31e241d1d27b2bc00c",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/Group/Even.lean": "1180fa9ac282e55257e95c8402acd7314fcbd0a18bcfdede92a3cde16e1db630",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Defs.lean": "617c1a2a927a2a282092f11c8d254036454e7ffa2eab12f8dd16880cf83d0d61",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Prime/Basic.lean": "b97e83d65681b68b3ad1f4bdfd36defd0a30aa173cf726b3d2807acf8bde5027",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/ModEq.lean": "678c7d5030c056efb633aaab3a1b44ceec599332b9f70f694b08f4cce27d1fea",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Data/Nat/Init.lean": "6eac43b5c217af7e02be819026cdbba38b24810659d1fc1dc7d90d6f78c7d3e3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/GroupWithZero/Defs.lean": "ebd4c4b8ed5e63d9ab41920c182f9c3dde99f8c979b4da118544c73f22b30cc5",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/Mathlib/Algebra/GroupWithZero/Basic.lean": "a9a32b9f4a26e3018a7ce5a42fb51101575294daf36d4e194af405f795589ce6",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean": "09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/descent-fidelity-v1.md": "02500f9a05e68f42c4eebeec074ee58a7cfbcb5b56a2fe01492b3fb231ef0411",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/nl/descent/proof-attempt-v1.md": "23fc6ad19d1c45dd432945aa84756b190700b8c15394b1554ebb3ecaff82235e",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/request.md": "a812fb01fe4e29e0c6e0fc4737fb3e98a730091f35e32f08ceba740bc30ec96f",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/Int/Order.lean": "06a375f0e855f6b132de56d79be4405691db1a14be3fe52fa8814df9b45cea68",
+    "~/.elan/toolchains/leanprover--lean4---v4.32.2/src/lean/Init/Data/Nat/Dvd.lean": "12cd37a3909fddc05c1f5541662d1a099c083aa1084777ded9d583c7a6780f96"
+  },
+  "cache_command_log": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/character-generator/reciprocity-cache.log",
+  "source_cutoff": "2026-07-31 inclusive",
+  "no_lake_update": true,
+  "reciprocity_api_source_and_field_instance": {
+    "Mathlib/NumberTheory/LegendreSymbol/Basic.lean": [
+      {
+        "lines": [
+          282,
+          286
+        ],
+        "text": "namespace ZMod\n\n/-- `-1` is a square in `ZMod p` iff `p` is not congruent to `3` mod `4`. -/\ntheorem exists_sq_eq_neg_one_iff : IsSquare (-1 : ZMod p) ↔ p % 4 ≠ 3 := by\n  rw [FiniteField.isSquare_neg_one_iff, card p]\n"
+      }
+    ],
+    "Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean": [
+      {
+        "lines": [
+          45,
+          45
+        ],
+        "text": "variable {p : ℕ} [Fact p.Prime]\n"
+      },
+      {
+        "lines": [
+          73,
+          77
+        ],
+        "text": "/-- `2` is a square modulo an odd prime `p` iff `p` is congruent to `1` or `7` mod `8`. -/\ntheorem exists_sq_eq_two_iff (hp : p ≠ 2) : IsSquare (2 : ZMod p) ↔ p % 8 = 1 ∨ p % 8 = 7 := by\n  rw [FiniteField.isSquare_two_iff, card p]\n  have h₁ := (Prime.mod_two_eq_one_iff_ne_two Fact.out).mpr hp\n  lia\n"
+      },
+      {
+        "lines": [
+          99,
+          99
+        ],
+        "text": "variable {p q : ℕ} [Fact p.Prime] [Fact q.Prime]\n"
+      },
+      {
+        "lines": [
+          153,
+          167
+        ],
+        "text": "/-- If `p` and `q` are odd primes and `p % 4 = 1`, then `q` is a square mod `p` iff\n`p` is a square mod `q`. -/\ntheorem exists_sq_eq_prime_iff_of_mod_four_eq_one (hp1 : p % 4 = 1) (hq1 : q ≠ 2) :\n    IsSquare (q : ZMod p) ↔ IsSquare (p : ZMod q) := by\n  rcases eq_or_ne p q with rfl | h\n  · rfl\n  · rw [← eq_one_iff' p (prime_ne_zero p q h), ← eq_one_iff' q (prime_ne_zero q p h.symm),\n      quadratic_reciprocity_one_mod_four hp1 hq1]\n\n/-- If `p` and `q` are distinct primes that are both congruent to `3` mod `4`, then `q` is\na square mod `p` iff `p` is a nonsquare mod `q`. -/\ntheorem exists_sq_eq_prime_iff_of_mod_four_eq_three (hp3 : p % 4 = 3) (hq3 : q % 4 = 3)\n    (hpq : p ≠ q) : IsSquare (q : ZMod p) ↔ ¬IsSquare (p : ZMod q) := by\n  rw [← eq_one_iff' p (prime_ne_zero p q hpq), ← eq_neg_one_iff' q,\n    quadratic_reciprocity_three_mod_four hp3 hq3, neg_inj]\n"
+      }
+    ],
+    "Mathlib/Algebra/Field/ZMod.lean": [
+      {
+        "lines": [
+          17,
+          39
+        ],
+        "text": "namespace ZMod\nvariable (p : ℕ) [hp : Fact p.Prime]\n\nset_option backward.privateInPublic true in\nprivate theorem mul_inv_cancel_aux (a : ZMod p) (h : a ≠ 0) : a * a⁻¹ = 1 := by\n  obtain ⟨k, rfl⟩ := natCast_zmod_surjective a\n  apply coe_mul_inv_eq_one\n  apply Nat.Coprime.symm\n  rwa [Nat.Prime.coprime_iff_not_dvd Fact.out, ← CharP.cast_eq_zero_iff (ZMod p)]\n\nset_option backward.privateInPublic true in\nset_option backward.privateInPublic.warn false in\n/-- Field structure on `ZMod p` if `p` is prime. -/\ninstance : Field (ZMod p) where\n  mul_inv_cancel := mul_inv_cancel_aux p\n  inv_zero := inv_zero p\n  nnqsmul := _\n  nnqsmul_def := fun _ _ => rfl\n  qsmul := _\n  qsmul_def := fun _ _ => rfl\n\n/-- `ZMod p` is an integral domain when `p` is prime. -/\ninstance : IsDomain (ZMod p) := by constructor\n"
+      }
+    ]
+  }
+}

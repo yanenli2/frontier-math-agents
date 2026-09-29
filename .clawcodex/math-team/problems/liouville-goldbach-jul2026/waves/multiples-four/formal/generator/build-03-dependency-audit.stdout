@@ -1,0 +1,34 @@
+∀ (m : ℕ), 0 < m → HasRepresentation (4 * m) : Prop
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/DependencyAudit.lean:7:19: warning: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ArithmeticStatement.representation_multiple_eight (m : ℕ) (hm : 0 < m) : HasRepresentation (8 * m)
+ArithmeticStatement.representation_diagonal {N : ℕ} (hEven : Even N) (hN : 2 < N) (hSign : lambda N = 1) :
+  HasRepresentation N
+ArithmeticStatement.lambda_mul {u v : ℕ} (hu : 0 < u) (hv : 0 < v) : lambda (u * v) = lambda u * lambda v
+ArithmeticStatement.hasSignedRepresentation_mul {s : ℤ} {N d : ℕ} (hd : 0 < d) (h : HasSignedRepresentation s N) :
+  HasSignedRepresentation (lambda d * s) (d * N)
+Nat.prod_primeFactorsList {n : ℕ} : n ≠ 0 → n.primeFactorsList.prod = n
+Nat.prime_of_mem_primeFactorsList {n p : ℕ} : p ∈ n.primeFactorsList → Nat.Prime p
+ArithmeticStatement.four_mul_representation_count {N : ℕ} (hN : 2 ≤ N) : 4 * ↑(R N) = ↑N - 1 - 2 * L (N - 1) + C N
+ArithmeticStatement.representation_count_pos_iff {N : ℕ} (hN : 2 ≤ N) : 0 < R N ↔ HasRepresentation N
+ArithmeticStatement.count_pos_iff_keystone {N : ℕ} (hN : 2 ≤ N) : 0 < R N ↔ 2 * L (N - 1) - (↑N - 1) < C N
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]

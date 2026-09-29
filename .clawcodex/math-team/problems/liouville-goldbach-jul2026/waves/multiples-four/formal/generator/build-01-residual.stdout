@@ -1,0 +1,9 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/Attempt-v1.lean:28:6: error: unsolved goals
+case neg.inr
+m : ℕ
+hm : 0 < m
+hEven : ¬Even m
+hminus : lambda m = -1
+hmne : m ≠ 1
+hmgt : 1 < m
+⊢ HasRepresentation (4 * m)

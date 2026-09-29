@@ -1,0 +1,18 @@
+cwd: .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean
+argv: ["lake", "build", "Statement.FourWork.Character.ResiduePrime"]
+command: lake build Statement.FourWork.Character.ResiduePrime
+
+ℹ [2834/2834] Built Statement.FourWork.Character.ResiduePrime (20s)
+info: Statement/FourWork/Character/ResiduePrime.lean:64:0: 'ArithmeticStatement.FourWork.prime_dvd_quarter_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/FourWork/Character/ResiduePrime.lean:65:0: 'ArithmeticStatement.FourWork.exists_small_prime_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/FourWork/Character/ResiduePrime.lean:66:0: 'ZMod.exists_sq_eq_neg_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/FourWork/Character/ResiduePrime.lean:67:0: 'ZMod.exists_sq_eq_two_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/FourWork/Character/ResiduePrime.lean:68:0: 'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/FourWork/Character/ResiduePrime.lean:69:0: 'ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/FourWork/Character/ResiduePrime.lean:70:0: 'Nat.exists_prime_and_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/FourWork/Character/ResiduePrime.lean:71:0: 'Nat.le_of_dvd' depends on axioms: [propext]
+info: Statement/FourWork/Character/ResiduePrime.lean:72:0: 'Nat.Prime.eq_two_or_odd' depends on axioms: [propext]
+info: Statement/FourWork/Character/ResiduePrime.lean:73:0: 'Nat.odd_mod_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2834 jobs).
+
+exit_status: 0

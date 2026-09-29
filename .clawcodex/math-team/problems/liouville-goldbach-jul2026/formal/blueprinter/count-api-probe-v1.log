@@ -1,0 +1,1 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/blueprinter/count-api-probe-v1.lean:1:0: error: object file '.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Interval/Finset/Nat.olean' of module Mathlib.Order.Interval.Finset.Nat does not exist

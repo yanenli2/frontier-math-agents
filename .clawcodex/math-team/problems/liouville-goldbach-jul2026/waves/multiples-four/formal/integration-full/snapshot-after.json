@@ -1,0 +1,226 @@
+{
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/FINAL_ARGUMENT.md": {
+    "sha256": "1b93364b818b0eae95875d391ca6f944614f00b963a1e384ba1a0fe2533957a9",
+    "bytes": 31851
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/LEMMA_MAP.md": {
+    "sha256": "0fb9cdbfe253e2881149accfb7d261fbdb4fae3e773c2ca956567db853133eba",
+    "bytes": 6416
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/REPRODUCE.md": {
+    "sha256": "cb982a4687549930a398cec4b3d81449ebec7cd0bb2eb9ed8fc75f8d30e301c0",
+    "bytes": 8566
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json": {
+    "sha256": "051de67ee5bfd81242942075cf9dabacd8cfa96b74abf3733b025456694cc4c1",
+    "bytes": 53996
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement.lean": {
+    "sha256": "cd6a1dd9bff63ef400559805123c5e6cb7d2d4c9af28cf7f7c24f2cc640abc3c",
+    "bytes": 167
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": {
+    "sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    "bytes": 403
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean": {
+    "sha256": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+    "bytes": 12611
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Assembly.lean": {
+    "sha256": "fb279bfbb469022b119c37d011cfcf47852a3fe25dea03fac966379351437066",
+    "bytes": 5301
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean": {
+    "sha256": "518f28a33ab98d1a44ea7b544ca7f695e28c48893982caaf72eb4879956763dd",
+    "bytes": 2922
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean": {
+    "sha256": "3df5a3f0a6de6a60c2b8b8ba89dd6e44fa4d47cb28e98c33f1e31d1dfb7d84dd",
+    "bytes": 2601
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean": {
+    "sha256": "843e4ee562071ef4729a61c715b77510b378add7f19b8c02d1e3d36fa9165f88",
+    "bytes": 4379
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean": {
+    "sha256": "09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290",
+    "bytes": 4900
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean": {
+    "sha256": "d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753",
+    "bytes": 6864
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": {
+    "sha256": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    "bytes": 17967
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Scaffold.lean": {
+    "sha256": "0bd0952096ebf027fa956458dfb1c1bb08e6396cd89c77b24a3eaadbe1070d1a",
+    "bytes": 343
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Smoke.lean": {
+    "sha256": "50fcf1606d7bf7c52cf84cc7ebc60f0e05a151745339f295c86c1a37ffab8e19",
+    "bytes": 1648
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": {
+    "sha256": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+    "bytes": 3548
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": {
+    "sha256": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+    "bytes": 282
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": {
+    "sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+    "bytes": 25
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md": {
+    "sha256": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f",
+    "bytes": 7762
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/sources.md": {
+    "sha256": "9df552348f03fd84ffe0e203f1340f26e6a902f8424f924068fe6fb86c1a7dbb",
+    "bytes": 7696
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/PROOF.md": {
+    "sha256": "205df4c7b85c9ce40cccf1b42aa92f174fb0365b058466a3c4f2d3ba6968831b",
+    "bytes": 19741
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean": {
+    "sha256": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed",
+    "bytes": 519
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/assembly-generator/audit-v1.json": {
+    "sha256": "2ef37d2d5ad5b5b3d8d6f3253754b73eead05f04b106eb6086826b37dd3c0d92",
+    "bytes": 32836
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/assembly-generator/proof-status-map-v1.txt": {
+    "sha256": "c23f34883efe520f9d4943e1b60c7fbecb86f17bf8dbc55aaea24c6b969ca9f5",
+    "bytes": 11422
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/character-generator/provenance-v1.json": {
+    "sha256": "d88424e87469955c5848fc350ce0f8a7d8c88906960b15df77ae51fe067b8be4",
+    "bytes": 7910
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/character-generator/statement-comparison-v1.json": {
+    "sha256": "25e2e3b21351da5d88eaad4796021ecebee52daa772c7b9adf7416fc7e5853e5",
+    "bytes": 10835
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt": {
+    "sha256": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+    "bytes": 4673
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-generator/audit-v1.json": {
+    "sha256": "b0f01c628d12018a2e04cbf3434c6833b1d74274e2e9ff71103d50f00ef124d5",
+    "bytes": 17377
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean": {
+    "sha256": "be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee",
+    "bytes": 2853
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/descent-fidelity-v1.md": {
+    "sha256": "02500f9a05e68f42c4eebeec074ee58a7cfbcb5b56a2fe01492b3fb231ef0411",
+    "bytes": 25419
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/four-candidate-review-v1.compile.json": {
+    "sha256": "7b380889526d86a557ba3c389c4f97a3a6f40392349340d7ef5cdcc23e0a79f5",
+    "bytes": 67556
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/four-candidate-review-v1.compile.log": {
+    "sha256": "2275f1fe8774affbdf27f43476dbb493b1dfd8f820f2e7a63c28ce3390816b12",
+    "bytes": 4956
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/four-candidate-review-v1.md": {
+    "sha256": "573eedc7b428cbadfb3730854bb36bb61c226ab9011433fc7808273b820f56e5",
+    "bytes": 18633
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.audit.json": {
+    "sha256": "c19955b46fb7b75f651e3cc6d6e3fa7b7596849749a48521dc7049740dee4f34",
+    "bytes": 133496
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.compile.json": {
+    "sha256": "3bd3a1b3b1f2f8e03644eb2ce481a25c94f60013a63e5c731bc945af423d67eb",
+    "bytes": 810
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.compile.log": {
+    "sha256": "b11f5fe7f9530bb229409bc308f340f15aed0e3280c1b943b005812c6df438e9",
+    "bytes": 45909
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.dependencies.json": {
+    "sha256": "abe7f8ea67f506ed8a1be5aa40733d86894532dd054be381b3a5d9efb6510e05",
+    "bytes": 2951
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.dependencies.log": {
+    "sha256": "34fa457fbcd48055b6f0597dcb6cca13348790ce4858259fcbc11b668cf4507b",
+    "bytes": 20832
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.md": {
+    "sha256": "8557e4bf5269adbbbc6609a274a9243920cd025041687f15aca9c50e26f91587",
+    "bytes": 22684
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.provenance.json": {
+    "sha256": "12e352a433122514a186b6b3ded66d814d21c1dc7720748ee05e9a48db282d39",
+    "bytes": 16400
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.signatures.json": {
+    "sha256": "16207ad349b9cb8e0fe4e79dc4e8989018b7e5298b72766e41d5de214909a77c",
+    "bytes": 52252
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.snapshot-begin.json": {
+    "sha256": "f4c3d72aa900837062d9c026d018990748f1967590699c120232fba38254153f",
+    "bytes": 5133
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.snapshot-end.json": {
+    "sha256": "dbb30b51527dd0e294490b5b0cd421544c548814a112676cd2b83dd5d09b1113",
+    "bytes": 8272
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.trust0.json": {
+    "sha256": "d9dea44cd9d998efebc43ad62cfb68f9cbe4613c9453eea032c83860680acad4",
+    "bytes": 439
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.trust0.log": {
+    "sha256": "bc6ef09ed5763673d199a1d34b96be739d5581b5c3087e38a0f71fac082cb17a",
+    "bytes": 7856
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.types.json": {
+    "sha256": "048f6add0b2776bb06efc988c3a4ad7da27b12df2515a2f108c77d8f9d6e5368",
+    "bytes": 3795
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.types.log": {
+    "sha256": "b3034b73f55ee22a6a1950a8a66ae4d692921e9e5acb64f3fe7bfa9bf023b929",
+    "bytes": 11759
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.types2.json": {
+    "sha256": "403c143aee81e309d474b325a5b7296dccdb8edd40c356ff22a59343db8021fc",
+    "bytes": 3881
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.types2.log": {
+    "sha256": "9cb18e03d5defa65ce0e0e8c6ecbb4a3bee6997eb18872fa056ef6f806c6d668",
+    "bytes": 11713
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/helper-fidelity-v1.md": {
+    "sha256": "ad4612c5f35e0e0b75b1b06913b756605f4fe62557346be0ee2f6cdfbd35f517",
+    "bytes": 17436
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/statement-fidelity-v1.md": {
+    "sha256": "d3835bd2c981a18a62b9c72a3c0f93685e5555a4eeb5908175f68e99bfd6475d",
+    "bytes": 8899
+  },
+  ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/request.md": {
+    "sha256": "a812fb01fe4e29e0c6e0fc4737fb3e98a730091f35e32f08ceba740bc30ec96f",
+    "bytes": 1244
+  },
+  ".clawcodex/math-team/review-inputs/r20260924-four-v1/DescentInterfaces.lean.txt": {
+    "sha256": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+    "bytes": 4673
+  },
+  ".clawcodex/math-team/review-inputs/r20260924-four-v1/ModularDefinitions.lean.txt": {
+    "sha256": "5c073db2b07ba2ccd729dd9c0218fd7ca6d1d6767e18d81c74bc19975188ec56",
+    "bytes": 348
+  },
+  ".clawcodex/math-team/review-inputs/r20260924-four-v1/descent-readback.md": {
+    "sha256": "460c911b32d72948da676c52e3f0edba52ad724aa505bd4d650b94375165e6ab",
+    "bytes": 18041
+  }
+}

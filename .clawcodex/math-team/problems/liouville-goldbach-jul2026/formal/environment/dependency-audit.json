@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "python3",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit_dependencies.py"
+  ],
+  "shell_display": "python3 .clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/audit_dependencies.py",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:00:09.948262+00:00",
+  "elapsed_seconds": 11.787349458,
+  "timeout_seconds": 180,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dependency-audit.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dependency-audit.stderr",
+  "stdout_sha256": "b673009d545f1876d74a7213edc269de574632666c7e68f37116aa77efcb64ae",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

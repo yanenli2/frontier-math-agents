@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "--stdin"
+  ],
+  "shell_display": "lake env lean --stdin",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T03:56:54.579159+00:00",
+  "elapsed_seconds": 1.671,
+  "exit_status": 1,
+  "expected_exit_status": 1,
+  "timeout_seconds": 300,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/integration/v1-09-absent-endpoints.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/integration/v1-09-absent-endpoints.stderr",
+  "stdout_sha256": "8e8f8e11e2b7324c752c36ea5a992f19f999656b89a7a1fafd8eb1c07105e590",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdin_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/integration/v1-09-absent-endpoints.stdin.lean",
+  "stdin_sha256": "0314a0c6994f5bd1ea17d69de15457c10eae9b2231dab38ac401a5f3317c7bd8"
+}

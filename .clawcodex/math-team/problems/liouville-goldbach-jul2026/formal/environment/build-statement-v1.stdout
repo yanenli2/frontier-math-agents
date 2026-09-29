@@ -1,0 +1,51 @@
+✔ [680/684] Built Statement.Definitions (4.5s)
+✔ [681/684] Built Statement.Scaffold (967ms)
+ℹ [682/684] Built Statement.Smoke (1.1s)
+info: Statement/Smoke.lean:5:0: []
+info: Statement/Smoke.lean:6:0: [2, 2, 3]
+info: Statement/Smoke.lean:7:0: [(1, 0, 1), (2, 1, -1), (4, 2, 1), (8, 3, -1), (12, 3, -1), (18, 3, -1)]
+info: Statement/Smoke.lean:9:0: definition smoke checks passed
+info: Statement/Smoke.lean:22:0: Target : Prop
+info: Statement/Smoke.lean:23:0: def ArithmeticStatement.omega : ℕ → ℕ :=
+fun n => n.primeFactorsList.length
+info: Statement/Smoke.lean:24:0: def ArithmeticStatement.lambda : ℕ → ℤ :=
+fun n => (-1) ^ omega n
+info: Statement/Smoke.lean:25:0: def ArithmeticStatement.Target : Prop :=
+∀ (N : ℕ), Even N → 2 < N → ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ lambda a = -1 ∧ lambda b = -1
+info: Statement/Smoke.lean:26:0: structure ArithmeticStatement.UnfinishedScaffold : Prop
+number of parameters: 0
+fields:
+  ArithmeticStatement.UnfinishedScaffold.result : Target
+constructor:
+  ArithmeticStatement.UnfinishedScaffold.mk (result : Target) : UnfinishedScaffold
+info: Statement/Smoke.lean:27:0: 'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:28:0: 'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:29:0: 'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:30:0: 'ArithmeticStatement.UnfinishedScaffold.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:31:0: def Even.{u_2} : {α : Type u_2} → [Add α] → α → Prop :=
+fun {α} [Add α] a => ∃ r, a = r + r
+info: Statement/Smoke.lean:32:0: @[irreducible] def Nat.primeFactorsList : ℕ → List ℕ :=
+WellFounded.Nat.fix (fun x => x) fun a a_1 =>
+  (match (motive := (x : ℕ) → ((y : ℕ) → InvImage (fun x1 x2 => x1 < x2) (fun x => x) y x → List ℕ) → List ℕ) a with
+    | 0 => fun x => []
+    | 1 => fun x => []
+    | k.succ.succ => fun x =>
+      let m := (k + 2).minFac;
+      m :: x ((k + 2) / m) ⋯)
+    a_1
+info: Statement/Smoke.lean:33:0: Nat.primeFactorsList_zero : Nat.primeFactorsList 0 = []
+info: Statement/Smoke.lean:34:0: Nat.primeFactorsList_one : Nat.primeFactorsList 1 = []
+info: Statement/Smoke.lean:35:0: Nat.prime_of_mem_primeFactorsList {n p : ℕ} : p ∈ n.primeFactorsList → Nat.Prime p
+info: Statement/Smoke.lean:36:0: Nat.prod_primeFactorsList {n : ℕ} : n ≠ 0 → n.primeFactorsList.prod = n
+info: Statement/Smoke.lean:37:0: Nat.primeFactorsList_unique {n : ℕ} {l : List ℕ} (h₁ : l.prod = n) (h₂ : ∀ (p : ℕ), p ∈ l → Nat.Prime p) :
+  l.Perm n.primeFactorsList
+info: Statement/Smoke.lean:38:0: Nat.Prime.primeFactorsList_pow {p : ℕ} (hp : Nat.Prime p) (n : ℕ) : (p ^ n).primeFactorsList = List.replicate n p
+info: Statement/Smoke.lean:39:0: Nat.perm_primeFactorsList_mul {a b : ℕ} (ha : a ≠ 0) (hb : b ≠ 0) :
+  (a * b).primeFactorsList.Perm (a.primeFactorsList ++ b.primeFactorsList)
+info: Statement/Smoke.lean:40:0: 'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:41:0: 'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:42:0: 'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:43:0: 'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Smoke.lean:44:0: 'Nat.Prime.primeFactorsList_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [683/684] Built Statement (925ms)
+Build completed successfully (684 jobs).

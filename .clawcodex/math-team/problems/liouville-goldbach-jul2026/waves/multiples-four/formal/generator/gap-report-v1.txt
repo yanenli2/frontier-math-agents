@@ -1,0 +1,215 @@
+Mode: CERTIFICATION — focused exact-target attempt, no new theorem established.
+Owner: fl-generator; task 30751e67dd70.
+P=.clawcodex/math-team/problems/liouville-goldbach-jul2026
+W=P/waves/multiples-four
+
+RESULT
+
+The assigned all-multiples-of-four theorem is not proved by this attempt. Two
+exact-statement Lean attempts preserve a concrete uniform mathematical gap.
+Imports, existing APIs, factor extraction, and representation scaling work in the
+pinned environment; the failures are not missing-library or tool failures.
+
+No successful Candidate.lean or new theorem is offered for integration. The
+incomplete Attempt-v1.lean and Attempt-v2.lean files deliberately fail at `done`;
+they must not be treated as accepted modules or proofs. The successful
+DependencyAudit.lean file contains checks/axiom prints only, no new theorem.
+
+EXACT APPROVED CONTRACT
+
+namespace ArithmeticStatement
+
+theorem representation_multiple_four (m : ℕ) (hm : 0 < m) :
+  HasRepresentation (4 * m)
+
+The type is unchanged. HasRepresentation is the existing positive-witness
+predicate with both lambda signs -1. Neither parity nor lambda sign nor a core
+representation assumption was added to the target's premises. All positive m,
+including m=1, remain in scope; equal summands remain allowed.
+
+Approved snapshot W/formal/approved-v1/Declaration.lean:
+bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed
+Exact two-line signature SHA-256 (including final LF):
+8553b2804a2be4c99b92e7e8127e588b00351a5d650386160c3056ee997d1728
+Fresh statement-only gate: W/formal/reviews/statement-fidelity-v1.md.
+
+ACCEPTED INPUTS AND GUARDS
+
+The only import in all scratch Lean files is Statement.Partial. Its accepted
+hash remains 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0.
+Protected Definitions.lean remains
+79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d.
+
+Existing load-bearing APIs used are:
+- representation_multiple_eight (k) (hk : 0<k) : HasRepresentation (8*k).
+- representation_diagonal with Even N, 2<N, and lambda N=1.
+- lambda_sign with positive argument; lambda_one, lambda_four, lambda_prime.
+- lambda_mul, with both factors positive.
+- hasSignedRepresentation_mul, with a positive multiplier.
+- Nat.prod_primeFactorsList with nonzero input.
+- Nat.prime_of_mem_primeFactorsList on an actual entry of that list.
+
+These are already proved. The original Target, its right-hand-side core family,
+and all new fourfold prime cases are NOT available assumptions.
+
+ATTEMPT 1: EXACT SUBCASE SPLIT
+
+File: W/formal/generator/Attempt-v1.lean
+SHA-256 84565442e7cfd05a582ecf09fcd13b332639e30b6e9e9b3482a28a09a33a2dd7
+Evidence: build-01-residual.{lean,json,stdout,stderr} in the same directory.
+Actual Lean exit: 1, with exactly one unsolved goal at the final `done`.
+
+The following branches elaborate without residual errors:
+1. If Even m, choose k with m=k+k. Positivity of m gives k>0 and 4m=8k,
+   so the accepted all-8m theorem applies.
+2. If lambda m=1, multiplicativity gives lambda(4m)=1; 4m is even and >2,
+   so the accepted diagonal theorem applies. This includes m=1.
+
+The actual remaining compiler goal is:
+
+m : ℕ
+hm : 0 < m
+hEven : ¬Even m
+hminus : lambda m = -1
+hmne : m ≠ 1
+hmgt : 1 < m
+⊢ HasRepresentation (4 * m)
+
+The proof of m≠1 uses lambda_one; it does not assume away an allowed input.
+This case is not empty: odd primes satisfy its sign condition. It is not a
+counterexample claim: for example m=3 itself has the negative pair 5+7 at 12.
+
+ATTEMPT 2: ONE-PRIME EXTRACTION AND EXACT SCALING
+
+File: W/formal/generator/Attempt-v2.lean
+SHA-256 e6025881f81a63a65d31ff8c6a4bc7e82cf87f29e277319c033d91cafe354ab9
+Evidence: build-02-prime-core.{lean,json,stdout,stderr} in the same directory.
+Actual Lean exit: 1, again only at the final mathematical obligation.
+
+After the same first two branches, the negative-sign factor list is nonempty:
+an empty list would force lambda m=1. Write the actual list as p::t. Then:
+- p is prime by membership in m.primeFactorsList;
+- d=t.prod is positive because the list product is the positive number m;
+- m=d*p by the factor-list product theorem;
+- lambda m=-1, lambda p=-1, and positivity of d,p give lambda d=1;
+- p≠2, since otherwise m=d*2 would contradict ¬Even m.
+
+The conditional scaling assembly is fully elaborated as a `suffices` step: a
+representation of 4p would scale by d, preserve both negative signs, and sum to
+4m. The `suffices` premise is left as an explicit unsolved goal, not granted as
+an assumption in any successful declaration.
+
+Actual residual goal (irrelevant original context omitted only here; full
+context is in build-02-prime-core.stdout):
+
+p : ℕ
+hp : Nat.Prime p
+hpne : p ≠ 2
+⊢ HasRepresentation (4 * p)
+
+The full context also records m=d*p, d>0, lambda d=1, and the original hypotheses.
+No distinct-prime condition or d>1 restriction is introduced. The case d=1 is
+precisely why this reduction leaves a genuine prime-indexed uniform obligation.
+
+Optional standalone helper types, not accepted declarations, are recorded in
+proposed-helpers-v1.txt. They require fresh statement review before acceptance.
+No new helper theorem was silently added to the approved interface.
+
+OTHER FOCUSED ROUTES AND THEIR LIMITATIONS
+
+A. The all-8m theorem alone does not handle 4p for odd primes p: 8 does not divide
+4p. Substituting m/2 into that theorem would lose the odd multipliers.
+
+B. The diagonal cannot solve the negative-sign residual: lambda(2m)=-lambda m=1,
+so the pair (2m,2m) has the wrong sign when lambda m=-1. This is an obstruction
+to that witness choice, not to all representations.
+
+C. More fixed two-sign seeds do not by themselves cover the odd-prime core.
+For any fixed finite set of seed values, choose an odd prime p larger than all
+of them. A seed used purely by integer scaling to 4p must divide 4p. Its only
+possible values below p are 1,2,4. None is a two-sign seed: 1 has no positive
+split; 2 has only 1+1 (positive signs); 4 has splits 1+3,2+2,3+1 and no
+positive-positive split. Thus finite fixed seed expansion cannot be the entire
+uniform proof along that restricted strategy. This is a route assessment,
+not a refutation of the requested theorem or all other constructions.
+
+D. The accepted counting identity and count-existence equivalence specialize to
+N=4m. They still require the strict bound
+
+  2 * L (4 * m - 1) - (((4 * m : ℕ) : ℤ) - 1) < C (4 * m).
+
+Natural subtraction inside L remains guarded by m>0; scalar subtraction is in
+integers. The identity alone gives a nonnegative natural count, not positivity.
+No new uniform signed/correlation estimate has been obtained here.
+
+E. target_iff_prime_product_core is a proved equivalence, not a proof of either
+side. Invoking its core family at primes 2,p without first proving Target would
+be circular and was not done.
+
+These routes were examined only to isolate useful next obligations. The attempt
+does not establish that the theorem is false, unprovable, or open in the
+literature. It records only that this focused assignment has not supplied its
+uniform proof. No large numerical search or external solver was used.
+
+COMPILER, AXIOM, AND STATEMENT EVIDENCE
+
+All commands ran from:
+P/lean
+
+Exact target command forms (absolute paths appear in each saved JSON argv):
+lake env lean W/formal/generator/Attempt-v1.lean
+lake env lean W/formal/generator/Attempt-v2.lean
+Both exit 1 with the precise residual goals described above. There are no
+import errors, unavailable tactics, or timeout errors. The diagnostic snapshots
+are retained; no failed attempt was overwritten.
+
+The dependency-only command:
+lake env lean W/formal/generator/DependencyAudit.lean
+exits 0. Evidence: build-03-dependency-audit.{lean,json,stdout,stderr}.
+Its source SHA-256 is
+bd99e38fe785f5ef8ce5e763e0a3eef69981b2953848d715375f1439786dfc55.
+It checks the exact quantified target as a proposition, checks the usable APIs,
+and prints axioms of 17 existing definitions/theorems. Every reported set is
+exactly {propext, Classical.choice, Quot.sound}; no custom/sorry/native axiom
+occurs. This audits accepted dependencies ONLY; it is not an axiom certificate
+for representation_multiple_four, which does not compile.
+
+The target attempts contain no sorry, admit, axiom declaration, native_decide,
+or unsafe code. Their failure is intentionally not bypassed. No admitted target
+is being accepted. A target proof/axiom certificate remains unavailable.
+
+check.py stores exact argv/cwd, status, source snapshots, source/stream hashes,
+timeouts, and protected hashes before/after each run. audit-v1.py/audit-v1.json
+verify that both target headers are byte-identical to the approved two-line
+signature, verify source/log hashes and actual exit statuses, distinguish the
+successful dependency-only audit from failed target attempts, and recheck the
+protected input hashes. The Bash wrapper's `|| test "$?" -eq 1` only permits
+expected failed attempt output; saved JSON records actual Lean status 1.
+
+ENVIRONMENT AND OWNERSHIP
+
+Lean v4.32.2, compiler f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+Mathlib immutable revision 905b95818eb32af7874a58b427f50c1711a5e96c.
+The actual version, exact local Mathlib HEAD, and clean git status are recorded
+in audit-v1.json. All checked manifest/toolchain/config/protected source hashes
+remain unchanged. This wave required no cache fetch, source fetch, install,
+lake update, moving-branch lookup, or post-cutoff source. The supplied source
+cutoff remains 2026-07-31 inclusive.
+
+Every new artifact is within W/formal/generator/. No master Statement file,
+accepted candidate, approved snapshot, project configuration, or dependency was
+edited. No nested agents were spawned.
+
+HANDOFF
+
+Next mathematical owner: the leader's independent NL generator or another
+explicitly assigned uniform-core proof worker. The smallest concrete unresolved
+goal found here is HasRepresentation(4*p) for every odd prime p. An NL uniform
+argument can be returned for exact Lean implementation; a helper-interface
+change must go through fresh fidelity review. Existing master and earlier
+accepted partial wave remain preserved.
+
+Next integration action: NONE. There is no new accepted target proof to merge.
+This gap report completes only the bounded proof-attempt artifact production,
+not mathematical acceptance or proof of the new theorem. The worker remains
+available for a subsequent proof candidate or authorized assignment.

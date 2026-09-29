@@ -1,0 +1,7 @@
+--- before/lean/Statement.lean
++++ after/lean/Statement.lean
+@@ -3,3 +3,4 @@
+ import Statement.Smoke
+ import Statement.Partial
+ import Statement.FourPartial
++import Statement.FourWork.Assembly

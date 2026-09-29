@@ -1,0 +1,64 @@
+Mode: CERTIFICATION — mechanically integrated 19-helper partial baseline.
+Owner: fl-integrator. Shared lemma/source ledgers are unchanged.
+
+Module: Statement.FourPartial; namespace: ArithmeticStatement.
+Master SHA-256: 4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325.
+Snapshot: formal/generator/four-interfaces-v1.lean within this wave,
+SHA-256 be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee.
+
+Every row is an exact reviewed header, compiled after integration with no
+admissions, and has exactly {propext, Classical.choice, Quot.sound}. All types,
+line numbers and per-declaration hashes are in audit-v2.json; all elaborated
+types are in v2-07-root-import.stdout:1-41. Main dependencies below are not a
+full syntactic proof graph; the axiom reports are transitive.
+
+Common review links, relative to wave root:
+- formal/reviews/helper-fidelity-v1.md (statement protection).
+- formal/reviews/four-candidate-review-v1.md (exact candidate and 48-axiom gate).
+- nl/reviews/partial-review-v1.md (scoped NL partial mathematics).
+- Neutral interfaces-readback.md at math-team/review-inputs/r20260924-four-v1;
+  its signature and definition inputs were compared to this exact version.
+
+Source keys:
+LOCAL = reviewed new deductions, nl/generator/proof-attempt-v1.md §§1-4.
+BASE = unchanged accepted Statement.Partial and Statement.Definitions.
+FACT = Mathlib.Data.Nat.Factors/Nat.Prime infrastructure at the fixed Mathlib pin.
+SQ = Nat.Prime.sq_add_sq at Mathlib 905b95818eb32af7874a58b427f50c1711a5e96c;
+     exact source/type/preconditions/availability in provenance-addendum-v1.txt.
+AR = same-pin Nat/Int/ZMod arithmetic and checked tactics; no custom proof oracle.
+
+Line | Declaration | Informal source | Main dependencies / scope
+8 | lambda_six | §2.3 | BASE lambda_mul, lambda_two, lambda_three; AR
+14 | lambda_seven | §1/§2.3 | BASE lambda_prime, FACT Nat.prime_seven
+18 | twelve_two_sign_seed | §2.3 | (5,7) negative and (6,6) positive independent pairs; LOCAL
+25 | representation_multiple_twelve | §2.3 | BASE two-sign seed scaling; all t>0
+29 | representation_multiple_four_of_lambda_one | §2.1/§4 | BASE doubling and diagonal construction; sign premise retained
+37 | representation_multiple_four_of_even | §2.1 | BASE representation_multiple_eight; positive even multiplier
+46 | representation_multiple_four_of_three_dvd | §2.3/§4 | representation_multiple_twelve; positive quotient
+55 | representation_multiple_four_of_sum_two_squares | §3.1 | BASE positive squares/doubling; equal-root all-8t case; zero roots allowed
+81 | prime_one_mod_four_eq_sum_two_squares | §3.2 assertion | SQ, local Fact prime; eligible Gaussian proof, not prose proof steps
+88 | representation_four_prime_one_mod_four | §3.2 | preceding SQ fact plus square-sum construction
+94 | prime_divisor_positive_sign_cofactor | §2.1/§4 | BASE multiplicativity and prime sign; arbitrary prime divisor
+109 | exists_prime_factor_of_lambda_neg_one | §1/§2.1 | FACT prime divisor, preceding cofactor lemma
+121 | representation_multiple_four_of_prime_divisor | §2.1/§4 | positive-sign cofactor, BASE signed scaling; G(4p) is an explicit premise
+131 | representation_multiple_four_of_prime_one_mod_four_dvd | §4 | sign split, prime-divisor scaling, SQ representation case
+140 | exists_prime_one_mod_four_of_lambda_neg_one | §4 | FACT multiplicity list/product; AR ZMod4 cast/sign contradiction
+190 | representation_multiple_four_of_mod_four_one | §4 | sign split, preceding prime occurrence and scaling lemmas
+198 | representation_multiple_four_of_mod_four_ne_three | §4 | even branch or residue1 branch; not the unrestricted T4
+207 | multiple_four_iff_odd_prime_core | §2.2 | sign/even cases and FACT cofactor scaling; equivalence only
+226 | multiple_four_iff_prime_three_mod_four_core | §4 | preceding iff, prime3 seed and SQ residue1 family; equivalence only
+
+Available cases include all positive multipliers m with m%4!=3, plus several
+other explicit sufficient conditions. The final equivalence leaves the exact
+prime-core proposition forall prime p>=7 with p%4=3, HasRepresentation(4*p).
+No row asserts that universal residual proposition.
+
+ABSENT FROM THIS INTEGRATED BASELINE
+representation_multiple_four (m : Nat) (hm : 0<m) : HasRepresentation(4*m)
+pointwise_keystone (original all-even inequality endpoint)
+liouville_goldbach : Target (original all-even theorem)
+
+Their absence is checked in v2-08-absent-endpoints.stdout. Later descent proof
+work is a separate candidate/review/integration wave, not a dependency assumed
+by these helpers. The new helper status is checked and integrated; full T4
+proof status must not be inferred from the partial-family or iff names.

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/mathlib4/git/ref/tags/v4.32.2"
+  ],
+  "shell_display": "gh api repos/leanprover-community/mathlib4/git/ref/tags/v4.32.2",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T01:59:01.037038+00:00",
+  "elapsed_seconds": 0.277493291,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-tag.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/mathlib-tag.stderr",
+  "stdout_sha256": "f30a5c0414145175309c6c691bb7760c55347bf6b7d8192f29d3ef69cce0b79a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

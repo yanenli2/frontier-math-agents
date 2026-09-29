@@ -1,0 +1,904 @@
+{
+  "normalization": "All whitespace removed from theorem header up to :=; whole definition retained. Names and binders unchanged.",
+  "summary": {
+    "full": {
+      "theorems": 19,
+      "definitions": 6,
+      "all_match": true
+    },
+    "old_helpers": {
+      "theorems": 19,
+      "definitions": 0,
+      "all_match": true
+    },
+    "exact_target": {
+      "theorems": 1,
+      "definitions": 4,
+      "all_match": true
+    }
+  },
+  "declarations": [
+    {
+      "category": "full",
+      "kind": "def",
+      "name": "omega",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 9,
+        "text": "def omega (n : ℕ) : ℕ := n.primeFactorsList.length"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean",
+        "line": 6,
+        "text": "def omega (n : ℕ) : ℕ := n.primeFactorsList.length"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "30c382663a8c27bdb252fc7e552e177eaf5162f8663baf729e463cf458a1dd78",
+      "actual_normalized_sha256": "30c382663a8c27bdb252fc7e552e177eaf5162f8663baf729e463cf458a1dd78"
+    },
+    {
+      "category": "full",
+      "kind": "def",
+      "name": "lambda",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 11,
+        "text": "def lambda (n : ℕ) : ℤ := (-1 : ℤ) ^ omega n"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean",
+        "line": 8,
+        "text": "def lambda (n : ℕ) : ℤ := (-1 : ℤ) ^ omega n"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "7f7e5362ace1c1ac0b89b03c470770d3f25c25f2554fdd4a144a06efdacce646",
+      "actual_normalized_sha256": "7f7e5362ace1c1ac0b89b03c470770d3f25c25f2554fdd4a144a06efdacce646"
+    },
+    {
+      "category": "full",
+      "kind": "def",
+      "name": "HasSignedRepresentation",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 13,
+        "text": "def HasSignedRepresentation (s : ℤ) (N : ℕ) : Prop :=\n  ∃ a b : ℕ,\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = s ∧ lambda b = s"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean",
+        "line": 14,
+        "text": "def HasSignedRepresentation (s : ℤ) (N : ℕ) : Prop :=\n  ∃ a b : ℕ,\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = s ∧ lambda b = s"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "a6d5b5b1a092a1c864e9c427296c44cc3a4c99f3fe7189bde4c3f4a7a9f8192a",
+      "actual_normalized_sha256": "a6d5b5b1a092a1c864e9c427296c44cc3a4c99f3fe7189bde4c3f4a7a9f8192a"
+    },
+    {
+      "category": "full",
+      "kind": "def",
+      "name": "HasRepresentation",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 18,
+        "text": "def HasRepresentation (N : ℕ) : Prop :=\n  HasSignedRepresentation (-1 : ℤ) N"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean",
+        "line": 19,
+        "text": "def HasRepresentation (N : ℕ) : Prop :=\n  HasSignedRepresentation (-1 : ℤ) N"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "9da4ef04228e7530d572686669d9574bc2cd92bc924cdf0f46b9bce901174bbe",
+      "actual_normalized_sha256": "9da4ef04228e7530d572686669d9574bc2cd92bc924cdf0f46b9bce901174bbe"
+    },
+    {
+      "category": "full",
+      "kind": "def",
+      "name": "residueLambda",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 23,
+        "text": "def residueLambda (p : ℕ) (z : ZMod p) : ℤ :=\n  lambda z.val"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+        "line": 9,
+        "text": "def residueLambda (p : ℕ) (z : ZMod p) : ℤ :=\n  lambda z.val"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "600ed13f039ecde9bbfe7f30aba9d66af170f4bba6cffbd2c79241e06e3d4f9a",
+      "actual_normalized_sha256": "600ed13f039ecde9bbfe7f30aba9d66af170f4bba6cffbd2c79241e06e3d4f9a"
+    },
+    {
+      "category": "full",
+      "kind": "def",
+      "name": "GoodMultiplier",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 26,
+        "text": "def GoodMultiplier (p : ℕ) (a : ZMod p) : Prop :=\n  a ≠ 0 ∧ ∀ z : ZMod p, z ≠ 0 →\n    residueLambda p (a * z) = residueLambda p a * residueLambda p z"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+        "line": 12,
+        "text": "def GoodMultiplier (p : ℕ) (a : ZMod p) : Prop :=\n  a ≠ 0 ∧ ∀ z : ZMod p, z ≠ 0 →\n    residueLambda p (a * z) = residueLambda p a * residueLambda p z"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "1179a169069e6e48febeb45cf006d32212e99d73a59a4d05cbe27bec2fe75a64",
+      "actual_normalized_sha256": "1179a169069e6e48febeb45cf006d32212e99d73a59a4d05cbe27bec2fe75a64"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "lambda_reflection_eq_one_of_neg",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 30,
+        "text": "theorem lambda_reflection_eq_one_of_neg {p n : ℕ}\n    (hno : ¬ HasRepresentation (4 * p))\n    (hn : 0 < n) (hnp : n < p) (hs : lambda n = (-1 : ℤ)) :\n    lambda (p - n) = (1 : ℤ)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+        "line": 8,
+        "text": "theorem lambda_reflection_eq_one_of_neg {p n : ℕ}\n    (hno : ¬ HasRepresentation (4 * p))\n    (hn : 0 < n) (hnp : n < p) (hs : lambda n = (-1 : ℤ)) :\n    lambda (p - n) = (1 : ℤ)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "ddf62c1b38929aa66ba7efb706263ceb2928a76b24223770031cf93879c715a8",
+      "actual_normalized_sha256": "ddf62c1b38929aa66ba7efb706263ceb2928a76b24223770031cf93879c715a8"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "lambda_double_reflection_eq_neg_one_of_pos",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 35,
+        "text": "theorem lambda_double_reflection_eq_neg_one_of_pos {p n : ℕ}\n    (hno : ¬ HasRepresentation (4 * p))\n    (hn : 0 < n) (hnp : n < 2 * p) (hs : lambda n = (1 : ℤ)) :\n    lambda (2 * p - n) = (-1 : ℤ)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+        "line": 22,
+        "text": "theorem lambda_double_reflection_eq_neg_one_of_pos {p n : ℕ}\n    (hno : ¬ HasRepresentation (4 * p))\n    (hn : 0 < n) (hnp : n < 2 * p) (hs : lambda n = (1 : ℤ)) :\n    lambda (2 * p - n) = (-1 : ℤ)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "56b2d8100cfaf243a0160fdbaefb702ed8262cf6e644fda8821081efb7bfa2ba",
+      "actual_normalized_sha256": "56b2d8100cfaf243a0160fdbaefb702ed8262cf6e644fda8821081efb7bfa2ba"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "three_not_dvd_of_positive_pair",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 40,
+        "text": "theorem three_not_dvd_of_positive_pair {p x y : ℕ}\n    (hno : ¬ HasRepresentation (4 * p))\n    (hx : 0 < x) (hy : 0 < y) (hsum : x + y = p)\n    (hxsign : lambda x = (1 : ℤ)) (hysign : lambda y = (1 : ℤ)) :\n    ¬ 3 ∣ x"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+        "line": 36,
+        "text": "theorem three_not_dvd_of_positive_pair {p x y : ℕ}\n    (hno : ¬ HasRepresentation (4 * p))\n    (hx : 0 < x) (hy : 0 < y) (hsum : x + y = p)\n    (hxsign : lambda x = (1 : ℤ)) (hysign : lambda y = (1 : ℤ)) :\n    ¬ 3 ∣ x"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "44f8cc68ea7b517af4b8034fef2f5e94857b0fe7042d96ec00b8448669f008c3",
+      "actual_normalized_sha256": "44f8cc68ea7b517af4b8034fef2f5e94857b0fe7042d96ec00b8448669f008c3"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "positive_pair_gap_step",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 46,
+        "text": "theorem positive_pair_gap_step {p x y : ℕ}\n    (hp : Nat.Prime p) (hp3 : p ≠ 3)\n    (hno : ¬ HasRepresentation (4 * p))\n    (hx : 0 < x) (hxy : x < y) (hsum : x + y = p)\n    (hxsign : lambda x = (1 : ℤ)) (hysign : lambda y = (1 : ℤ)) :\n    ∃ u v : ℕ, 0 < u ∧ u < v ∧ u + v = p ∧\n      lambda u = (1 : ℤ) ∧ lambda v = (1 : ℤ) ∧ v - u < y - x"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+        "line": 56,
+        "text": "theorem positive_pair_gap_step {p x y : ℕ}\n    (hp : Nat.Prime p) (hp3 : p ≠ 3)\n    (hno : ¬ HasRepresentation (4 * p))\n    (hx : 0 < x) (hxy : x < y) (hsum : x + y = p)\n    (hxsign : lambda x = (1 : ℤ)) (hysign : lambda y = (1 : ℤ)) :\n    ∃ u v : ℕ, 0 < u ∧ u < v ∧ u + v = p ∧\n      lambda u = (1 : ℤ) ∧ lambda v = (1 : ℤ) ∧ v - u < y - x"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "9872bfad6ed1e72a1a5091ad62f3e8f655a466a7a288ddf7fffe9f8210063446",
+      "actual_normalized_sha256": "9872bfad6ed1e72a1a5091ad62f3e8f655a466a7a288ddf7fffe9f8210063446"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "no_positive_pair",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 54,
+        "text": "theorem no_positive_pair {p : ℕ}\n    (hp : Nat.Prime p) (hp2 : p ≠ 2) (hp3 : p ≠ 3)\n    (hno : ¬ HasRepresentation (4 * p))\n    {x y : ℕ} (hx : 0 < x) (hy : 0 < y) (hsum : x + y = p) :\n    ¬ (lambda x = (1 : ℤ) ∧ lambda y = (1 : ℤ))"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+        "line": 103,
+        "text": "theorem no_positive_pair {p : ℕ}\n    (hp : Nat.Prime p) (hp2 : p ≠ 2) (hp3 : p ≠ 3)\n    (hno : ¬ HasRepresentation (4 * p))\n    {x y : ℕ} (hx : 0 < x) (hy : 0 < y) (hsum : x + y = p) :\n    ¬ (lambda x = (1 : ℤ) ∧ lambda y = (1 : ℤ))"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "5345a51bf7c5b55a96767d192e4711e4b176610d136abf312f92f98d3d79ec9c",
+      "actual_normalized_sha256": "5345a51bf7c5b55a96767d192e4711e4b176610d136abf312f92f98d3d79ec9c"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "lambda_antireflection_of_no_representation",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 60,
+        "text": "theorem lambda_antireflection_of_no_representation {p : ℕ}\n    (hp : Nat.Prime p) (hp2 : p ≠ 2) (hp3 : p ≠ 3)\n    (hno : ¬ HasRepresentation (4 * p)) :\n    ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean",
+        "line": 124,
+        "text": "theorem lambda_antireflection_of_no_representation {p : ℕ}\n    (hp : Nat.Prime p) (hp2 : p ≠ 2) (hp3 : p ≠ 3)\n    (hno : ¬ HasRepresentation (4 * p)) :\n    ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "52fbe8a64ebaba028fb5fe0d7260fa26e211a769029722ce75089f78eb381287",
+      "actual_normalized_sha256": "52fbe8a64ebaba028fb5fe0d7260fa26e211a769029722ce75089f78eb381287"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "cyclic_short_multiple",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 65,
+        "text": "theorem cyclic_short_multiple {p n : ℕ}\n    (hp : Nat.Prime p) (hn : 2 ≤ n) (hnp : n < p)\n    (z : ZMod p) (hz : z ≠ 0) :\n    ∃ k : ℤ, ∃ d : ℕ, k ≠ 0 ∧ k.natAbs < n ∧\n      0 < d ∧ n * d < p ∧ (k : ZMod p) * z = (d : ZMod p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean",
+        "line": 10,
+        "text": "theorem cyclic_short_multiple {p n : ℕ}\n    (hp : Nat.Prime p) (hn : 2 ≤ n) (hnp : n < p)\n    (z : ZMod p) (hz : z ≠ 0) :\n    ∃ k : ℤ, ∃ d : ℕ, k ≠ 0 ∧ k.natAbs < n ∧\n      0 < d ∧ n * d < p ∧ (k : ZMod p) * z = (d : ZMod p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "07d98f4dd0cc70362366d5e833f877cd0dadd59a0115d60dee2c6b540fd26fb4",
+      "actual_normalized_sha256": "07d98f4dd0cc70362366d5e833f877cd0dadd59a0115d60dee2c6b540fd26fb4"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "residueLambda_natCast",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 71,
+        "text": "theorem residueLambda_natCast {p n : ℕ} (hnp : n < p) :\n    residueLambda p (n : ZMod p) = lambda n"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+        "line": 16,
+        "text": "theorem residueLambda_natCast {p n : ℕ} (hnp : n < p) :\n    residueLambda p (n : ZMod p) = lambda n"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "7e28a4e8185362f7f07269657906ded4d47ebf2168c8390ebfbcc3f6726d3508",
+      "actual_normalized_sha256": "7e28a4e8185362f7f07269657906ded4d47ebf2168c8390ebfbcc3f6726d3508"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "residueLambda_sign",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 74,
+        "text": "theorem residueLambda_sign {p : ℕ} {z : ZMod p} (hz : z ≠ 0) :\n    residueLambda p z = (1 : ℤ) ∨ residueLambda p z = (-1 : ℤ)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+        "line": 21,
+        "text": "theorem residueLambda_sign {p : ℕ} {z : ZMod p} (hz : z ≠ 0) :\n    residueLambda p z = (1 : ℤ) ∨ residueLambda p z = (-1 : ℤ)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "34ced95fc224db222056b0725ced32608ebf1c26a6bae7d002e5a2e8afcb3c97",
+      "actual_normalized_sha256": "34ced95fc224db222056b0725ced32608ebf1c26a6bae7d002e5a2e8afcb3c97"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "residueLambda_neg",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 77,
+        "text": "theorem residueLambda_neg {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {z : ZMod p} (hz : z ≠ 0) :\n    residueLambda p (-z) = -residueLambda p z"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+        "line": 25,
+        "text": "theorem residueLambda_neg {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {z : ZMod p} (hz : z ≠ 0) :\n    residueLambda p (-z) = -residueLambda p z"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "7fe90697b237d62d865063d8aef0d1e9d5d74970c74a936b8b69ef3d49465f94",
+      "actual_normalized_sha256": "7fe90697b237d62d865063d8aef0d1e9d5d74970c74a936b8b69ef3d49465f94"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "goodMultiplier_one",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 82,
+        "text": "theorem goodMultiplier_one {p : ℕ} (hp : Nat.Prime p) :\n    GoodMultiplier p (1 : ZMod p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+        "line": 33,
+        "text": "theorem goodMultiplier_one {p : ℕ} (hp : Nat.Prime p) :\n    GoodMultiplier p (1 : ZMod p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "91a778eaee2f0b912a7c718fc18a11a34e36ccec6498ead0253c1441b3e27ceb",
+      "actual_normalized_sha256": "91a778eaee2f0b912a7c718fc18a11a34e36ccec6498ead0253c1441b3e27ceb"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "goodMultiplier_neg",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 85,
+        "text": "theorem goodMultiplier_neg {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {a : ZMod p} (ha : GoodMultiplier p a) :\n    GoodMultiplier p (-a)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+        "line": 43,
+        "text": "theorem goodMultiplier_neg {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {a : ZMod p} (ha : GoodMultiplier p a) :\n    GoodMultiplier p (-a)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "04a968c49df278ab63d2cd3cbc06cda9162d1b27715fd52b620f3188154daee2",
+      "actual_normalized_sha256": "04a968c49df278ab63d2cd3cbc06cda9162d1b27715fd52b620f3188154daee2"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "goodMultiplier_natCast_step",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 90,
+        "text": "theorem goodMultiplier_natCast_step {p n : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ j : ℕ, 0 < j → j < p → lambda (p - j) = -lambda j)\n    (hn : 0 < n) (hnp : n < p)\n    (hsmall : ∀ j : ℕ, 0 < j → j < n → GoodMultiplier p (j : ZMod p)) :\n    GoodMultiplier p (n : ZMod p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean",
+        "line": 9,
+        "text": "theorem goodMultiplier_natCast_step {p n : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ j : ℕ, 0 < j → j < p → lambda (p - j) = -lambda j)\n    (hn : 0 < n) (hnp : n < p)\n    (hsmall : ∀ j : ℕ, 0 < j → j < n → GoodMultiplier p (j : ZMod p)) :\n    GoodMultiplier p (n : ZMod p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "a8f91013228a964761d0ec96b92482222ccf8e80ae4bdaf6932aff50c89a9c80",
+      "actual_normalized_sha256": "a8f91013228a964761d0ec96b92482222ccf8e80ae4bdaf6932aff50c89a9c80"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "residueLambda_mul",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 96,
+        "text": "theorem residueLambda_mul {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {a b : ZMod p} (ha : a ≠ 0) (hb : b ≠ 0) :\n    residueLambda p (a * b) = residueLambda p a * residueLambda p b"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean",
+        "line": 60,
+        "text": "theorem residueLambda_mul {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {a b : ZMod p} (ha : a ≠ 0) (hb : b ≠ 0) :\n    residueLambda p (a * b) = residueLambda p a * residueLambda p b"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "25deaeba64e1c4311ac5024bfe2fc840caae53224985d0ab71dc41239949f816",
+      "actual_normalized_sha256": "25deaeba64e1c4311ac5024bfe2fc840caae53224985d0ab71dc41239949f816"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "lambda_eq_one_of_isSquare",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 101,
+        "text": "theorem lambda_eq_one_of_isSquare {p n : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ j : ℕ, 0 < j → j < p → lambda (p - j) = -lambda j)\n    (hn : 0 < n) (hnp : n < p) (hsquare : IsSquare (n : ZMod p)) :\n    lambda n = (1 : ℤ)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean",
+        "line": 76,
+        "text": "theorem lambda_eq_one_of_isSquare {p n : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ j : ℕ, 0 < j → j < p → lambda (p - j) = -lambda j)\n    (hn : 0 < n) (hnp : n < p) (hsquare : IsSquare (n : ZMod p)) :\n    lambda n = (1 : ℤ)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "42cc957c2683cc27407d2959e0c1c8f7ffa9807054206b1fbe235efcd21bd2e2",
+      "actual_normalized_sha256": "42cc957c2683cc27407d2959e0c1c8f7ffa9807054206b1fbe235efcd21bd2e2"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "prime_dvd_quarter_isSquare",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 106,
+        "text": "theorem prime_dvd_quarter_isSquare {p r : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3)\n    (hr : Nat.Prime r) (hdiv : r ∣ (p + 1) / 4) :\n    IsSquare (r : ZMod p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean",
+        "line": 9,
+        "text": "theorem prime_dvd_quarter_isSquare {p r : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3)\n    (hr : Nat.Prime r) (hdiv : r ∣ (p + 1) / 4) :\n    IsSquare (r : ZMod p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "476a40949b891d897a20eef97d7c6fd6748ac62483bf13540c772403528e4161",
+      "actual_normalized_sha256": "476a40949b891d897a20eef97d7c6fd6748ac62483bf13540c772403528e4161"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "exists_small_prime_isSquare",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 111,
+        "text": "theorem exists_small_prime_isSquare {p : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3) :\n    ∃ r : ℕ, Nat.Prime r ∧ r ∣ (p + 1) / 4 ∧\n      r ≤ (p + 1) / 4 ∧ r < p ∧ IsSquare (r : ZMod p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean",
+        "line": 50,
+        "text": "theorem exists_small_prime_isSquare {p : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3) :\n    ∃ r : ℕ, Nat.Prime r ∧ r ∣ (p + 1) / 4 ∧\n      r ≤ (p + 1) / 4 ∧ r < p ∧ IsSquare (r : ZMod p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "c022be6b2c196bad22a728774fe03b7608e68afe401fcb7463ae336a733fc67d",
+      "actual_normalized_sha256": "c022be6b2c196bad22a728774fe03b7608e68afe401fcb7463ae336a733fc67d"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "representation_four_prime_three_mod_four",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 118,
+        "text": "theorem representation_four_prime_three_mod_four {p : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3) :\n    HasRepresentation (4 * p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Assembly.lean",
+        "line": 10,
+        "text": "theorem representation_four_prime_three_mod_four {p : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3) :\n    HasRepresentation (4 * p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "ad634154dd45e5f59eae9eaef43e3b8fead1818c23cf112fb37a711626d9c7ff",
+      "actual_normalized_sha256": "ad634154dd45e5f59eae9eaef43e3b8fead1818c23cf112fb37a711626d9c7ff"
+    },
+    {
+      "category": "full",
+      "kind": "theorem",
+      "name": "representation_multiple_four",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+        "line": 122,
+        "text": "theorem representation_multiple_four (m : ℕ) (hm : 0 < m) :\n    HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Assembly.lean",
+        "line": 21,
+        "text": "theorem representation_multiple_four (m : ℕ) (hm : 0 < m) :\n    HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "cf97da2e3c43201a99605f2385942bb2abd7c3ba8a9377a4f5899bf01fc1c9e4",
+      "actual_normalized_sha256": "cf97da2e3c43201a99605f2385942bb2abd7c3ba8a9377a4f5899bf01fc1c9e4"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "lambda_six",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 7,
+        "text": "theorem lambda_six :\n  lambda 6 = (1 : ℤ)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 8,
+        "text": "theorem lambda_six :\n  lambda 6 = (1 : ℤ)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "fe6f2041d290534a8070d1d82d6c2c3edca0c84d102d4ae6e960d064ad10889e",
+      "actual_normalized_sha256": "fe6f2041d290534a8070d1d82d6c2c3edca0c84d102d4ae6e960d064ad10889e"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "lambda_seven",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 10,
+        "text": "theorem lambda_seven :\n  lambda 7 = (-1 : ℤ)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 14,
+        "text": "theorem lambda_seven :\n  lambda 7 = (-1 : ℤ)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "294874cdd84db9f7187dad038f820ef6d3ad96708d73143daa101ecd865c0e39",
+      "actual_normalized_sha256": "294874cdd84db9f7187dad038f820ef6d3ad96708d73143daa101ecd865c0e39"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "twelve_two_sign_seed",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 13,
+        "text": "theorem twelve_two_sign_seed :\n  HasSignedRepresentation (-1 : ℤ) 12 ∧\n    HasSignedRepresentation (1 : ℤ) 12"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 18,
+        "text": "theorem twelve_two_sign_seed :\n  HasSignedRepresentation (-1 : ℤ) 12 ∧\n    HasSignedRepresentation (1 : ℤ) 12"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "2ed54578be950cb7501b55793c8648958d6070bb1c7a43724475a46887e46f96",
+      "actual_normalized_sha256": "2ed54578be950cb7501b55793c8648958d6070bb1c7a43724475a46887e46f96"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_twelve",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 17,
+        "text": "theorem representation_multiple_twelve (t : ℕ) (ht : 0 < t) :\n  HasRepresentation (12 * t)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 25,
+        "text": "theorem representation_multiple_twelve (t : ℕ) (ht : 0 < t) :\n  HasRepresentation (12 * t)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "a84a13d8e2194228f7950f885cae8f58c8bbcbd659ae8ba400f8df5d210555b0",
+      "actual_normalized_sha256": "a84a13d8e2194228f7950f885cae8f58c8bbcbd659ae8ba400f8df5d210555b0"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_lambda_one",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 20,
+        "text": "theorem representation_multiple_four_of_lambda_one {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (1 : ℤ)) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 29,
+        "text": "theorem representation_multiple_four_of_lambda_one {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (1 : ℤ)) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "a943d15d442ded9336693e6a9db865629ec8220e575dab6ba08c468a2bcaf675",
+      "actual_normalized_sha256": "a943d15d442ded9336693e6a9db865629ec8220e575dab6ba08c468a2bcaf675"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_even",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 24,
+        "text": "theorem representation_multiple_four_of_even {m : ℕ}\n    (hm : 0 < m) (hEven : Even m) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 37,
+        "text": "theorem representation_multiple_four_of_even {m : ℕ}\n    (hm : 0 < m) (hEven : Even m) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "f791dfcb9e88396eec89e50a99bd0b19fa348f8d08603e74800a9a55d1ccbe60",
+      "actual_normalized_sha256": "f791dfcb9e88396eec89e50a99bd0b19fa348f8d08603e74800a9a55d1ccbe60"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_three_dvd",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 28,
+        "text": "theorem representation_multiple_four_of_three_dvd {m : ℕ}\n    (hm : 0 < m) (hThree : 3 ∣ m) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 46,
+        "text": "theorem representation_multiple_four_of_three_dvd {m : ℕ}\n    (hm : 0 < m) (hThree : 3 ∣ m) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "89bb31ccd38aaf4c70016ed5a211842fc0e266b9258c381111cb5a25fd99a165",
+      "actual_normalized_sha256": "89bb31ccd38aaf4c70016ed5a211842fc0e266b9258c381111cb5a25fd99a165"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_sum_two_squares",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 32,
+        "text": "theorem representation_multiple_four_of_sum_two_squares {m u v : ℕ}\n    (hm : 0 < m) (hSum : m = u ^ 2 + v ^ 2) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 55,
+        "text": "theorem representation_multiple_four_of_sum_two_squares {m u v : ℕ}\n    (hm : 0 < m) (hSum : m = u ^ 2 + v ^ 2) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "197db38d1f28d8c96d2427960fe0ecd774fb98b1e7ab6cd16f5a3a1f2eb48e50",
+      "actual_normalized_sha256": "197db38d1f28d8c96d2427960fe0ecd774fb98b1e7ab6cd16f5a3a1f2eb48e50"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "prime_one_mod_four_eq_sum_two_squares",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 36,
+        "text": "theorem prime_one_mod_four_eq_sum_two_squares {p : ℕ}\n    (hp : Nat.Prime p) (hMod : p % 4 = 1) :\n  ∃ u v : ℕ, p = u ^ 2 + v ^ 2"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 81,
+        "text": "theorem prime_one_mod_four_eq_sum_two_squares {p : ℕ}\n    (hp : Nat.Prime p) (hMod : p % 4 = 1) :\n  ∃ u v : ℕ, p = u ^ 2 + v ^ 2"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "470964bd212b371f7497d905268bc62ef3c344ffe4edf420c0833ef329c92048",
+      "actual_normalized_sha256": "470964bd212b371f7497d905268bc62ef3c344ffe4edf420c0833ef329c92048"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_four_prime_one_mod_four",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 40,
+        "text": "theorem representation_four_prime_one_mod_four {p : ℕ}\n    (hp : Nat.Prime p) (hMod : p % 4 = 1) :\n  HasRepresentation (4 * p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 88,
+        "text": "theorem representation_four_prime_one_mod_four {p : ℕ}\n    (hp : Nat.Prime p) (hMod : p % 4 = 1) :\n  HasRepresentation (4 * p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "eb6067b60b29237b6249bc75b3a37e98084aac6bc1e703dd1122bc5fd10d4107",
+      "actual_normalized_sha256": "eb6067b60b29237b6249bc75b3a37e98084aac6bc1e703dd1122bc5fd10d4107"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "prime_divisor_positive_sign_cofactor",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 44,
+        "text": "theorem prime_divisor_positive_sign_cofactor {m p : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ))\n    (hp : Nat.Prime p) (hDiv : p ∣ m) :\n  ∃ d : ℕ, 0 < d ∧ lambda d = (1 : ℤ) ∧ m = d * p"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 94,
+        "text": "theorem prime_divisor_positive_sign_cofactor {m p : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ))\n    (hp : Nat.Prime p) (hDiv : p ∣ m) :\n  ∃ d : ℕ, 0 < d ∧ lambda d = (1 : ℤ) ∧ m = d * p"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "f3a69b57efab26ab6d6a1cefed5486c66cff9783d9916f8260f59a9cf4e0997b",
+      "actual_normalized_sha256": "f3a69b57efab26ab6d6a1cefed5486c66cff9783d9916f8260f59a9cf4e0997b"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "exists_prime_factor_of_lambda_neg_one",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 49,
+        "text": "theorem exists_prime_factor_of_lambda_neg_one {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ)) :\n  ∃ p d : ℕ,\n    Nat.Prime p ∧ 0 < d ∧ lambda d = (1 : ℤ) ∧ m = d * p"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 109,
+        "text": "theorem exists_prime_factor_of_lambda_neg_one {m : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ)) :\n  ∃ p d : ℕ,\n    Nat.Prime p ∧ 0 < d ∧ lambda d = (1 : ℤ) ∧ m = d * p"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "473ca95b9d43748fd1eb50f42cee970bc8a4bef28cad0ed4542b3fdbd477158b",
+      "actual_normalized_sha256": "473ca95b9d43748fd1eb50f42cee970bc8a4bef28cad0ed4542b3fdbd477158b"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_prime_divisor",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 54,
+        "text": "theorem representation_multiple_four_of_prime_divisor {m p : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ))\n    (hp : Nat.Prime p) (hDiv : p ∣ m)\n    (hCore : HasRepresentation (4 * p)) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 121,
+        "text": "theorem representation_multiple_four_of_prime_divisor {m p : ℕ}\n    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ))\n    (hp : Nat.Prime p) (hDiv : p ∣ m)\n    (hCore : HasRepresentation (4 * p)) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "9252743feadc1324192b8129b4c24f912b532e7cc8c06318fae4d7ecb6153d31",
+      "actual_normalized_sha256": "9252743feadc1324192b8129b4c24f912b532e7cc8c06318fae4d7ecb6153d31"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_prime_one_mod_four_dvd",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 60,
+        "text": "theorem representation_multiple_four_of_prime_one_mod_four_dvd {m p : ℕ}\n    (hm : 0 < m) (hp : Nat.Prime p)\n    (hDiv : p ∣ m) (hMod : p % 4 = 1) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 131,
+        "text": "theorem representation_multiple_four_of_prime_one_mod_four_dvd {m p : ℕ}\n    (hm : 0 < m) (hp : Nat.Prime p)\n    (hDiv : p ∣ m) (hMod : p % 4 = 1) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "a7886343b733fad99ce9e10984de2aa8b8506aa53adbbef569c5e34f26d6b4be",
+      "actual_normalized_sha256": "a7886343b733fad99ce9e10984de2aa8b8506aa53adbbef569c5e34f26d6b4be"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "exists_prime_one_mod_four_of_lambda_neg_one",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 65,
+        "text": "theorem exists_prime_one_mod_four_of_lambda_neg_one {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 = 1)\n    (hSign : lambda m = (-1 : ℤ)) :\n  ∃ p : ℕ, Nat.Prime p ∧ p ∣ m ∧ p % 4 = 1"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 140,
+        "text": "theorem exists_prime_one_mod_four_of_lambda_neg_one {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 = 1)\n    (hSign : lambda m = (-1 : ℤ)) :\n  ∃ p : ℕ, Nat.Prime p ∧ p ∣ m ∧ p % 4 = 1"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "c38d95b2a2b6d01a0b4c4b76804d977604bfe18f75183e83f2002ec99841d4eb",
+      "actual_normalized_sha256": "c38d95b2a2b6d01a0b4c4b76804d977604bfe18f75183e83f2002ec99841d4eb"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_mod_four_one",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 70,
+        "text": "theorem representation_multiple_four_of_mod_four_one {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 = 1) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 190,
+        "text": "theorem representation_multiple_four_of_mod_four_one {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 = 1) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "7c4e59b701d31819c50ef993e3d23f9d075a7fdef25b22d2367404a6c723a0cb",
+      "actual_normalized_sha256": "7c4e59b701d31819c50ef993e3d23f9d075a7fdef25b22d2367404a6c723a0cb"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "representation_multiple_four_of_mod_four_ne_three",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 74,
+        "text": "theorem representation_multiple_four_of_mod_four_ne_three {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 ≠ 3) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 198,
+        "text": "theorem representation_multiple_four_of_mod_four_ne_three {m : ℕ}\n    (hm : 0 < m) (hMod : m % 4 ≠ 3) :\n  HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "63922fc4f1da62592eea1b323392440eb12c520d2cd17d60bb1ae77c331cd1bf",
+      "actual_normalized_sha256": "63922fc4f1da62592eea1b323392440eb12c520d2cd17d60bb1ae77c331cd1bf"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "multiple_four_iff_odd_prime_core",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 78,
+        "text": "theorem multiple_four_iff_odd_prime_core :\n  (∀ m : ℕ, 0 < m → HasRepresentation (4 * m)) ↔\n    ∀ p : ℕ, Nat.Prime p → p ≠ 2 → HasRepresentation (4 * p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 207,
+        "text": "theorem multiple_four_iff_odd_prime_core :\n  (∀ m : ℕ, 0 < m → HasRepresentation (4 * m)) ↔\n    ∀ p : ℕ, Nat.Prime p → p ≠ 2 → HasRepresentation (4 * p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "ceecce0f3e3988f396d6c347e4cd19ea5b27b61932cbc75a432165944c500a2b",
+      "actual_normalized_sha256": "ceecce0f3e3988f396d6c347e4cd19ea5b27b61932cbc75a432165944c500a2b"
+    },
+    {
+      "category": "old_helpers",
+      "kind": "theorem",
+      "name": "multiple_four_iff_prime_three_mod_four_core",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean",
+        "line": 82,
+        "text": "theorem multiple_four_iff_prime_three_mod_four_core :\n  (∀ m : ℕ, 0 < m → HasRepresentation (4 * m)) ↔\n    ∀ p : ℕ, Nat.Prime p → 7 ≤ p → p % 4 = 3 →\n      HasRepresentation (4 * p)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean",
+        "line": 226,
+        "text": "theorem multiple_four_iff_prime_three_mod_four_core :\n  (∀ m : ℕ, 0 < m → HasRepresentation (4 * m)) ↔\n    ∀ p : ℕ, Nat.Prime p → 7 ≤ p → p % 4 = 3 →\n      HasRepresentation (4 * p)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "d8dec587a539876e1bac4cedc16ea2bf32c90a079c6033d0215430a37510f835",
+      "actual_normalized_sha256": "d8dec587a539876e1bac4cedc16ea2bf32c90a079c6033d0215430a37510f835"
+    },
+    {
+      "category": "exact_target",
+      "kind": "def",
+      "name": "omega",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean",
+        "line": 5,
+        "text": "def omega (n : ℕ) : ℕ := n.primeFactorsList.length"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean",
+        "line": 6,
+        "text": "def omega (n : ℕ) : ℕ := n.primeFactorsList.length"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "30c382663a8c27bdb252fc7e552e177eaf5162f8663baf729e463cf458a1dd78",
+      "actual_normalized_sha256": "30c382663a8c27bdb252fc7e552e177eaf5162f8663baf729e463cf458a1dd78"
+    },
+    {
+      "category": "exact_target",
+      "kind": "def",
+      "name": "lambda",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean",
+        "line": 7,
+        "text": "def lambda (n : ℕ) : ℤ := (-1 : ℤ) ^ omega n"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean",
+        "line": 8,
+        "text": "def lambda (n : ℕ) : ℤ := (-1 : ℤ) ^ omega n"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "7f7e5362ace1c1ac0b89b03c470770d3f25c25f2554fdd4a144a06efdacce646",
+      "actual_normalized_sha256": "7f7e5362ace1c1ac0b89b03c470770d3f25c25f2554fdd4a144a06efdacce646"
+    },
+    {
+      "category": "exact_target",
+      "kind": "def",
+      "name": "HasSignedRepresentation",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean",
+        "line": 9,
+        "text": "def HasSignedRepresentation (s : ℤ) (N : ℕ) : Prop :=\n  ∃ a b : ℕ,\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = s ∧ lambda b = s"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean",
+        "line": 14,
+        "text": "def HasSignedRepresentation (s : ℤ) (N : ℕ) : Prop :=\n  ∃ a b : ℕ,\n    0 < a ∧ 0 < b ∧ N = a + b ∧\n      lambda a = s ∧ lambda b = s"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "a6d5b5b1a092a1c864e9c427296c44cc3a4c99f3fe7189bde4c3f4a7a9f8192a",
+      "actual_normalized_sha256": "a6d5b5b1a092a1c864e9c427296c44cc3a4c99f3fe7189bde4c3f4a7a9f8192a"
+    },
+    {
+      "category": "exact_target",
+      "kind": "def",
+      "name": "HasRepresentation",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean",
+        "line": 14,
+        "text": "def HasRepresentation (N : ℕ) : Prop :=\n  HasSignedRepresentation (-1 : ℤ) N"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean",
+        "line": 19,
+        "text": "def HasRepresentation (N : ℕ) : Prop :=\n  HasSignedRepresentation (-1 : ℤ) N"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "9da4ef04228e7530d572686669d9574bc2cd92bc924cdf0f46b9bce901174bbe",
+      "actual_normalized_sha256": "9da4ef04228e7530d572686669d9574bc2cd92bc924cdf0f46b9bce901174bbe"
+    },
+    {
+      "category": "exact_target",
+      "kind": "theorem",
+      "name": "representation_multiple_four",
+      "approved": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean",
+        "line": 17,
+        "text": "theorem representation_multiple_four (m : ℕ) (hm : 0 < m) :\n  HasRepresentation (4 * m)"
+      },
+      "actual": {
+        "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Assembly.lean",
+        "line": 21,
+        "text": "theorem representation_multiple_four (m : ℕ) (hm : 0 < m) :\n    HasRepresentation (4 * m)"
+      },
+      "match_ignoring_whitespace": true,
+      "approved_normalized_sha256": "cf97da2e3c43201a99605f2385942bb2abd7c3ba8a9377a4f5899bf01fc1c9e4",
+      "actual_normalized_sha256": "cf97da2e3c43201a99605f2385942bb2abd7c3ba8a9377a4f5899bf01fc1c9e4"
+    }
+  ]
+}

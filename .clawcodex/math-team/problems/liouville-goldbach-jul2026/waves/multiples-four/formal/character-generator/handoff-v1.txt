@@ -1,0 +1,157 @@
+Mode: CERTIFICATION — compiler-checked candidate helpers; independent proof review and master integration remain separate.
+
+Owner: fl-character, task bcd3df25ac7d.
+P = .clawcodex/math-team/problems/liouville-goldbach-jul2026
+W = P/waves/multiples-four
+O = W/formal/character-generator
+
+DELIVERABLE AND IDENTITY
+
+All ten assigned theorem bodies and the two approved definitions are implemented, with no outstanding proof obligation, in the three assigned scratch modules:
+
+1. P/lean/Statement/FourWork/Character/ResiduePrime.lean
+   SHA256 518f28a33ab98d1a44ea7b544ca7f695e28c48893982caaf72eb4879956763dd
+   C1 prime_dvd_quarter_isSquare; C2 exists_small_prime_isSquare.
+   Imports Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity and Mathlib.Tactic.Ring.
+
+2. P/lean/Statement/FourWork/Character/ResidueValue.lean
+   SHA256 3df5a3f0a6de6a60c2b8b8ba89dd6e44fa4d47cb28e98c33f1e31d1dfb7d84dd
+   Exactly the new definitions residueLambda and GoodMultiplier; B1 residueLambda_natCast,
+   B2 residueLambda_sign, B3 residueLambda_neg, B4 goodMultiplier_one, B5 goodMultiplier_neg.
+   Imports Statement.Partial and Mathlib.Algebra.Field.ZMod.
+
+3. P/lean/Statement/FourWork/Character/Rigidity.lean
+   SHA256 843e4ee562071ef4729a61c715b77510b378add7f19b8c02d1e3d36fa9165f88
+   B6 goodMultiplier_natCast_step; B7 residueLambda_mul; B8 lambda_eq_one_of_isSquare.
+   Imports Statement.FourWork.Character.ResidueValue and Statement.FourWork.Descent.Cyclic.
+
+Every new name is in ArithmeticStatement.FourWork. No additional exported helper, axiom, definition, endpoint theorem, or premise has been introduced. Only the integrator may write the master development.
+
+EXACT STATEMENT AND DEFINITION COMPARISON
+
+The protected input is W/formal/descent-blueprint/Readback.lean.txt,
+SHA256 372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763.
+Its pre-proof fidelity approval is W/formal/reviews/descent-fidelity-v1.md,
+SHA256 02500f9a05e68f42c4eebeec074ee58a7cfbcb5b56a2fe01492b3fb231ef0411.
+The source is W/nl/descent/proof-attempt-v1.md, SHA256
+23fc6ad19d1c45dd432945aa84756b190700b8c15394b1554ebb3ecaff82235e;
+relevant source sections are 4.1–4.4 for B, 6 for C, and 7 for the later endpoint use.
+The permitted same-pin reciprocity proof replacement is used for C, not the source's Gauss floor-count proof.
+
+O/statement-comparison-v1.json contains the actual extracted text and hashes for every declaration. All ten theorem signatures match the exact approved bytes after removing only the trailing ' := by' and proof body; all internal whitespace and the trailing LF are preserved. Both complete new definition bodies match exactly. There are no ambient section hypotheses or changed quantifiers. The generated O/CharacterInterfaces-v1.lean.txt is a neutral code-only extraction for any further blind readback; it is a signature inventory, not a standalone compiling proof. O/approved-statements-v1.lean.txt preserves the entire approved packet.
+
+The same comparison verifies unchanged hashes for Statement/Definitions.lean,
+Statement/Partial.lean, Statement/FourPartial.lean, lean-toolchain, lakefile.toml,
+and lake-manifest.json. Definitions remains 79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d;
+Partial remains 9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0;
+FourPartial remains 4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325.
+No root Statement.lean, old master, dependency pin, or other worker source was edited.
+
+ACTUAL COMPILATION, COMMANDS, AND AXIOMS
+
+Working directory for every Lake command: P/lean.
+Toolchain: leanprover/lean4:v4.32.2, Lean commit f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+Mathlib: clean HEAD 905b95818eb32af7874a58b427f50c1711a5e96c,
+commit date 2026-07-28T18:36:13+02:00, within source cutoff 2026-07-31 inclusive.
+
+Final-version successful commands (each exit 0):
+
+- lake build Statement.FourWork.Character.ResiduePrime
+  O/residue-prime-build-final.{log,json}
+- lake env lean Statement/FourWork/Character/ResiduePrime.lean
+  O/residue-prime-direct-final.{log,json}
+- lake build Statement.FourWork.Character.ResiduePrime Statement.FourWork.Character.ResidueValue Statement.FourWork.Character.Rigidity
+  O/character-final-build.{log,json}; this certifies the final ResidueValue/Rigidity.
+  The subsequent ResiduePrime change added only one extra library #print axioms command;
+  its exact final hash is covered by the two residue-prime-*-final logs above.
+- lake env lean Statement/FourWork/Character/ResidueValue.lean
+  O/residue-value-direct-final.{log,json}
+- lake env lean Statement/FourWork/Character/Rigidity.lean
+  O/rigidity-direct-final.{log,json}
+
+Each JSON records exact argv, cwd, status, diagnostics path, file hashes, and immutable source snapshot paths. Earlier attempted commands and snapshots are retained. The sole failed proof-module build was residue-value-build-v1: Mathlib.Data.ZMod.Basic did not expose NoZeroDivisors for prime moduli. The correction was the explicit same-pin Mathlib.Algebra.Field.ZMod import; no statement changed. That failed diagnostic contains Lean's error-recovery sorryAx for the unelaborated proof and is not accepted evidence. All final versions compile without errors or admission warnings. The final joint build replays only pre-existing unused-variable warnings from the untouched Partial module.
+
+#print axioms was run in the actual source files for all ten new theorems, both new definitions, the actual cyclic dependency, all four reciprocity/supplementary APIs, the modular representative APIs, ZMod.instField, the natural-prime/divisor APIs, and the strong-induction/signed-absolute-value/cancellation facts. Every new theorem and both definitions have exactly:
+  [propext, Classical.choice, Quot.sound]
+Every inspected library dependency has a subset of that trusted set. No final target has sorryAx, a custom axiom, or an unaccepted foundation. The files contain no sorry, admit, axiom declaration, unsafe proof, or native_decide. This token check supplements, rather than replaces, actual compilation and transitive axiom inspection.
+
+PINNED RECIPROCITY PROVENANCE AND USE
+
+Authorized targeted setup command:
+  lake exe cache get Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity
+recorded in O/reciprocity-cache.{log,json}, exit 0. Its only environment override was
+MATHLIB_CACHE_DIR=O/cache. It fetched that exact source-hash-linked module and imports;
+no lake update, newer version, unsafe scope, external mathematical source, global setting,
+or toolchain change was used. O/provenance-v1.json records exact Git/Lean commands,
+clean source status, hashes, source line ranges, and API source text.
+
+Primary hashes:
+- Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.lean:
+  24ffbf256f6f6f7a2617901323c2d532e2d7871c826a8b11f0580b283e994302
+- Mathlib/NumberTheory/LegendreSymbol/Basic.lean:
+  9ac75516bf1585b7af0c71340344ecb3e4c135ac3c06f959d6a3f1e8c2ebd95c
+- Mathlib/Algebra/Field/ZMod.lean:
+  417e8776440d058896b5f05a65d534041a1b7f0b8adb90c011b75486f3e1de22
+
+Usable APIs (all primality instances are derived locally from the displayed hp/hr):
+
+- ZMod.exists_sq_eq_neg_one_iff, [Fact r.Prime]:
+  IsSquare (-1 : ZMod r) ↔ r % 4 ≠ 3.
+- ZMod.exists_sq_eq_two_iff (hp2 : p ≠ 2), [Fact p.Prime]:
+  IsSquare (2 : ZMod p) ↔ p % 8 = 1 ∨ p % 8 = 7.
+- ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_one,
+  [Fact r.Prime] [Fact p.Prime], (hr1 : r % 4 = 1), (hp2 : p ≠ 2):
+  IsSquare (p : ZMod r) ↔ IsSquare (r : ZMod p).
+  The actual call swaps the library parameters and uses .mp.
+- ZMod.exists_sq_eq_prime_iff_of_mod_four_eq_three,
+  [Fact p.Prime] [Fact r.Prime], (hMod : p % 4 = 3), (hr3 : r % 4 = 3), (p ≠ r):
+  IsSquare (r : ZMod p) ↔ ¬ IsSquare (p : ZMod r).
+  The actual call uses .mpr.
+
+C1 first establishes 4*((p+1)/4)=p+1, positive quarter, and r≤quarter<p.
+Writing quarter=r*s gives r∣p+1 and (p : ZMod r)=-1. If r=2, the identity gives
+p%8=7. Otherwise prime parity gives exactly r%4=1 or r%4=3, to which the indicated
+neg-one criterion and reciprocity direction apply. The r<p bound supplies distinctness.
+C2 uses quarter≥2 with Nat.exists_prime_and_dvd, obtains the divisor bound from
+Nat.le_of_dvd using strictly positive quarter, and invokes C1. C imports no character,
+antireflection, nonrepresentation hypothesis, or representation endpoint.
+
+RIGIDITY DEPENDENCY AND NONCIRCULARITY
+
+The actual compiled dependency is P/lean/Statement/FourWork/Descent/Cyclic.lean,
+SHA256 09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290.
+The owner supplied W/formal/descent-generator/cyclic-03-lake-build.json with exit 0
+and that exact hash. I read the source/evidence, then imported the actual module,
+rebuilt the import graph, and printed its axioms. O/Cyclic-dependency-v1.lean.txt
+preserves the exact consumed source. No temporary cyclic premise or axiom was used.
+
+B6 handles n=1 by B4. Otherwise G gives nonzero integer k, 0<|k|<n, positive d,
+and n*d<p. The induction premise and B5 make the signed residue k good. Ordinary
+lambda multiplicativity is used only for the positive natural arguments n,d, with
+all three representatives n,d,n*d strictly below p. Goodness of k at z and n*z
+then gives the desired multiplication identity after canceling its nonzero ±1 value.
+There is no periodicity claim for lambda and no use of the desired residue law to
+justify this bridge. B7 applies strong induction and canonical representatives.
+B8 proves the square root is nonzero, then applies B7 and the ±1 dichotomy.
+
+The full antireflection hypothesis remains explicitly conditional in B3, B5, B6,
+B7, and B8 exactly as approved. It is not an axiom or claimed unconditionally.
+It must be discharged at the eventual endpoint using the independent Descent.Ternary
+helper. These character proofs do not import that helper or an endpoint theorem.
+
+INTEGRATION HANDOFF AND REMAINING GATES
+
+The candidate is ready for independent proof review and statement/readback identity
+checks. The existing fidelity report approves the unchanged interfaces; it does not
+constitute an independent review of these new proof bodies. No fresh reviewer was
+spawned by this worker, in accordance with the team contract.
+
+After acceptance, the separate integrator should use these existing module paths,
+import Rigidity and ResiduePrime together with the reviewed Ternary and fixed
+Statement.FourPartial reduction, and discharge the antireflection premise only inside
+the prime endpoint argument. Rebuild and re-print endpoint axioms after integration.
+No final representation_multiple_four or all-even theorem is proved by this handoff
+alone, and no final/master file has been changed here.
+
+Proof/setup blockers in assigned scope: none.
+Next owner: team-lead for independent review, then the separate integrator.

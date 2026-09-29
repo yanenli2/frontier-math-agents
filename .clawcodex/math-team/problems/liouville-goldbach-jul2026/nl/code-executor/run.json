@@ -1,0 +1,77 @@
+{
+  "artifacts": {
+    "evidence": {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/evidence.json",
+      "sha256": "b42b9544e632431476c872b5696679d2908f05858737f6718f7d8c5a626fd72e"
+    },
+    "log": {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/run.log",
+      "sha256": "656020dc378a129bf6f4800f153728e8fcbc8c4ca2b2b9348a917c6447a5da11"
+    },
+    "protocol": {
+      "path": ".clawcodex/skills/math-team/references/protocol.md",
+      "sha256": "e712830b3febe6e3fcaf0479c7aa9fc30f23aa4fcc5e1f45088f736f9c161f2b"
+    },
+    "request": {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md",
+      "sha256": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f"
+    },
+    "script": {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/finite_certify.py",
+      "sha256": "00a9d66bd81ca58e5cf0148fba6fa5b742c6a3285c82f46d5a1e3952aeab98f5"
+    }
+  },
+  "parent_command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "-S",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/finite_certify.py"
+  ],
+  "parent_exit_status": 0,
+  "runtime": {
+    "direct_stdlib_module_files": {
+      "hashlib": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+        "sha256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a"
+      },
+      "json": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+        "sha256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27"
+      },
+      "pathlib": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py",
+        "sha256": "6b33d2d55c09aa9c607a528003ed8fe154894afaa977ec554e0a858240412b72"
+      },
+      "subprocess": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py",
+        "sha256": "d2f73c7128a3931f74411b46352146ba85322a8dc8f12a721d4801dc43d9766e"
+      },
+      "traceback": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/traceback.py",
+        "sha256": "44de63aeb34fd305a6f98562eb3d1255005e98bb3c800ece7ddb14b9f401de2f"
+      }
+    },
+    "executable": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+    "executable_sha256": "8e598855de9a6648bc670d5fe7a3a653f1fa967b74373ed7c4ca16fbc40c0de1",
+    "implementation": "cpython",
+    "isolated": 1,
+    "no_site": 1,
+    "version": "3.9.6 (default, Dec  2 2025, 07:27:58) \n[Clang 17.0.0 (clang-1700.6.3.2)]",
+    "version_info": [
+      3,
+      9,
+      6,
+      "final",
+      0
+    ]
+  },
+  "worker_actual_exit_status": 0,
+  "worker_command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-I",
+    "-S",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/finite_certify.py",
+    "--worker"
+  ],
+  "working_directory_constraint": "none; all paths absolute"
+}

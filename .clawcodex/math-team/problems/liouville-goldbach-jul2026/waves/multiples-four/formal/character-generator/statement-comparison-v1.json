@@ -1,0 +1,182 @@
+{
+  "approved_snapshot": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt",
+  "approved_sha256": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+  "comparison_rule": "Exact UTF-8 internal text, including whitespace and final LF; only the theorem body separator ' := by' and proof are excluded. Definition bodies are included.",
+  "declarations": {
+    "residueLambda": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+      "approved_lines": [
+        23,
+        24
+      ],
+      "approved_sha256": "304359790e4b777fd60844807f7d3dce06791e78a091f965090cd8106906a9b7",
+      "candidate_sha256": "304359790e4b777fd60844807f7d3dce06791e78a091f965090cd8106906a9b7",
+      "exact_equal": true,
+      "text": "def residueLambda (p : ℕ) (z : ZMod p) : ℤ :=\n  lambda z.val\n"
+    },
+    "GoodMultiplier": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+      "approved_lines": [
+        26,
+        28
+      ],
+      "approved_sha256": "28608b53e4ebe1e22ad9fa41b5655b393105f56ee0f4ebe59e6f2df716a59d60",
+      "candidate_sha256": "28608b53e4ebe1e22ad9fa41b5655b393105f56ee0f4ebe59e6f2df716a59d60",
+      "exact_equal": true,
+      "text": "def GoodMultiplier (p : ℕ) (a : ZMod p) : Prop :=\n  a ≠ 0 ∧ ∀ z : ZMod p, z ≠ 0 →\n    residueLambda p (a * z) = residueLambda p a * residueLambda p z\n"
+    },
+    "residueLambda_natCast": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+      "approved_lines": [
+        71,
+        72
+      ],
+      "approved_sha256": "354660c059b4a0d9d8567b3157b2f3358efa781e3f8a83dacb7e947cd58027c5",
+      "candidate_sha256": "354660c059b4a0d9d8567b3157b2f3358efa781e3f8a83dacb7e947cd58027c5",
+      "exact_equal": true,
+      "text": "theorem residueLambda_natCast {p n : ℕ} (hnp : n < p) :\n    residueLambda p (n : ZMod p) = lambda n\n"
+    },
+    "residueLambda_sign": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+      "approved_lines": [
+        74,
+        75
+      ],
+      "approved_sha256": "2d91748d279e49d12b72deb1b910399ee08a040041b94c40857ff3dd105969e7",
+      "candidate_sha256": "2d91748d279e49d12b72deb1b910399ee08a040041b94c40857ff3dd105969e7",
+      "exact_equal": true,
+      "text": "theorem residueLambda_sign {p : ℕ} {z : ZMod p} (hz : z ≠ 0) :\n    residueLambda p z = (1 : ℤ) ∨ residueLambda p z = (-1 : ℤ)\n"
+    },
+    "residueLambda_neg": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+      "approved_lines": [
+        77,
+        80
+      ],
+      "approved_sha256": "f23fdfd79509335d4e48a974ba5acfefe73bc503e3da50569182e7d7b6d86cae",
+      "candidate_sha256": "f23fdfd79509335d4e48a974ba5acfefe73bc503e3da50569182e7d7b6d86cae",
+      "exact_equal": true,
+      "text": "theorem residueLambda_neg {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {z : ZMod p} (hz : z ≠ 0) :\n    residueLambda p (-z) = -residueLambda p z\n"
+    },
+    "goodMultiplier_one": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+      "approved_lines": [
+        82,
+        83
+      ],
+      "approved_sha256": "a3d6bea78c6c2258015b9a94189483c593e85d81deb4abcdf215815a082f2bc2",
+      "candidate_sha256": "a3d6bea78c6c2258015b9a94189483c593e85d81deb4abcdf215815a082f2bc2",
+      "exact_equal": true,
+      "text": "theorem goodMultiplier_one {p : ℕ} (hp : Nat.Prime p) :\n    GoodMultiplier p (1 : ZMod p)\n"
+    },
+    "goodMultiplier_neg": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean",
+      "approved_lines": [
+        85,
+        88
+      ],
+      "approved_sha256": "e21f680968765b2e663079c7ed64c84b73d8571ae6d87e1e913f61d8a36ba11e",
+      "candidate_sha256": "e21f680968765b2e663079c7ed64c84b73d8571ae6d87e1e913f61d8a36ba11e",
+      "exact_equal": true,
+      "text": "theorem goodMultiplier_neg {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {a : ZMod p} (ha : GoodMultiplier p a) :\n    GoodMultiplier p (-a)\n"
+    },
+    "goodMultiplier_natCast_step": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean",
+      "approved_lines": [
+        90,
+        94
+      ],
+      "approved_sha256": "73fa8f8bf445ec7d72bb45f692cc4a7de8702891e23f72b4f73df5039d22f425",
+      "candidate_sha256": "73fa8f8bf445ec7d72bb45f692cc4a7de8702891e23f72b4f73df5039d22f425",
+      "exact_equal": true,
+      "text": "theorem goodMultiplier_natCast_step {p n : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ j : ℕ, 0 < j → j < p → lambda (p - j) = -lambda j)\n    (hn : 0 < n) (hnp : n < p)\n    (hsmall : ∀ j : ℕ, 0 < j → j < n → GoodMultiplier p (j : ZMod p)) :\n    GoodMultiplier p (n : ZMod p)\n"
+    },
+    "residueLambda_mul": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean",
+      "approved_lines": [
+        96,
+        99
+      ],
+      "approved_sha256": "f2e2d9afe2f79e72f70ad8298fa3943d0afdcfe1a52a968358fd6845a9dc495f",
+      "candidate_sha256": "f2e2d9afe2f79e72f70ad8298fa3943d0afdcfe1a52a968358fd6845a9dc495f",
+      "exact_equal": true,
+      "text": "theorem residueLambda_mul {p : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ n : ℕ, 0 < n → n < p → lambda (p - n) = -lambda n)\n    {a b : ZMod p} (ha : a ≠ 0) (hb : b ≠ 0) :\n    residueLambda p (a * b) = residueLambda p a * residueLambda p b\n"
+    },
+    "lambda_eq_one_of_isSquare": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean",
+      "approved_lines": [
+        101,
+        104
+      ],
+      "approved_sha256": "f14b0bfde0c27ef9089c6096b51228da247d6da72fbdc4d9e99cedf6a99abaed",
+      "candidate_sha256": "f14b0bfde0c27ef9089c6096b51228da247d6da72fbdc4d9e99cedf6a99abaed",
+      "exact_equal": true,
+      "text": "theorem lambda_eq_one_of_isSquare {p n : ℕ} (hp : Nat.Prime p)\n    (hanti : ∀ j : ℕ, 0 < j → j < p → lambda (p - j) = -lambda j)\n    (hn : 0 < n) (hnp : n < p) (hsquare : IsSquare (n : ZMod p)) :\n    lambda n = (1 : ℤ)\n"
+    },
+    "prime_dvd_quarter_isSquare": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean",
+      "approved_lines": [
+        106,
+        109
+      ],
+      "approved_sha256": "8fbcf7e66d56f074517ac016b3c8e18466737bc0f80b0a27e6f1732596b40b92",
+      "candidate_sha256": "8fbcf7e66d56f074517ac016b3c8e18466737bc0f80b0a27e6f1732596b40b92",
+      "exact_equal": true,
+      "text": "theorem prime_dvd_quarter_isSquare {p r : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3)\n    (hr : Nat.Prime r) (hdiv : r ∣ (p + 1) / 4) :\n    IsSquare (r : ZMod p)\n"
+    },
+    "exists_small_prime_isSquare": {
+      "source": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean",
+      "approved_lines": [
+        111,
+        114
+      ],
+      "approved_sha256": "27e25215e9236c61cd56faea29ad94ce05d31c40d103b5bb735dcb9a7a2dce75",
+      "candidate_sha256": "27e25215e9236c61cd56faea29ad94ce05d31c40d103b5bb735dcb9a7a2dce75",
+      "exact_equal": true,
+      "text": "theorem exists_small_prime_isSquare {p : ℕ}\n    (hp : Nat.Prime p) (hLower : 7 ≤ p) (hMod : p % 4 = 3) :\n    ∃ r : ℕ, Nat.Prime r ∧ r ∣ (p + 1) / 4 ∧\n      r ≤ (p + 1) / 4 ∧ r < p ∧ IsSquare (r : ZMod p)\n"
+    }
+  },
+  "sources": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean": "3df5a3f0a6de6a60c2b8b8ba89dd6e44fa4d47cb28e98c33f1e31d1dfb7d84dd",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean": "843e4ee562071ef4729a61c715b77510b378add7f19b8c02d1e3d36fa9165f88",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean": "518f28a33ab98d1a44ea7b544ca7f695e28c48893982caaf72eb4879956763dd"
+  },
+  "prohibited_tokens": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean": [],
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean": [],
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean": []
+  },
+  "fixed_files": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": {
+      "expected": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+      "actual": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+      "unchanged": true
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": {
+      "expected": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+      "actual": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+      "unchanged": true
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean": {
+      "expected": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+      "actual": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+      "unchanged": true
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": {
+      "expected": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+      "actual": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+      "unchanged": true
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": {
+      "expected": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+      "actual": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+      "unchanged": true
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": {
+      "expected": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+      "actual": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+      "unchanged": true
+    }
+  },
+  "all_comparisons_pass": true
+}

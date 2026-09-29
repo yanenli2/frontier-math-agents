@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import json,pathlib; p=pathlib.Path(\".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json\"); data=json.loads(p.read_text()); result=[dict(name=x[\"name\"],sha=x[\"sha\"],witness=min(x[\"witnesses\"],key=lambda y:y[\"created_at\"])) for x in data]; print(json.dumps(result,indent=2))"
+  ],
+  "shell_display": "python3 -c 'import json,pathlib; p=pathlib.Path(\".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-availability-witnesses.json\"); data=json.loads(p.read_text()); result=[dict(name=x[\"name\"],sha=x[\"sha\"],witness=min(x[\"witnesses\"],key=lambda y:y[\"created_at\"])) for x in data]; print(json.dumps(result,indent=2))'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:14:06.921311+00:00",
+  "elapsed_seconds": 0.048897375,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-summary.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/publication-summary.stderr",
+  "stdout_sha256": "e886408ba69b5855d573c51873785d1662574204fc7af04c71fb142b9aad75c8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

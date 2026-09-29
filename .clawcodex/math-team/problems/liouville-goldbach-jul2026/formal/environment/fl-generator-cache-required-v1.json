@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib.Algebra.Ring.Int.Defs",
+    "Mathlib.Order.Interval.Finset.Nat",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Tactic.Ring"
+  ],
+  "shell_display": "lake exe cache get Mathlib.Algebra.Ring.Int.Defs Mathlib.Order.Interval.Finset.Nat Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Tactic.Ring",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "environment_additions": {
+    "MATHLIB_CACHE_DIR": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache"
+  },
+  "started_utc": "2026-09-25T03:16:56.052316+00:00",
+  "elapsed_seconds": 9.3310495,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/fl-generator-cache-required-v1.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/fl-generator-cache-required-v1.stderr",
+  "stdout_sha256": "cb2c6c04bdcb19d28fc7425b023c9aa90bb02baa09b3ef5e0457265c5bab715a",
+  "stderr_sha256": "a58917a1d2c2c773558dabf2069b84c46b2e2ff23403f71e1b7651ad88251542"
+}

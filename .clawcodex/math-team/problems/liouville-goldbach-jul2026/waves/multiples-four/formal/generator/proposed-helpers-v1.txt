@@ -1,0 +1,42 @@
+Mode: CERTIFICATION — proposed helper statements only; not accepted declarations.
+All names below are proposed in ArithmeticStatement with the existing fixed
+omega, lambda, and HasRepresentation definitions imported from Statement.Partial.
+No helper below is an axiom or available assumption. Fresh statement review is
+required before any standalone helper is accepted or integrated.
+
+1. Optional single-prime extraction:
+
+theorem exists_prime_factor_of_lambda_neg_one {m : ℕ}
+    (hm : 0 < m) (hSign : lambda m = (-1 : ℤ)) :
+  ∃ p d : ℕ,
+    Nat.Prime p ∧ 0 < d ∧ lambda d = (1 : ℤ) ∧ m = d * p
+
+The factor-list cannot be empty because hSign excludes lambda m=1. Its head p
+is prime and its tail product d is positive because the whole product is m>0.
+Multiplicativity and lambda p=-1 give lambda d=1. Repetition of prime factors
+and d=1 are permitted. These local steps were elaborated in Attempt-v2.lean,
+which still fails at the later representation goal and is not a proved module.
+
+2. Optional exact odd-prime-core equivalence:
+
+theorem multiple_four_iff_odd_prime_core :
+  (∀ m : ℕ, 0 < m → HasRepresentation (4 * m)) ↔
+    ∀ p : ℕ, Nat.Prime p → p ≠ 2 → HasRepresentation (4 * p)
+
+Forward: specialize m=p; primality gives positivity.
+Reverse plan: even m is the accepted all-8m theorem. A positive lambda sign on m
+gives the accepted diagonal at 4m. In the remaining odd/negative-sign case,
+extract p,d as above; evenness of m excludes p=2. A core representation at 4p
+would scale by d without changing its negative signs. The core proposition on
+the right is itself OPEN, not supplied by this proposed equivalence.
+
+3. The actual unresolved core is NOT proposed as an assumed helper:
+
+p : ℕ
+hp : Nat.Prime p
+hpne : p ≠ 2
+⊢ HasRepresentation (4 * p)
+
+A proof of this for every such p would finish the assigned exact target. No
+uniform proof has been obtained in the current focused Lean attempt. The main
+target's statement has not been changed to this core or conditioned on it.

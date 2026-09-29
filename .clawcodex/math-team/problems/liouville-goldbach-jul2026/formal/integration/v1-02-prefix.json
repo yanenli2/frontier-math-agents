@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "--print-prefix"
+  ],
+  "shell_display": "lake env lean --print-prefix",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T03:56:37.786457+00:00",
+  "elapsed_seconds": 0.606,
+  "exit_status": 0,
+  "expected_exit_status": 0,
+  "timeout_seconds": 300,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/integration/v1-02-prefix.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/integration/v1-02-prefix.stderr",
+  "stdout_sha256": "ab824f36c3f255e3209f4e7b86c0bf4f51cdf42213e04b44df1246592eccbdc3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

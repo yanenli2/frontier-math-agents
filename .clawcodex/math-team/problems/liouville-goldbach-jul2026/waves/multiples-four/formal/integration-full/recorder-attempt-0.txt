@@ -1,0 +1,12 @@
+Recorder-only setup failure, before any root or proof edit or Lean check.
+Command: python3 .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/check-integration-v1.py preflight
+Exit: 1
+Raw diagnostics:
+Traceback (most recent call last):
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/check-integration-v1.py", line 310, in <module>
+    preflight()
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/check-integration-v1.py", line 207, in preflight
+    assert p.exists(), p
+AssertionError: .clawcodex/math-team/problems/liouville-goldbach-jul2026/PROOF.md
+
+Cause: recorder assumed a nonexistent original PROOF.md; original exposition is FINAL_ARGUMENT.md. The frozen wave PROOF.md exists and had passed its expected hash. Only the evidence inventory path was corrected. No candidate statement, proof, dependency, or root was changed. No evidence output had yet been written by this failed invocation.

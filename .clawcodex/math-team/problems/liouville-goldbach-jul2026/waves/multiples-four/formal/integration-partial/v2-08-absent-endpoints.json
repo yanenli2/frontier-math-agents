@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "--stdin"
+  ],
+  "shell_display": "lake env lean --stdin",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T10:13:34.896641+00:00",
+  "elapsed_seconds": 2.122,
+  "exit_status": 1,
+  "expected_exit_status": 1,
+  "timeout_seconds": 600,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v2-08-absent-endpoints.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v2-08-absent-endpoints.stderr",
+  "stdout_sha256": "752415707f6c1daacf42893b68d209261efc9fea271e1819f1310e9e5d23a0f3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdin_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-partial/v2-08-absent-endpoints.stdin.lean",
+  "stdin_sha256": "b5153d01417c48afd7868a65661216e992f576010172f7923ccb204c2fec7349"
+}

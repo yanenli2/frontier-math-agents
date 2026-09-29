@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "-t0",
+    "Statement/FourWork/Character/ResidueValue.lean"
+  ],
+  "shell_display": "lake env lean -t0 Statement/FourWork/Character/ResidueValue.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T11:11:42.684437+00:00",
+  "seconds": 1.782686333000001,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "0bd48310a2cba7ebe8974b1641a84ec7c556024d9ac6508dd48174b33b63009d",
+    "bytes": 1282
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

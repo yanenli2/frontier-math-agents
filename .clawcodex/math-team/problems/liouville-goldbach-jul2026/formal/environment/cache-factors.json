@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib.Data.Nat.Factors",
+    "Mathlib.Algebra.Group.Even"
+  ],
+  "shell_display": "lake exe cache get Mathlib.Data.Nat.Factors Mathlib.Algebra.Group.Even",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "environment_additions": {
+    "MATHLIB_CACHE_DIR": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1"
+  },
+  "started_utc": "2026-09-25T02:03:43.728933+00:00",
+  "elapsed_seconds": 24.900172291,
+  "timeout_seconds": 550,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache-factors.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/cache-factors.stderr",
+  "stdout_sha256": "7301c279e2b82f729fa0b9b615ff0fb09c2a7ef900df961bee6c15935df4e4e9",
+  "stderr_sha256": "056cab59c74e14817ddea16c738932b55a2d4a7e8a620e7bc791e79392782aa3"
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "name": "plausible",
+    "repo": "leanprover-community/plausible",
+    "sha": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "dates": {
+      "author": "2026-07-13T13:20:47Z",
+      "committer": "2026-07-13T13:20:47Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-plausible-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-plausible-toolchain.stdout"
+      },
+      "lakefile.toml": {
+        "command_exit_status": 0,
+        "capture": "dep-plausible-lakefile.stdout"
+      }
+    },
+    "nested_pins": [],
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "name": "LeanSearchClient",
+    "repo": "leanprover-community/LeanSearchClient",
+    "sha": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "dates": {
+      "author": "2026-02-12T00:28:04Z",
+      "committer": "2026-02-12T00:28:04Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-LeanSearchClient-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-LeanSearchClient-toolchain.stdout"
+      },
+      "lakefile.toml": {
+        "command_exit_status": 0,
+        "capture": "dep-LeanSearchClient-lakefile.stdout"
+      }
+    },
+    "nested_pins": [],
+    "toolchain": "leanprover/lean4:v4.27.0-rc1"
+  },
+  {
+    "name": "importGraph",
+    "repo": "leanprover-community/import-graph",
+    "sha": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "dates": {
+      "author": "2026-07-13T13:50:40Z",
+      "committer": "2026-07-13T13:50:40Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-importGraph-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-importGraph-toolchain.stdout"
+      },
+      "lakefile.toml": {
+        "command_exit_status": 0,
+        "capture": "dep-importGraph-lakefile.stdout"
+      }
+    },
+    "nested_pins": [
+      {
+        "name": "Cli",
+        "rev": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+        "root_revision": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+        "agrees_with_root": true
+      }
+    ],
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "name": "proofwidgets",
+    "repo": "leanprover-community/ProofWidgets4",
+    "sha": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "dates": {
+      "author": "2026-07-13T13:20:50Z",
+      "committer": "2026-07-13T13:20:50Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-proofwidgets-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-proofwidgets-toolchain.stdout"
+      },
+      "lakefile.lean": {
+        "command_exit_status": 0,
+        "capture": "dep-proofwidgets-lakefile.stdout"
+      }
+    },
+    "nested_pins": [],
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "name": "aesop",
+    "repo": "leanprover-community/aesop",
+    "sha": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "dates": {
+      "author": "2026-07-13T14:03:17Z",
+      "committer": "2026-07-13T14:03:17Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-aesop-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-aesop-toolchain.stdout"
+      },
+      "lakefile.toml": {
+        "command_exit_status": 0,
+        "capture": "dep-aesop-lakefile.stdout"
+      }
+    },
+    "nested_pins": [
+      {
+        "name": "batteries",
+        "rev": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+        "root_revision": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+        "agrees_with_root": true
+      }
+    ],
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "name": "Qq",
+    "repo": "leanprover-community/quote4",
+    "sha": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "dates": {
+      "author": "2026-07-13T13:20:53Z",
+      "committer": "2026-07-13T13:20:53Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-Qq-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-Qq-toolchain.stdout"
+      },
+      "lakefile.toml": {
+        "command_exit_status": 0,
+        "capture": "dep-Qq-lakefile.stdout"
+      }
+    },
+    "nested_pins": [],
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "name": "batteries",
+    "repo": "leanprover-community/batteries",
+    "sha": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "dates": {
+      "author": "2026-07-13T13:38:26Z",
+      "committer": "2026-07-13T13:38:26Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-batteries-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-batteries-toolchain.stdout"
+      },
+      "lakefile.toml": {
+        "command_exit_status": 0,
+        "capture": "dep-batteries-lakefile.stdout"
+      }
+    },
+    "nested_pins": [],
+    "toolchain": "leanprover/lean4:v4.32.0"
+  },
+  {
+    "name": "Cli",
+    "repo": "leanprover/lean4-cli",
+    "sha": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+    "dates": {
+      "author": "2026-07-13T13:20:44Z",
+      "committer": "2026-07-13T13:20:44Z"
+    },
+    "availability_witness": "Immutable pin in Mathlib v4.32.2 release manifest; release published 2026-07-28T16:47:51Z",
+    "files": {
+      "lake-manifest.json": {
+        "command_exit_status": 0,
+        "capture": "dep-Cli-manifest.stdout"
+      },
+      "lean-toolchain": {
+        "command_exit_status": 0,
+        "capture": "dep-Cli-toolchain.stdout"
+      },
+      "lakefile.toml": {
+        "command_exit_status": 0,
+        "capture": "dep-Cli-lakefile.stdout"
+      }
+    },
+    "nested_pins": [],
+    "toolchain": "leanprover/lean4:v4.32.0"
+  }
+]

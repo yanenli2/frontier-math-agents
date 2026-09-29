@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "git",
+    "init",
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible"
+  ],
+  "shell_display": "git init .clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/.lake/packages/plausible",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:02:00.319494+00:00",
+  "elapsed_seconds": 0.019603416999999998,
+  "timeout_seconds": 180,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-init.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/plausible-git-init.stderr",
+  "stdout_sha256": "502d4e17dc246ff61b30eaa53a0c6a6701edfbba72099072eedafebe3d6f7815",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Algebra/Group/Irreducible/Defs.lean&per_page=1"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Algebra/Group/Irreducible/Defs.lean&per_page=1'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:05.175993+00:00",
+  "elapsed_seconds": 0.421115917,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-history.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-irreducible-history.stderr",
+  "stdout_sha256": "8a7691f232c298dc1fc2d59a7fa0f8e248cfce3b35e9cc520691d7b4aa4e93f1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

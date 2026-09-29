@@ -1,0 +1,23 @@
+01-default-build exit 0
+02-assembly-build exit 0
+03-assembly-direct exit 0
+04-assembly-trust0 exit 0
+05-trust0-00-Statement-Definitions exit 0
+05-trust0-01-Statement-Scaffold exit 0
+05-trust0-02-Statement-Smoke exit 0
+05-trust0-03-Statement-Partial exit 0
+05-trust0-04-Statement-FourPartial exit 0
+05-trust0-05-Statement-FourWork-Descent-Ternary exit 0
+05-trust0-06-Statement-FourWork-Character-ResidueValue exit 0
+05-trust0-07-Statement-FourWork-Descent-Cyclic exit 0
+05-trust0-08-Statement-FourWork-Character-Rigidity exit 0
+05-trust0-09-Statement-FourWork-Character-ResiduePrime exit 0
+05-trust0-11-Statement exit 0
+06-root-import exit 0
+Traceback (most recent call last):
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/check-integration-v1.py", line 312, in <module>
+    integrated()
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/check-integration-v1.py", line 275, in integrated
+    assert set(root_axioms) == set(queries), set(queries) - set(root_axioms)
+AssertionError: {"Finset.sum_nbij'"}
+__CLAWCODEX_EXIT__=1

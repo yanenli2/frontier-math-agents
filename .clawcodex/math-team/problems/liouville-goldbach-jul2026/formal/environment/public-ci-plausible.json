@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/plausible/actions/runs?head_sha=e12c1910fe855cbfc38803cd4e55543906d5fa62&per_page=100"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/plausible/actions/runs?head_sha=e12c1910fe855cbfc38803cd4e55543906d5fa62&per_page=100'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:12:11.968960+00:00",
+  "elapsed_seconds": 0.550597667,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-plausible.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/public-ci-plausible.stderr",
+  "stdout_sha256": "7db3a5d1c95ca7d1b1906ec25958d6f1d490a9953154fdf3180f09fd57195e7b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,139 @@
+import Statement
+#check @ArithmeticStatement.lambda_six
+#check @ArithmeticStatement.lambda_seven
+#check @ArithmeticStatement.twelve_two_sign_seed
+#check @ArithmeticStatement.representation_multiple_twelve
+#check @ArithmeticStatement.representation_multiple_four_of_lambda_one
+#check @ArithmeticStatement.representation_multiple_four_of_even
+#check @ArithmeticStatement.representation_multiple_four_of_three_dvd
+#check @ArithmeticStatement.representation_multiple_four_of_sum_two_squares
+#check @ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares
+#check @ArithmeticStatement.representation_four_prime_one_mod_four
+#check @ArithmeticStatement.prime_divisor_positive_sign_cofactor
+#check @ArithmeticStatement.exists_prime_factor_of_lambda_neg_one
+#check @ArithmeticStatement.representation_multiple_four_of_prime_divisor
+#check @ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd
+#check @ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one
+#check @ArithmeticStatement.representation_multiple_four_of_mod_four_one
+#check @ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three
+#check @ArithmeticStatement.multiple_four_iff_odd_prime_core
+#check @ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core
+#print ArithmeticStatement.omega
+#print ArithmeticStatement.lambda
+#print ArithmeticStatement.HasSignedRepresentation
+#print ArithmeticStatement.HasRepresentation
+#print ArithmeticStatement.Target
+#print axioms ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one
+#print axioms ArithmeticStatement.representation_multiple_four_of_mod_four_one
+#print axioms ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three
+#print axioms ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core
+#print axioms Nat.Prime.sq_add_sq
+#print axioms ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares
+#print axioms ArithmeticStatement.representation_four_prime_one_mod_four
+#print axioms ArithmeticStatement.prime_divisor_positive_sign_cofactor
+#print axioms ArithmeticStatement.exists_prime_factor_of_lambda_neg_one
+#print axioms ArithmeticStatement.representation_multiple_four_of_prime_divisor
+#print axioms ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd
+#print axioms ArithmeticStatement.multiple_four_iff_odd_prime_core
+#print axioms ArithmeticStatement.lambda_six
+#print axioms ArithmeticStatement.lambda_seven
+#print axioms ArithmeticStatement.twelve_two_sign_seed
+#print axioms ArithmeticStatement.representation_multiple_twelve
+#print axioms ArithmeticStatement.representation_multiple_four_of_lambda_one
+#print axioms ArithmeticStatement.representation_multiple_four_of_even
+#print axioms ArithmeticStatement.representation_multiple_four_of_three_dvd
+#print axioms ArithmeticStatement.representation_multiple_four_of_sum_two_squares
+#print axioms ArithmeticStatement.omega
+#print axioms ArithmeticStatement.lambda
+#print axioms ArithmeticStatement.HasSignedRepresentation
+#print axioms ArithmeticStatement.HasRepresentation
+#print axioms ArithmeticStatement.lambda_one
+#print axioms ArithmeticStatement.lambda_sign
+#print axioms ArithmeticStatement.lambda_mul
+#print axioms ArithmeticStatement.lambda_prime
+#print axioms ArithmeticStatement.lambda_two_mul
+#print axioms ArithmeticStatement.lambda_square
+#print axioms ArithmeticStatement.hasSignedRepresentation_mul
+#print axioms ArithmeticStatement.representation_double
+#print axioms ArithmeticStatement.representation_two_sign_seed
+#print axioms ArithmeticStatement.representation_multiple_eight
+#print axioms Nat.prime_seven
+#print axioms Nat.exists_eq_add_of_le
+#print axioms Nat.exists_prime_and_dvd
+#print axioms Nat.prod_primeFactorsList
+#print axioms Nat.prime_of_mem_primeFactorsList
+#print axioms Nat.dvd_of_mem_primeFactorsList
+#print axioms Nat.Prime.eq_two_or_odd
+#print axioms Nat.odd_mod_four_iff
+#print axioms Nat.odd_iff
+#print axioms Nat.not_even_iff_odd
+#print axioms ZMod.natCast_mod
+#print axioms Int.cast_pow
+#print axioms GaussianInt.sq_add_sq_of_nat_prime_of_not_irreducible
+#print axioms GaussianInt.prime_iff_mod_four_eq_three_of_nat_prime
+#print axioms ArithmeticStatement.exists_prime_pair_factor_of_lambda_one
+#print axioms ArithmeticStatement.target_iff_prime_product_core
+#print axioms ArithmeticStatement.two_sign_indicator
+#print axioms ArithmeticStatement.representation_count_eq_indicator_sum
+#print axioms ArithmeticStatement.four_mul_representation_count
+#print axioms ArithmeticStatement.count_pos_iff_keystone
+#print axioms ArithmeticStatement.keystone_ge_four_iff
+#print axioms ArithmeticStatement.target_iff_count_pos
+#print axioms ArithmeticStatement.target_iff_pointwise_keystone
+#print axioms ArithmeticStatement.mem_I_iff
+#print axioms ArithmeticStatement.interval_eq_Icc
+#print axioms ArithmeticStatement.interval_bounds
+#print axioms ArithmeticStatement.interval_card_cast
+#print axioms ArithmeticStatement.reflection_mem
+#print axioms ArithmeticStatement.reflection_involutive
+#print axioms ArithmeticStatement.reflection_bijection
+#print axioms ArithmeticStatement.sum_lambda_interval
+#print axioms ArithmeticStatement.sum_lambda_reflection
+#print axioms ArithmeticStatement.mem_orderedRepresentations
+#print axioms ArithmeticStatement.orderedRepresentations_eq_image
+#print axioms ArithmeticStatement.representation_count_eq_card_indices
+#print axioms ArithmeticStatement.representation_count_pos_iff
+#print axioms ArithmeticStatement.omega_one
+#print axioms ArithmeticStatement.omega_mul
+#print axioms ArithmeticStatement.lambda_two
+#print axioms ArithmeticStatement.lambda_three
+#print axioms ArithmeticStatement.lambda_four
+#print axioms ArithmeticStatement.lambda_five
+#print axioms ArithmeticStatement.target_iff_forall_hasRepresentation
+#print axioms ArithmeticStatement.representation_scaled_sign
+#print axioms ArithmeticStatement.representation_diagonal
+#print axioms ArithmeticStatement.eight_two_sign_seed
+#print axioms ArithmeticStatement.Target
+#print axioms ArithmeticStatement.I
+#print axioms ArithmeticStatement.representationIndices
+#print axioms ArithmeticStatement.orderedRepresentations
+#print axioms ArithmeticStatement.R
+#print axioms ArithmeticStatement.L
+#print axioms ArithmeticStatement.C
+#print axioms Nat.primeFactorsList
+#print axioms Nat.primeFactorsList_one
+#print axioms Nat.perm_primeFactorsList_mul
+#print axioms List.Perm.length_eq
+#print axioms List.length_append
+#print axioms Nat.primeFactorsList_prime
+#print axioms pow_add
+#print axioms neg_one_pow_eq_ite
+#print axioms Nat.prime_two
+#print axioms Nat.prime_three
+#print axioms Nat.prime_five
+#print axioms Nat.sub_sub_self
+#print axioms Nat.cast_sub
+#print axioms Nat.card_Ico
+#print axioms Finset.product_eq_sprod
+#print axioms Finset.mem_product
+#print axioms Finset.mem_filter
+#print axioms Finset.card_pos
+#print axioms Finset.mem_image
+#print axioms Finset.card_image_of_injective
+#print axioms Finset.sum_nbij'
+#print axioms Finset.sum_filter
+#print axioms Finset.sum_const
+#print axioms Finset.mul_sum
+#print axioms Finset.sum_add_distrib
+#print axioms Finset.sum_sub_distrib
+#print axioms List.prod_cons

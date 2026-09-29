@@ -1,0 +1,22 @@
+Command: python3 .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py
+Exit: 1
+Raw diagnostics:
+Traceback (most recent call last):
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py", line 93, in <module>
+    original = set().union(*(visit(m) for m in ['Statement.Definitions', 'Statement.Scaffold', 'Statement.Smoke', 'Statement.Partial']))
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py", line 93, in <genexpr>
+    original = set().union(*(visit(m) for m in ['Statement.Definitions', 'Statement.Scaffold', 'Statement.Smoke', 'Statement.Partial']))
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py", line 66, in visit
+    closure |= visit(dependency)
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py", line 66, in visit
+    closure |= visit(dependency)
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py", line 66, in visit
+    closure |= visit(dependency)
+  [Previous line repeated 19 more times]
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py", line 55, in visit
+    p, root, package = locate(m)
+  File ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/integration-full/library-inventory-v1.py", line 46, in locate
+    raise AssertionError(('unresolved source module', m))
+AssertionError: ('unresolved source module', '{')
+
+Cause: the source inventory parser scanned beyond Lean's module header and treated JavaScript imports inside Lean/Log.lean:67-82's string literal as Lean imports. Correction restricts parsing to the import header. No proof/build/pin/source was changed. No inventory output had yet been written.

@@ -1,0 +1,109 @@
+{
+  "runs": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/Definitions.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:05.095941+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 2.3903035000000004
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/Partial.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:07.486790+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 2.2589985
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourPartial.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:09.746229+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 3.728435833999999
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Descent/Cyclic.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:13.475461+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 2.692979417
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Descent/Ternary.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:16.168934+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 2.1349762919999993
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Character/ResidueValue.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:18.304492+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 1.7829165419999988
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Character/Rigidity.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:20.087977+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 1.9728885409999997
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-t0",
+        "Statement/FourWork/Character/ResiduePrime.lean"
+      ],
+      "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+      "start_utc": "2026-09-25T10:55:22.061371+00:00",
+      "exit_status": 0,
+      "elapsed_seconds": 9.472739458
+    }
+  ],
+  "raw_log": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/reviews/full-candidate-review-v1.dependencies.log"
+}

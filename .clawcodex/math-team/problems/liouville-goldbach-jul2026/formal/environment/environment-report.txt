@@ -1,0 +1,133 @@
+Mode: CERTIFICATION environment/scaffold production only.
+Problem: liouville-goldbach-jul2026. Task ca76ab6f021e.
+Status: PINNED ENVIRONMENT WORKS; TARGET NOT PROVED; STATEMENT REVIEW PENDING.
+
+Toolchain
+- Installed Lean: leanprover/lean4:v4.32.2, arm64-apple-darwin24.6.0.
+- Actual binary commit: f3b06c705e6c85f5314019d5d3baab0fec5b580c.
+- Actual Lake: 5.0.0-src+f3b06c7.
+- Only installed toolchain was used. No global toolchain installation or setting
+  change was made. No configured deferred Lean diagnostics were available.
+- Release published_at: 2026-07-28T16:34:35Z. The release tag resolves to the
+  installed binary commit. Commit date: 2026-07-28T14:26:42Z.
+- Public exact-SHA CI witness: https://github.com/leanprover/lean4/actions/runs/30368480005
+  created 2026-07-28T14:27:52Z; finished 2026-07-28T16:34:41Z.
+- Evidence: lean-release.*, lean-tag.*, lean-commit.*, lake-env-version.*.
+
+Mathlib pin and availability
+- Exact commit 905b95818eb32af7874a58b427f50c1711a5e96c, release v4.32.2.
+- Mathlib lean-toolchain is exactly leanprover/lean4:v4.32.2.
+- Commit author/committer date: 2026-07-28T16:36:13Z.
+- Release published_at: 2026-07-28T16:47:51Z.
+- GitHub reports the release/tag mutable; the project therefore pins the SHA,
+  not the tag. Independent exact-head-SHA public CI metadata ties this commit
+  to pre-cutoff availability, rather than relying only on today's tag pointer.
+- Release job https://github.com/leanprover-community/mathlib4/actions/runs/30379912464
+  created 2026-07-28T16:47:39Z; completed 2026-07-28T16:47:53Z.
+- Full Mathlib CI https://github.com/leanprover-community/mathlib4/actions/runs/30385574037
+  created 2026-07-28T18:01:52Z; completed successfully 2026-07-28T18:16:52Z.
+- Evidence: mathlib-{release,tag,commit,toolchain,manifest,lakefile}.* and
+  public-ci-mathlib.*. Raw outputs are saved unchanged.
+
+Transitive manifest audit
+Each row is package | exact Git revision | author=committer UTC source date.
+plausible | e12c1910fe855cbfc38803cd4e55543906d5fa62 | 2026-07-13T13:20:47Z
+LeanSearchClient | c5d5b8fe6e5158def25cd28eb94e4141ad97c843 | 2026-02-12T00:28:04Z
+importGraph | 7e9612bf0b9ee66db3cb5b9988a35afc706f5a12 | 2026-07-13T13:50:40Z
+proofwidgets | 6e311e2a844da9b2cc3971187df2fe0066947b93 | 2026-07-13T13:20:50Z
+aesop | a7dbf0c63b694e47f425f3dcddbc0e178bb432d3 | 2026-07-13T14:03:17Z
+Qq | 38d591e778f100aec9762bb582f9c7f55f50e9dc | 2026-07-13T13:20:53Z
+batteries | 023ce7d62a0531e22a5331e20b587817a80d49ff | 2026-07-13T13:38:26Z
+Cli | 88679d088c9720c27ebdf2ba4dafe17341747f94 | 2026-07-13T13:20:44Z
+
+All eight have dated public GitHub Actions records for the exact SHA before
+2026-07-31, in public-availability-witnesses.json and publication-summary.stdout.
+CI success is not needed to establish public availability: the early plausible
+and LeanSearchClient runs failed, but visibly identify the exact commit and date.
+We do not use those upstream runs as a claim that this local build passed;
+that is established by our recorded local build.
+
+Every dependency's pinned lake-manifest, lakefile and lean-toolchain was fetched
+and audited. Only additional nested pins are importGraph -> Cli and aesop ->
+batteries, both identical to the parent Mathlib manifest. All remaining nested
+manifests have empty package arrays. There are no missing or conflicting nested
+revisions. Dependency toolchains are v4.32.0 except LeanSearchClient's
+v4.27.0-rc1. The actual build uses the root v4.32.2; successful compilation of
+our selected import closure checks compatibility for the modules used, not
+all test suites or all executables in every upstream package.
+
+Evidence:
+- dependency-audit.stdout: complete eight-package audit summary.
+- dep-<name>-{commit,manifest,toolchain,lakefile}.{json,stdout,stderr}: raw dated
+  source metadata, nested manifests, configuration, exact commands and exits.
+- NOTE: the first audit script wrote its summary to dependency-audit.json and
+  the command recorder then used that same filename for command metadata.
+  The summary is preserved without loss as dependency-audit.stdout. The script
+  was corrected to use dependency-pins.json on a future clean rerun; no audit
+  command was rerun against changing source versions.
+
+Checkout/cache setup and side effects
+- Narrow pre-download check: no lean-toolchain in this workspace, the relevant
+  adjacent MechMath-agent-team checkout, or ~/.cache/mathlib. The latter held
+  unversioned cache archives, not a project; no such archive was read/adopted.
+- Created only the authorized project-local lean/ and assigned report/cache paths.
+- Initial git checkouts use git init, remote add, then fetch --depth 1 --no-tags
+  origin <audited SHA> and checkout --detach <SHA>. No current main/master
+  branch was fetched, and no lake update command was run.
+- Root lakefile.toml pins Mathlib by SHA. Root lake-manifest.json copies all
+  exact Mathlib dependency rev fields and marks them inherited. Historical
+  inputRev strings main/master survive as metadata in the locked manifest;
+  they were never resolved during this setup. Do not discard/regenerate the
+  manifest or invoke an unconstrained update when reproducing this snapshot.
+- All nine checkouts' final HEADs equal their pins, with no tracked-source
+  modifications. Mathlib's manifest is byte-identical to the raw pinned file.
+  See checkout-audit.json and final-<name>-{head,status}.*.
+- Downloaded only the cache closure of Mathlib.Data.Nat.Factors and
+  Mathlib.Algebra.Group.Even: 664 source-hash-addressed module artifacts.
+  The empty mathlib4-master cache lookup fell back to the legacy mathlib4
+  container and succeeded. These are container names, not newly fetched source
+  branches. Cache hashes are computed by the pinned Cache/Hashing.lean from
+  exact source contents, imports and Mathlib's pinned configuration.
+- Cache directory set explicitly to formal/environment/cache; no ~/.cache
+  contents or global settings were changed. Bundled leantar from the already
+  eligible Lean toolchain was used; no extra compression binary was installed.
+- Local sizes after setup: lean/ 973 MiB, assigned cache/ 68 MiB. Full Mathlib
+  was not built or cached; only the requested dependency closure was obtained.
+- The standard precompiled-library cache is a trusted build-artifact mechanism.
+  We have not independently rebuilt every imported upstream theorem from source.
+
+Actual diagnostics
+- lake env lean --version: exit 0.
+- lake exe cache get Mathlib.Data.Nat.Factors Mathlib.Algebra.Group.Even: exit 0.
+- lake build Statement.Definitions Statement.Scaffold Statement.Smoke Statement:
+  exit 0, 684 jobs including all four named local modules.
+- lake env lean Statement/Scaffold.lean: exit 0, no diagnostics.
+- lake env lean Statement/Smoke.lean: exit 0; definition tests passed; printed
+  exact definitions, target quantifiers, factor-list semantic signatures and
+  axiom sets [propext, Classical.choice, Quot.sound], without sorryAx.
+- lake env lean <review-inputs>/r20260924-v1/Declaration.lean: exit 0, no diagnostics.
+- Initial directory listing exit 1 was solely the expected absence of lean/,
+  subsequently created under explicit authorization. No environment blocker.
+- Cache executable link warning: ld64.lld could not find -L/usr/local/lib.
+  The executable nevertheless linked and ran successfully. No remaining build
+  warning/error in our definition, scaffold or smoke modules.
+
+Provenance and contamination
+Source cutoff: 2026-07-31 inclusive UTC. All mathematical source code adopted
+is from the above pinned, dated public versions. Actual selected source file
+bytes, Git blobs and last-changing ancestor dates are in
+source-file-identities.json; each was at or before cutoff. Current GitHub
+metadata was consulted only for immutable source identity and date witnesses.
+No later mathematical source, current main documentation, paper, or solution
+was read or used. No accidental post-cutoff mathematical exposure is known.
+The user-mentioned Mangerel paper was not read by this worker and supplies no
+proof dependency. Proposed provenance entries are separate in
+../formalizer/proposed-sources-additions.txt; shared sources.md was not edited.
+
+Recording conventions
+run.py stores exact argv, shell display, cwd, UTC start, duration, environment
+additions, timeout, exit status, and SHA256 of raw stdout/stderr for each command.
+Initial observations predating the recorder are preserved in
+initial-observations.txt. Script outputs and all raw metadata remain in this
+owned directory. The environment check certifies only setup and scaffold
+compilation, never the mathematical target.

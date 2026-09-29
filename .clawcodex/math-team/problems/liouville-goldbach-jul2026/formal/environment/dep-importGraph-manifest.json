@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "-H",
+    "Accept: application/vnd.github.raw+json",
+    "repos/leanprover-community/import-graph/contents/lake-manifest.json?ref=7e9612bf0b9ee66db3cb5b9988a35afc706f5a12"
+  ],
+  "shell_display": "gh api -H 'Accept: application/vnd.github.raw+json' 'repos/leanprover-community/import-graph/contents/lake-manifest.json?ref=7e9612bf0b9ee66db3cb5b9988a35afc706f5a12'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:00:13.481623+00:00",
+  "elapsed_seconds": 0.299429125,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-manifest.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-importGraph-manifest.stderr",
+  "stdout_sha256": "c8028cb25d859d531af43c02ca1ead5cd95a95f34f180f1544cee17316dd1703",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

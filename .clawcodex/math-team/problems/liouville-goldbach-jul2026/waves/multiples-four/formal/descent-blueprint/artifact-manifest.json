@@ -1,0 +1,61 @@
+{
+  "status": "blueprint_complete_no_new_theorem_proved",
+  "root": ".",
+  "output_directory": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint",
+  "working_directory": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "lean_version": "4.32.2",
+  "lean_commit": "f3b06c705e6c85f5314019d5d3baab0fec5b580c",
+  "mathlib_commit": "905b95818eb32af7874a58b427f50c1711a5e96c",
+  "mathlib_commit_timestamp": "2026-07-28T18:36:13+02:00",
+  "source_cutoff_inclusive": "2026-07-31",
+  "proposed_theorem_count": 19,
+  "new_definition_count": 2,
+  "header_to_type_probe_text_match": true,
+  "new_definition_text_match": true,
+  "comparison_method": "Replace each theorem name by #check forall syntax and the declaration type separator by the forall comma; compare whitespace-normalized type text in order. Compare both new definition blocks exactly.",
+  "runs": [
+    {
+      "command": "lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/ApiProbe.lean",
+      "timeout_seconds": 90,
+      "exit_status": 1,
+      "diagnostics": "api-probe.log",
+      "scope": "Exploratory API check; three unavailable names corrected or excluded; not an accepted dependency check."
+    },
+    {
+      "command": "lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/ApiProbeVerified.lean",
+      "timeout_seconds": 90,
+      "exit_status": 0,
+      "diagnostics": "api-probe-verified.log",
+      "scope": "Cached API types and two library axiom sets only."
+    },
+    {
+      "command": "lake env lean .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/SignatureTypeProbe.lean",
+      "timeout_seconds": 90,
+      "exit_status": 0,
+      "diagnostics": "signature-type-probe.log",
+      "scope": "Elaboration of all 19 proposed proposition types and two definitions only; no theorem bodies. Unused proof-binder-name warnings do not justify removing hypotheses."
+    }
+  ],
+  "artifact_sha256": {
+    "Readback.lean.txt": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+    "SignatureTypeProbe.lean": "6554e0ed21ef82001b877b3564ba8793c55f399ee44cc6f838190064953280d1",
+    "signature-type-probe.log": "ad1b3465f1900e3344567ca9ad83591a939be78dd3f09dd5d8a4b92a54aceb2b",
+    "ApiProbeVerified.lean": "bb420ae1ac909614a3b885a87836dafdf2c4fe5b3dadfd92da55100ee1d28f24",
+    "api-probe-verified.log": "0d25263fb19711db63902dc59800ca20a7dcbb60c56bdf7b1a83b1de4af6e896",
+    "blueprint.md": "6a0e3789ef384d54f5caa512602e1177eb77d2501d0dfec78d2c1234cf80433d",
+    "api-audit.md": "fa5edb2a327adc90a0c2c7092e51d69a733f92bc8a53c2ff8b2693b530301082",
+    "next-target.md": "c955b60d2928c6b0a1398d2cdfdf918b2353ce20c80c878830f97bdbee692aa1"
+  },
+  "frozen_input_hashes_rechecked_unchanged": {
+    "Statement/Definitions.lean": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+    "Statement/Partial.lean": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+    "FourCandidate.lean": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325"
+  },
+  "uncached_source_only_modules": [
+    "Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity",
+    "Mathlib.NumberTheory.DiophantineApproximation.Basic",
+    "Mathlib.NumberTheory.WellApproximable",
+    "Mathlib.Data.Int.Lemmas"
+  ],
+  "theorem_acceptance": "Not attempted. No new proof bodies, admissions, assumptions, or master edits. Fresh readback/fidelity, proof generation, pinned compilation, axiom checks, and integration remain required."
+}

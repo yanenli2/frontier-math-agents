@@ -1,0 +1,155 @@
+Mode: CERTIFICATION — integrated partial results only.
+Owner: fl-integrator; task 197f419f93e6.
+
+IDENTITY AND STATUS CONVENTIONS
+
+All names below are in namespace ArithmeticStatement. File/line locations refer
+to lean/Statement/Partial.lean, SHA-256
+9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0.
+It is byte-identical to the independently approved formal/generator/Candidate.lean.
+Base definitions remain in lean/Statement/Definitions.lean, SHA-256
+79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d.
+
+I = independently approved partial statement/proof candidate, mechanically
+integrated and recompiled; NOT a proof of Target. Every I theorem has the
+transitive axiom set {propext, Classical.choice, Quot.sound}.
+D = unchanged approved definition; not an assertion of its truth.
+O = open goal, not declared, assumed, admitted, or imported as a theorem/axiom.
+
+Every integrated signature/body is compared individually in audit-v1.json,
+field declaration_comparisons. Full elaborated types and definition bodies:
+v1-08-root-import-check.stdout:1-124. All 82 exact transitive axiom results:
+v1-06-partial-direct.stdout:21-102, also audit-v1.json's three axiom maps.
+The named dependencies below are the main mathematical steps, not a complete
+syntactic dependency graph. The axiom output is transitive.
+
+COMMON REVIEW EVIDENCE
+
+F: formal/reviews/candidate-audit-v1.md, SHA-256
+b6b315abb960fd385f614aea01e2f5b3ead76057d2f345ea5af2abee5eb011f5.
+Its scope is all 42 actual theorems, eight helper definitions, and protected base.
+B: formal/blueprinter/interfaces-v1.lean, SHA-256
+89080f705ec6f0ba690edbc4e7d3d97cea18a6f3d3c3cdcb31e30abefbb434bc.
+The two final unimplemented signatures in B are goals, not dependencies.
+R: .clawcodex/math-team/review-inputs/r20260924-v1/readback.md
+and interfaces-readback.md in the same directory; hashes are in audit-v1.json.
+Their isolated inputs equal the protected snapshots.
+N: nl/reviews/partial-proof-review-v1.md, especially sections 5.1-5.3.
+This certifies the v1 partial derivations, not unproved optional bridges or Target.
+The v2 prose correction reclassifies O-M5 as refuted; no integrated proof uses it.
+
+SOURCE PROVENANCE KEYS
+
+All Mathlib paths below refer to commit
+905b95818eb32af7874a58b427f50c1711a5e96c, publicly witnessed 2026-07-28,
+not a moving branch. Base URL:
+https://github.com/leanprover-community/mathlib4/blob/905b95818eb32af7874a58b427f50c1711a5e96c/
+Lean and its bundled standard library are v4.32.2, commit
+f3b06c705e6c85f5314019d5d3baab0fec5b580c, publicly witnessed 2026-07-28.
+
+FCT: Mathlib/Data/Nat/Factors.lean; authors Leonardo de Moura, Jeremy Avigad,
+Mario Carneiro; primeFactorsList_one 49-50, prime_of_mem_primeFactorsList 55-65,
+prod_primeFactorsList 70-81, primeFactorsList_prime 83-88,
+perm_primeFactorsList_mul 196-202 (nonzero factors, no coprimality requirement).
+EV: Mathlib/Algebra/Group/Even.lean, Even's additive definition from 55-57.
+SIG: Mathlib/Algebra/Ring/Parity.lean, neg_one_pow_eq_ite; integer ring instance
+from Mathlib/Algebra/Ring/Int/Defs.lean; finite sign case reasoning is local.
+INTV: Mathlib/Order/Interval/Finset/Nat.lean and its pinned dependencies;
+Finset.Ico/Icc, membership, Nat.card_Ico, cast/subtraction lemmas.
+FIN: pinned finite sets/products/filter/card/image, Finset.sum_nbij',
+sum_filter, mul_sum, sum_add_distrib, sum_sub_distrib; loaded via
+Mathlib/Algebra/BigOperators/Ring/Finset.lean and narrow interval import.
+AR: pinned Lean/list/Nat/Int arithmetic infrastructure and proof-producing
+simp/omega/ring/ordinary decide. Ring import: Mathlib/Tactic/Ring.lean.
+LOCAL: mathematical deduction authored in this run, not an imported literature
+theorem. Source intent comes from request.md, nl/generator/proof-v1.md and the
+handoff IDs below; statements/proofs receive evidence F/N plus integrated Lean.
+
+All package pins, exact public CI witnesses/raw-response hashes, direct resolved
+olean hashes, original same-pin cache command records, and source-file identity
+rechecks are in audit-v1.json. No paper result is a proof dependency. All package
+tracked worktrees were clean. No update/network/cache fetch occurred in integration.
+
+DEFINITIONS
+
+Status | Location | Declaration | Informal meaning / dependency provenance
+D | Definitions:6 | omega | FCT list length counts multiplicity
+D | Definitions:8 | lambda | integer (-1)^omega; FCT, AR
+D | Definitions:10 | Target | exact positive-witness goal; EV, lambda; NOT proved
+D | Partial:14 | HasSignedRepresentation | positive pair of specified common integer sign; LOCAL
+D | Partial:19 | HasRepresentation | sign -1 specialization; LOCAL
+D | Partial:22 | I | Finset.Ico 1 N; INTV
+D | Partial:25 | representationIndices | first-coordinate filter; I, lambda, FIN
+D | Partial:29 | orderedRepresentations | ordered pair product/filter; I, lambda, FIN
+D | Partial:34 | R | cardinality of actual orderedRepresentations; FIN
+D | Partial:37 | L | integer inclusive sum over Icc 1 x; INTV, FIN
+D | Partial:40 | C | integer reflection correlation over I N; INTV, FIN
+
+THEOREMS
+
+Status | Line | NL ID | Declaration | Main proof/dependencies and source keys
+I | 43 | C01.2 | omega_one | primeFactorsList_one; FCT, AR
+I | 47 | C01.2 | lambda_one | omega_one, zeroth power; AR
+I | 51 | C01.1 | lambda_sign | neg_one_pow_eq_ite; SIG
+I | 57 | E01.1 | omega_mul | perm_primeFactorsList_mul, list lengths; FCT, AR
+I | 62 | E01.1 | lambda_mul | omega_mul, pow_add; AR
+I | 66 | E01.2 | lambda_prime | primeFactorsList_prime; FCT
+I | 70 | E01.2 | lambda_two | lambda_prime, Nat.prime_two; FCT
+I | 74 | E01.2 | lambda_three | lambda_prime, Nat.prime_three; FCT
+I | 78 | E01.2 | lambda_four | lambda_mul at 2, lambda_two; LOCAL, AR
+I | 84 | E01.2 | lambda_five | lambda_prime, Nat.prime_five; FCT
+I | 88 | E01.2 | lambda_two_mul | lambda_mul, lambda_two; LOCAL, AR
+I | 93 | E01.2 | lambda_square | lambda_mul, lambda_sign; LOCAL, AR
+I | 98 | A01 | target_iff_forall_hasRepresentation | definitional equivalence only; LOCAL
+I | 102 | E03 | hasSignedRepresentation_mul | multiply positive witnesses; lambda_mul; LOCAL
+I | 111 | E03 | representation_scaled_sign | signed scaling, exhaustive sign hypotheses; LOCAL
+I | 124 | E02 | representation_double | witnesses (m,m) with negative sign; LOCAL
+I | 129 | E02 | representation_diagonal | Even witness, lambda_two_mul, representation_double; EV, LOCAL
+I | 139 | E04 | representation_two_sign_seed | lambda_sign, signed scaling; LOCAL
+I | 150 | E05.8 | eight_two_sign_seed | witnesses (3,5) and (4,4); lambda_three/four/five; LOCAL
+I | 157 | E05.8 | representation_multiple_eight | two-sign seed transfer; all m>0; LOCAL
+I | 161 | C02 | mem_I_iff | interval membership; INTV
+I | 165 | C02 | interval_eq_Icc | guarded endpoint arithmetic; INTV, AR
+I | 171 | C02 | interval_bounds | mem_I_iff, positive complement bounds; AR
+I | 176 | C02 | interval_card_cast | Nat.card_Ico, justified Nat.cast_sub; INTV, AR
+I | 182 | C02 | reflection_mem | interval_bounds; LOCAL
+I | 186 | C02 | reflection_involutive | Nat.sub_sub_self with interval bound; AR
+I | 191 | C02 | reflection_bijection | reflection map and self-inverse; LOCAL
+I | 200 | C03 | sum_lambda_interval | interval_eq_Icc, L; LOCAL
+I | 205 | C03 | sum_lambda_reflection | Finset.sum_nbij' and reflection involution; FIN, LOCAL
+I | 215 | C04 | mem_orderedRepresentations | product/filter membership and positive bounds; FIN, AR
+I | 227 | C04 | orderedRepresentations_eq_image | a maps to (a,N-a), first-coordinate inverse; FIN, LOCAL
+I | 247 | C04 | representation_count_eq_card_indices | injective-image cardinality; FIN, LOCAL
+I | 252 | C05 | two_sign_indicator | four exhaustive sign pairs; lambda_sign; LOCAL
+I | 259 | C06 | representation_count_eq_indicator_sum | cardinality bridge, sum_filter; FIN, LOCAL
+I | 268 | C07 | four_mul_representation_count | indicators, reflection, cardinality cast, ring; FIN, AR, LOCAL
+I | 291 | C08 | representation_count_pos_iff | Finset.card_pos, exact pair membership; FIN, LOCAL
+I | 300 | C09 | count_pos_iff_keystone | exact identity and ordered arithmetic; AR, LOCAL
+I | 305 | C09 | keystone_ge_four_iff | exact identity and integer count margin; AR, LOCAL
+I | 310 | A01 | target_iff_count_pos | representation_count_pos_iff at each admissible N; LOCAL
+I | 319 | A01 | target_iff_pointwise_keystone | target_iff_count_pos, strict inequality equivalence; LOCAL
+I | 329 | PC00 | exists_prime_pair_factor_of_lambda_one | two factor-list entries, positive tail product; FCT, lambda_mul, LOCAL
+I | 362 | PC01 | target_iff_prime_product_core | diagonal or positive-sign core scaling; PC00, LOCAL
+
+OPEN / EXCLUDED
+
+O | interfaces-v1:191 | K01 | pointwise_keystone | uniform strict inequality; no proof supplied
+O | interfaces-v1:194 | final | liouville_goldbach : Target | original theorem absent
+O | equivalent residual | Core | forall primes p,q, HasRepresentation (2*p*q) | PC01 proves equivalence, not Core
+
+No complete threshold-and-small-cases proof exists here. All-multiples-of-eight
+and diagonal coverage do not establish the remaining even inputs. Additional
+NL PB/LS bridge proposals remain unproved and are not Lean declarations.
+O-M5 (strict L(q-1)<0 for every prime q>=5) was refuted at q=5 and is excluded.
+No separately formalized integer/natural target-transport theorem is claimed;
+the protected natural-domain normalization has independent fidelity approval.
+
+The pre-existing UnfinishedScaffold is only a structure with a required Target
+field, not an inhabitant of Target. Partial neither imports nor uses it. Root
+Statement still imports the prior Scaffold/Smoke modules; their content was not
+changed or promoted to accepted proof evidence. No signature-only snapshot,
+failed attempt, OPEN endpoint, or prose assumption was imported by Partial.
+
+Mechanical evidence is complete. Final integrated-wave regulation and any
+acceptance/publication decision belong to the leader and independent reviewers.
+This map is integrator-owned; the shared LEMMA_MAP was not edited.

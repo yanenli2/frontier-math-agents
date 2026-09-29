@@ -1,0 +1,102 @@
+{
+  "phase": "begin",
+  "utc": "2026-09-25T10:49:29.041645+00:00",
+  "files": {
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md": {
+      "sha256": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f",
+      "size": 7762
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/request.md": {
+      "sha256": "a812fb01fe4e29e0c6e0fc4737fb3e98a730091f35e32f08ceba740bc30ec96f",
+      "size": 1244
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/PROOF.md": {
+      "sha256": "205df4c7b85c9ce40cccf1b42aa92f174fb0365b058466a3c4f2d3ba6968831b",
+      "size": 19741
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/descent-blueprint/Readback.lean.txt": {
+      "sha256": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+      "size": 4673
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/approved-v1/Declaration.lean": {
+      "sha256": "bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed",
+      "size": 519
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/generator/four-interfaces-v1.lean": {
+      "sha256": "be55b4df2e640ec4645a2544b0013de5d6f366439162820af4233162766a0cee",
+      "size": 2853
+    },
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/descent-readback.md": {
+      "sha256": "460c911b32d72948da676c52e3f0edba52ad724aa505bd4d650b94375165e6ab",
+      "size": 18041
+    },
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/DescentInterfaces.lean.txt": {
+      "sha256": "372c3a6b8acfc112331707944bfef543c12ea03049ce5bb95eae7e34f9591763",
+      "size": 4673
+    },
+    ".clawcodex/math-team/review-inputs/r20260924-four-v1/ModularDefinitions.lean.txt": {
+      "sha256": "5c073db2b07ba2ccd729dd9c0218fd7ca6d1d6767e18d81c74bc19975188ec56",
+      "size": 348
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lean-toolchain": {
+      "sha256": "2bdc48adfa58d0017e538a0ad117c5d73d35deec879978f909406a80c8037273",
+      "size": 25
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lakefile.toml": {
+      "sha256": "0ccf5fbb075e3de589067cac832ecde230db77c411efaa495b5578ad69cddaa4",
+      "size": 282
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/lake-manifest.json": {
+      "sha256": "de9173316a8421f7f5572cf43fc93768e3bffe6de99141c2de2ccf17dc40ef03",
+      "size": 3548
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement.lean": {
+      "sha256": "dc72b845dbb045593ef3a6212b03a54cc0797a29baac132e870aff324cdc5853",
+      "size": 132
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Definitions.lean": {
+      "sha256": "79e976007c612f99c2023e675ca81337145dc25dd762e1ad17b967d0ac7cde6d",
+      "size": 403
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourPartial.lean": {
+      "sha256": "4b5e430fcfc8f766475ce4d0483f129642b0eaffc2af34e78a42d9bf10581325",
+      "size": 12611
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Assembly.lean": {
+      "sha256": "fb279bfbb469022b119c37d011cfcf47852a3fe25dea03fac966379351437066",
+      "size": 5301
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResiduePrime.lean": {
+      "sha256": "518f28a33ab98d1a44ea7b544ca7f695e28c48893982caaf72eb4879956763dd",
+      "size": 2922
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/ResidueValue.lean": {
+      "sha256": "3df5a3f0a6de6a60c2b8b8ba89dd6e44fa4d47cb28e98c33f1e31d1dfb7d84dd",
+      "size": 2601
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Character/Rigidity.lean": {
+      "sha256": "843e4ee562071ef4729a61c715b77510b378add7f19b8c02d1e3d36fa9165f88",
+      "size": 4379
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean": {
+      "sha256": "09fbee47a60bf7db94d65e871fc49f5d07d60838c8b01cfbfdecb53033471290",
+      "size": 4900
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Ternary.lean": {
+      "sha256": "d6f231fc9aa372f562b19170268b31ae16bdca178185256131232011fd255753",
+      "size": 6864
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Partial.lean": {
+      "sha256": "9f0f46d5b9cc6442e76b73148e94c8c84766136acabebb7e709e398cfab4c8f0",
+      "size": 17967
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Scaffold.lean": {
+      "sha256": "0bd0952096ebf027fa956458dfb1c1bb08e6396cd89c77b24a3eaadbe1070d1a",
+      "size": 343
+    },
+    ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/Smoke.lean": {
+      "sha256": "50fcf1606d7bf7c52cf84cc7ebc60f0e05a151745339f295c86c1a37ffab8e19",
+      "size": 1648
+    }
+  }
+}

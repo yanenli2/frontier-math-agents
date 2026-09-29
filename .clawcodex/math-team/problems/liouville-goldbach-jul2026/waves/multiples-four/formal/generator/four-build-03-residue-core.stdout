@@ -1,0 +1,39 @@
+'ArithmeticStatement.exists_prime_one_mod_four_of_lambda_neg_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_mod_four_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_mod_four_ne_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.multiple_four_iff_prime_three_mod_four_core' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Nat.Prime.sq_add_sq {p : ℕ} [Fact (Nat.Prime p)] (hp : p % 4 ≠ 3) : ∃ a b, a ^ 2 + b ^ 2 = p
+'Nat.Prime.sq_add_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.prime_one_mod_four_eq_sum_two_squares' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_four_prime_one_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.prime_divisor_positive_sign_cofactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.exists_prime_factor_of_lambda_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_prime_divisor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_prime_one_mod_four_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.multiple_four_iff_odd_prime_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.twelve_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_lambda_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_three_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ArithmeticStatement.representation_multiple_four_of_sum_two_squares' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

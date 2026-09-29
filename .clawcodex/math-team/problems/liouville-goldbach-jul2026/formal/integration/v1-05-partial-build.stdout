@@ -1,0 +1,104 @@
+⚠ [921/921] Replayed Statement.Partial
+warning: Statement/Partial.lean:51:29: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Statement/Partial.lean:171:35: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Statement/Partial.lean:187:5: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Statement/Partial.lean:291:46: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Statement/Partial.lean:390:0: 'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:391:0: 'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:392:0: 'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:393:0: 'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:394:0: 'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:395:0: 'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:396:0: 'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:397:0: 'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:398:0: 'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:399:0: 'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:400:0: 'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:401:0: 'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:402:0: 'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:403:0: 'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:404:0: 'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:405:0: 'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:406:0: 'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:407:0: 'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:408:0: 'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:409:0: 'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:410:0: 'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:411:0: 'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:412:0: 'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:413:0: 'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:414:0: 'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:415:0: 'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:416:0: 'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:417:0: 'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:418:0: 'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:419:0: 'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:420:0: 'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:421:0: 'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:422:0: 'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:423:0: 'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:424:0: 'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:425:0: 'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:426:0: 'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:427:0: 'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:428:0: 'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:429:0: 'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:430:0: 'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:431:0: 'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:432:0: 'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:433:0: 'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:434:0: 'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:435:0: 'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:436:0: 'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:437:0: 'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:438:0: 'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:439:0: 'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:440:0: 'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:441:0: 'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:442:0: 'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:443:0: 'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:444:0: 'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:445:0: 'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:446:0: 'List.Perm.length_eq' depends on axioms: [propext]
+info: Statement/Partial.lean:447:0: 'List.length_append' depends on axioms: [propext]
+info: Statement/Partial.lean:448:0: 'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:449:0: 'pow_add' does not depend on any axioms
+info: Statement/Partial.lean:450:0: 'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:451:0: 'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:452:0: 'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:453:0: 'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:454:0: 'Nat.sub_sub_self' depends on axioms: [propext]
+info: Statement/Partial.lean:455:0: 'Nat.cast_sub' depends on axioms: [propext]
+info: Statement/Partial.lean:456:0: 'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:457:0: 'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:458:0: 'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:459:0: 'Finset.mem_filter' depends on axioms: [propext, Quot.sound]
+info: Statement/Partial.lean:460:0: 'Finset.card_pos' depends on axioms: [propext, Quot.sound]
+info: Statement/Partial.lean:461:0: 'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:462:0: 'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:463:0: 'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]
+info: Statement/Partial.lean:464:0: 'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:465:0: 'Finset.sum_const' depends on axioms: [propext, Quot.sound]
+info: Statement/Partial.lean:466:0: 'Finset.mul_sum' depends on axioms: [propext, Quot.sound]
+info: Statement/Partial.lean:467:0: 'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]
+info: Statement/Partial.lean:468:0: 'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]
+info: Statement/Partial.lean:469:0: 'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:470:0: 'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Statement/Partial.lean:471:0: 'List.prod_cons' does not depend on any axioms
+Build completed successfully (921 jobs).

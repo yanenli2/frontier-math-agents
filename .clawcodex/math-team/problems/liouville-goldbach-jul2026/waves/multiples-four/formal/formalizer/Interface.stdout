@@ -1,0 +1,14 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.lean:8:13: warning: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+def MultipleFourStatementInterface.statement : Prop :=
+∀ (m : ℕ), 0 < m → ArithmeticStatement.HasRepresentation (4 * m)
+'MultipleFourStatementInterface.statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+fun h m hm =>
+  have this := h m hm;
+  this : statement → ∀ (m : ℕ), 0 < m → ArithmeticStatement.HasRepresentation (4 * m)
+fun h hm =>
+  have this := h 1 hm;
+  this : statement → 0 < 1 → ArithmeticStatement.HasRepresentation 4

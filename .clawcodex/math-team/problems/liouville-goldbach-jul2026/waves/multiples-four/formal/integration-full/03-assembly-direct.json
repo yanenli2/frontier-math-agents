@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "Statement/FourWork/Assembly.lean"
+  ],
+  "shell_display": "lake env lean Statement/FourWork/Assembly.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T11:11:15.619953+00:00",
+  "seconds": 7.178965292000001,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "c5521b5f017771799eb20205ab92731e45bb20ee241ec108db562d32983e20fd",
+    "bytes": 7715
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

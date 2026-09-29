@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "-H",
+    "Accept: application/vnd.github.raw+json",
+    "repos/leanprover/lean4/contents/src/Init/Data/Int/Basic.lean?ref=f3b06c705e6c85f5314019d5d3baab0fec5b580c"
+  ],
+  "shell_display": "gh api -H 'Accept: application/vnd.github.raw+json' 'repos/leanprover/lean4/contents/src/Init/Data/Int/Basic.lean?ref=f3b06c705e6c85f5314019d5d3baab0fec5b580c'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:08.929467+00:00",
+  "elapsed_seconds": 0.309120542,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-raw.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-lean-int-basic-raw.stderr",
+  "stdout_sha256": "e3a3b503e2f89a7dc5dfbfdf610c5b9927ddc0c61809bbb8110053b7982021e5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

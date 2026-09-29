@@ -1,0 +1,10 @@
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/lean/Statement/FourWork/Descent/Cyclic.lean:29:46: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsRightCancelMulZero (ZMod p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'ArithmeticStatement.FourWork.cyclic_short_multiple' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Finset.exists_ne_map_eq_of_card_lt_of_maps_to' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZMod.val_lt' depends on axioms: [propext]
+'ZMod.natCast_zmod_val' depends on axioms: [propext, Quot.sound]
+'ZMod.val_natCast_of_lt' depends on axioms: [propext, Quot.sound]
+'Nat.Prime.eq_one_or_self_of_dvd' depends on axioms: [propext]

@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "-t0",
+    "Statement/FourWork/Character/Rigidity.lean"
+  ],
+  "shell_display": "lake env lean -t0 Statement/FourWork/Character/Rigidity.lean",
+  "cwd": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/lean",
+  "started_utc": "2026-09-25T11:11:47.264797+00:00",
+  "seconds": 2.0314244579999965,
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "stdout": {
+    "sha256": "3ede6d2649123452d1efd741ef5a0c7528d951b2e518bdeb6eb83d6092f1a9b1",
+    "bytes": 810
+  },
+  "stderr": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

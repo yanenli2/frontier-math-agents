@@ -1,0 +1,36 @@
+def ArithmeticStatement.omega : ℕ → ℕ :=
+fun n => n.primeFactorsList.length
+def ArithmeticStatement.lambda : ℕ → ℤ :=
+fun n => (-1) ^ ArithmeticStatement.omega n
+def ArithmeticStatement.HasSignedRepresentation : ℤ → ℕ → Prop :=
+fun s N => ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = s ∧ ArithmeticStatement.lambda b = s
+def ArithmeticStatement.HasRepresentation : ℕ → Prop :=
+fun N => ArithmeticStatement.HasSignedRepresentation (-1) N
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+fun N h =>
+  have this := h;
+  this : ∀ (N : ℕ),
+  ArithmeticStatement.HasRepresentation N →
+    ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda b = -1
+fun N h =>
+  have this := h;
+  this : ∀ (N : ℕ),
+  (∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda b = -1) →
+    ArithmeticStatement.HasRepresentation N
+fun a ha hSign =>
+  have this := Exists.intro a (Exists.intro a ⟨ha, ⟨ha, ⟨rfl, ⟨hSign, hSign⟩⟩⟩⟩);
+  this : ∀ (a : ℕ), 0 < a → ArithmeticStatement.lambda a = -1 → ArithmeticStatement.HasRepresentation (a + a)
+[]
+0
+1
+[2]
+-1
+[2, 2]
+2
+1
+true
+false
+true

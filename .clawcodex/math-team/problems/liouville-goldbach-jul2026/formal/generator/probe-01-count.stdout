@@ -1,0 +1,38 @@
+Finset.sum_nbij'.{u_1, u_2, u_3} {ι : Type u_1} {κ : Type u_2} {M : Type u_3} [AddCommMonoid M] {s : Finset ι}
+  {t : Finset κ} {f : ι → M} {g : κ → M} (i : ι → κ) (j : κ → ι) (hi : ∀ a ∈ s, i a ∈ t) (hj : ∀ a ∈ t, j a ∈ s)
+  (left_neg : ∀ a ∈ s, j (i a) = a) (right_neg : ∀ a ∈ t, i (j a) = a) (h : ∀ a ∈ s, f a = g (i a)) :
+  ∑ x ∈ s, f x = ∑ x ∈ t, g x
+Finset.sum_filter.{u_1, u_4} {ι : Type u_1} {M : Type u_4} {s : Finset ι} [AddCommMonoid M] (p : ι → Prop)
+  [DecidablePred p] (f : ι → M) : ∑ a ∈ s with p a, f a = ∑ a ∈ s, if p a then f a else 0
+Finset.sum_const.{u_1, u_4} {ι : Type u_1} {M : Type u_4} {s : Finset ι} [AddCommMonoid M] (b : M) :
+  ∑ _x ∈ s, b = s.card • b
+Finset.sum_const_zero.{u_1, u_3} {ι : Type u_1} {M : Type u_3} {s : Finset ι} [AddCommMonoid M] : ∑ _x ∈ s, 0 = 0
+Finset.sum_congr.{u_1, u_4} {ι : Type u_1} {M : Type u_4} {s₁ s₂ : Finset ι} [AddCommMonoid M] {f g : ι → M}
+  (h : s₁ = s₂) : (∀ x ∈ s₂, f x = g x) → s₁.sum f = s₂.sum g
+Finset.sum_sub_distrib.{u_1, u_5} {ι : Type u_1} {G : Type u_5} {s : Finset ι} [SubtractionCommMonoid G] (f g : ι → G) :
+  ∑ x ∈ s, (f x - g x) = ∑ x ∈ s, f x - ∑ x ∈ s, g x
+Finset.sum_add_distrib.{u_1, u_4} {ι : Type u_1} {M : Type u_4} {s : Finset ι} [AddCommMonoid M] {f g : ι → M} :
+  ∑ x ∈ s, (f x + g x) = ∑ x ∈ s, f x + ∑ x ∈ s, g x
+Finset.mul_sum.{u_1, u_4} {ι : Type u_1} {R : Type u_4} [NonUnitalNonAssocSemiring R] (s : Finset ι) (f : ι → R)
+  (a : R) : a * ∑ i ∈ s, f i = ∑ i ∈ s, a * f i
+Finset.card_image_of_injective.{u_1, u_2} {α : Type u_1} {β : Type u_2} {f : α → β} [DecidableEq β] (s : Finset α)
+  (H : Function.Injective f) : (Finset.image f s).card = s.card
+Finset.card_pos.{u_1} {α : Type u_1} {s : Finset α} : 0 < s.card ↔ s.Nonempty
+Finset.card_ne_zero.{u_1} {α : Type u_1} {s : Finset α} : s.card ≠ 0 ↔ s.Nonempty
+Finset.mem_image.{u_1, u_2} {α : Type u_1} {β : Type u_2} [DecidableEq β] {f : α → β} {s : Finset α} {b : β} :
+  b ∈ Finset.image f s ↔ ∃ a ∈ s, f a = b
+Finset.mem_product.{u_1, u_2} {α : Type u_1} {β : Type u_2} {s : Finset α} {t : Finset β} {p : α × β} :
+  p ∈ s ×ˢ t ↔ p.1 ∈ s ∧ p.2 ∈ t
+Nat.card_Ico (a b : ℕ) : (Finset.Ico a b).card = b - a
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/ApiProbe.lean:22:7: error(lean.unknownIdentifier): Unknown constant `Nat.cast_pos`
+Int.natCast_pos {n : ℕ} : 0 < ↑n ↔ 0 < n
+Nat.cast_sub.{u} {R : Type u} [AddGroupWithOne R] {m n : ℕ} (h : m ≤ n) : ↑(n - m) = ↑n - ↑m
+Nat.prime_of_mem_primeFactorsList {n p : ℕ} : p ∈ n.primeFactorsList → Nat.Prime p
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/ApiProbe.lean:26:7: error(lean.unknownIdentifier): Unknown constant `List.prod_pos`
+.clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/generator/ApiProbe.lean:27:7: error(lean.unknownIdentifier): Unknown constant `Nat.prod_pos`
+List.prod_cons.{u} {α : Type u} [Mul α] [One α] {a : α} {l : List α} : (a :: l).prod = a * l.prod
+Nat.prime_two : Nat.Prime 2
+Nat.mul_pos {n m : ℕ} (hn : 0 < n) (hm : 0 < m) : 0 < n * m
+Int.ofNat_lt {n m : ℕ} : ↑n < ↑m ↔ n < m
+Int.ofNat_le {m n : ℕ} : ↑m ≤ ↑n ↔ m ≤ n
+Set.BijOn.{u, v} {α : Type u} {β : Type v} (f : α → β) (s : Set α) (t : Set β) : Prop

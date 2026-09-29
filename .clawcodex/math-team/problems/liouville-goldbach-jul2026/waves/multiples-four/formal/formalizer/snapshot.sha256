@@ -1,0 +1,12 @@
+bdfb30bcfade7b9df33e48f280125d10a40dd76f365cf5b87047183475fee7ed  .clawcodex/math-team/review-inputs/r20260924-four-v1/Declaration.lean
+fd4ec312622db449d27d6ac0b18b1decd62a9f76e18f8251bb40ffbabdef7981  .clawcodex/math-team/review-inputs/r20260924-four-v1/Dependencies.lean
+925cbf08a1aac0870075ad56ff2d95c7b0eb94c87853ace32d0043a9c094e2bc  .clawcodex/math-team/review-inputs/r20260924-four-v1/ListOperations.lean
+d8d4a87650d077b5b28f289055a0f11e58f9579c73b5343c5fa6a0748a27ea7d  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.lean
+dd7cda0504cb56099a4a1c2f0430e4fd59da03b351d8af156467e7009ef05039  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Check.lean
+f358974e730af782202d41d581b6376248e2a3464300a2dc58bcca9100e1671f  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/run-check.py
+f7f038079c6ae7befbeab7d8b48811f67225f4d7d9f5859581fc83a164bb71df  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/check-record.json
+155b5c6f1955f0c7294b899722b569051ba5bfe0f5d557d5864e149ffc7e6be9  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Interface.stderr
+33c2fc8eb38092c7a1a622ba0401e8ababedf2be3ce6115fb42ed6c73f202c91  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Check.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/Check.stderr
+e34290a2e07d67c64bb86590f296f8f363d9c302548b237030bab8bf3d118b8b  .clawcodex/math-team/problems/liouville-goldbach-jul2026/waves/multiples-four/formal/formalizer/statement-audit.md

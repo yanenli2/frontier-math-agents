@@ -1,0 +1,20 @@
+ArithmeticStatement.omega (n : ℕ) : ℕ
+ArithmeticStatement.lambda (n : ℕ) : ℤ
+ArithmeticStatement.Target : Prop
+Nat.primeFactorsList_one : Nat.primeFactorsList 1 = []
+Nat.primeFactorsList_two : Nat.primeFactorsList 2 = [2]
+Nat.primeFactorsList_prime {p : ℕ} (hp : Nat.Prime p) : p.primeFactorsList = [p]
+Nat.perm_primeFactorsList_mul {a b : ℕ} (ha : a ≠ 0) (hb : b ≠ 0) :
+  (a * b).primeFactorsList.Perm (a.primeFactorsList ++ b.primeFactorsList)
+List.Perm.length_eq.{u_1} {α : Type u_1} {l₁ l₂ : List α} (p : l₁.Perm l₂) : l₁.length = l₂.length
+List.length_append.{u} {α : Type u} {as bs : List α} : (as ++ bs).length = as.length + bs.length
+Nat.prod_primeFactorsList {n : ℕ} : n ≠ 0 → n.primeFactorsList.prod = n
+Nat.prime_of_mem_primeFactorsList {n p : ℕ} : p ∈ n.primeFactorsList → Nat.Prime p
+Nat.primeFactorsList_eq_nil (n : ℕ) : n.primeFactorsList = [] ↔ n = 0 ∨ n = 1
+pow_add.{u_2} {M : Type u_2} [Monoid M] (a : M) (m n : ℕ) : a ^ (m + n) = a ^ m * a ^ n
+neg_one_pow_eq_ite.{u_4} {R : Type u_4} [Monoid R] [HasDistribNeg R] {n : ℕ} : (-1) ^ n = if Even n then 1 else -1
+Nat.sub_sub_self {n m : ℕ} (h : m ≤ n) : n - (n - m) = m
+Nat.cast_sub.{u} {R : Type u} [AddGroupWithOne R] {m n : ℕ} (h : m ≤ n) : ↑(n - m) = ↑n - ↑m
+Int.ofNat_sub {m n : ℕ} (h : m ≤ n) : ↑(n - m) = ↑n - ↑m
+def Even.{u_2} : {α : Type u_2} → [Add α] → α → Prop :=
+fun {α} [Add α] a => ∃ r, a = r + r

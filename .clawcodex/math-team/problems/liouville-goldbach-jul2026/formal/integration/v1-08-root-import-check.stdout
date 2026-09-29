@@ -1,0 +1,206 @@
+ArithmeticStatement.HasSignedRepresentation : ℤ → ℕ → Prop
+ArithmeticStatement.HasRepresentation : ℕ → Prop
+ArithmeticStatement.I : ℕ → Finset ℕ
+ArithmeticStatement.representationIndices : ℕ → Finset ℕ
+ArithmeticStatement.orderedRepresentations : ℕ → Finset (ℕ × ℕ)
+ArithmeticStatement.R : ℕ → ℕ
+ArithmeticStatement.L : ℕ → ℤ
+ArithmeticStatement.C : ℕ → ℤ
+ArithmeticStatement.omega_one : ArithmeticStatement.omega 1 = 0
+ArithmeticStatement.lambda_one : ArithmeticStatement.lambda 1 = 1
+@ArithmeticStatement.lambda_sign : ∀ {n : ℕ},
+  0 < n → ArithmeticStatement.lambda n = 1 ∨ ArithmeticStatement.lambda n = -1
+@ArithmeticStatement.omega_mul : ∀ {u v : ℕ},
+  0 < u → 0 < v → ArithmeticStatement.omega (u * v) = ArithmeticStatement.omega u + ArithmeticStatement.omega v
+@ArithmeticStatement.lambda_mul : ∀ {u v : ℕ},
+  0 < u → 0 < v → ArithmeticStatement.lambda (u * v) = ArithmeticStatement.lambda u * ArithmeticStatement.lambda v
+@ArithmeticStatement.lambda_prime : ∀ {p : ℕ}, Nat.Prime p → ArithmeticStatement.lambda p = -1
+ArithmeticStatement.lambda_two : ArithmeticStatement.lambda 2 = -1
+ArithmeticStatement.lambda_three : ArithmeticStatement.lambda 3 = -1
+ArithmeticStatement.lambda_four : ArithmeticStatement.lambda 4 = 1
+ArithmeticStatement.lambda_five : ArithmeticStatement.lambda 5 = -1
+@ArithmeticStatement.lambda_two_mul : ∀ {m : ℕ},
+  0 < m → ArithmeticStatement.lambda (2 * m) = -ArithmeticStatement.lambda m
+@ArithmeticStatement.lambda_square : ∀ {t : ℕ}, 0 < t → ArithmeticStatement.lambda (t ^ 2) = 1
+ArithmeticStatement.target_iff_forall_hasRepresentation : ArithmeticStatement.Target ↔
+  ∀ (N : ℕ), Even N → 2 < N → ArithmeticStatement.HasRepresentation N
+@ArithmeticStatement.hasSignedRepresentation_mul : ∀ {s : ℤ} {N d : ℕ},
+  0 < d →
+    ArithmeticStatement.HasSignedRepresentation s N →
+      ArithmeticStatement.HasSignedRepresentation (ArithmeticStatement.lambda d * s) (d * N)
+@ArithmeticStatement.representation_scaled_sign : ∀ {u v m : ℕ} {s : ℤ},
+  0 < u →
+    0 < v →
+      0 < m →
+        s = 1 ∨ s = -1 →
+          ArithmeticStatement.lambda u = s →
+            ArithmeticStatement.lambda v = s →
+              ArithmeticStatement.lambda m = -s → ArithmeticStatement.HasRepresentation (m * (u + v))
+@ArithmeticStatement.representation_double : ∀ {m : ℕ},
+  0 < m → ArithmeticStatement.lambda m = -1 → ArithmeticStatement.HasRepresentation (2 * m)
+@ArithmeticStatement.representation_diagonal : ∀ {N : ℕ},
+  Even N → 2 < N → ArithmeticStatement.lambda N = 1 → ArithmeticStatement.HasRepresentation N
+@ArithmeticStatement.representation_two_sign_seed : ∀ {d : ℕ},
+  ArithmeticStatement.HasSignedRepresentation (-1) d →
+    ArithmeticStatement.HasSignedRepresentation 1 d → ∀ (m : ℕ), 0 < m → ArithmeticStatement.HasRepresentation (d * m)
+ArithmeticStatement.eight_two_sign_seed : ArithmeticStatement.HasSignedRepresentation (-1) 8 ∧
+  ArithmeticStatement.HasSignedRepresentation 1 8
+ArithmeticStatement.representation_multiple_eight : ∀ (m : ℕ), 0 < m → ArithmeticStatement.HasRepresentation (8 * m)
+@ArithmeticStatement.mem_I_iff : ∀ {N a : ℕ}, a ∈ ArithmeticStatement.I N ↔ 0 < a ∧ a < N
+@ArithmeticStatement.interval_eq_Icc : ∀ {N : ℕ}, 2 ≤ N → ArithmeticStatement.I N = Finset.Icc 1 (N - 1)
+@ArithmeticStatement.interval_bounds : ∀ {N a : ℕ},
+  2 ≤ N → a ∈ ArithmeticStatement.I N → 0 < a ∧ a < N ∧ 0 < N - a ∧ N - a < N
+@ArithmeticStatement.interval_card_cast : ∀ {N : ℕ}, 2 ≤ N → ↑(ArithmeticStatement.I N).card = ↑N - 1
+@ArithmeticStatement.reflection_mem : ∀ {N a : ℕ}, 2 ≤ N → a ∈ ArithmeticStatement.I N → N - a ∈ ArithmeticStatement.I N
+@ArithmeticStatement.reflection_involutive : ∀ {N a : ℕ}, 2 ≤ N → a ∈ ArithmeticStatement.I N → N - (N - a) = a
+@ArithmeticStatement.reflection_bijection : ∀ {N : ℕ},
+  2 ≤ N → Set.BijOn (fun a => N - a) ↑(ArithmeticStatement.I N) ↑(ArithmeticStatement.I N)
+@ArithmeticStatement.sum_lambda_interval : ∀ {N : ℕ},
+  2 ≤ N → ∑ a ∈ ArithmeticStatement.I N, ArithmeticStatement.lambda a = ArithmeticStatement.L (N - 1)
+@ArithmeticStatement.sum_lambda_reflection : ∀ {N : ℕ},
+  2 ≤ N → ∑ a ∈ ArithmeticStatement.I N, ArithmeticStatement.lambda (N - a) = ArithmeticStatement.L (N - 1)
+@ArithmeticStatement.mem_orderedRepresentations : ∀ {N a b : ℕ},
+  (a, b) ∈ ArithmeticStatement.orderedRepresentations N ↔
+    0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda b = -1
+@ArithmeticStatement.orderedRepresentations_eq_image : ∀ {N : ℕ},
+  2 ≤ N →
+    ArithmeticStatement.orderedRepresentations N =
+      Finset.image (fun a => (a, N - a)) (ArithmeticStatement.representationIndices N)
+@ArithmeticStatement.representation_count_eq_card_indices : ∀ {N : ℕ},
+  2 ≤ N → ArithmeticStatement.R N = (ArithmeticStatement.representationIndices N).card
+@ArithmeticStatement.two_sign_indicator : ∀ {a b : ℕ},
+  0 < a →
+    0 < b →
+      (4 * if ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda b = -1 then 1 else 0) =
+        (1 - ArithmeticStatement.lambda a) * (1 - ArithmeticStatement.lambda b)
+@ArithmeticStatement.representation_count_eq_indicator_sum : ∀ {N : ℕ},
+  2 ≤ N →
+    ↑(ArithmeticStatement.R N) =
+      ∑ a ∈ ArithmeticStatement.I N,
+        if ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda (N - a) = -1 then 1 else 0
+@ArithmeticStatement.four_mul_representation_count : ∀ {N : ℕ},
+  2 ≤ N → 4 * ↑(ArithmeticStatement.R N) = ↑N - 1 - 2 * ArithmeticStatement.L (N - 1) + ArithmeticStatement.C N
+@ArithmeticStatement.representation_count_pos_iff : ∀ {N : ℕ},
+  2 ≤ N → (0 < ArithmeticStatement.R N ↔ ArithmeticStatement.HasRepresentation N)
+@ArithmeticStatement.count_pos_iff_keystone : ∀ {N : ℕ},
+  2 ≤ N → (0 < ArithmeticStatement.R N ↔ 2 * ArithmeticStatement.L (N - 1) - (↑N - 1) < ArithmeticStatement.C N)
+@ArithmeticStatement.keystone_ge_four_iff : ∀ {N : ℕ},
+  2 ≤ N → (0 < ArithmeticStatement.R N ↔ 4 ≤ ↑N - 1 - 2 * ArithmeticStatement.L (N - 1) + ArithmeticStatement.C N)
+ArithmeticStatement.target_iff_count_pos : ArithmeticStatement.Target ↔
+  ∀ (N : ℕ), Even N → 2 < N → 0 < ArithmeticStatement.R N
+ArithmeticStatement.target_iff_pointwise_keystone : ArithmeticStatement.Target ↔
+  ∀ (N : ℕ), Even N → 2 < N → 2 * ArithmeticStatement.L (N - 1) - (↑N - 1) < ArithmeticStatement.C N
+@ArithmeticStatement.exists_prime_pair_factor_of_lambda_one : ∀ {m : ℕ},
+  1 < m →
+    ArithmeticStatement.lambda m = 1 →
+      ∃ p q d, Nat.Prime p ∧ Nat.Prime q ∧ 0 < d ∧ ArithmeticStatement.lambda d = 1 ∧ m = d * (p * q)
+ArithmeticStatement.target_iff_prime_product_core : ArithmeticStatement.Target ↔
+  ∀ (p q : ℕ), Nat.Prime p → Nat.Prime q → ArithmeticStatement.HasRepresentation (2 * p * q)
+def ArithmeticStatement.omega : ℕ → ℕ :=
+fun n => n.primeFactorsList.length
+def ArithmeticStatement.lambda : ℕ → ℤ :=
+fun n => (-1) ^ ArithmeticStatement.omega n
+def ArithmeticStatement.Target : Prop :=
+∀ (N : ℕ),
+  Even N →
+    2 < N → ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda b = -1
+def ArithmeticStatement.HasSignedRepresentation : ℤ → ℕ → Prop :=
+fun s N => ∃ a b, 0 < a ∧ 0 < b ∧ N = a + b ∧ ArithmeticStatement.lambda a = s ∧ ArithmeticStatement.lambda b = s
+def ArithmeticStatement.HasRepresentation : ℕ → Prop :=
+fun N => ArithmeticStatement.HasSignedRepresentation (-1) N
+def ArithmeticStatement.I : ℕ → Finset ℕ :=
+fun N => Finset.Ico 1 N
+def ArithmeticStatement.representationIndices : ℕ → Finset ℕ :=
+fun N => {a ∈ ArithmeticStatement.I N | ArithmeticStatement.lambda a = -1 ∧ ArithmeticStatement.lambda (N - a) = -1}
+def ArithmeticStatement.orderedRepresentations : ℕ → Finset (ℕ × ℕ) :=
+fun N =>
+  {ab ∈ (ArithmeticStatement.I N).product (ArithmeticStatement.I N) |
+    N = ab.1 + ab.2 ∧ ArithmeticStatement.lambda ab.1 = -1 ∧ ArithmeticStatement.lambda ab.2 = -1}
+def ArithmeticStatement.R : ℕ → ℕ :=
+fun N => (ArithmeticStatement.orderedRepresentations N).card
+def ArithmeticStatement.L : ℕ → ℤ :=
+fun x => ∑ a ∈ Finset.Icc 1 x, ArithmeticStatement.lambda a
+def ArithmeticStatement.C : ℕ → ℤ :=
+fun N => ∑ a ∈ ArithmeticStatement.I N, ArithmeticStatement.lambda a * ArithmeticStatement.lambda (N - a)
+'ArithmeticStatement.exists_prime_pair_factor_of_lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_prime_product_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.two_sign_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.four_mul_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.count_pos_iff_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.keystone_ge_four_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_pointwise_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_I_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.interval_card_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.reflection_bijection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.sum_lambda_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.mem_orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_eq_card_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_count_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.target_iff_forall_hasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.hasSignedRepresentation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_scaled_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.eight_two_sign_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representation_multiple_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.lambda' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.Target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasSignedRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.HasRepresentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.representationIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.orderedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.L' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArithmeticStatement.C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.primeFactorsList_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.perm_primeFactorsList_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.Perm.length_eq' depends on axioms: [propext]
+'List.length_append' depends on axioms: [propext]
+'Nat.primeFactorsList_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'pow_add' does not depend on any axioms
+'neg_one_pow_eq_ite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.sub_sub_self' depends on axioms: [propext]
+'Nat.cast_sub' depends on axioms: [propext]
+'Nat.card_Ico' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.product_eq_sprod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.mem_filter' depends on axioms: [propext, Quot.sound]
+'Finset.card_pos' depends on axioms: [propext, Quot.sound]
+'Finset.mem_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.card_image_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_nbij'' depends on axioms: [propext, Quot.sound]
+'Finset.sum_filter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Finset.sum_const' depends on axioms: [propext, Quot.sound]
+'Finset.mul_sum' depends on axioms: [propext, Quot.sound]
+'Finset.sum_add_distrib' depends on axioms: [propext, Quot.sound]
+'Finset.sum_sub_distrib' depends on axioms: [propext, Quot.sound]
+'Nat.prod_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Nat.prime_of_mem_primeFactorsList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'List.prod_cons' does not depend on any axioms

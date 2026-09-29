@@ -1,0 +1,8 @@
+{
+  "artifact_delivery": "complete",
+  "team_notification_attempted": true,
+  "recipient": "team-lead",
+  "tool_result": "Only active team members can send team messages",
+  "notification_delivered": false,
+  "next_action": "Return artifact paths through the one-shot response; no task or team operations attempted."
+}

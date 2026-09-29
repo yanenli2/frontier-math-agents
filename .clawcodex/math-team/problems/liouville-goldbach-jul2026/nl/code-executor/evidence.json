@@ -1,0 +1,9724 @@
+{
+  "N10": {
+    "C_signed": 9,
+    "L_inclusive_N_minus_1": -1,
+    "N": 10,
+    "R_ordered_positive_pairs": 5,
+    "lhs": 20,
+    "ordered_negative_pairs": [
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "rhs": 20
+  },
+  "assertion_count": 1260,
+  "assertion_counts_by_category": {
+    "coverage": 2,
+    "example": 17,
+    "factor_product": 271,
+    "identity": 255,
+    "independent_representative": 15,
+    "lambda_cross_check": 271,
+    "lambda_sign_range": 271,
+    "prime_certificate": 57,
+    "prime_sieve_cross_check": 57,
+    "square": 44
+  },
+  "claim": "Only the explicit finite arithmetic claims and identity instances recorded here",
+  "coverage": {
+    "all_used_lambda_entries_cross_checked": true,
+    "identity_N_count": 255,
+    "identity_N_max": 256,
+    "identity_N_min": 2,
+    "identity_ordered_pair_positions_examined": 32640,
+    "independently_rechecked_N": [
+      2,
+      3,
+      4,
+      10,
+      256
+    ],
+    "scope_excludes": [
+      "broad target search",
+      "broad bridge search",
+      "N outside 2..256 except specified examples",
+      "universal counting-identity proof",
+      "global target proof"
+    ],
+    "sieve_bound": 2608,
+    "sieve_entries_not_used_in_claims": 2337,
+    "symmetry_reduction": "none; both (a,b) and (b,a), and diagonal a=b, retained",
+    "used_lambda_argument_count": 271,
+    "used_lambda_argument_max": 2608,
+    "used_lambda_argument_min": 1
+  },
+  "definitions": {
+    "C": "signed sum lambda(a)*lambda(N-a) for a=1,...,N-1",
+    "L": "inclusive sum lambda(a) for a=1,...,N-1",
+    "R": "actual ordered positive pairs (a,b), a+b=N, both lambda=-1; a=b permitted",
+    "explicit_three_tests": "(1,2q-1),(4,2q-4),(6,2q-6) at q=37",
+    "identity": "4*R(N)=(N-1)-2*L(N-1)+C(N)",
+    "lambda": "(-1)^Omega(n), positive integer n, Omega(1)=0",
+    "square_test": "k=1,...,7; (k^2,m-k^2), then (2k^2,2(m-k^2)), m=1304"
+  },
+  "exceptions": [],
+  "failed_assertions": [],
+  "global_mathematical_conclusion": "none",
+  "identity_rows": [
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": 1,
+      "N": 2,
+      "R_ordered_positive_pairs": 0,
+      "lhs": 0,
+      "rhs": 0
+    },
+    {
+      "C_signed": -2,
+      "L_inclusive_N_minus_1": 0,
+      "N": 3,
+      "R_ordered_positive_pairs": 0,
+      "lhs": 0,
+      "rhs": 0
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -1,
+      "N": 4,
+      "R_ordered_positive_pairs": 1,
+      "lhs": 4,
+      "rhs": 4
+    },
+    {
+      "C_signed": 4,
+      "L_inclusive_N_minus_1": 0,
+      "N": 5,
+      "R_ordered_positive_pairs": 2,
+      "lhs": 8,
+      "rhs": 8
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 6,
+      "R_ordered_positive_pairs": 1,
+      "lhs": 4,
+      "rhs": 4
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": 0,
+      "N": 7,
+      "R_ordered_positive_pairs": 2,
+      "lhs": 8,
+      "rhs": 8
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -1,
+      "N": 8,
+      "R_ordered_positive_pairs": 2,
+      "lhs": 8,
+      "rhs": 8
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -2,
+      "N": 9,
+      "R_ordered_positive_pairs": 2,
+      "lhs": 8,
+      "rhs": 8
+    },
+    {
+      "C_signed": 9,
+      "L_inclusive_N_minus_1": -1,
+      "N": 10,
+      "R_ordered_positive_pairs": 5,
+      "lhs": 20,
+      "rhs": 20
+    },
+    {
+      "C_signed": -2,
+      "L_inclusive_N_minus_1": 0,
+      "N": 11,
+      "R_ordered_positive_pairs": 2,
+      "lhs": 8,
+      "rhs": 8
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -1,
+      "N": 12,
+      "R_ordered_positive_pairs": 2,
+      "lhs": 8,
+      "rhs": 8
+    },
+    {
+      "C_signed": 0,
+      "L_inclusive_N_minus_1": -2,
+      "N": 13,
+      "R_ordered_positive_pairs": 4,
+      "lhs": 16,
+      "rhs": 16
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -3,
+      "N": 14,
+      "R_ordered_positive_pairs": 5,
+      "lhs": 20,
+      "rhs": 20
+    },
+    {
+      "C_signed": 6,
+      "L_inclusive_N_minus_1": -2,
+      "N": 15,
+      "R_ordered_positive_pairs": 6,
+      "lhs": 24,
+      "rhs": 24
+    },
+    {
+      "C_signed": 3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 16,
+      "R_ordered_positive_pairs": 5,
+      "lhs": 20,
+      "rhs": 20
+    },
+    {
+      "C_signed": -8,
+      "L_inclusive_N_minus_1": 0,
+      "N": 17,
+      "R_ordered_positive_pairs": 2,
+      "lhs": 8,
+      "rhs": 8
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 18,
+      "R_ordered_positive_pairs": 4,
+      "lhs": 16,
+      "rhs": 16
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -2,
+      "N": 19,
+      "R_ordered_positive_pairs": 6,
+      "lhs": 24,
+      "rhs": 24
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -3,
+      "N": 20,
+      "R_ordered_positive_pairs": 8,
+      "lhs": 32,
+      "rhs": 32
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -4,
+      "N": 21,
+      "R_ordered_positive_pairs": 6,
+      "lhs": 24,
+      "rhs": 24
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -3,
+      "N": 22,
+      "R_ordered_positive_pairs": 7,
+      "lhs": 28,
+      "rhs": 28
+    },
+    {
+      "C_signed": -2,
+      "L_inclusive_N_minus_1": -2,
+      "N": 23,
+      "R_ordered_positive_pairs": 6,
+      "lhs": 24,
+      "rhs": 24
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -3,
+      "N": 24,
+      "R_ordered_positive_pairs": 7,
+      "lhs": 28,
+      "rhs": 28
+    },
+    {
+      "C_signed": 12,
+      "L_inclusive_N_minus_1": -2,
+      "N": 25,
+      "R_ordered_positive_pairs": 10,
+      "lhs": 40,
+      "rhs": 40
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -1,
+      "N": 26,
+      "R_ordered_positive_pairs": 7,
+      "lhs": 28,
+      "rhs": 28
+    },
+    {
+      "C_signed": -10,
+      "L_inclusive_N_minus_1": 0,
+      "N": 27,
+      "R_ordered_positive_pairs": 4,
+      "lhs": 16,
+      "rhs": 16
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -1,
+      "N": 28,
+      "R_ordered_positive_pairs": 6,
+      "lhs": 24,
+      "rhs": 24
+    },
+    {
+      "C_signed": -8,
+      "L_inclusive_N_minus_1": -2,
+      "N": 29,
+      "R_ordered_positive_pairs": 6,
+      "lhs": 24,
+      "rhs": 24
+    },
+    {
+      "C_signed": 13,
+      "L_inclusive_N_minus_1": -3,
+      "N": 30,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": 10,
+      "L_inclusive_N_minus_1": -4,
+      "N": 31,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -5,
+      "N": 32,
+      "R_ordered_positive_pairs": 10,
+      "lhs": 40,
+      "rhs": 40
+    },
+    {
+      "C_signed": -12,
+      "L_inclusive_N_minus_1": -6,
+      "N": 33,
+      "R_ordered_positive_pairs": 8,
+      "lhs": 32,
+      "rhs": 32
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -5,
+      "N": 34,
+      "R_ordered_positive_pairs": 11,
+      "lhs": 44,
+      "rhs": 44
+    },
+    {
+      "C_signed": 6,
+      "L_inclusive_N_minus_1": -4,
+      "N": 35,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": 3,
+      "L_inclusive_N_minus_1": -3,
+      "N": 36,
+      "R_ordered_positive_pairs": 11,
+      "lhs": 44,
+      "rhs": 44
+    },
+    {
+      "C_signed": 0,
+      "L_inclusive_N_minus_1": -2,
+      "N": 37,
+      "R_ordered_positive_pairs": 10,
+      "lhs": 40,
+      "rhs": 40
+    },
+    {
+      "C_signed": -7,
+      "L_inclusive_N_minus_1": -3,
+      "N": 38,
+      "R_ordered_positive_pairs": 9,
+      "lhs": 36,
+      "rhs": 36
+    },
+    {
+      "C_signed": 6,
+      "L_inclusive_N_minus_1": -2,
+      "N": 39,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": 11,
+      "L_inclusive_N_minus_1": -1,
+      "N": 40,
+      "R_ordered_positive_pairs": 13,
+      "lhs": 52,
+      "rhs": 52
+    },
+    {
+      "C_signed": -8,
+      "L_inclusive_N_minus_1": 0,
+      "N": 41,
+      "R_ordered_positive_pairs": 8,
+      "lhs": 32,
+      "rhs": 32
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 42,
+      "R_ordered_positive_pairs": 10,
+      "lhs": 40,
+      "rhs": 40
+    },
+    {
+      "C_signed": -6,
+      "L_inclusive_N_minus_1": -2,
+      "N": 43,
+      "R_ordered_positive_pairs": 10,
+      "lhs": 40,
+      "rhs": 40
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -3,
+      "N": 44,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -4,
+      "N": 45,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -5,
+      "N": 46,
+      "R_ordered_positive_pairs": 13,
+      "lhs": 52,
+      "rhs": 52
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -4,
+      "N": 47,
+      "R_ordered_positive_pairs": 14,
+      "lhs": 56,
+      "rhs": 56
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -5,
+      "N": 48,
+      "R_ordered_positive_pairs": 16,
+      "lhs": 64,
+      "rhs": 64
+    },
+    {
+      "C_signed": 12,
+      "L_inclusive_N_minus_1": -6,
+      "N": 49,
+      "R_ordered_positive_pairs": 18,
+      "lhs": 72,
+      "rhs": 72
+    },
+    {
+      "C_signed": 21,
+      "L_inclusive_N_minus_1": -5,
+      "N": 50,
+      "R_ordered_positive_pairs": 20,
+      "lhs": 80,
+      "rhs": 80
+    },
+    {
+      "C_signed": -14,
+      "L_inclusive_N_minus_1": -6,
+      "N": 51,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -5,
+      "N": 52,
+      "R_ordered_positive_pairs": 14,
+      "lhs": 56,
+      "rhs": 56
+    },
+    {
+      "C_signed": -16,
+      "L_inclusive_N_minus_1": -6,
+      "N": 53,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": -7,
+      "L_inclusive_N_minus_1": -7,
+      "N": 54,
+      "R_ordered_positive_pairs": 15,
+      "lhs": 60,
+      "rhs": 60
+    },
+    {
+      "C_signed": 22,
+      "L_inclusive_N_minus_1": -6,
+      "N": 55,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -5,
+      "N": 56,
+      "R_ordered_positive_pairs": 15,
+      "lhs": 60,
+      "rhs": 60
+    },
+    {
+      "C_signed": -8,
+      "L_inclusive_N_minus_1": -4,
+      "N": 57,
+      "R_ordered_positive_pairs": 14,
+      "lhs": 56,
+      "rhs": 56
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -3,
+      "N": 58,
+      "R_ordered_positive_pairs": 15,
+      "lhs": 60,
+      "rhs": 60
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -2,
+      "N": 59,
+      "R_ordered_positive_pairs": 16,
+      "lhs": 64,
+      "rhs": 64
+    },
+    {
+      "C_signed": 19,
+      "L_inclusive_N_minus_1": -3,
+      "N": 60,
+      "R_ordered_positive_pairs": 21,
+      "lhs": 84,
+      "rhs": 84
+    },
+    {
+      "C_signed": 16,
+      "L_inclusive_N_minus_1": -2,
+      "N": 61,
+      "R_ordered_positive_pairs": 20,
+      "lhs": 80,
+      "rhs": 80
+    },
+    {
+      "C_signed": -7,
+      "L_inclusive_N_minus_1": -3,
+      "N": 62,
+      "R_ordered_positive_pairs": 15,
+      "lhs": 60,
+      "rhs": 60
+    },
+    {
+      "C_signed": -10,
+      "L_inclusive_N_minus_1": -2,
+      "N": 63,
+      "R_ordered_positive_pairs": 14,
+      "lhs": 56,
+      "rhs": 56
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -3,
+      "N": 64,
+      "R_ordered_positive_pairs": 19,
+      "lhs": 76,
+      "rhs": 76
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -2,
+      "N": 65,
+      "R_ordered_positive_pairs": 16,
+      "lhs": 64,
+      "rhs": 64
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 66,
+      "R_ordered_positive_pairs": 16,
+      "lhs": 64,
+      "rhs": 64
+    },
+    {
+      "C_signed": -22,
+      "L_inclusive_N_minus_1": -2,
+      "N": 67,
+      "R_ordered_positive_pairs": 12,
+      "lhs": 48,
+      "rhs": 48
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -3,
+      "N": 68,
+      "R_ordered_positive_pairs": 16,
+      "lhs": 64,
+      "rhs": 64
+    },
+    {
+      "C_signed": -12,
+      "L_inclusive_N_minus_1": -4,
+      "N": 69,
+      "R_ordered_positive_pairs": 16,
+      "lhs": 64,
+      "rhs": 64
+    },
+    {
+      "C_signed": 13,
+      "L_inclusive_N_minus_1": -3,
+      "N": 70,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": 10,
+      "L_inclusive_N_minus_1": -4,
+      "N": 71,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -5,
+      "N": 72,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": 12,
+      "L_inclusive_N_minus_1": -6,
+      "N": 73,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -7,
+      "N": 74,
+      "R_ordered_positive_pairs": 23,
+      "lhs": 92,
+      "rhs": 92
+    },
+    {
+      "C_signed": 10,
+      "L_inclusive_N_minus_1": -6,
+      "N": 75,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -7,
+      "N": 76,
+      "R_ordered_positive_pairs": 20,
+      "lhs": 80,
+      "rhs": 80
+    },
+    {
+      "C_signed": -20,
+      "L_inclusive_N_minus_1": -8,
+      "N": 77,
+      "R_ordered_positive_pairs": 18,
+      "lhs": 72,
+      "rhs": 72
+    },
+    {
+      "C_signed": 13,
+      "L_inclusive_N_minus_1": -7,
+      "N": 78,
+      "R_ordered_positive_pairs": 26,
+      "lhs": 104,
+      "rhs": 104
+    },
+    {
+      "C_signed": 10,
+      "L_inclusive_N_minus_1": -8,
+      "N": 79,
+      "R_ordered_positive_pairs": 26,
+      "lhs": 104,
+      "rhs": 104
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -9,
+      "N": 80,
+      "R_ordered_positive_pairs": 26,
+      "lhs": 104,
+      "rhs": 104
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -10,
+      "N": 81,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": -7,
+      "L_inclusive_N_minus_1": -9,
+      "N": 82,
+      "R_ordered_positive_pairs": 23,
+      "lhs": 92,
+      "rhs": 92
+    },
+    {
+      "C_signed": -2,
+      "L_inclusive_N_minus_1": -8,
+      "N": 83,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -9,
+      "N": 84,
+      "R_ordered_positive_pairs": 25,
+      "lhs": 100,
+      "rhs": 100
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -8,
+      "N": 85,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -7,
+      "N": 86,
+      "R_ordered_positive_pairs": 25,
+      "lhs": 100,
+      "rhs": 100
+    },
+    {
+      "C_signed": -10,
+      "L_inclusive_N_minus_1": -6,
+      "N": 87,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -5,
+      "N": 88,
+      "R_ordered_positive_pairs": 23,
+      "lhs": 92,
+      "rhs": 92
+    },
+    {
+      "C_signed": 0,
+      "L_inclusive_N_minus_1": -4,
+      "N": 89,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": 17,
+      "L_inclusive_N_minus_1": -5,
+      "N": 90,
+      "R_ordered_positive_pairs": 29,
+      "lhs": 116,
+      "rhs": 116
+    },
+    {
+      "C_signed": 22,
+      "L_inclusive_N_minus_1": -4,
+      "N": 91,
+      "R_ordered_positive_pairs": 30,
+      "lhs": 120,
+      "rhs": 120
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -3,
+      "N": 92,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": -12,
+      "L_inclusive_N_minus_1": -4,
+      "N": 93,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -3,
+      "N": 94,
+      "R_ordered_positive_pairs": 25,
+      "lhs": 100,
+      "rhs": 100
+    },
+    {
+      "C_signed": 14,
+      "L_inclusive_N_minus_1": -2,
+      "N": 95,
+      "R_ordered_positive_pairs": 28,
+      "lhs": 112,
+      "rhs": 112
+    },
+    {
+      "C_signed": 3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 96,
+      "R_ordered_positive_pairs": 25,
+      "lhs": 100,
+      "rhs": 100
+    },
+    {
+      "C_signed": 0,
+      "L_inclusive_N_minus_1": 0,
+      "N": 97,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 98,
+      "R_ordered_positive_pairs": 24,
+      "lhs": 96,
+      "rhs": 96
+    },
+    {
+      "C_signed": -14,
+      "L_inclusive_N_minus_1": -2,
+      "N": 99,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": 19,
+      "L_inclusive_N_minus_1": -3,
+      "N": 100,
+      "R_ordered_positive_pairs": 31,
+      "lhs": 124,
+      "rhs": 124
+    },
+    {
+      "C_signed": -16,
+      "L_inclusive_N_minus_1": -2,
+      "N": 101,
+      "R_ordered_positive_pairs": 22,
+      "lhs": 88,
+      "rhs": 88
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -3,
+      "N": 102,
+      "R_ordered_positive_pairs": 26,
+      "lhs": 104,
+      "rhs": 104
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -4,
+      "N": 103,
+      "R_ordered_positive_pairs": 28,
+      "lhs": 112,
+      "rhs": 112
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -5,
+      "N": 104,
+      "R_ordered_positive_pairs": 27,
+      "lhs": 108,
+      "rhs": 108
+    },
+    {
+      "C_signed": -8,
+      "L_inclusive_N_minus_1": -4,
+      "N": 105,
+      "R_ordered_positive_pairs": 26,
+      "lhs": 104,
+      "rhs": 104
+    },
+    {
+      "C_signed": -7,
+      "L_inclusive_N_minus_1": -5,
+      "N": 106,
+      "R_ordered_positive_pairs": 27,
+      "lhs": 108,
+      "rhs": 108
+    },
+    {
+      "C_signed": -10,
+      "L_inclusive_N_minus_1": -4,
+      "N": 107,
+      "R_ordered_positive_pairs": 26,
+      "lhs": 104,
+      "rhs": 104
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -5,
+      "N": 108,
+      "R_ordered_positive_pairs": 28,
+      "lhs": 112,
+      "rhs": 112
+    },
+    {
+      "C_signed": 8,
+      "L_inclusive_N_minus_1": -6,
+      "N": 109,
+      "R_ordered_positive_pairs": 32,
+      "lhs": 128,
+      "rhs": 128
+    },
+    {
+      "C_signed": 21,
+      "L_inclusive_N_minus_1": -7,
+      "N": 110,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -8,
+      "N": 111,
+      "R_ordered_positive_pairs": 32,
+      "lhs": 128,
+      "rhs": 128
+    },
+    {
+      "C_signed": 3,
+      "L_inclusive_N_minus_1": -7,
+      "N": 112,
+      "R_ordered_positive_pairs": 32,
+      "lhs": 128,
+      "rhs": 128
+    },
+    {
+      "C_signed": -16,
+      "L_inclusive_N_minus_1": -8,
+      "N": 113,
+      "R_ordered_positive_pairs": 28,
+      "lhs": 112,
+      "rhs": 112
+    },
+    {
+      "C_signed": -11,
+      "L_inclusive_N_minus_1": -9,
+      "N": 114,
+      "R_ordered_positive_pairs": 30,
+      "lhs": 120,
+      "rhs": 120
+    },
+    {
+      "C_signed": 18,
+      "L_inclusive_N_minus_1": -10,
+      "N": 115,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": 11,
+      "L_inclusive_N_minus_1": -9,
+      "N": 116,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": -8,
+      "L_inclusive_N_minus_1": -10,
+      "N": 117,
+      "R_ordered_positive_pairs": 32,
+      "lhs": 128,
+      "rhs": 128
+    },
+    {
+      "C_signed": -7,
+      "L_inclusive_N_minus_1": -11,
+      "N": 118,
+      "R_ordered_positive_pairs": 33,
+      "lhs": 132,
+      "rhs": 132
+    },
+    {
+      "C_signed": 6,
+      "L_inclusive_N_minus_1": -10,
+      "N": 119,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": 47,
+      "L_inclusive_N_minus_1": -9,
+      "N": 120,
+      "R_ordered_positive_pairs": 46,
+      "lhs": 184,
+      "rhs": 184
+    },
+    {
+      "C_signed": 12,
+      "L_inclusive_N_minus_1": -10,
+      "N": 121,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -9,
+      "N": 122,
+      "R_ordered_positive_pairs": 35,
+      "lhs": 140,
+      "rhs": 140
+    },
+    {
+      "C_signed": -18,
+      "L_inclusive_N_minus_1": -8,
+      "N": 123,
+      "R_ordered_positive_pairs": 30,
+      "lhs": 120,
+      "rhs": 120
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -7,
+      "N": 124,
+      "R_ordered_positive_pairs": 32,
+      "lhs": 128,
+      "rhs": 128
+    },
+    {
+      "C_signed": 4,
+      "L_inclusive_N_minus_1": -8,
+      "N": 125,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -9,
+      "N": 126,
+      "R_ordered_positive_pairs": 35,
+      "lhs": 140,
+      "rhs": 140
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -8,
+      "N": 127,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -9,
+      "N": 128,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -10,
+      "N": 129,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -9,
+      "N": 130,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": -6,
+      "L_inclusive_N_minus_1": -10,
+      "N": 131,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -11,
+      "N": 132,
+      "R_ordered_positive_pairs": 37,
+      "lhs": 148,
+      "rhs": 148
+    },
+    {
+      "C_signed": 8,
+      "L_inclusive_N_minus_1": -10,
+      "N": 133,
+      "R_ordered_positive_pairs": 40,
+      "lhs": 160,
+      "rhs": 160
+    },
+    {
+      "C_signed": -19,
+      "L_inclusive_N_minus_1": -9,
+      "N": 134,
+      "R_ordered_positive_pairs": 33,
+      "lhs": 132,
+      "rhs": 132
+    },
+    {
+      "C_signed": -14,
+      "L_inclusive_N_minus_1": -8,
+      "N": 135,
+      "R_ordered_positive_pairs": 34,
+      "lhs": 136,
+      "rhs": 136
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -7,
+      "N": 136,
+      "R_ordered_positive_pairs": 37,
+      "lhs": 148,
+      "rhs": 148
+    },
+    {
+      "C_signed": -12,
+      "L_inclusive_N_minus_1": -6,
+      "N": 137,
+      "R_ordered_positive_pairs": 34,
+      "lhs": 136,
+      "rhs": 136
+    },
+    {
+      "C_signed": -23,
+      "L_inclusive_N_minus_1": -7,
+      "N": 138,
+      "R_ordered_positive_pairs": 32,
+      "lhs": 128,
+      "rhs": 128
+    },
+    {
+      "C_signed": 22,
+      "L_inclusive_N_minus_1": -8,
+      "N": 139,
+      "R_ordered_positive_pairs": 44,
+      "lhs": 176,
+      "rhs": 176
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -9,
+      "N": 140,
+      "R_ordered_positive_pairs": 39,
+      "lhs": 156,
+      "rhs": 156
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -8,
+      "N": 141,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": 25,
+      "L_inclusive_N_minus_1": -7,
+      "N": 142,
+      "R_ordered_positive_pairs": 45,
+      "lhs": 180,
+      "rhs": 180
+    },
+    {
+      "C_signed": -2,
+      "L_inclusive_N_minus_1": -6,
+      "N": 143,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": 27,
+      "L_inclusive_N_minus_1": -5,
+      "N": 144,
+      "R_ordered_positive_pairs": 45,
+      "lhs": 180,
+      "rhs": 180
+    },
+    {
+      "C_signed": 8,
+      "L_inclusive_N_minus_1": -4,
+      "N": 145,
+      "R_ordered_positive_pairs": 40,
+      "lhs": 160,
+      "rhs": 160
+    },
+    {
+      "C_signed": 13,
+      "L_inclusive_N_minus_1": -3,
+      "N": 146,
+      "R_ordered_positive_pairs": 41,
+      "lhs": 164,
+      "rhs": 164
+    },
+    {
+      "C_signed": -6,
+      "L_inclusive_N_minus_1": -2,
+      "N": 147,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -3,
+      "N": 148,
+      "R_ordered_positive_pairs": 36,
+      "lhs": 144,
+      "rhs": 144
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -4,
+      "N": 149,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": 29,
+      "L_inclusive_N_minus_1": -5,
+      "N": 150,
+      "R_ordered_positive_pairs": 47,
+      "lhs": 188,
+      "rhs": 188
+    },
+    {
+      "C_signed": 26,
+      "L_inclusive_N_minus_1": -4,
+      "N": 151,
+      "R_ordered_positive_pairs": 46,
+      "lhs": 184,
+      "rhs": 184
+    },
+    {
+      "C_signed": -29,
+      "L_inclusive_N_minus_1": -5,
+      "N": 152,
+      "R_ordered_positive_pairs": 33,
+      "lhs": 132,
+      "rhs": 132
+    },
+    {
+      "C_signed": -24,
+      "L_inclusive_N_minus_1": -4,
+      "N": 153,
+      "R_ordered_positive_pairs": 34,
+      "lhs": 136,
+      "rhs": 136
+    },
+    {
+      "C_signed": -11,
+      "L_inclusive_N_minus_1": -5,
+      "N": 154,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": 18,
+      "L_inclusive_N_minus_1": -6,
+      "N": 155,
+      "R_ordered_positive_pairs": 46,
+      "lhs": 184,
+      "rhs": 184
+    },
+    {
+      "C_signed": 15,
+      "L_inclusive_N_minus_1": -5,
+      "N": 156,
+      "R_ordered_positive_pairs": 45,
+      "lhs": 180,
+      "rhs": 180
+    },
+    {
+      "C_signed": 4,
+      "L_inclusive_N_minus_1": -4,
+      "N": 157,
+      "R_ordered_positive_pairs": 42,
+      "lhs": 168,
+      "rhs": 168
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -5,
+      "N": 158,
+      "R_ordered_positive_pairs": 43,
+      "lhs": 172,
+      "rhs": 172
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -4,
+      "N": 159,
+      "R_ordered_positive_pairs": 42,
+      "lhs": 168,
+      "rhs": 168
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -3,
+      "N": 160,
+      "R_ordered_positive_pairs": 43,
+      "lhs": 172,
+      "rhs": 172
+    },
+    {
+      "C_signed": -12,
+      "L_inclusive_N_minus_1": -2,
+      "N": 161,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -1,
+      "N": 162,
+      "R_ordered_positive_pairs": 40,
+      "lhs": 160,
+      "rhs": 160
+    },
+    {
+      "C_signed": -86,
+      "L_inclusive_N_minus_1": -2,
+      "N": 163,
+      "R_ordered_positive_pairs": 20,
+      "lhs": 80,
+      "rhs": 80
+    },
+    {
+      "C_signed": -17,
+      "L_inclusive_N_minus_1": -3,
+      "N": 164,
+      "R_ordered_positive_pairs": 38,
+      "lhs": 152,
+      "rhs": 152
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -4,
+      "N": 165,
+      "R_ordered_positive_pairs": 42,
+      "lhs": 168,
+      "rhs": 168
+    },
+    {
+      "C_signed": -11,
+      "L_inclusive_N_minus_1": -5,
+      "N": 166,
+      "R_ordered_positive_pairs": 41,
+      "lhs": 164,
+      "rhs": 164
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -4,
+      "N": 167,
+      "R_ordered_positive_pairs": 44,
+      "lhs": 176,
+      "rhs": 176
+    },
+    {
+      "C_signed": 15,
+      "L_inclusive_N_minus_1": -5,
+      "N": 168,
+      "R_ordered_positive_pairs": 48,
+      "lhs": 192,
+      "rhs": 192
+    },
+    {
+      "C_signed": 12,
+      "L_inclusive_N_minus_1": -6,
+      "N": 169,
+      "R_ordered_positive_pairs": 48,
+      "lhs": 192,
+      "rhs": 192
+    },
+    {
+      "C_signed": 13,
+      "L_inclusive_N_minus_1": -5,
+      "N": 170,
+      "R_ordered_positive_pairs": 48,
+      "lhs": 192,
+      "rhs": 192
+    },
+    {
+      "C_signed": -14,
+      "L_inclusive_N_minus_1": -6,
+      "N": 171,
+      "R_ordered_positive_pairs": 42,
+      "lhs": 168,
+      "rhs": 168
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -7,
+      "N": 172,
+      "R_ordered_positive_pairs": 46,
+      "lhs": 184,
+      "rhs": 184
+    },
+    {
+      "C_signed": -12,
+      "L_inclusive_N_minus_1": -8,
+      "N": 173,
+      "R_ordered_positive_pairs": 44,
+      "lhs": 176,
+      "rhs": 176
+    },
+    {
+      "C_signed": -15,
+      "L_inclusive_N_minus_1": -9,
+      "N": 174,
+      "R_ordered_positive_pairs": 44,
+      "lhs": 176,
+      "rhs": 176
+    },
+    {
+      "C_signed": 38,
+      "L_inclusive_N_minus_1": -10,
+      "N": 175,
+      "R_ordered_positive_pairs": 58,
+      "lhs": 232,
+      "rhs": 232
+    },
+    {
+      "C_signed": 11,
+      "L_inclusive_N_minus_1": -11,
+      "N": 176,
+      "R_ordered_positive_pairs": 52,
+      "lhs": 208,
+      "rhs": 208
+    },
+    {
+      "C_signed": 8,
+      "L_inclusive_N_minus_1": -12,
+      "N": 177,
+      "R_ordered_positive_pairs": 52,
+      "lhs": 208,
+      "rhs": 208
+    },
+    {
+      "C_signed": 13,
+      "L_inclusive_N_minus_1": -11,
+      "N": 178,
+      "R_ordered_positive_pairs": 53,
+      "lhs": 212,
+      "rhs": 212
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -10,
+      "N": 179,
+      "R_ordered_positive_pairs": 50,
+      "lhs": 200,
+      "rhs": 200
+    },
+    {
+      "C_signed": 39,
+      "L_inclusive_N_minus_1": -11,
+      "N": 180,
+      "R_ordered_positive_pairs": 60,
+      "lhs": 240,
+      "rhs": 240
+    },
+    {
+      "C_signed": 36,
+      "L_inclusive_N_minus_1": -12,
+      "N": 181,
+      "R_ordered_positive_pairs": 60,
+      "lhs": 240,
+      "rhs": 240
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -13,
+      "N": 182,
+      "R_ordered_positive_pairs": 52,
+      "lhs": 208,
+      "rhs": 208
+    },
+    {
+      "C_signed": 14,
+      "L_inclusive_N_minus_1": -14,
+      "N": 183,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": 11,
+      "L_inclusive_N_minus_1": -13,
+      "N": 184,
+      "R_ordered_positive_pairs": 55,
+      "lhs": 220,
+      "rhs": 220
+    },
+    {
+      "C_signed": -8,
+      "L_inclusive_N_minus_1": -12,
+      "N": 185,
+      "R_ordered_positive_pairs": 50,
+      "lhs": 200,
+      "rhs": 200
+    },
+    {
+      "C_signed": -15,
+      "L_inclusive_N_minus_1": -11,
+      "N": 186,
+      "R_ordered_positive_pairs": 48,
+      "lhs": 192,
+      "rhs": 192
+    },
+    {
+      "C_signed": -18,
+      "L_inclusive_N_minus_1": -12,
+      "N": 187,
+      "R_ordered_positive_pairs": 48,
+      "lhs": 192,
+      "rhs": 192
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -11,
+      "N": 188,
+      "R_ordered_positive_pairs": 50,
+      "lhs": 200,
+      "rhs": 200
+    },
+    {
+      "C_signed": -36,
+      "L_inclusive_N_minus_1": -12,
+      "N": 189,
+      "R_ordered_positive_pairs": 44,
+      "lhs": 176,
+      "rhs": 176
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -11,
+      "N": 190,
+      "R_ordered_positive_pairs": 54,
+      "lhs": 216,
+      "rhs": 216
+    },
+    {
+      "C_signed": 18,
+      "L_inclusive_N_minus_1": -12,
+      "N": 191,
+      "R_ordered_positive_pairs": 58,
+      "lhs": 232,
+      "rhs": 232
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -13,
+      "N": 192,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": 4,
+      "L_inclusive_N_minus_1": -14,
+      "N": 193,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -15,
+      "N": 194,
+      "R_ordered_positive_pairs": 55,
+      "lhs": 220,
+      "rhs": 220
+    },
+    {
+      "C_signed": 2,
+      "L_inclusive_N_minus_1": -14,
+      "N": 195,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": -13,
+      "L_inclusive_N_minus_1": -15,
+      "N": 196,
+      "R_ordered_positive_pairs": 53,
+      "lhs": 212,
+      "rhs": 212
+    },
+    {
+      "C_signed": -16,
+      "L_inclusive_N_minus_1": -14,
+      "N": 197,
+      "R_ordered_positive_pairs": 52,
+      "lhs": 208,
+      "rhs": 208
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -15,
+      "N": 198,
+      "R_ordered_positive_pairs": 57,
+      "lhs": 228,
+      "rhs": 228
+    },
+    {
+      "C_signed": 30,
+      "L_inclusive_N_minus_1": -14,
+      "N": 199,
+      "R_ordered_positive_pairs": 64,
+      "lhs": 256,
+      "rhs": 256
+    },
+    {
+      "C_signed": 19,
+      "L_inclusive_N_minus_1": -15,
+      "N": 200,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": -16,
+      "L_inclusive_N_minus_1": -16,
+      "N": 201,
+      "R_ordered_positive_pairs": 54,
+      "lhs": 216,
+      "rhs": 216
+    },
+    {
+      "C_signed": -11,
+      "L_inclusive_N_minus_1": -15,
+      "N": 202,
+      "R_ordered_positive_pairs": 55,
+      "lhs": 220,
+      "rhs": 220
+    },
+    {
+      "C_signed": -14,
+      "L_inclusive_N_minus_1": -14,
+      "N": 203,
+      "R_ordered_positive_pairs": 54,
+      "lhs": 216,
+      "rhs": 216
+    },
+    {
+      "C_signed": -1,
+      "L_inclusive_N_minus_1": -13,
+      "N": 204,
+      "R_ordered_positive_pairs": 57,
+      "lhs": 228,
+      "rhs": 228
+    },
+    {
+      "C_signed": -4,
+      "L_inclusive_N_minus_1": -12,
+      "N": 205,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": 1,
+      "L_inclusive_N_minus_1": -11,
+      "N": 206,
+      "R_ordered_positive_pairs": 57,
+      "lhs": 228,
+      "rhs": 228
+    },
+    {
+      "C_signed": -10,
+      "L_inclusive_N_minus_1": -10,
+      "N": 207,
+      "R_ordered_positive_pairs": 54,
+      "lhs": 216,
+      "rhs": 216
+    },
+    {
+      "C_signed": -13,
+      "L_inclusive_N_minus_1": -11,
+      "N": 208,
+      "R_ordered_positive_pairs": 54,
+      "lhs": 216,
+      "rhs": 216
+    },
+    {
+      "C_signed": 0,
+      "L_inclusive_N_minus_1": -12,
+      "N": 209,
+      "R_ordered_positive_pairs": 58,
+      "lhs": 232,
+      "rhs": 232
+    },
+    {
+      "C_signed": 37,
+      "L_inclusive_N_minus_1": -11,
+      "N": 210,
+      "R_ordered_positive_pairs": 67,
+      "lhs": 268,
+      "rhs": 268
+    },
+    {
+      "C_signed": -6,
+      "L_inclusive_N_minus_1": -10,
+      "N": 211,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -11,
+      "N": 212,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": -20,
+      "L_inclusive_N_minus_1": -12,
+      "N": 213,
+      "R_ordered_positive_pairs": 54,
+      "lhs": 216,
+      "rhs": 216
+    },
+    {
+      "C_signed": -7,
+      "L_inclusive_N_minus_1": -11,
+      "N": 214,
+      "R_ordered_positive_pairs": 57,
+      "lhs": 228,
+      "rhs": 228
+    },
+    {
+      "C_signed": 14,
+      "L_inclusive_N_minus_1": -10,
+      "N": 215,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": -5,
+      "L_inclusive_N_minus_1": -9,
+      "N": 216,
+      "R_ordered_positive_pairs": 57,
+      "lhs": 228,
+      "rhs": 228
+    },
+    {
+      "C_signed": 24,
+      "L_inclusive_N_minus_1": -8,
+      "N": 217,
+      "R_ordered_positive_pairs": 64,
+      "lhs": 256,
+      "rhs": 256
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -7,
+      "N": 218,
+      "R_ordered_positive_pairs": 59,
+      "lhs": 236,
+      "rhs": 236
+    },
+    {
+      "C_signed": 18,
+      "L_inclusive_N_minus_1": -6,
+      "N": 219,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": 15,
+      "L_inclusive_N_minus_1": -5,
+      "N": 220,
+      "R_ordered_positive_pairs": 61,
+      "lhs": 244,
+      "rhs": 244
+    },
+    {
+      "C_signed": -28,
+      "L_inclusive_N_minus_1": -4,
+      "N": 221,
+      "R_ordered_positive_pairs": 50,
+      "lhs": 200,
+      "rhs": 200
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -3,
+      "N": 222,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": 18,
+      "L_inclusive_N_minus_1": -4,
+      "N": 223,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": 3,
+      "L_inclusive_N_minus_1": -5,
+      "N": 224,
+      "R_ordered_positive_pairs": 59,
+      "lhs": 236,
+      "rhs": 236
+    },
+    {
+      "C_signed": 0,
+      "L_inclusive_N_minus_1": -4,
+      "N": 225,
+      "R_ordered_positive_pairs": 58,
+      "lhs": 232,
+      "rhs": 232
+    },
+    {
+      "C_signed": -3,
+      "L_inclusive_N_minus_1": -3,
+      "N": 226,
+      "R_ordered_positive_pairs": 57,
+      "lhs": 228,
+      "rhs": 228
+    },
+    {
+      "C_signed": 10,
+      "L_inclusive_N_minus_1": -2,
+      "N": 227,
+      "R_ordered_positive_pairs": 60,
+      "lhs": 240,
+      "rhs": 240
+    },
+    {
+      "C_signed": -21,
+      "L_inclusive_N_minus_1": -3,
+      "N": 228,
+      "R_ordered_positive_pairs": 53,
+      "lhs": 212,
+      "rhs": 212
+    },
+    {
+      "C_signed": 24,
+      "L_inclusive_N_minus_1": -2,
+      "N": 229,
+      "R_ordered_positive_pairs": 64,
+      "lhs": 256,
+      "rhs": 256
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -3,
+      "N": 230,
+      "R_ordered_positive_pairs": 60,
+      "lhs": 240,
+      "rhs": 240
+    },
+    {
+      "C_signed": -30,
+      "L_inclusive_N_minus_1": -4,
+      "N": 231,
+      "R_ordered_positive_pairs": 52,
+      "lhs": 208,
+      "rhs": 208
+    },
+    {
+      "C_signed": -21,
+      "L_inclusive_N_minus_1": -5,
+      "N": 232,
+      "R_ordered_positive_pairs": 55,
+      "lhs": 220,
+      "rhs": 220
+    },
+    {
+      "C_signed": -24,
+      "L_inclusive_N_minus_1": -4,
+      "N": 233,
+      "R_ordered_positive_pairs": 54,
+      "lhs": 216,
+      "rhs": 216
+    },
+    {
+      "C_signed": 9,
+      "L_inclusive_N_minus_1": -5,
+      "N": 234,
+      "R_ordered_positive_pairs": 63,
+      "lhs": 252,
+      "rhs": 252
+    },
+    {
+      "C_signed": -2,
+      "L_inclusive_N_minus_1": -4,
+      "N": 235,
+      "R_ordered_positive_pairs": 60,
+      "lhs": 240,
+      "rhs": 240
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -3,
+      "N": 236,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": -20,
+      "L_inclusive_N_minus_1": -4,
+      "N": 237,
+      "R_ordered_positive_pairs": 56,
+      "lhs": 224,
+      "rhs": 224
+    },
+    {
+      "C_signed": 21,
+      "L_inclusive_N_minus_1": -3,
+      "N": 238,
+      "R_ordered_positive_pairs": 66,
+      "lhs": 264,
+      "rhs": 264
+    },
+    {
+      "C_signed": -14,
+      "L_inclusive_N_minus_1": -4,
+      "N": 239,
+      "R_ordered_positive_pairs": 58,
+      "lhs": 232,
+      "rhs": 232
+    },
+    {
+      "C_signed": 59,
+      "L_inclusive_N_minus_1": -5,
+      "N": 240,
+      "R_ordered_positive_pairs": 77,
+      "lhs": 308,
+      "rhs": 308
+    },
+    {
+      "C_signed": 32,
+      "L_inclusive_N_minus_1": -4,
+      "N": 241,
+      "R_ordered_positive_pairs": 70,
+      "lhs": 280,
+      "rhs": 280
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -5,
+      "N": 242,
+      "R_ordered_positive_pairs": 64,
+      "lhs": 256,
+      "rhs": 256
+    },
+    {
+      "C_signed": 10,
+      "L_inclusive_N_minus_1": -6,
+      "N": 243,
+      "R_ordered_positive_pairs": 66,
+      "lhs": 264,
+      "rhs": 264
+    },
+    {
+      "C_signed": -9,
+      "L_inclusive_N_minus_1": -7,
+      "N": 244,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": -12,
+      "L_inclusive_N_minus_1": -8,
+      "N": 245,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": -15,
+      "L_inclusive_N_minus_1": -9,
+      "N": 246,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": -2,
+      "L_inclusive_N_minus_1": -10,
+      "N": 247,
+      "R_ordered_positive_pairs": 66,
+      "lhs": 264,
+      "rhs": 264
+    },
+    {
+      "C_signed": -29,
+      "L_inclusive_N_minus_1": -9,
+      "N": 248,
+      "R_ordered_positive_pairs": 59,
+      "lhs": 236,
+      "rhs": 236
+    },
+    {
+      "C_signed": 0,
+      "L_inclusive_N_minus_1": -8,
+      "N": 249,
+      "R_ordered_positive_pairs": 66,
+      "lhs": 264,
+      "rhs": 264
+    },
+    {
+      "C_signed": 5,
+      "L_inclusive_N_minus_1": -7,
+      "N": 250,
+      "R_ordered_positive_pairs": 67,
+      "lhs": 268,
+      "rhs": 268
+    },
+    {
+      "C_signed": 10,
+      "L_inclusive_N_minus_1": -6,
+      "N": 251,
+      "R_ordered_positive_pairs": 68,
+      "lhs": 272,
+      "rhs": 272
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -7,
+      "N": 252,
+      "R_ordered_positive_pairs": 68,
+      "lhs": 272,
+      "rhs": 272
+    },
+    {
+      "C_signed": -20,
+      "L_inclusive_N_minus_1": -8,
+      "N": 253,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": 25,
+      "L_inclusive_N_minus_1": -7,
+      "N": 254,
+      "R_ordered_positive_pairs": 73,
+      "lhs": 292,
+      "rhs": 292
+    },
+    {
+      "C_signed": -18,
+      "L_inclusive_N_minus_1": -6,
+      "N": 255,
+      "R_ordered_positive_pairs": 62,
+      "lhs": 248,
+      "rhs": 248
+    },
+    {
+      "C_signed": 7,
+      "L_inclusive_N_minus_1": -7,
+      "N": 256,
+      "R_ordered_positive_pairs": 69,
+      "lhs": 276,
+      "rhs": 276
+    }
+  ],
+  "independent_representatives": [
+    {
+      "C": 1,
+      "L": 1,
+      "N": 2,
+      "R": 0,
+      "ordered_negative_pairs": []
+    },
+    {
+      "C": -2,
+      "L": 0,
+      "N": 3,
+      "R": 0,
+      "ordered_negative_pairs": []
+    },
+    {
+      "C": -1,
+      "L": -1,
+      "N": 4,
+      "R": 1,
+      "ordered_negative_pairs": [
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "C": 9,
+      "L": -1,
+      "N": 10,
+      "R": 5,
+      "ordered_negative_pairs": [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          2
+        ]
+      ]
+    },
+    {
+      "C": 7,
+      "L": -7,
+      "N": 256,
+      "R": 69,
+      "ordered_negative_pairs": [
+        [
+          5,
+          251
+        ],
+        [
+          11,
+          245
+        ],
+        [
+          12,
+          244
+        ],
+        [
+          13,
+          243
+        ],
+        [
+          17,
+          239
+        ],
+        [
+          18,
+          238
+        ],
+        [
+          20,
+          236
+        ],
+        [
+          23,
+          233
+        ],
+        [
+          27,
+          229
+        ],
+        [
+          29,
+          227
+        ],
+        [
+          44,
+          212
+        ],
+        [
+          45,
+          211
+        ],
+        [
+          48,
+          208
+        ],
+        [
+          59,
+          197
+        ],
+        [
+          61,
+          195
+        ],
+        [
+          63,
+          193
+        ],
+        [
+          66,
+          190
+        ],
+        [
+          68,
+          188
+        ],
+        [
+          70,
+          186
+        ],
+        [
+          75,
+          181
+        ],
+        [
+          76,
+          180
+        ],
+        [
+          80,
+          176
+        ],
+        [
+          83,
+          173
+        ],
+        [
+          89,
+          167
+        ],
+        [
+          92,
+          164
+        ],
+        [
+          99,
+          157
+        ],
+        [
+          102,
+          154
+        ],
+        [
+          103,
+          153
+        ],
+        [
+          105,
+          151
+        ],
+        [
+          107,
+          149
+        ],
+        [
+          108,
+          148
+        ],
+        [
+          109,
+          147
+        ],
+        [
+          117,
+          139
+        ],
+        [
+          125,
+          131
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          131,
+          125
+        ],
+        [
+          139,
+          117
+        ],
+        [
+          147,
+          109
+        ],
+        [
+          148,
+          108
+        ],
+        [
+          149,
+          107
+        ],
+        [
+          151,
+          105
+        ],
+        [
+          153,
+          103
+        ],
+        [
+          154,
+          102
+        ],
+        [
+          157,
+          99
+        ],
+        [
+          164,
+          92
+        ],
+        [
+          167,
+          89
+        ],
+        [
+          173,
+          83
+        ],
+        [
+          176,
+          80
+        ],
+        [
+          180,
+          76
+        ],
+        [
+          181,
+          75
+        ],
+        [
+          186,
+          70
+        ],
+        [
+          188,
+          68
+        ],
+        [
+          190,
+          66
+        ],
+        [
+          193,
+          63
+        ],
+        [
+          195,
+          61
+        ],
+        [
+          197,
+          59
+        ],
+        [
+          208,
+          48
+        ],
+        [
+          211,
+          45
+        ],
+        [
+          212,
+          44
+        ],
+        [
+          227,
+          29
+        ],
+        [
+          229,
+          27
+        ],
+        [
+          233,
+          23
+        ],
+        [
+          236,
+          20
+        ],
+        [
+          238,
+          18
+        ],
+        [
+          239,
+          17
+        ],
+        [
+          243,
+          13
+        ],
+        [
+          244,
+          12
+        ],
+        [
+          245,
+          11
+        ],
+        [
+          251,
+          5
+        ]
+      ]
+    }
+  ],
+  "input_artifacts": {
+    "protocol": {
+      "path": ".clawcodex/skills/math-team/references/protocol.md",
+      "sha256": "e712830b3febe6e3fcaf0479c7aa9fc30f23aa4fcc5e1f45088f736f9c161f2b"
+    },
+    "request": {
+      "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/request.md",
+      "sha256": "7c9d7dbba7deb2dba58671b320e1888a1e7770211a8964af0e6c12a3ab2abf0f"
+    }
+  },
+  "lambda_entries_used": [
+    {
+      "Omega": 0,
+      "contexts": [
+        "identity",
+        "q37",
+        "q5_L4",
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 1,
+      "prime_powers": [],
+      "reconstructed_product": 1
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity",
+        "q37",
+        "q5_L4",
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 2,
+      "prime_powers": [
+        [
+          2,
+          1
+        ]
+      ],
+      "reconstructed_product": 2
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity",
+        "q37",
+        "q5_L4"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 3,
+      "prime_powers": [
+        [
+          3,
+          1
+        ]
+      ],
+      "reconstructed_product": 3
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "q37",
+        "q5_L4",
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 4,
+      "prime_powers": [
+        [
+          2,
+          2
+        ]
+      ],
+      "reconstructed_product": 4
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity",
+        "q37",
+        "q5_L4"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 5,
+      "prime_powers": [
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 5
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 6,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "reconstructed_product": 6
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 7,
+      "prime_powers": [
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 7
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity",
+        "q37",
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 8,
+      "prime_powers": [
+        [
+          2,
+          3
+        ]
+      ],
+      "reconstructed_product": 8
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "q37",
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 9,
+      "prime_powers": [
+        [
+          3,
+          2
+        ]
+      ],
+      "reconstructed_product": 9
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 10,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 10
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 11,
+      "prime_powers": [
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 11
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 12,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "reconstructed_product": 12
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 13,
+      "prime_powers": [
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 13
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 14,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 14
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 15,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 15
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 16,
+      "prime_powers": [
+        [
+          2,
+          4
+        ]
+      ],
+      "reconstructed_product": 16
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 17,
+      "prime_powers": [
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 17
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 18,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "reconstructed_product": 18
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 19,
+      "prime_powers": [
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 19
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 20,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 20
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 21,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 21
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 22,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 22
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 23,
+      "prime_powers": [
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 23
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 24,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "reconstructed_product": 24
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 25,
+      "prime_powers": [
+        [
+          5,
+          2
+        ]
+      ],
+      "reconstructed_product": 25
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 26,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 26
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 27,
+      "prime_powers": [
+        [
+          3,
+          3
+        ]
+      ],
+      "reconstructed_product": 27
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 28,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 28
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 29,
+      "prime_powers": [
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 29
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 30,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 30
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 31,
+      "prime_powers": [
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 31
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 32,
+      "prime_powers": [
+        [
+          2,
+          5
+        ]
+      ],
+      "reconstructed_product": 32
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 33,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 33
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 34,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 34
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 35,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 35
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 36,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "reconstructed_product": 36
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 37,
+      "prime_powers": [
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 37
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 38,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 38
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 39,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 39
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 40,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 40
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 41,
+      "prime_powers": [
+        [
+          41,
+          1
+        ]
+      ],
+      "reconstructed_product": 41
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 42,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 42
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 43,
+      "prime_powers": [
+        [
+          43,
+          1
+        ]
+      ],
+      "reconstructed_product": 43
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 44,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 44
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 45,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 45
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 46,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 46
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 47,
+      "prime_powers": [
+        [
+          47,
+          1
+        ]
+      ],
+      "reconstructed_product": 47
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 48,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "reconstructed_product": 48
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 49,
+      "prime_powers": [
+        [
+          7,
+          2
+        ]
+      ],
+      "reconstructed_product": 49
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 50,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "reconstructed_product": 50
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 51,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 51
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 52,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 52
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 53,
+      "prime_powers": [
+        [
+          53,
+          1
+        ]
+      ],
+      "reconstructed_product": 53
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 54,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "reconstructed_product": 54
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 55,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 55
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 56,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 56
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 57,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 57
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 58,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 58
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 59,
+      "prime_powers": [
+        [
+          59,
+          1
+        ]
+      ],
+      "reconstructed_product": 59
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 60,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 60
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 61,
+      "prime_powers": [
+        [
+          61,
+          1
+        ]
+      ],
+      "reconstructed_product": 61
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 62,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 62
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 63,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 63
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 64,
+      "prime_powers": [
+        [
+          2,
+          6
+        ]
+      ],
+      "reconstructed_product": 64
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 65,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 65
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 66,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 66
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 67,
+      "prime_powers": [
+        [
+          67,
+          1
+        ]
+      ],
+      "reconstructed_product": 67
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 68,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 68
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 69,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 69
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 70,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 70
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 71,
+      "prime_powers": [
+        [
+          71,
+          1
+        ]
+      ],
+      "reconstructed_product": 71
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 72,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "reconstructed_product": 72
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 73,
+      "prime_powers": [
+        [
+          73,
+          1
+        ]
+      ],
+      "reconstructed_product": 73
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity",
+        "q37"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 74,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 74
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 75,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "reconstructed_product": 75
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 76,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 76
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 77,
+      "prime_powers": [
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 77
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 78,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 78
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 79,
+      "prime_powers": [
+        [
+          79,
+          1
+        ]
+      ],
+      "reconstructed_product": 79
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 80,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 80
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 81,
+      "prime_powers": [
+        [
+          3,
+          4
+        ]
+      ],
+      "reconstructed_product": 81
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 82,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          41,
+          1
+        ]
+      ],
+      "reconstructed_product": 82
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 83,
+      "prime_powers": [
+        [
+          83,
+          1
+        ]
+      ],
+      "reconstructed_product": 83
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 84,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 84
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 85,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 85
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 86,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          43,
+          1
+        ]
+      ],
+      "reconstructed_product": 86
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 87,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 87
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 88,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 88
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 89,
+      "prime_powers": [
+        [
+          89,
+          1
+        ]
+      ],
+      "reconstructed_product": 89
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 90,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 90
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 91,
+      "prime_powers": [
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 91
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 92,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 92
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 93,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 93
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 94,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          47,
+          1
+        ]
+      ],
+      "reconstructed_product": 94
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 95,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 95
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 96,
+      "prime_powers": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "reconstructed_product": 96
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 97,
+      "prime_powers": [
+        [
+          97,
+          1
+        ]
+      ],
+      "reconstructed_product": 97
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity",
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 98,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "reconstructed_product": 98
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 99,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 99
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 100,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "reconstructed_product": 100
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 101,
+      "prime_powers": [
+        [
+          101,
+          1
+        ]
+      ],
+      "reconstructed_product": 101
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 102,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 102
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 103,
+      "prime_powers": [
+        [
+          103,
+          1
+        ]
+      ],
+      "reconstructed_product": 103
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 104,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 104
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 105,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 105
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 106,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          53,
+          1
+        ]
+      ],
+      "reconstructed_product": 106
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 107,
+      "prime_powers": [
+        [
+          107,
+          1
+        ]
+      ],
+      "reconstructed_product": 107
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 108,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "reconstructed_product": 108
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 109,
+      "prime_powers": [
+        [
+          109,
+          1
+        ]
+      ],
+      "reconstructed_product": 109
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 110,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 110
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 111,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 111
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 112,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 112
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 113,
+      "prime_powers": [
+        [
+          113,
+          1
+        ]
+      ],
+      "reconstructed_product": 113
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 114,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 114
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 115,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 115
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 116,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 116
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 117,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 117
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 118,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          59,
+          1
+        ]
+      ],
+      "reconstructed_product": 118
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 119,
+      "prime_powers": [
+        [
+          7,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 119
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 120,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 120
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 121,
+      "prime_powers": [
+        [
+          11,
+          2
+        ]
+      ],
+      "reconstructed_product": 121
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 122,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          61,
+          1
+        ]
+      ],
+      "reconstructed_product": 122
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 123,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ]
+      ],
+      "reconstructed_product": 123
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 124,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 124
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 125,
+      "prime_powers": [
+        [
+          5,
+          3
+        ]
+      ],
+      "reconstructed_product": 125
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 126,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 126
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 127,
+      "prime_powers": [
+        [
+          127,
+          1
+        ]
+      ],
+      "reconstructed_product": 127
+    },
+    {
+      "Omega": 7,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 128,
+      "prime_powers": [
+        [
+          2,
+          7
+        ]
+      ],
+      "reconstructed_product": 128
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 129,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          43,
+          1
+        ]
+      ],
+      "reconstructed_product": 129
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 130,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 130
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 131,
+      "prime_powers": [
+        [
+          131,
+          1
+        ]
+      ],
+      "reconstructed_product": 131
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 132,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 132
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 133,
+      "prime_powers": [
+        [
+          7,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 133
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 134,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          67,
+          1
+        ]
+      ],
+      "reconstructed_product": 134
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 135,
+      "prime_powers": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 135
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 136,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 136
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 137,
+      "prime_powers": [
+        [
+          137,
+          1
+        ]
+      ],
+      "reconstructed_product": 137
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 138,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 138
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 139,
+      "prime_powers": [
+        [
+          139,
+          1
+        ]
+      ],
+      "reconstructed_product": 139
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 140,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 140
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 141,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          47,
+          1
+        ]
+      ],
+      "reconstructed_product": 141
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 142,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          71,
+          1
+        ]
+      ],
+      "reconstructed_product": 142
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 143,
+      "prime_powers": [
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 143
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 144,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "reconstructed_product": 144
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 145,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 145
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 146,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "reconstructed_product": 146
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 147,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "reconstructed_product": 147
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 148,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 148
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 149,
+      "prime_powers": [
+        [
+          149,
+          1
+        ]
+      ],
+      "reconstructed_product": 149
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 150,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "reconstructed_product": 150
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 151,
+      "prime_powers": [
+        [
+          151,
+          1
+        ]
+      ],
+      "reconstructed_product": 151
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 152,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 152
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 153,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 153
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 154,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 154
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 155,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 155
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 156,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 156
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 157,
+      "prime_powers": [
+        [
+          157,
+          1
+        ]
+      ],
+      "reconstructed_product": 157
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 158,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          79,
+          1
+        ]
+      ],
+      "reconstructed_product": 158
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 159,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          53,
+          1
+        ]
+      ],
+      "reconstructed_product": 159
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 160,
+      "prime_powers": [
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 160
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 161,
+      "prime_powers": [
+        [
+          7,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 161
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 162,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "reconstructed_product": 162
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 163,
+      "prime_powers": [
+        [
+          163,
+          1
+        ]
+      ],
+      "reconstructed_product": 163
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 164,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          41,
+          1
+        ]
+      ],
+      "reconstructed_product": 164
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 165,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 165
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 166,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          83,
+          1
+        ]
+      ],
+      "reconstructed_product": 166
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 167,
+      "prime_powers": [
+        [
+          167,
+          1
+        ]
+      ],
+      "reconstructed_product": 167
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 168,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 168
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 169,
+      "prime_powers": [
+        [
+          13,
+          2
+        ]
+      ],
+      "reconstructed_product": 169
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 170,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 170
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 171,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 171
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 172,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          43,
+          1
+        ]
+      ],
+      "reconstructed_product": 172
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 173,
+      "prime_powers": [
+        [
+          173,
+          1
+        ]
+      ],
+      "reconstructed_product": 173
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 174,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 174
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 175,
+      "prime_powers": [
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 175
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 176,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 176
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 177,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          59,
+          1
+        ]
+      ],
+      "reconstructed_product": 177
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 178,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          89,
+          1
+        ]
+      ],
+      "reconstructed_product": 178
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 179,
+      "prime_powers": [
+        [
+          179,
+          1
+        ]
+      ],
+      "reconstructed_product": 179
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 180,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 180
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 181,
+      "prime_powers": [
+        [
+          181,
+          1
+        ]
+      ],
+      "reconstructed_product": 181
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 182,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 182
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 183,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          61,
+          1
+        ]
+      ],
+      "reconstructed_product": 183
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 184,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 184
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 185,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 185
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 186,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 186
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 187,
+      "prime_powers": [
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 187
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 188,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          47,
+          1
+        ]
+      ],
+      "reconstructed_product": 188
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 189,
+      "prime_powers": [
+        [
+          3,
+          3
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 189
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 190,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 190
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 191,
+      "prime_powers": [
+        [
+          191,
+          1
+        ]
+      ],
+      "reconstructed_product": 191
+    },
+    {
+      "Omega": 7,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 192,
+      "prime_powers": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "reconstructed_product": 192
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 193,
+      "prime_powers": [
+        [
+          193,
+          1
+        ]
+      ],
+      "reconstructed_product": 193
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 194,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          97,
+          1
+        ]
+      ],
+      "reconstructed_product": 194
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 195,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 195
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 196,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "reconstructed_product": 196
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 197,
+      "prime_powers": [
+        [
+          197,
+          1
+        ]
+      ],
+      "reconstructed_product": 197
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 198,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 198
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 199,
+      "prime_powers": [
+        [
+          199,
+          1
+        ]
+      ],
+      "reconstructed_product": 199
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 200,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "reconstructed_product": 200
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 201,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          67,
+          1
+        ]
+      ],
+      "reconstructed_product": 201
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 202,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          101,
+          1
+        ]
+      ],
+      "reconstructed_product": 202
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 203,
+      "prime_powers": [
+        [
+          7,
+          1
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 203
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 204,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 204
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 205,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          41,
+          1
+        ]
+      ],
+      "reconstructed_product": 205
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 206,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          103,
+          1
+        ]
+      ],
+      "reconstructed_product": 206
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 207,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 207
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 208,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 208
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 209,
+      "prime_powers": [
+        [
+          11,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 209
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 210,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 210
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 211,
+      "prime_powers": [
+        [
+          211,
+          1
+        ]
+      ],
+      "reconstructed_product": 211
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 212,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          53,
+          1
+        ]
+      ],
+      "reconstructed_product": 212
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 213,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          71,
+          1
+        ]
+      ],
+      "reconstructed_product": 213
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 214,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          107,
+          1
+        ]
+      ],
+      "reconstructed_product": 214
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 215,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          43,
+          1
+        ]
+      ],
+      "reconstructed_product": 215
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 216,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "reconstructed_product": 216
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 217,
+      "prime_powers": [
+        [
+          7,
+          1
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 217
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 218,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          109,
+          1
+        ]
+      ],
+      "reconstructed_product": 218
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 219,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "reconstructed_product": 219
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 220,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 220
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 221,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 221
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 222,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 222
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 223,
+      "prime_powers": [
+        [
+          223,
+          1
+        ]
+      ],
+      "reconstructed_product": 223
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 224,
+      "prime_powers": [
+        [
+          2,
+          5
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 224
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 225,
+      "prime_powers": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "reconstructed_product": 225
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 226,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          113,
+          1
+        ]
+      ],
+      "reconstructed_product": 226
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 227,
+      "prime_powers": [
+        [
+          227,
+          1
+        ]
+      ],
+      "reconstructed_product": 227
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 228,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 228
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 229,
+      "prime_powers": [
+        [
+          229,
+          1
+        ]
+      ],
+      "reconstructed_product": 229
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 230,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 230
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 231,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "reconstructed_product": 231
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 232,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "reconstructed_product": 232
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 233,
+      "prime_powers": [
+        [
+          233,
+          1
+        ]
+      ],
+      "reconstructed_product": 233
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 234,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 234
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 235,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          47,
+          1
+        ]
+      ],
+      "reconstructed_product": 235
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 236,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          59,
+          1
+        ]
+      ],
+      "reconstructed_product": 236
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 237,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          79,
+          1
+        ]
+      ],
+      "reconstructed_product": 237
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 238,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 238
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 239,
+      "prime_powers": [
+        [
+          239,
+          1
+        ]
+      ],
+      "reconstructed_product": 239
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 240,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "reconstructed_product": 240
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 241,
+      "prime_powers": [
+        [
+          241,
+          1
+        ]
+      ],
+      "reconstructed_product": 241
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 242,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          2
+        ]
+      ],
+      "reconstructed_product": 242
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 243,
+      "prime_powers": [
+        [
+          3,
+          5
+        ]
+      ],
+      "reconstructed_product": 243
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 244,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          61,
+          1
+        ]
+      ],
+      "reconstructed_product": 244
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 245,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "reconstructed_product": 245
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 246,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ]
+      ],
+      "reconstructed_product": 246
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 247,
+      "prime_powers": [
+        [
+          13,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "reconstructed_product": 247
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 248,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "reconstructed_product": 248
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 249,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          83,
+          1
+        ]
+      ],
+      "reconstructed_product": 249
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 250,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "reconstructed_product": 250
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 251,
+      "prime_powers": [
+        [
+          251,
+          1
+        ]
+      ],
+      "reconstructed_product": 251
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 252,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "reconstructed_product": 252
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 253,
+      "prime_powers": [
+        [
+          11,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 253
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 254,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          127,
+          1
+        ]
+      ],
+      "reconstructed_product": 254
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "identity"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 255,
+      "prime_powers": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "reconstructed_product": 255
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 1255,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          251,
+          1
+        ]
+      ],
+      "reconstructed_product": 1255
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 1268,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          317,
+          1
+        ]
+      ],
+      "reconstructed_product": 1268
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 1279,
+      "prime_powers": [
+        [
+          1279,
+          1
+        ]
+      ],
+      "reconstructed_product": 1279
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 1288,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 1288
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 1295,
+      "prime_powers": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 1295
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 1300,
+      "prime_powers": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 1300
+    },
+    {
+      "Omega": 1,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 1303,
+      "prime_powers": [
+        [
+          1303,
+          1
+        ]
+      ],
+      "reconstructed_product": 1303
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 1304,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          163,
+          1
+        ]
+      ],
+      "reconstructed_product": 1304
+    },
+    {
+      "Omega": 3,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 2510,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          251,
+          1
+        ]
+      ],
+      "reconstructed_product": 2510
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 2536,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          317,
+          1
+        ]
+      ],
+      "reconstructed_product": 2536
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 2558,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          1279,
+          1
+        ]
+      ],
+      "reconstructed_product": 2558
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 2576,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          23,
+          1
+        ]
+      ],
+      "reconstructed_product": 2576
+    },
+    {
+      "Omega": 4,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 2590,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "reconstructed_product": 2590
+    },
+    {
+      "Omega": 6,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 2600,
+      "prime_powers": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "reconstructed_product": 2600
+    },
+    {
+      "Omega": 2,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": 1,
+      "lambda_trial": 1,
+      "n": 2606,
+      "prime_powers": [
+        [
+          2,
+          1
+        ],
+        [
+          1303,
+          1
+        ]
+      ],
+      "reconstructed_product": 2606
+    },
+    {
+      "Omega": 5,
+      "contexts": [
+        "square_template"
+      ],
+      "lambda_sieve": -1,
+      "lambda_trial": -1,
+      "n": 2608,
+      "prime_powers": [
+        [
+          2,
+          4
+        ],
+        [
+          163,
+          1
+        ]
+      ],
+      "reconstructed_product": 2608
+    }
+  ],
+  "m1304": {
+    "N": 2608,
+    "m": 1304,
+    "square_tests": [
+      {
+        "k": 1,
+        "m_minus_square": 1303,
+        "reduced_pair": {
+          "a": 1,
+          "b": 1303,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": 1,
+          "lambda_b": -1,
+          "sum": 1304
+        },
+        "square": 1,
+        "target_pair": {
+          "a": 2,
+          "b": 2606,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": -1,
+          "lambda_b": 1,
+          "sum": 2608
+        }
+      },
+      {
+        "k": 2,
+        "m_minus_square": 1300,
+        "reduced_pair": {
+          "a": 4,
+          "b": 1300,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": 1,
+          "lambda_b": -1,
+          "sum": 1304
+        },
+        "square": 4,
+        "target_pair": {
+          "a": 8,
+          "b": 2600,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": -1,
+          "lambda_b": 1,
+          "sum": 2608
+        }
+      },
+      {
+        "k": 3,
+        "m_minus_square": 1295,
+        "reduced_pair": {
+          "a": 9,
+          "b": 1295,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": 1,
+          "lambda_b": -1,
+          "sum": 1304
+        },
+        "square": 9,
+        "target_pair": {
+          "a": 18,
+          "b": 2590,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": -1,
+          "lambda_b": 1,
+          "sum": 2608
+        }
+      },
+      {
+        "k": 4,
+        "m_minus_square": 1288,
+        "reduced_pair": {
+          "a": 16,
+          "b": 1288,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": 1,
+          "lambda_b": -1,
+          "sum": 1304
+        },
+        "square": 16,
+        "target_pair": {
+          "a": 32,
+          "b": 2576,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": -1,
+          "lambda_b": 1,
+          "sum": 2608
+        }
+      },
+      {
+        "k": 5,
+        "m_minus_square": 1279,
+        "reduced_pair": {
+          "a": 25,
+          "b": 1279,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": 1,
+          "lambda_b": -1,
+          "sum": 1304
+        },
+        "square": 25,
+        "target_pair": {
+          "a": 50,
+          "b": 2558,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": -1,
+          "lambda_b": 1,
+          "sum": 2608
+        }
+      },
+      {
+        "k": 6,
+        "m_minus_square": 1268,
+        "reduced_pair": {
+          "a": 36,
+          "b": 1268,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": 1,
+          "lambda_b": -1,
+          "sum": 1304
+        },
+        "square": 36,
+        "target_pair": {
+          "a": 72,
+          "b": 2536,
+          "both_negative_lambda": false,
+          "both_positive_lambda": false,
+          "lambda_a": -1,
+          "lambda_b": 1,
+          "sum": 2608
+        }
+      },
+      {
+        "k": 7,
+        "m_minus_square": 1255,
+        "reduced_pair": {
+          "a": 49,
+          "b": 1255,
+          "both_negative_lambda": false,
+          "both_positive_lambda": true,
+          "lambda_a": 1,
+          "lambda_b": 1,
+          "sum": 1304
+        },
+        "square": 49,
+        "target_pair": {
+          "a": 98,
+          "b": 2510,
+          "both_negative_lambda": true,
+          "both_positive_lambda": false,
+          "lambda_a": -1,
+          "lambda_b": -1,
+          "sum": 2608
+        }
+      }
+    ]
+  },
+  "mode": "CERTIFICATION / finite computational AUDIT",
+  "prime_divisor_certificates": [
+    {
+      "first_divisor_beyond_sqrt": 2,
+      "is_prime": true,
+      "p": 2,
+      "remainders": [],
+      "tested_divisors": []
+    },
+    {
+      "first_divisor_beyond_sqrt": 2,
+      "is_prime": true,
+      "p": 3,
+      "remainders": [],
+      "tested_divisors": []
+    },
+    {
+      "first_divisor_beyond_sqrt": 3,
+      "is_prime": true,
+      "p": 5,
+      "remainders": [
+        1
+      ],
+      "tested_divisors": [
+        2
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 3,
+      "is_prime": true,
+      "p": 7,
+      "remainders": [
+        1
+      ],
+      "tested_divisors": [
+        2
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 4,
+      "is_prime": true,
+      "p": 11,
+      "remainders": [
+        1,
+        2
+      ],
+      "tested_divisors": [
+        2,
+        3
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 4,
+      "is_prime": true,
+      "p": 13,
+      "remainders": [
+        1,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 5,
+      "is_prime": true,
+      "p": 17,
+      "remainders": [
+        1,
+        2,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 5,
+      "is_prime": true,
+      "p": 19,
+      "remainders": [
+        1,
+        1,
+        3
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 5,
+      "is_prime": true,
+      "p": 23,
+      "remainders": [
+        1,
+        2,
+        3
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 6,
+      "is_prime": true,
+      "p": 29,
+      "remainders": [
+        1,
+        2,
+        1,
+        4
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 6,
+      "is_prime": true,
+      "p": 31,
+      "remainders": [
+        1,
+        1,
+        3,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 7,
+      "is_prime": true,
+      "p": 37,
+      "remainders": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 7,
+      "is_prime": true,
+      "p": 41,
+      "remainders": [
+        1,
+        2,
+        1,
+        1,
+        5
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 7,
+      "is_prime": true,
+      "p": 43,
+      "remainders": [
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 7,
+      "is_prime": true,
+      "p": 47,
+      "remainders": [
+        1,
+        2,
+        3,
+        2,
+        5
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 8,
+      "is_prime": true,
+      "p": 53,
+      "remainders": [
+        1,
+        2,
+        1,
+        3,
+        5,
+        4
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 8,
+      "is_prime": true,
+      "p": 59,
+      "remainders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        3
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 8,
+      "is_prime": true,
+      "p": 61,
+      "remainders": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 9,
+      "is_prime": true,
+      "p": 67,
+      "remainders": [
+        1,
+        1,
+        3,
+        2,
+        1,
+        4,
+        3
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 9,
+      "is_prime": true,
+      "p": 71,
+      "remainders": [
+        1,
+        2,
+        3,
+        1,
+        5,
+        1,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 9,
+      "is_prime": true,
+      "p": 73,
+      "remainders": [
+        1,
+        1,
+        1,
+        3,
+        1,
+        3,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 9,
+      "is_prime": true,
+      "p": 79,
+      "remainders": [
+        1,
+        1,
+        3,
+        4,
+        1,
+        2,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 10,
+      "is_prime": true,
+      "p": 83,
+      "remainders": [
+        1,
+        2,
+        3,
+        3,
+        5,
+        6,
+        3,
+        2
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 10,
+      "is_prime": true,
+      "p": 89,
+      "remainders": [
+        1,
+        2,
+        1,
+        4,
+        5,
+        5,
+        1,
+        8
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 10,
+      "is_prime": true,
+      "p": 97,
+      "remainders": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        6,
+        1,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 11,
+      "is_prime": true,
+      "p": 101,
+      "remainders": [
+        1,
+        2,
+        1,
+        1,
+        5,
+        3,
+        5,
+        2,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 11,
+      "is_prime": true,
+      "p": 103,
+      "remainders": [
+        1,
+        1,
+        3,
+        3,
+        1,
+        5,
+        7,
+        4,
+        3
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 11,
+      "is_prime": true,
+      "p": 107,
+      "remainders": [
+        1,
+        2,
+        3,
+        2,
+        5,
+        2,
+        3,
+        8,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 11,
+      "is_prime": true,
+      "p": 109,
+      "remainders": [
+        1,
+        1,
+        1,
+        4,
+        1,
+        4,
+        5,
+        1,
+        9
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 11,
+      "is_prime": true,
+      "p": 113,
+      "remainders": [
+        1,
+        2,
+        1,
+        3,
+        5,
+        1,
+        1,
+        5,
+        3
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 12,
+      "is_prime": true,
+      "p": 127,
+      "remainders": [
+        1,
+        1,
+        3,
+        2,
+        1,
+        1,
+        7,
+        1,
+        7,
+        6
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 12,
+      "is_prime": true,
+      "p": 131,
+      "remainders": [
+        1,
+        2,
+        3,
+        1,
+        5,
+        5,
+        3,
+        5,
+        1,
+        10
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 12,
+      "is_prime": true,
+      "p": 137,
+      "remainders": [
+        1,
+        2,
+        1,
+        2,
+        5,
+        4,
+        1,
+        2,
+        7,
+        5
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 12,
+      "is_prime": true,
+      "p": 139,
+      "remainders": [
+        1,
+        1,
+        3,
+        4,
+        1,
+        6,
+        3,
+        4,
+        9,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 13,
+      "is_prime": true,
+      "p": 149,
+      "remainders": [
+        1,
+        2,
+        1,
+        4,
+        5,
+        2,
+        5,
+        5,
+        9,
+        6,
+        5
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 13,
+      "is_prime": true,
+      "p": 151,
+      "remainders": [
+        1,
+        1,
+        3,
+        1,
+        1,
+        4,
+        7,
+        7,
+        1,
+        8,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 13,
+      "is_prime": true,
+      "p": 157,
+      "remainders": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        3,
+        5,
+        4,
+        7,
+        3,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 13,
+      "is_prime": true,
+      "p": 163,
+      "remainders": [
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        3,
+        1,
+        3,
+        9,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 13,
+      "is_prime": true,
+      "p": 167,
+      "remainders": [
+        1,
+        2,
+        3,
+        2,
+        5,
+        6,
+        7,
+        5,
+        7,
+        2,
+        11
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 14,
+      "is_prime": true,
+      "p": 173,
+      "remainders": [
+        1,
+        2,
+        1,
+        3,
+        5,
+        5,
+        5,
+        2,
+        3,
+        8,
+        5,
+        4
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 14,
+      "is_prime": true,
+      "p": 179,
+      "remainders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        4,
+        3,
+        8,
+        9,
+        3,
+        11,
+        10
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 14,
+      "is_prime": true,
+      "p": 181,
+      "remainders": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        5,
+        1,
+        1,
+        5,
+        1,
+        12
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 14,
+      "is_prime": true,
+      "p": 191,
+      "remainders": [
+        1,
+        2,
+        3,
+        1,
+        5,
+        2,
+        7,
+        2,
+        1,
+        4,
+        11,
+        9
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 14,
+      "is_prime": true,
+      "p": 193,
+      "remainders": [
+        1,
+        1,
+        1,
+        3,
+        1,
+        4,
+        1,
+        4,
+        3,
+        6,
+        1,
+        11
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 15,
+      "is_prime": true,
+      "p": 197,
+      "remainders": [
+        1,
+        2,
+        1,
+        2,
+        5,
+        1,
+        5,
+        8,
+        7,
+        10,
+        5,
+        2,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 15,
+      "is_prime": true,
+      "p": 199,
+      "remainders": [
+        1,
+        1,
+        3,
+        4,
+        1,
+        3,
+        7,
+        1,
+        9,
+        1,
+        7,
+        4,
+        3
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 15,
+      "is_prime": true,
+      "p": 211,
+      "remainders": [
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        4,
+        1,
+        2,
+        7,
+        3,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 15,
+      "is_prime": true,
+      "p": 223,
+      "remainders": [
+        1,
+        1,
+        3,
+        3,
+        1,
+        6,
+        7,
+        7,
+        3,
+        3,
+        7,
+        2,
+        13
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 16,
+      "is_prime": true,
+      "p": 227,
+      "remainders": [
+        1,
+        2,
+        3,
+        2,
+        5,
+        3,
+        3,
+        2,
+        7,
+        7,
+        11,
+        6,
+        3,
+        2
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 16,
+      "is_prime": true,
+      "p": 229,
+      "remainders": [
+        1,
+        1,
+        1,
+        4,
+        1,
+        5,
+        5,
+        4,
+        9,
+        9,
+        1,
+        8,
+        5,
+        4
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 16,
+      "is_prime": true,
+      "p": 233,
+      "remainders": [
+        1,
+        2,
+        1,
+        3,
+        5,
+        2,
+        1,
+        8,
+        3,
+        2,
+        5,
+        12,
+        9,
+        8
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 16,
+      "is_prime": true,
+      "p": 239,
+      "remainders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        1,
+        7,
+        5,
+        9,
+        8,
+        11,
+        5,
+        1,
+        14
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 16,
+      "is_prime": true,
+      "p": 241,
+      "remainders": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        7,
+        1,
+        10,
+        1,
+        7,
+        3,
+        1
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 16,
+      "is_prime": true,
+      "p": 251,
+      "remainders": [
+        1,
+        2,
+        3,
+        1,
+        5,
+        6,
+        3,
+        8,
+        1,
+        9,
+        11,
+        4,
+        13,
+        11
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 18,
+      "is_prime": true,
+      "p": 317,
+      "remainders": [
+        1,
+        2,
+        1,
+        2,
+        5,
+        2,
+        5,
+        2,
+        7,
+        9,
+        5,
+        5,
+        9,
+        2,
+        13,
+        11
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 36,
+      "is_prime": true,
+      "p": 1279,
+      "remainders": [
+        1,
+        1,
+        3,
+        4,
+        1,
+        5,
+        7,
+        1,
+        9,
+        3,
+        7,
+        5,
+        5,
+        4,
+        15,
+        4,
+        1,
+        6,
+        19,
+        19,
+        3,
+        14,
+        7,
+        4,
+        5,
+        10,
+        19,
+        3,
+        19,
+        8,
+        31,
+        25,
+        21,
+        19
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "first_divisor_beyond_sqrt": 37,
+      "is_prime": true,
+      "p": 1303,
+      "remainders": [
+        1,
+        1,
+        3,
+        3,
+        1,
+        1,
+        7,
+        7,
+        3,
+        5,
+        7,
+        3,
+        1,
+        13,
+        7,
+        11,
+        7,
+        11,
+        3,
+        1,
+        5,
+        15,
+        7,
+        3,
+        3,
+        7,
+        15,
+        27,
+        13,
+        1,
+        23,
+        16,
+        11,
+        8,
+        7
+      ],
+      "tested_divisors": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    }
+  ],
+  "q37": {
+    "q": 37,
+    "reduced_three_test_arguments": [
+      {
+        "lambda": -1,
+        "n": 73
+      },
+      {
+        "lambda": 1,
+        "n": 35
+      },
+      {
+        "lambda": 1,
+        "n": 34
+      }
+    ],
+    "successful_plus_pair": {
+      "a": 9,
+      "b": 65,
+      "both_negative_lambda": false,
+      "both_positive_lambda": true,
+      "lambda_a": 1,
+      "lambda_b": 1,
+      "sum": 74
+    },
+    "three_tests": [
+      {
+        "a": 1,
+        "b": 73,
+        "both_negative_lambda": false,
+        "both_positive_lambda": false,
+        "lambda_a": 1,
+        "lambda_b": -1,
+        "sum": 74
+      },
+      {
+        "a": 4,
+        "b": 70,
+        "both_negative_lambda": false,
+        "both_positive_lambda": false,
+        "lambda_a": 1,
+        "lambda_b": -1,
+        "sum": 74
+      },
+      {
+        "a": 6,
+        "b": 68,
+        "both_negative_lambda": false,
+        "both_positive_lambda": false,
+        "lambda_a": 1,
+        "lambda_b": -1,
+        "sum": 74
+      }
+    ],
+    "twice_q": 74
+  },
+  "q5": {
+    "L_inclusive_4": 0,
+    "q": 5,
+    "terms": [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "runtime": {
+    "direct_stdlib_module_files": {
+      "hashlib": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py",
+        "sha256": "a25e6f24d6ae5b5205844e2717f3d6dbeda005c1afeaf4d450b4f2c363a3d34a"
+      },
+      "json": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py",
+        "sha256": "332fabb72a4a1ed02c9207a7619ab339dac8f0b6862e16f6499147121b302a27"
+      },
+      "pathlib": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py",
+        "sha256": "6b33d2d55c09aa9c607a528003ed8fe154894afaa977ec554e0a858240412b72"
+      },
+      "subprocess": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py",
+        "sha256": "d2f73c7128a3931f74411b46352146ba85322a8dc8f12a721d4801dc43d9766e"
+      },
+      "traceback": {
+        "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/traceback.py",
+        "sha256": "44de63aeb34fd305a6f98562eb3d1255005e98bb3c800ece7ddb14b9f401de2f"
+      }
+    },
+    "executable": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3.9",
+    "executable_sha256": "8e598855de9a6648bc670d5fe7a3a653f1fa967b74373ed7c4ca16fbc40c0de1",
+    "implementation": "cpython",
+    "isolated": 1,
+    "no_site": 1,
+    "version": "3.9.6 (default, Dec  2 2025, 07:27:58) \n[Clang 17.0.0 (clang-1700.6.3.2)]",
+    "version_info": [
+      3,
+      9,
+      6,
+      "final",
+      0
+    ]
+  },
+  "script": {
+    "path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/finite_certify.py",
+    "sha256": "00a9d66bd81ca58e5cf0148fba6fa5b742c6a3285c82f46d5a1e3952aeab98f5"
+  },
+  "source_policy": {
+    "arithmetic": "Python arbitrary-precision integers only; no rounding error",
+    "code": "newly written for this bounded audit",
+    "cutoff_inclusive": "2026-07-31",
+    "external_mathematical_inputs": [],
+    "seed": null,
+    "third_party_dependencies": []
+  },
+  "template_label_limitation": "PB three-test is not defined in the supplied request.md. The explicit three-smallest-positive-lambda-first-summand tests are checked, but their fidelity to the undefined PB label is not certified. The square-template formulas are recorded explicitly as well.",
+  "unresolved_obligations": [
+    "Leader must confirm that the explicit three tests match the intended PB definition.",
+    "No claim for every N, nor a formal proof of the counting identity, is supplied.",
+    "No Lean execution, universal positivity argument, or final theorem certification is supplied."
+  ],
+  "verdict": "PASS_EXPLICIT_FINITE_CLAIMS_ONLY",
+  "worker_intended_exit_status": 0
+}

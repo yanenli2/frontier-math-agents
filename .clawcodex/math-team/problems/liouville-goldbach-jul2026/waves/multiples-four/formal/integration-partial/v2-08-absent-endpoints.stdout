@@ -1,0 +1,3 @@
+<stdin>:2:7: error(lean.unknownIdentifier): Unknown identifier `ArithmeticStatement.representation_multiple_four`
+<stdin>:3:7: error(lean.unknownIdentifier): Unknown identifier `ArithmeticStatement.pointwise_keystone`
+<stdin>:4:7: error(lean.unknownIdentifier): Unknown identifier `ArithmeticStatement.liouville_goldbach`

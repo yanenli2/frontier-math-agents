@@ -1,0 +1,5 @@
+id
+  ArithmeticStatement.representation_multiple_four : ∀ (m : ℕ),
+  0 < m →
+    ∃ a b, 0 < a ∧ 0 < b ∧ 4 * m = a + b ∧ (-1) ^ a.primeFactorsList.length = -1 ∧ (-1) ^ b.primeFactorsList.length = -1
+'ArithmeticStatement.representation_multiple_four' depends on axioms: [propext, Classical.choice, Quot.sound]

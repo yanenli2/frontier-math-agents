@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Algebra/Group/Units/Defs.lean&per_page=1"
+  ],
+  "shell_display": "gh api 'repos/leanprover-community/mathlib4/commits?sha=905b95818eb32af7874a58b427f50c1711a5e96c&path=Mathlib/Algebra/Group/Units/Defs.lean&per_page=1'",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:11:05.709033+00:00",
+  "elapsed_seconds": 0.44671025,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-history.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/source-mathlib-units-history.stderr",
+  "stdout_sha256": "f628810065e9bc0332215820692523ea45f87d15f6a5812b661b164c2294f921",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,13 @@
+mode=CERTIFICATION, finite scope only
+parent_command=["/Library/Developer/CommandLineTools/usr/bin/python3", "-I", "-S", ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/finite_certify.py"]
+worker_command=["/Library/Developer/CommandLineTools/usr/bin/python3", "-I", "-S", ".clawcodex/math-team/problems/liouville-goldbach-jul2026/nl/code-executor/finite_certify.py", "--worker"]
+--- worker stdout ---
+verdict=PASS_EXPLICIT_FINITE_CLAIMS_ONLY
+assertions=1260
+failed_assertions=0
+coverage={"all_used_lambda_entries_cross_checked": true, "identity_N_count": 255, "identity_N_max": 256, "identity_N_min": 2, "identity_ordered_pair_positions_examined": 32640, "independently_rechecked_N": [2, 3, 4, 10, 256], "scope_excludes": ["broad target search", "broad bridge search", "N outside 2..256 except specified examples", "universal counting-identity proof", "global target proof"], "sieve_bound": 2608, "sieve_entries_not_used_in_claims": 2337, "symmetry_reduction": "none; both (a,b) and (b,a), and diagonal a=b, retained", "used_lambda_argument_count": 271, "used_lambda_argument_max": 2608, "used_lambda_argument_min": 1}
+PB_label_fidelity=UNVERIFIED; explicit formulas recorded
+worker_intended_exit_status=0
+--- worker stderr ---
+worker_actual_exit_status=0
+parent_exit_status=0

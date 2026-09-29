@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/leanprover-community/plausible/git/commits/e12c1910fe855cbfc38803cd4e55543906d5fa62"
+  ],
+  "shell_display": "gh api repos/leanprover-community/plausible/git/commits/e12c1910fe855cbfc38803cd4e55543906d5fa62",
+  "cwd": ".",
+  "environment_additions": {},
+  "started_utc": "2026-09-25T02:00:10.019886+00:00",
+  "elapsed_seconds": 0.44734925,
+  "timeout_seconds": 600,
+  "exit_status": 0,
+  "stdout_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-commit.stdout",
+  "stderr_path": ".clawcodex/math-team/problems/liouville-goldbach-jul2026/formal/environment/dep-plausible-commit.stderr",
+  "stdout_sha256": "547c29f023e5bb7681deefb13ded0c91357335885fa7c9d262c39045fa70da2c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
