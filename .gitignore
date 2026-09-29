@@ -13,3 +13,6 @@
 
 # The versioned citation and hash are archived; the third-party PDF stays local.
 .clawcodex/math-team/problems/liouville-goldbach-jul2026/knowledge/mangerel-v2/paper.pdf
+
+# Personal local notes; never published.
+/my-docs/
